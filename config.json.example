@@ -1,0 +1,13 @@
+{
+	"target": {
+		"username": "YOUR_USERNAME",
+		"password": "YOUR_PASSWORD",
+		"wiki_url": "YOUR_WIKI_URL"
+	},
+	"source": {
+		"wiki_url": "https://pzwiki.net/",
+		"namespaces": [
+			"Modding:Lua Event"
+		]
+	}
+}
