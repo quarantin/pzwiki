@@ -1,0 +1,10 @@
+{{Function
+|name= <pre>OnPlayerMove</pre>
+|description=Triggered while the player is moving.
+|parameter=N/A
+|example= <pre>Events.OnPlayerMove.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

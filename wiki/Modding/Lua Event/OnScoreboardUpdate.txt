@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnScoreboardUpdate</pre>
+|description= Called when multiplayer scoreboard is updated.
+|parameter=
+#ArrayList<[[String]]> Player names.
+#ArrayList<[[String]]> Steam ID.
+|example= <pre>Events.OnScoreboardUpdate.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

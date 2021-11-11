@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnCharacterCollide</pre>
+|description= Called when [[IsoGameCharacter]] collides with another [[IsoGameCharacter]]
+|parameter=
+#[[IsoGameCharacter]] this (person function is called with)
+#[[IsoGameCharacter]] character collided with.
+|example= <pre>Events.OnCharacterCollide.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnObjectCollide|OnObjectCollide]]
+}}
+
+[[Category:Lua Event]]

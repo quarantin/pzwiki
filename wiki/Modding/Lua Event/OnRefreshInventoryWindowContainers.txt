@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnRefreshInventoryWindowContainers</pre>
+|description=Triggered during the process of refreshing inventory containers.
+|parameter=
+#[[ISInventoryPage]] The inventory page being refreshed.
+#[[String]] A string representing the state of the refresh process; can be any of "begin", "beforeFloor", "buttonsAdded", and "end".
+|example= <pre>Events.OnRefreshInventoryWindowContainers.Add(functionName)</pre>
+|additional_info = N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

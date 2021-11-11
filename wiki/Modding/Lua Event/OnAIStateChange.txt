@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnAIStateChange</pre>
+|description=Triggered before an AI state changes.
+|parameter=
+# [[IsoGameCharacter]] The character that owns the state machine.
+# [[State]] The new AI state.
+# [[State]] The previous AI state.
+|example= <pre>Events.OnAIStateChange.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

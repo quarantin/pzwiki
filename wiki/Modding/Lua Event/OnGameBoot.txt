@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnGameBoot</pre>
+|description= Lua event is called when the game/server is started or when mods are reloaded while the game is started.
+|parameter= N/A
+|example= <pre>Events.OnGameBoot.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnPreGameStart|OnPreGameStart]]
+*[[Modding:Lua Event/OnGameStart|OnGameStart]]
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnSpawnRegionsLoaded</pre>
+|description=Triggered after spawn regions are loaded.
+|parameter=
+# [[KahluaTable]] A table containing spawn regions.
+|example= <pre>Events.OnSpawnRegionsLoaded.Add(functionName)</pre>
+|additional_info=This event is triggered on the server.
+|see_also=
+}}
+
+[[Category:Lua Event]]

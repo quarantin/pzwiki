@@ -1,0 +1,10 @@
+{{Function
+|name= <pre>OnCreateUI</pre>
+|description=Triggered after UI initialization.
+|parameter=N/A
+|example= <pre>Events.OnCreateUI.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnWeaponSwingHitPoint</pre>
+|description= Triggered when a [[HandWeapon]] has hit the apex of its swing.
+|parameter=
+#[[IsoGameCharacter]] owner
+#[[HandWeapon]] weapon
+|example= <pre>Events.OnWeaponSwingHitPoint.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

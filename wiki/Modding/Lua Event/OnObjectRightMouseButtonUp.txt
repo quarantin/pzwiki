@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnObjectRightMouseButtonUp</pre>
+|description= Triggered when right mouse button is released on [[IsoObject]]
+|parameter=
+#[[IsoObject]] tile clicked.
+#[[Integer]] Mouse position X.
+#[[Integer]] Mouse position Y.
+|example= <pre>Events.OnObjectRightMouseButtonUp.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

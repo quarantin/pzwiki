@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnPlayerSetSafehouse</pre>
+|description= Triggered when survivor group has their safehouse set.
+|parameter=
+#[[SurvivorGroup]] The survivor group safehouse is being set for.
+#[[BuildingDef]] The building definition of the safehouse being set.
+|example= <pre>Events.OnPlayerSetSafehouse.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

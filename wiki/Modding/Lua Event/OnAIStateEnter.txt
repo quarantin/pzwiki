@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnAIStateEnter</pre>
+|description=Triggered when an AI state is entered.
+|parameter=
+# [[IsoGameCharacter]] The character the state will execute on.
+|example= <pre>Events.OnAIStateEnter.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

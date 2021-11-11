@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnConnectionStateChanged</pre>
+|description= Called at the different stages that a players connection state changes to the server when initially connecting.
+|parameter=
+#[[String]] The State
+#[[String]] Message
+|example= <pre>Events.OnConnectionStateChanged.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnJoypadActivate</pre>
+|description=Triggered when a controller is activated.
+|parameter=
+# [[Integer]] The ID of the activated controller.
+|example= <pre>Events.OnJoypadActivate.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

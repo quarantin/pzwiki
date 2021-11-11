@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnConnected</pre>
+|description= Called when player successfully connects to server.
+|parameter=
+N/A
+|example= <pre>Events.OnConnected.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

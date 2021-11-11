@@ -1,0 +1,14 @@
+{{Function
+|name= <pre>OnWeaponHitCharacter</pre>
+|description= Triggered when a [[IsoGameCharacter]] has been hit by a [[HandWeapon]]
+|parameter=
+#[[IsoGameCharacter]] attacker
+#[[IsoGameCharacter]] target
+#[[HandWeapon]] weapon
+#[[Float]] damage split
+|example= <pre>Events.OnWeaponHitCharacter.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

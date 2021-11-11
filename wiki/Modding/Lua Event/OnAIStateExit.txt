@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnAIStateExit</pre>
+|description=Triggered when an AI state is exited.
+|parameter=
+# [[IsoGameCharacter]] The character the state was executed on.
+|example= <pre>Events.OnAIStateExit.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

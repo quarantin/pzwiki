@@ -1,0 +1,14 @@
+{{Function
+|name= <pre>OnFillWorldObjectContextMenu</pre>
+|description= Called when world object context menus are filed.
+|parameter=
+#[[IsoPlayer]] The player who will see the menu.
+#[[ISContextMenu]] Context menu.
+#[[KahluaTable|table]] World objects. 
+#[[Boolean]] True if called for the purpose of testing for nearby objects.
+|example= <pre>Events.OnFillWorldObjectContextMenu.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

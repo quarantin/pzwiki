@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnLoadSoundBanks</pre>
+|description= Triggered when sound banks are loaded for the game.
+|parameter=
+N/A
+|example= <pre>Events.OnLoadSoundBanks.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

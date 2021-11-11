@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnCharacterMeet</pre>
+|description=Triggered when a survivor meets another character.
+|parameter=
+# [[IsoSurvivor]] The survivor meeting the character.
+# [[IsoGameCharacter]] The character being met.
+# [[Integer]] The number of times before this the two characters have met; if it is 0, this is the first time.
+|example= <pre>Events.OnCharacterMeet.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnCreatePlayer</pre>
+|description=Triggered when a player is created.
+|parameter=
+# [[Integer]] The player's PlayerIndex.
+# [[IsoPlayer]] The player which was created.
+|example= <pre>Events.OnCreatePlayer.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

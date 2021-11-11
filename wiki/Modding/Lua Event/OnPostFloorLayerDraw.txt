@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnPostFloorLayerDraw</pre>
+|description=Triggered after a floor layer is rendered.
+|parameter=
+# [[Integer]] The Z-index of the layer which was rendered.
+|example= <pre>Events.OnPostFloorLayerDraw.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

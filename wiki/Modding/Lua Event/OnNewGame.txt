@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnNewGame</pre>
+|description=Triggered after a world is initialized.
+|parameter=
+# [[IsoPlayer]] The player.
+# [[IsoGridSquare]] The square where the player is located.
+|example= <pre>Events.OnNewGame.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,10 @@
+{{Function
+|name= <pre>OnPreMapLoad</pre>
+|description=Triggered before a map is loaded.
+|parameter=N/A
+|example= <pre>Events.OnPreMapLoad.Add(functionName)</pre>
+|additional_info=
+|see_also=
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnMouseDown</pre>
+|description= Triggered when mouse button is down.
+|parameter=
+#[[Integer]] Mouse position x
+#[[Integer]] Mouse position y
+|example= <pre>Events.OnMouseDown.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

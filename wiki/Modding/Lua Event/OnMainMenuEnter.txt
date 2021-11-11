@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnMainMenuEnter</pre>
+|description= Called when player sees the main menu. This will occur when they launch the game or if they quit a running game.
+|parameter=
+N/A
+|example= <pre>Events.OnMainMenuEnter.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

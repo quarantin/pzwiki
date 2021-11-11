@@ -1,0 +1,10 @@
+{{Function
+|name= <pre>OnEnterVehicle</pre>
+|description= Called when [[IsoPlayer]] successfully enters a vehicle.
+|parameter=#[[IsoPlayer]] The player that entered the vehicle.
+|example=
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

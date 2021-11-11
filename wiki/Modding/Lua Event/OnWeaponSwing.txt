@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnWeaponSwing</pre>
+|description= Triggered when a [[IsoGameCharacter]] swings [[HandWeapon]]
+|parameter=
+#[[IsoGameCharacter]] attacker
+#[[HandWeapon]] weapon
+|example= <pre>Events.OnWeaponSwing.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

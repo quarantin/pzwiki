@@ -1,0 +1,15 @@
+{{Function
+|name= <pre>OnCustomUIKey</pre>
+|description= Unknown.
+|parameter= 
+#[[Integer]] denoted key. (See Keyboard Class in java docs for more info.)
+|example= <pre>Events.OnCustomUIKey.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnKeyStartPressed|OnKeyStartPressed]]
+*[[Modding:Lua Event/OnKeyKeepPressed|OnKeyKeepPressed]]
+*[[Modding:Lua Event/OnKeyPressed|OnKeyPressed]]
+
+}}
+
+[[Category:Lua Event]]

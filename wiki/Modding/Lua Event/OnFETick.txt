@@ -1,0 +1,14 @@
+{{Function
+|name= <pre>OnFETick</pre>
+|description= Same as OnTick, except is only called while on the main menu.
+|parameter=
+# [[Integer]]: Always 0, unknown use.
+|example= <pre>Events.OnFETick.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnTick|OnTick]]
+*[[Modding:Lua Event/OnRenderUpdate|OnRenderUpdate]]
+*[[Modding:Lua Event/OnTickEvenPaused|OnTickEvenPaused]]
+}}
+
+[[Category:Lua Event]]

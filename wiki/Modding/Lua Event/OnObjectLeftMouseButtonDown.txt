@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnObjectLeftMouseButtonDown</pre>
+|description= Triggered when left mouse button clicked on [[IsoObject]]
+|parameter=
+#[[IsoObject]] tile clicked.
+#[[Integer]] Mouse position X.
+#[[Integer]] Mouse position Y.
+|example= <pre>Events.OnObjectLeftMouseButtonDown.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

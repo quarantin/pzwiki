@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnConnectFailed</pre>
+|description= Triggered when connection to server has failed.
+|parameter=
+#[[String]] Connection failure reason.
+|example= <pre>Events.OnConnectFailed.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,15 @@
+{{Function
+|name= <pre>OnKeyStartPressed</pre>
+|description= Called when key is initially pressed.
+|parameter= 
+#[[Integer]] denoted key. (See Keyboard Class in java docs for more info.)
+|example= <pre>Events.OnKeyStartPressed.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnKeyPressed|OnKeyPressed]]
+*[[Modding:Lua Event/OnKeyKeepPressed|OnKeyKeepPressed]]
+*[[Modding:Lua Event/OnCustomUIKey|OnCustomUIKey]]
+
+}}
+
+[[Category:Lua Event]]

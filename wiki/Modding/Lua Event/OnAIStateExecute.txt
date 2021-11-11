@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnAIStateExecute</pre>
+|description=Triggered when an AI state executes.
+|parameter=
+# [[IsoGameCharacter]] The character the state executed on.
+|example= <pre>Events.OnAIStateExecute.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

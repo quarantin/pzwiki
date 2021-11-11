@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnLoginState</pre>
+|description= Used when entering login state (?)
+|parameter=
+#[[LoginState]] login state
+|example= <pre>Events.OnLoginState.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

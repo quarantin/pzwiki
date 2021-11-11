@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnPostMapLoad</pre>
+|description=Triggered after a cell is loaded.
+|parameter=
+# [[IsoCell]] The cell which was loaded.
+# [[Integer]] The world X.
+# [[Integer]] The world Y.
+|example= <pre>Events.OnPostMapLoad.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

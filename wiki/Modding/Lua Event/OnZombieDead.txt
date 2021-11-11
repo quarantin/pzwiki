@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnZombieDead</pre>
+|description= Called after a player kills [[IsoZombie]].
+|parameter=
+#[[IsoZombie]] The zombie that was killed.
+|example= 
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

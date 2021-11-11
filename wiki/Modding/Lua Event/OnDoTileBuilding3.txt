@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnDoTileBuilding3</pre>
+|description= ???
+|parameter=
+#[[IsoCell]] Cell player is on?
+#[[Boolean]] bRender
+#[[Integer]] ???
+|example= <pre>Events.OnDoTileBuilding3.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnPlayerUpdate</pre>
+|description= Called when [[IsoPlayer]] updates.
+|parameter=
+#[[IsoPlayer]] The IsoPlayer that is updating.
+|example= <pre>Events.OnPlayerUpdate.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnNPCSurvivorUpdate|OnNPCSurvivorUpdate]]
+*[[Modding:Lua Event/OnZombieUpdate|OnZombieUpdate]]
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnWeaponHitTree</pre>
+|description= Triggered when an [[IsoGameCharacter]] uses a [[HandWeapon]] to hit an [[IsoTree]].
+|parameter=
+#[[IsoGameCharacter]] owner
+#[[HandWeapon]] weapon
+|example= <pre>Events.OnWeaponHitTree.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

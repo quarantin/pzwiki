@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnSave</pre>
+|description=Triggered during the game's saving process.
+|parameter=N/A
+|example= <pre>Events.OnSave.Add(functionName)</pre>
+|additional_info=The event is triggered after saving ''map_ver.bin'' and ''map_sand.bin'', and just before saving ''map.bin''.
+|see_also=
+*[[Modding:Lua Event/OnLoad|OnLoad]]
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,14 @@
+{{Function
+|name= <pre>OnPostUIDraw</pre>
+|description= Called by UI Manager in its render function after the UI has been drawn.
+|parameter= N/A
+|example= <pre>Events.OnPreUIDraw.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnPreUIDraw|OnPreUIDraw]]
+*[[Modding:Lua Event/CreateUI|CreateUI]]
+*[[Modding:Lua Event/OnJoypadActivateUI|OnJoypadActivateUI]]
+*[[Modding:Lua Event/OnCustomUIKey|OnCustomUIKey]]
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,11 @@
+{{Function
+|name= <pre>OnPlayerDeath</pre>
+|description=Triggered when a player dies.
+|parameter=
+# [[IsoPlayer]] The player which died.
+|example= <pre>Events.OnPlayerDeath.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

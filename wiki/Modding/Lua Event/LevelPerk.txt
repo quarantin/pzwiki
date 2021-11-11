@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>LevelPerk</pre>
+|description= Triggered when a perk is leveled up.
+|parameter=
+#[[IsoGameCharacter]] The character whose perk is being leveled up.
+#[[Perks]] The perk being leveled up.
+#[[Integer]] Perk level.
+|example= <pre>Events.LevelPerk.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

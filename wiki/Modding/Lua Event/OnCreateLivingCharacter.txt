@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnCreateLivingCharacter</pre>
+|description= Called when IsoPlayer or IsoSurvivor is being created.
+|parameter=
+#[[IsoSurvivor]]/[[IsoPlayer]] the character created.
+#[[SurvivorDesc]] The description of the survivor.
+|example= <pre>Events.OnCreateLivingCharacter.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

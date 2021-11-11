@@ -1,0 +1,14 @@
+{{Function
+|name= <pre>OnMultiTriggerNPCEvent</pre>
+|description= (?)
+|parameter=
+#[[String]] Type of trigger.
+#[[KahluaTable]] Data of trigger.
+#[[BuildingDef]] Building definition of trigger (?)
+|example= <pre>Events.OnMultiTriggerNPCEvent.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnTriggerNPCEvent|OnMultiTriggerNPCEvent]]
+}}
+
+[[Category:Lua Event]]

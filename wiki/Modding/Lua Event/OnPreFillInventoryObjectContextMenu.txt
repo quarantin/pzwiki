@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnPreFillInventoryObjectContextMenu</pre>
+|description= Called before context menus get filled with options.
+|parameter=
+#[[IsoPlayer]] player
+#??? Context menu.
+#??? Items
+|example= <pre>Events.OnPreFillInventoryObjectContextMenu.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

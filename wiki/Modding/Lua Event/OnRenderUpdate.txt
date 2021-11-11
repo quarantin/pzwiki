@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnRenderUpdate</pre>
+|description= Used to be called every Display.update() but is now obsolete.
+|parameter= N/A
+|example= <pre>Events.OnRenderUpdate.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnTick|OnTick]]
+*[[Modding:Lua Event/OnTickEvenPaused|OnTickEvenPaused]]
+*[[Modding:Lua Event/OnFETick|OnFETick]]
+}}
+
+[[Category:Lua Event]]

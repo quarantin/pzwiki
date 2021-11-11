@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnZombieUpdate</pre>
+|description= Called when [[IsoZombie]] updates.
+|parameter=
+#[[IsoZombie]] The IsoZombie that is updating.
+|example= <pre>Events.OnZombieUpdate.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnNPCSurvivorUpdate|OnNPCSurvivor]]
+*[[Modding:Lua Event/OnPlayerUpdate|OnZombieUpdate]]
+}}
+
+[[Category:Lua Event]]

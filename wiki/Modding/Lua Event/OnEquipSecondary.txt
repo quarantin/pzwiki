@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnEquipSecondary</pre>
+|description=Triggered when a character equips an item in its secondary slot.
+|parameter=
+# [[IsoGameCharacter]] The character which equipped the item.
+# [[InventoryItem]] The item which was equipped.
+|example= <pre>Events.OnEquipSecondary.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>AddXP</pre>
+|description= Triggered when earning XP?
+|parameter=
+#[[IsoGameCharacter]] Game character earning XP.
+#[[Perks]] Type of XP?
+#[[Float]] Amount of XP.
+|example= <pre>Events.AddXP.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]

@@ -1,0 +1,12 @@
+{{Function
+|name= <pre>OnPreGameStart</pre>
+|description= Event is now obsolete.
+|parameter= N/A
+|example= <pre>Events.OnPreGameStart.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnGameBoot|OnGameBoot]]
+*[[Modding:Lua Event/OnGameStart|OnGameStart]]
+}}
+
+[[Category:Lua Event]]

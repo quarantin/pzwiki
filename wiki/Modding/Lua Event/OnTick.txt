@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnTick</pre>
+|description= Called every tick, try to not use this one, use EveryTenMinutes instead because it can create a lot of frame loss/garbage collection.
+|parameter= N/A
+|example= <pre>Events.OnTick.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnTickEvenPaused|OnTickEvenPaused]]
+*[[Modding:Lua Event/OnRenderUpdate|OnRenderUpdate]]
+*[[Modding:Lua Event/OnFETick|OnFETick]]
+}}
+
+[[Category:Lua Event]]

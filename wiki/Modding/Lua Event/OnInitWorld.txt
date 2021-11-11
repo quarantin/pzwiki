@@ -1,0 +1,10 @@
+{{Function
+|name= <pre>OnInitWorld</pre>
+|description=Triggered during the process of initializing the world.
+|parameter=N/A
+|example= <pre>Events.OnInitWorld.Add(functionName)</pre>
+|additional_info=N/A
+|see_also=
+}}
+
+[[Category:Lua Event]]

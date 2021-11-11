@@ -1,0 +1,13 @@
+{{Function
+|name= <pre>OnTickEvenPaused</pre>
+|description= Same as OnTrick, but triggered when the game is paused as well.
+|parameter= N/A
+|example= <pre>Events.OnTickEvenPaused.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+*[[Modding:Lua Event/OnTick|OnTick]]
+*[[Modding:Lua Event/OnRenderUpdate|OnRenderUpdate]]
+*[[Modding:Lua Event/OnFETick|OnFETick]]
+}}
+
+[[Category:Lua Event]]

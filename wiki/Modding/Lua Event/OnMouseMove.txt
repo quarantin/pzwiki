@@ -1,0 +1,14 @@
+{{Function
+|name= <pre>OnMouseMove</pre>
+|description= Triggered when mouse is moved.
+|parameter=
+#[[Integer]] Mouse x position.
+#[[Integer]] Mouse y position.
+#[[Integer]] Mouse x W?
+#[[Integer]] Mouse y W?
+|example= <pre>Events.OnMouseMove.Add(functionName)</pre>
+|additional_info = N/A
+|see_also= 
+}}
+
+[[Category:Lua Event]]
