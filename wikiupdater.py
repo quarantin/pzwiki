@@ -66,7 +66,7 @@ class WikiUpdater:
 		return jsondata['query']['tokens']['csrftoken']
 
 
-	def edit_wiki(self, title, filepath):
+	def edit_page(self, title, filepath):
 
 		print(title.replace(sep, ':', 1))
 
@@ -102,7 +102,7 @@ class WikiUpdater:
 			for filename in files:
 				title = sep.join([root, filename.replace('.json', '')])
 				filepath = join(root, filename)
-				self.edit_wiki(title, filepath)
+				self.edit_page(title, filepath)
 				time.sleep(0.2)
 
 
