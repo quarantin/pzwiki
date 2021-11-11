@@ -1,0 +1,29 @@
+#!/bin/bash
+
+cd $(dirname "${0}")
+cd ..
+
+JAVAROOT=$(jq .java.root config.json | tr -d '"')
+
+CORE="$(find "${JAVAROOT}" -name Core.java)"
+if [ -z "${CORE}" ]; then
+	echo 'Cannot find Core.java!'
+	exit
+fi
+
+VERSION="$(grep 'new GameVersion' "${CORE}" | cut -f2 -d'(' | awk -F',' '{ print $1 $2 }' | sed 's/[ ]\+/./')"
+if [ -z "${VERSION}" ]; then
+	echo 'Cannot find game version!'
+	exit
+fi
+
+echo "== Version ${VERSION} =="
+while read LINE; do
+
+	if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
+		continue
+	fi
+
+	echo "*[[Modding:Lua Event/$LINE|$LINE]]"
+
+done < <(grep -R 'AddEvent("' "${JAVAROOT}" --include '*.java' | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
