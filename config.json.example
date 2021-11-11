@@ -1,4 +1,7 @@
 {
+	"java": {
+		"root": "/home/co/Zomboid/sources/41.56"
+	},
 	"target": {
 		"username": "YOUR_USERNAME",
 		"password": "YOUR_PASSWORD",
