@@ -1,6 +1,17 @@
 {
 	"java": {
-		"root": "/home/co/Zomboid/sources/41.56"
+		"root": "/home/co/IdeaProjects/Zomboid/build/generated/sources/zomboid/",
+		"javadoc_url": "https://quarantin.github.io/zomboid-javadoc/41.56/",
+		"ignored_packages": [
+			"astar",
+			"com",
+			"de",
+			"fmod",
+			"javax",
+			"N3D",
+			"org",
+			"se"
+		]
 	},
 	"target": {
 		"username": "YOUR_USERNAME",
