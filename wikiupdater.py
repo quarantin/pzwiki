@@ -2,6 +2,7 @@
 
 import sys
 import json
+import time
 import requests
 
 from os import chdir, walk
@@ -99,9 +100,10 @@ class WikiUpdater:
 			root = root[2:]
 
 			for filename in files:
-				title = sep.join([root, filename.replace('.txt', '')])
+				title = sep.join([root, filename.replace('.json', '')])
 				filepath = join(root, filename)
 				self.edit_wiki(title, filepath)
+				time.sleep(0.2)
 
 
 if __name__ == '__main__':
