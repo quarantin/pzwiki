@@ -66,12 +66,10 @@ for root, subdirs, files in walk('Modding/Lua Event/'):
 			if line == 'N/A':
 				continue
 
-		print(f)
-		print(json.dumps(db[f], indent=4))
-		if db[f].get('parameters') and not db[f]['parameters']:
+		if 'parameters' in db[f] and not db[f]['parameters']:
 			del(db[f]['parameters'])
 
-		if db[f].get('see_also') and not db[f]['see_also']:
+		if 'see_also' in db[f] and not db[f]['see_also']:
 			del(db[f]['see_also'])
 
 chdir('../wiki')
@@ -79,5 +77,3 @@ for f, jsondata in db.items():
 	f = f.replace('.txt', '.json')
 	with open(f, 'w') as fd:
 		fd.write(json.dumps(jsondata))
-
-#print(json.dumps(db, indent=4))
