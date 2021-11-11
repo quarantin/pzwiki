@@ -17,13 +17,19 @@ if [ -z "${VERSION}" ]; then
 	exit
 fi
 
-echo "== Version ${VERSION} =="
+OUTPUT1="addevent.txt"
+OUTPUT2="wiki/Modding/Lua Event.txt"
+echo -n > "${OUTPUT1}"
+echo -n > "${OUTPUT2}"
+
+echo "== Version ${VERSION} ==" >> "${OUTPUT2}"
 while read LINE; do
 
 	if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
 		continue
 	fi
 
-	echo "*[[Modding:Lua Event/$LINE|$LINE]]"
+	echo "${LINE}" >> "${OUTPUT1}"
+	echo "*[[Modding:Lua Event/$LINE|$LINE]]" >> "${OUTPUT2}"
 
 done < <(grep -R 'AddEvent("' "${JAVAROOT}" --include '*.java' | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
