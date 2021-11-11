@@ -1,0 +1,1 @@
+{"description": "Triggered during the process of refreshing inventory containers.", "parameters": ["[[ISInventoryPage]] The inventory page being refreshed.", "[[String]] A string representing the state of the refresh process; can be any of \"begin\", \"beforeFloor\", \"buttonsAdded\", and \"end\"."], "see_also": []}

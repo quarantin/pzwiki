@@ -1,0 +1,1 @@
+{"description": "Triggered when an AI state is exited.", "parameters": ["[[IsoGameCharacter]] The character the state was executed on."], "see_also": []}

@@ -1,0 +1,1 @@
+{"description": "Called when Trigger is hit (?)", "parameters": ["[[String]] Type of trigger.", "[[KahluaTable]] Data of trigger.", "[[BuildingDef]] Building definition of trigger (?)"], "see_also": ["[[Modding:Lua Event/OnMultiTriggerNPCEvent|OnMultiTriggerNPCEvent]]"]}

@@ -1,0 +1,1 @@
+{"description": "Called when multiplayer scoreboard is updated.", "parameters": ["ArrayList<[[String]]> Player names.", "ArrayList<[[String]]> Steam ID."], "see_also": []}

@@ -1,0 +1,1 @@
+{"description": "Same as OnTrick, but triggered when the game is paused as well.", "see_also": ["[[Modding:Lua Event/OnTick|OnTick]]", "[[Modding:Lua Event/OnRenderUpdate|OnRenderUpdate]]", "[[Modding:Lua Event/OnFETick|OnFETick]]"]}

@@ -1,0 +1,1 @@
+{"description": "Called when world object context menus are filed.", "parameters": ["[[IsoPlayer]] The player who will see the menu.", "[[ISContextMenu]] Context menu.", "[[KahluaTable|table]] World objects.", "[[Boolean]] True if called for the purpose of testing for nearby objects."], "see_also": []}

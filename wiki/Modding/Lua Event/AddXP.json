@@ -1,0 +1,1 @@
+{"description": "Triggered when earning XP?", "parameters": ["[[IsoGameCharacter]] Game character earning XP.", "[[Perks]] Type of XP?", "[[Float]] Amount of XP."], "see_also": []}

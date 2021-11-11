@@ -1,0 +1,1 @@
+{"description": "Called when [[IsoZombie]] updates.", "parameters": ["[[IsoZombie]] The IsoZombie that is updating."], "see_also": ["[[Modding:Lua Event/OnNPCSurvivorUpdate|OnNPCSurvivor]]", "[[Modding:Lua Event/OnPlayerUpdate|OnZombieUpdate]]"]}

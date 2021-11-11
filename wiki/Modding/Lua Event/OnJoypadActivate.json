@@ -1,0 +1,1 @@
+{"description": "Triggered when a controller is activated.", "parameters": ["[[Integer]] The ID of the activated controller."], "see_also": []}

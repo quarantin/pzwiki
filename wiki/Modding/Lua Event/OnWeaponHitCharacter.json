@@ -1,0 +1,1 @@
+{"description": "Triggered when a [[IsoGameCharacter]] has been hit by a [[HandWeapon]]", "parameters": ["[[IsoGameCharacter]] attacker", "[[IsoGameCharacter]] target", "[[HandWeapon]] weapon", "[[Float]] damage split"], "see_also": []}

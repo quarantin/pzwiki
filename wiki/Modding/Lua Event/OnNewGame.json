@@ -1,0 +1,1 @@
+{"description": "Triggered after a world is initialized.", "parameters": ["[[IsoPlayer]] The player.", "[[IsoGridSquare]] The square where the player is located."], "see_also": []}

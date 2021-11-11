@@ -1,0 +1,1 @@
+{"description": "Called by UI Manager in its render function before the UI gets drawn.", "see_also": ["[[Modding:Lua Event/OnPostUIDraw|OnPostUIDraw]]", "[[Modding:Lua Event/CreateUI|CreateUI]]", "[[Modding:Lua Event/OnJoypadActivateUI|OnJoypadActivateUI]]", "[[Modding:Lua Event/OnCustomUIKey|OnCustomUIKey]]"]}

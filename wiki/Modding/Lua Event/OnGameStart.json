@@ -1,0 +1,1 @@
+{"description": "Called when a new game is started, or loading of a save is finished.", "see_also": ["[[Modding:Lua Event/OnGameBoot|OnGameBoot]]", "[[Modding:Lua Event/OnPreGameStart|OnPreGameStart]]", "[[Modding:Lua Event/OnLoad|OnLoad]]", "[[Modding:Lua Event/OnSave|OnSave]]", "[[Modding:Lua Event/OnNewGame|OnNewGame]]"]}

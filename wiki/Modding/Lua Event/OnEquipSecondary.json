@@ -1,0 +1,1 @@
+{"description": "Triggered when a character equips an item in its secondary slot.", "parameters": ["[[IsoGameCharacter]] The character which equipped the item.", "[[InventoryItem]] The item which was equipped."], "see_also": []}

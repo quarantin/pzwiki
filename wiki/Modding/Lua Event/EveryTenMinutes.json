@@ -1,0 +1,1 @@
+{"description": "Called every ten in game minutes.", "parameters": [], "see_also": ["[[Modding:Lua Event/EveryHours|EveryHours]]", "[[Modding:Lua Event/EveryDays|EveryDays]]"]}

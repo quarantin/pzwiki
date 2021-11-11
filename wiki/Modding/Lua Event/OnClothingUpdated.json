@@ -1,0 +1,1 @@
+{"description": "Triggered when a character's clothing items are updated.", "parameters": ["[[IsoGameCharacter]] The character whose clothing was updated."], "see_also": []}

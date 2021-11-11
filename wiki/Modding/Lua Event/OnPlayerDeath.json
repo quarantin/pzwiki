@@ -1,0 +1,1 @@
+{"description": "Triggered when a player dies.", "parameters": ["[[IsoPlayer]] The player which died."], "see_also": []}

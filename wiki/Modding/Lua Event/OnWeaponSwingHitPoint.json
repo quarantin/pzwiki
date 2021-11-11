@@ -1,0 +1,1 @@
+{"description": "Triggered when a [[HandWeapon]] has hit the apex of its swing.", "parameters": ["[[IsoGameCharacter]] owner", "[[HandWeapon]] weapon"], "see_also": []}

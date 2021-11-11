@@ -1,0 +1,1 @@
+{"description": "Called when [[IsoGameCharacter]] collides with another [[IsoGameCharacter]]", "parameters": ["[[IsoGameCharacter]] this (person function is called with)", "[[IsoGameCharacter]] character collided with."], "see_also": ["[[Modding:Lua Event/OnObjectCollide|OnObjectCollide]]"]}
