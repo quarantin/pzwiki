@@ -5,7 +5,7 @@ import json
 import requests
 
 from os import chdir, walk
-from os.path import join, dirname, realpath
+from os.path import join, dirname, realpath, sep
 from urllib.parse import urljoin
 
 class WikiUpdater:
@@ -65,7 +65,7 @@ class WikiUpdater:
 
 	def edit_wiki(self, title, filepath):
 
-		print(title.replace('/', ':', 1))
+		print(title.replace(sep, ':', 1))
 
 		if not self.logged:
 			self.login()
@@ -75,7 +75,7 @@ class WikiUpdater:
 
 		data = {
 			'action': 'edit',
-			'title':  title.replace('/', ':', 1),
+			'title':  title.replace(sep, ':', 1),
 			'token':  self.get_csrf_token(),
 			'format': 'json',
 			'text':   text,
@@ -97,7 +97,7 @@ class WikiUpdater:
 			root = root[2:]
 
 			for filename in files:
-				title = '/'.join([root, filename.replace('.txt', '')])
+				title = sep.join([root, filename.replace('.txt', '')])
 				filepath = join(root, filename)
 				self.edit_wiki(title, filepath)
 

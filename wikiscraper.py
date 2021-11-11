@@ -6,7 +6,7 @@ import time
 import requests
 
 from os import chdir, makedirs, walk
-from os.path import join, dirname, realpath
+from os.path import join, dirname, realpath, sep
 from urllib.parse import urljoin
 from urllib.parse import urlencode
 
@@ -41,7 +41,7 @@ class WikiScraper:
 		jsondata = requests.get(self.api_url, params=params).json()
 
 		if save and jsondata.get('parse'):
-			filepath = title.replace(':', '/') + '.txt'
+			filepath = title.replace(':', sep) + '.txt'
 			filedir = dirname(filepath)
 			makedirs(filedir, exist_ok=True)
 			with open(filepath, 'w') as fd:
