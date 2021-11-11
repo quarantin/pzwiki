@@ -5,12 +5,14 @@ import json
 import time
 import requests
 
-from os import chdir, makedirs, walk
-from os.path import join, dirname, realpath, sep
+from os import chdir, makedirs, stat, walk
+from os.path import join, dirname, isfile, realpath, sep
 from urllib.parse import urljoin
 from urllib.parse import urlencode
 
 class WikiScraper:
+
+	config_file = 'config.json'
 
 	def __init__(self, config):
 
@@ -66,13 +68,15 @@ class WikiScraper:
 
 if __name__ == '__main__':
 
-	if len(sys.argv) < 2:
-		print('Usage: %s <config.json>' % sys.argv[0])
+	if not isfile(WikiScraper.config_file):
+		print('Can\'t find %s. Please copy the file config.json.example to config.json and edit the missing values.' % WikiScraper.config_file)
 		sys.exit(-1)
 
-	with open(sys.argv[1], 'r') as fd:
+	chdir(dirname(realpath(__file__)))
+
+	with open(WikiScraper.config_file, 'r') as fd:
 		config = json.loads(fd.read())
 
-	chdir(join(dirname(realpath(__file__)), 'wiki'))
+	chdir('pzwiki')
 
 	WikiScraper(config=config)
