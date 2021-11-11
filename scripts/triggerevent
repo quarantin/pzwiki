@@ -3,12 +3,16 @@
 cd $(dirname "${0}")
 cd ..
 
+ROOT=$(pwd)
 JAVAROOT=$(jq .java.root config.json | tr -d '"')
 cd "${JAVAROOT}"
 
+OUTPUT="${ROOT}/triggerevent.txt"
+echo -n > "${OUTPUT}"
 while read line; do
 
+	echo $line
 	CLASS=$(echo $line | cut -f1 -d';' | sed 's/\$/\\$/g')
-	echo $line | sed "s/this/${CLASS}/g"
+	echo $line | sed "s/this/${CLASS}/g" >> "${OUTPUT}"
 
-done < <(grep -R LuaEventManager.triggerEvent --include '*.java' | grep -v 'Binary' | grep LuaEventManager.triggerEvent | sed 's/\//./g' | sed 's/\.java//' | sed 's/[ ]\+//' | sed 's/LuaEventManager.triggerEvent//' | grep -v Lua.LuaEventManager | sed 's/(//' | rev | sed 's/)//' | sed 's/;//' | rev | sed 's/"//' | sed 's/"//' | sed 's/:/;/' | sed 's/,[ ]* /;/g')
+done < <(grep -R LuaEventManager.triggerEvent --include '*.java' | grep -v 'Binary' | grep LuaEventManager.triggerEvent | sed 's/\//./g' | sed 's/\.java//' | sed 's/[ ]\+//' | sed 's/LuaEventManager.triggerEvent[^(]*//' | grep -v Lua.LuaEventManager | sed 's/(//' | rev | sed 's/)//' | sed 's/;//' | rev | sed 's/"//' | sed 's/"//' | sed 's/:/;/' | sed 's/,[ ]* /;/g')
