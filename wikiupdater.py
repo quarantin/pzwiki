@@ -5,10 +5,12 @@ import json
 import requests
 
 from os import chdir, walk
-from os.path import join, dirname, realpath, sep
+from os.path import join, dirname, isfile, realpath, sep
 from urllib.parse import urljoin
 
 class WikiUpdater:
+
+	config_file = 'config.json'
 
 	def __init__(self, config):
 
@@ -104,11 +106,11 @@ class WikiUpdater:
 
 if __name__ == '__main__':
 
-	if len(sys.argv) < 2:
-		print('Usage: %s <config.json>' % sys.argv[0])
+	if not isfile(WikiUpdater.config_file):
+		print('Can\'t find %s. Please copy the file config.json.example to config.json and edit the missing values.' % WikiUpdater.config_file)
 		sys.exit(-1)
 
-	with open(sys.argv[1], 'r') as fd:
+	with open(WikiUpdater.config_file, 'r') as fd:
 		config = json.loads(fd.read())
 
 	chdir(join(dirname(realpath(__file__)), 'wiki'))
