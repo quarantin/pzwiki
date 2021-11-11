@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd $(dirname "${0}")
+cd ..
+
+JAVAROOT=$(jq '.java.root' config.json | tr -d '"')
+
+cd java
+
+while read JAVASRC; do
+	echo "${JAVASRC}"
+	java -cp . JavaFileParser "${JAVASRC}" > "${JAVASRC}.dissected"
+done < <(find "${JAVAROOT}" -name '*java')
