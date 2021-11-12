@@ -23,6 +23,7 @@ OnMakeItem
 OnMapLoadCreateIsoObject
 OnNewSurvivorGroup
 OnNPCSurvivorUpdate
+OnPlayerCancelTimedAction
 OnPlayerSetSafehouse
 OnPostCharactersSquareDraw
 OnPostFloorSquareDraw
