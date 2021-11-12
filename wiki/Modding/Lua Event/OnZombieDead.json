@@ -1,1 +1,1 @@
-{"description": "Called after a player kills [[IsoZombie]].", "parameters": ["[[IsoZombie]] The zombie that was killed."], "see_also": []}
+{"description": "Called after a player kills [[IsoZombie]].", "parameters": ["[[IsoZombie]] The zombie that was killed."]}

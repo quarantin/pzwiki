@@ -1,1 +1,1 @@
-{"description": "Triggered after a floor layer is rendered.", "parameters": ["[[Integer]] The Z-index of the layer which was rendered."], "see_also": []}
+{"description": "Triggered after a floor layer is rendered.", "parameters": ["[[Integer]] The Z-index of the layer which was rendered."]}

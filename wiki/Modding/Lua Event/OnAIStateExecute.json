@@ -1,1 +1,1 @@
-{"description": "Triggered when an AI state executes.", "parameters": ["[[IsoGameCharacter]] The character the state executed on."], "see_also": []}
+{"description": "Triggered when an AI state executes.", "parameters": ["[[IsoGameCharacter]] The character the state executed on."]}

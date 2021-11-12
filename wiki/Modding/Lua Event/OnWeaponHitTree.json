@@ -1,1 +1,1 @@
-{"description": "Triggered when an [[IsoGameCharacter]] uses a [[HandWeapon]] to hit an [[IsoTree]].", "parameters": ["[[IsoGameCharacter]] owner", "[[HandWeapon]] weapon"], "see_also": []}
+{"description": "Triggered when an [[IsoGameCharacter]] uses a [[HandWeapon]] to hit an [[IsoTree]].", "parameters": ["[[IsoGameCharacter]] owner", "[[HandWeapon]] weapon"]}

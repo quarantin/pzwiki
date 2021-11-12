@@ -1,1 +1,1 @@
-{"description": "Called at the different stages that a players connection state changes to the server when initially connecting.", "parameters": ["[[String]] The State", "[[String]] Message"], "see_also": []}
+{"description": "Called at the different stages that a players connection state changes to the server when initially connecting.", "parameters": ["[[String]] The State", "[[String]] Message"]}

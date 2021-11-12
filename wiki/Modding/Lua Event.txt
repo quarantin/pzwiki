@@ -123,6 +123,7 @@
 *[[Modding:Lua Event/OnObjectRightMouseButtonDown|OnObjectRightMouseButtonDown]]
 *[[Modding:Lua Event/OnObjectRightMouseButtonUp|OnObjectRightMouseButtonUp]]
 *[[Modding:Lua Event/OnPlayerAttackFinished|OnPlayerAttackFinished]]
+*<s>[[Modding:Lua Event/OnPlayerCancelTimedAction|OnPlayerCancelTimedAction]]</s>
 *[[Modding:Lua Event/OnPlayerDeath|OnPlayerDeath]]
 *[[Modding:Lua Event/OnPlayerMove|OnPlayerMove]]
 *<s>[[Modding:Lua Event/OnPlayerSetSafehouse|OnPlayerSetSafehouse]]</s>
