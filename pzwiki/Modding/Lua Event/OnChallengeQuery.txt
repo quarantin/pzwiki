@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>OnChallengeQuery</pre>
 |description= Called when the challenge options get populated.
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.OnChallengeQuery.Add(functionName)</pre>
 |additional_info = N/A
 |see_also= 

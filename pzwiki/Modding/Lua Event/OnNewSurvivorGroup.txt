@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>OnNewSurvivorGroup</pre>
 |description= OBSOLETE/UNUSED
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.OnNewSurvivorGroup.Add(functionName)</pre>
 |additional_info = N/A
 |see_also= 

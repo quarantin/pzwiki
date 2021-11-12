@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>EveryTenMinutes</pre>
 |description= Called every ten in game minutes.
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.EveryTenMinutes.Add(functionName)</pre>
 |additional_info = N/A
 |see_also=
