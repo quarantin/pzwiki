@@ -122,6 +122,7 @@ OnObjectLeftMouseButtonUp
 OnObjectRightMouseButtonDown
 OnObjectRightMouseButtonUp
 OnPlayerAttackFinished
+OnPlayerCancelTimedAction
 OnPlayerDeath
 OnPlayerMove
 OnPlayerSetSafehouse
