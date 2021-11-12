@@ -38,4 +38,4 @@ while read LINE; do
 		echo "*<s>[[Modding:Lua Event/$LINE|$LINE]]</s>" >> "${OUTPUT2}"
 	fi
 
-done < <(grep -R 'AddEvent("' "${JAVAROOT}" --include '*.java' | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
+done < <((echo OnPlayerCancelTimedAction; grep -R 'AddEvent("' "${JAVAROOT}" --include '*.java') | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
