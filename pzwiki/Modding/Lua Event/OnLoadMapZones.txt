@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>OnLoadMapZones</pre>
 |description= Called when IsoWorld initialises and is registering the zones for the map.
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.OnLoadMapZones.Add(functionName)</pre>
 |additional_info = N/A
 |see_also= 

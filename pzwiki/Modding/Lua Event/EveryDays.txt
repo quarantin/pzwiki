@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>EveryDays</pre>
 |description= Called every in game day at midnight.
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.EveryDays.Add(functionName)</pre>
 |additional_info = N/A
 |see_also=

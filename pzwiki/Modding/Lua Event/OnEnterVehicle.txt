@@ -2,7 +2,14 @@
 |name= <pre>OnEnterVehicle</pre>
 |description= Called when [[IsoPlayer]] successfully enters a vehicle.
 |parameter=#[[IsoPlayer]] The player that entered the vehicle.
-|example=
+|example= <pre>Events.OnEnterVehicle.Add(functionName)</pre>
+The script below has a 25% chance to spawn a screwdriver on any [[IsoPlayer]] that enters a vehicle.
+<pre>local function EnteredVehicle(player)
+	if (ZombRand(3) == 0) then --selects a random number between 0-3
+		player:getInventory():AddItem("Screwdriver")
+	end
+end
+Events.OnEnterVehicle.Add(EnteredVehicle);</pre>
 |additional_info = N/A
 |see_also= 
 }}

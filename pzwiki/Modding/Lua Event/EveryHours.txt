@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>EveryHours</pre>
 |description= Called every in game hour on the hour.
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.EveryHours.Add(functionName)</pre>
 |additional_info = N/A
 |see_also=

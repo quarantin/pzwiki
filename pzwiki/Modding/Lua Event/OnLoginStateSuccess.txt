@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>OnLoginStateSuccess</pre>
 |description= When LoginState succeeds.
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.OnLoginStateSuccess.Add(functionName)</pre>
 |additional_info = N/A
 |see_also= 

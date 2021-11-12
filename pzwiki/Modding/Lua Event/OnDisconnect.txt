@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>OnDisconnect</pre>
 |description= Triggered when player disconnects from server.
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.OnDisconnect.Add(functionName)</pre>
 |additional_info = N/A
 |see_also= 

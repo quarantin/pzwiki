@@ -1,8 +1,7 @@
 {{Function
 |name= <pre>OnAddBuilding</pre>
 |description= OBSOLETE
-|parameter=
-N/A
+|parameter= N/A
 |example= <pre>Events.OnAddBuilding.Add(functionName)</pre>
 |additional_info = N/A
 |see_also= 
