@@ -1,1 +1,1 @@
-{"description": "Triggered when mouse button is down.", "parameters": ["[[Integer]] Mouse position x", "[[Integer]] Mouse position y"], "see_also": []}
+{"description": "Triggered when mouse button is down.", "parameters": ["[[Integer]] Mouse position x", "[[Integer]] Mouse position y"]}

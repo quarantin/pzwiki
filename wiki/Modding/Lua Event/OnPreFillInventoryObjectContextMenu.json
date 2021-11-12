@@ -1,1 +1,1 @@
-{"description": "Called before context menus get filled with options.", "parameters": ["[[IsoPlayer]] player", "??? Context menu.", "??? Items"], "see_also": []}
+{"description": "Called before context menus get filled with options.", "parameters": ["[[IsoPlayer]] player", "??? Context menu.", "??? Items"]}

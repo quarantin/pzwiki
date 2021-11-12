@@ -1,1 +1,1 @@
-{"description": "Triggered when survivor group has their safehouse set.", "parameters": ["[[SurvivorGroup]] The survivor group safehouse is being set for.", "[[BuildingDef]] The building definition of the safehouse being set."], "see_also": []}
+{"description": "Triggered when survivor group has their safehouse set.", "parameters": ["[[SurvivorGroup]] The survivor group safehouse is being set for.", "[[BuildingDef]] The building definition of the safehouse being set."]}

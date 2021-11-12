@@ -1,1 +1,1 @@
-{"description": "Called when game is loading.", "parameters": [], "see_also": ["[[Modding:Lua Event/OnSave|OnSave]]"]}
+{"description": "Called when game is loading.", "see_also": ["[[Modding:Lua Event/OnSave|OnSave]]"]}

@@ -1,1 +1,1 @@
-{"description": "Triggered before an AI state changes.", "parameters": ["[[IsoGameCharacter]] The character that owns the state machine.", "[[State]] The new AI state.", "[[State]] The previous AI state."], "see_also": []}
+{"description": "Triggered before an AI state changes.", "parameters": ["[[IsoGameCharacter]] The character that owns the state machine.", "[[State]] The new AI state.", "[[State]] The previous AI state."]}

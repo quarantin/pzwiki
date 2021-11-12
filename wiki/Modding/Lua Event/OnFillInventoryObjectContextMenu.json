@@ -1,1 +1,1 @@
-{"description": "Use the event (as you would 'OnTick' etc) to add items to context menu without mod conflicts.", "parameters": ["[[IsoPlayer]] player", "??? Context menu.", "??? Items"], "see_also": []}
+{"description": "Use the event (as you would 'OnTick' etc) to add items to context menu without mod conflicts.", "parameters": ["[[IsoPlayer]] player", "??? Context menu.", "??? Items"]}
