@@ -1,1 +1,3 @@
+*.class
 config.json
+__pycache__
