@@ -1,1 +1,0 @@
-{"description": "Triggered when mouse is moved.", "parameters": ["[[Integer]] Mouse x position.", "[[Integer]] Mouse y position.", "[[Integer]] Mouse x W?", "[[Integer]] Mouse y W?"]}

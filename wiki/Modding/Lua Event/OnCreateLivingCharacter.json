@@ -1,1 +1,0 @@
-{"description": "Called when IsoPlayer or IsoSurvivor is being created.", "parameters": ["[[IsoSurvivor]]/[[IsoPlayer]] the character created.", "[[SurvivorDesc]] The description of the survivor."]}

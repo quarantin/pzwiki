@@ -1,1 +1,0 @@
-{"description": "(?)", "parameters": ["[[String]] Type of trigger.", "[[KahluaTable]] Data of trigger.", "[[BuildingDef]] Building definition of trigger (?)"], "see_also": ["[[Modding:Lua Event/OnTriggerNPCEvent|OnMultiTriggerNPCEvent]]"]}

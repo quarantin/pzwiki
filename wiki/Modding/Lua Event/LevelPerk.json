@@ -1,1 +1,0 @@
-{"description": "Triggered when a perk is leveled up.", "parameters": ["[[IsoGameCharacter]] The character whose perk is being leveled up.", "[[Perks]] The perk being leveled up.", "[[Integer]] Perk level."]}

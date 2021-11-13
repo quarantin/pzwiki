@@ -1,1 +1,0 @@
-{"description": "Used to be called every Display.update() but is now obsolete.", "see_also": ["[[Modding:Lua Event/OnTick|OnTick]]", "[[Modding:Lua Event/OnTickEvenPaused|OnTickEvenPaused]]", "[[Modding:Lua Event/OnFETick|OnFETick]]"]}

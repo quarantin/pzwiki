@@ -1,1 +1,0 @@
-{"description": "Unknown.", "parameters": ["[[Integer]] denoted key. (See Keyboard Class in java docs for more info.)"], "see_also": ["[[Modding:Lua Event/OnKeyStartPressed|OnKeyStartPressed]]", "[[Modding:Lua Event/OnKeyKeepPressed|OnKeyKeepPressed]]", "[[Modding:Lua Event/OnKeyPressed|OnKeyPressed]]"]}

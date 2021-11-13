@@ -1,1 +1,0 @@
-{"description": "Triggered when a [[IsoGameCharacter]] swings [[HandWeapon]]", "parameters": ["[[IsoGameCharacter]] attacker", "[[HandWeapon]] weapon"]}

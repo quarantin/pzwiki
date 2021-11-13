@@ -1,1 +1,0 @@
-{"description": "Triggered when a player cancels a timed action.", "parameters": ["[[BaseAction]] action"]}

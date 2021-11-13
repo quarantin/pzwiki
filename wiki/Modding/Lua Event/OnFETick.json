@@ -1,1 +1,0 @@
-{"description": "Same as OnTick, except is only called while on the main menu.", "parameters": ["[[Integer]]: Always 0, unknown use."], "see_also": ["[[Modding:Lua Event/OnTick|OnTick]]", "[[Modding:Lua Event/OnRenderUpdate|OnRenderUpdate]]", "[[Modding:Lua Event/OnTickEvenPaused|OnTickEvenPaused]]"]}

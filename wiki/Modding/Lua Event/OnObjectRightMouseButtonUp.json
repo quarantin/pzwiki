@@ -1,1 +1,0 @@
-{"description": "Triggered when right mouse button is released on [[IsoObject]]", "parameters": ["[[IsoObject]] tile clicked.", "[[Integer]] Mouse position X.", "[[Integer]] Mouse position Y."]}
