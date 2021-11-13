@@ -86,7 +86,6 @@
 *<s>[[Modding:Lua Events/OnIsoThumpableSave|OnIsoThumpableSave]]</s>
 *[[Modding:Lua Events/OnJoypadActivate|OnJoypadActivate]]
 *[[Modding:Lua Events/OnJoypadActivateUI|OnJoypadActivateUI]]
-*[[Modding:Lua Events/OnJoypadActivateUI|OnJoypadActivateUI]]
 *[[Modding:Lua Events/OnJoypadBeforeDeactivate|OnJoypadBeforeDeactivate]]
 *[[Modding:Lua Events/OnJoypadBeforeReactivate|OnJoypadBeforeReactivate]]
 *[[Modding:Lua Events/OnJoypadDeactivate|OnJoypadDeactivate]]
@@ -126,7 +125,6 @@
 *[[Modding:Lua Events/OnObjectRightMouseButtonUp|OnObjectRightMouseButtonUp]]
 *[[Modding:Lua Events/OnPlayerAttackFinished|OnPlayerAttackFinished]]
 *<s>[[Modding:Lua Events/OnPlayerCancelTimedAction|OnPlayerCancelTimedAction]]</s>
-*<s>[[Modding:Lua Events/OnPlayerCancelTimedAction|OnPlayerCancelTimedAction]]</s>
 *[[Modding:Lua Events/OnPlayerDeath|OnPlayerDeath]]
 *[[Modding:Lua Events/OnPlayerMove|OnPlayerMove]]
 *<s>[[Modding:Lua Events/OnPlayerSetSafehouse|OnPlayerSetSafehouse]]</s>
@@ -158,7 +156,6 @@
 *[[Modding:Lua Events/OnReceiveUserlog|OnReceiveUserlog]]
 *<s>[[Modding:Lua Events/OnRefreshInventoryWindowContainers|OnRefreshInventoryWindowContainers]]</s>
 *[[Modding:Lua Events/OnRenderTick|OnRenderTick]]
-*[[Modding:Lua Events/OnRenderTick|OnRenderTick]]
 *<s>[[Modding:Lua Events/OnRenderUpdate|OnRenderUpdate]]</s>
 *[[Modding:Lua Events/OnResetLua|OnResetLua]]
 *[[Modding:Lua Events/OnResolutionChange|OnResolutionChange]]
@@ -180,7 +177,6 @@
 *[[Modding:Lua Events/OnSteamFriendStatusChanged|OnSteamFriendStatusChanged]]
 *[[Modding:Lua Events/OnSteamGameJoin|OnSteamGameJoin]]
 *[[Modding:Lua Events/OnSteamRefreshInternetServers|OnSteamRefreshInternetServers]]
-*[[Modding:Lua Events/OnSteamRulesRefreshComplete|OnSteamRulesRefreshComplete]]
 *[[Modding:Lua Events/OnSteamRulesRefreshComplete|OnSteamRulesRefreshComplete]]
 *[[Modding:Lua Events/OnSteamServerFailedToRespond2|OnSteamServerFailedToRespond2]]
 *[[Modding:Lua Events/OnSteamServerResponded|OnSteamServerResponded]]
