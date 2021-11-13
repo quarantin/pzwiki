@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd $(dirname "${0}")
+cd ..
+
+JAVAROOT=$(jq .java.root config.json | tr -d '"')
+
+OUTPUT="data/txt/triggereventjava.txt"
+echo -n > "${OUTPUT}"
+while read line; do
+
+	echo $line
+	CLASS=$(echo $line | cut -f1 -d';' | sed 's/\$/\\$/g')
+	echo $line | sed "s/this/${CLASS}/g" >> "${OUTPUT}"
+
+done < <(grep -R 'LuaEventManager.triggerEvent\|LuaHookManager.TriggerHook' --include '*.java' "${JAVAROOT}" | sed "s#${JAVAROOT}##" | sed 's/\//./g' | sed 's/\.java//' | sed 's/[ ]\+//' | sed 's/\(LuaEventManager.triggerEvent\|if (!\?LuaHookManager.TriggerHook\)[^(]*//' | grep -v 'Lua.LuaEventManager\|LuaHookManager.TriggerHook' | sed 's/(//' | rev | sed 's/)//' | sed 's/;//' | rev | sed 's/"//' | sed 's/"//' | sed 's/:/;/' | sed 's/,[ ]*/;/g')
