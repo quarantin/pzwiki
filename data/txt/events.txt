@@ -85,7 +85,6 @@ OnIsoThumpableLoad
 OnIsoThumpableSave
 OnJoypadActivate
 OnJoypadActivateUI
-OnJoypadActivateUI
 OnJoypadBeforeDeactivate
 OnJoypadBeforeReactivate
 OnJoypadDeactivate
@@ -125,7 +124,6 @@ OnObjectRightMouseButtonDown
 OnObjectRightMouseButtonUp
 OnPlayerAttackFinished
 OnPlayerCancelTimedAction
-OnPlayerCancelTimedAction
 OnPlayerDeath
 OnPlayerMove
 OnPlayerSetSafehouse
@@ -157,7 +155,6 @@ OnReceiveItemListNet
 OnReceiveUserlog
 OnRefreshInventoryWindowContainers
 OnRenderTick
-OnRenderTick
 OnRenderUpdate
 OnResetLua
 OnResolutionChange
@@ -179,7 +176,6 @@ OnSpawnRegionsLoaded
 OnSteamFriendStatusChanged
 OnSteamGameJoin
 OnSteamRefreshInternetServers
-OnSteamRulesRefreshComplete
 OnSteamRulesRefreshComplete
 OnSteamServerFailedToRespond2
 OnSteamServerResponded
