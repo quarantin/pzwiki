@@ -1,0 +1,92 @@
+= Distribution API =
+
+'''Developer:''' Konijima<br />
+'''Contributors:''' -<br />
+'''Package:''' CommunityAPI.Server.Distribution
+
+== Description ==
+
+Add your new items to the distribution tables in a safer and more effective way.
+
+If a game update changes a distribution location, mods that are using this API will still works.<br />
+Only the faulty location path will be canceled and the rest of the distribution will be added.<br />
+It will logs everything so that you can easily debug if an item was added to the distribution table.<br />
+Also help the users to know which mod adds what to each tables.
+
+== How to use ==
+
+# Create your distribution file in <code>media\lua\server\MyModName\Server_Distribution.lua</code>.<br />
+
+# Use one of the example below to suit your preference.
+# Add <code>require=CommunityAPI</code> to your <code>mod.info</code> to make sure the API is enabled as well.
+
+Only paths to <code>SuburbsDistributions</code> and <code>ProceduralDistributions</code> works and must be written with dots in between.
+
+== Methods ==
+
+=== CreateLocation(locationPath, distributionTable) ===
+
+<pre>    locationPath : string : The path to the distribution table
+    distributionTable : table : The table with the items to add to the location</pre>
+=== Add(modName, distributionTable) ===
+
+<pre>    modName : string : The mod name adding the items
+    distributionTable : table : The table with the items to add to the location</pre>
+== Example 1 ==
+
+<source lang="lua">require("CommunityAPI")
+
+local DistributionAPI = CommunityAPI.Server.Distribution
+
+local modName = "My_Mod_Name"
+local distributionTable = {} -- Create a table to add your items
+
+local CrateCompactDiscs = DistributionAPI.CreateLocation("ProceduralDistributions.list.CrateCompactDiscs.items", distributionTable)
+CrateCompactDiscs:AddItem("Base.Screwdriver", 6)
+CrateCompactDiscs:AddItem("Base.Disc", 4)
+
+local CashRegister = DistributionAPI.CreateLocation("SuburbsDistributions.all.cashregister.items", distributionTable)
+CashRegister:AddItem("Base.Axe", 1)
+
+DistributionAPI.Add(modName, distributionTable)</source>
+== Example 2 ==
+
+<source lang="lua">require("CommunityAPI")
+
+local modName = "My_Mod_Name"
+local distributionTable = {
+
+    {
+        location = "ProceduralDistributions.list.CrateCompactDiscs.items",
+        items = {
+            { "Base.Screwdriver", 6 },
+            { "Base.Disc", 4 },
+        }
+    },
+
+    {
+        location = "SuburbsDistributions.all.cashregister.items",
+        items = {
+            { "Base.Axe", 1 },
+        }
+    },
+
+}
+
+CommunityAPI.Server.Distribution.Add(modName, distributionTable)</source>
+'''Example of Logs Output'''
+
+If no error:
+
+<pre>LOG  : General     , &gt; ---------------------------------------------------------------------------------------
+LOG  : General     , &gt; My_Mod_Name: Distribution added 'Base.Screwdriver':'6' to table 'ProceduralDistributions.list.CrateCompactDiscs.items'!
+LOG  : General     , &gt; My_Mod_Name: Distribution added 'Base.Disc':'4' to table 'ProceduralDistributions.list.CrateCompactDiscs.items'!
+LOG  : General     , &gt; My_Mod_Name: Adding to the distribution table process completed!
+LOG  : General     , &gt; ---------------------------------------------------------------------------------------</pre>
+If one of the game distribution location changed after a game update:
+
+<pre>LOG  : General     , &gt; ---------------------------------------------------------------------------------------
+ERROR: General     , &gt; My_Mod_Name: Error distribution invalid location at 'ProceduralDistributions.list.CrateCompactDiscs.items2'!
+LOG  : General     , &gt; My_Mod_Name: Distribution added 'Base.Screwdriver':'6' to table 'ProceduralDistributions.list.CrateCompactDiscs.items'!
+LOG  : General     , &gt; My_Mod_Name: Distribution added 'Base.Disc':'4' to table 'ProceduralDistributions.list.CrateCompactDiscs.items'!
+LOG  : General     , &gt; My_Mod_Name: Adding to the distribution table process completed with 1 error(s)!</pre>

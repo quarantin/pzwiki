@@ -1,0 +1,9 @@
+ItemTooltipAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/client/ItemTooltipAPI/README.md
+LightAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/client/LightAPI/README.md
+SpawnerAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/client/SpawnerAPI/README.md
+WorldSoundAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/client/WorldSoundAPI/README.md
+DistributionAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/server/DistributionAPI/README.md
+SpawnerAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/server/SpawnerAPI/README.md
+EventAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/shared/EventAPI/README.md
+BodyLocationAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/shared/BodyLocationsAPI/README.md
+CommunityAPI;https://raw.githubusercontent.com/Konijima/PZ-Community-API/@BRANCH@/Contents/mods/CommunityAPI/media/lua/shared/CommunityAPI/README.md

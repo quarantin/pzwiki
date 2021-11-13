@@ -1,0 +1,45 @@
+= Utilities =
+
+Utility packages to use in API and Mods.
+
+== How to use ==
+
+<source lang="lua">require("CommunityAPI")
+
+local StringUtils = CommunityAPI.Utils.String
+StringUtils.SplitString("Hello world", " ")</source>
+=== CommunityAPI.Utils.Inventory ===
+
+<source lang="lua">FindAllItemInInventoryByTag(inventory, tag)</source>
+=== CommunityAPI.Utils.Iso ===
+
+<source lang="lua">RecursiveGetSquare(object)
+
+GetIsoRange(center, range, fractalOffset)
+
+GetIsoGameCharactersInFractalRange(center, range, fractalRange, lookForType, addedBooleanFunctions)
+
+GetIsoGameCharactersInRange(center, range, lookForType, addedBooleanFunctions)</source>
+=== CommunityAPI.Utils.Math ===
+
+<source lang="lua">GetDistance(x1, y1, x2, y2)</source>
+=== CommunityAPI.Utils.String ===
+
+<source lang="lua">SquareToId(square)
+
+PositionToId(x, y ,z)
+
+SplitString(str, delimiter)</source>
+=== CommunityAPI.Utils.Table ===
+
+<source lang="lua">CountTableEntries(targetTable)
+
+GetTableKeys(targetTable)
+
+TableContains(table, value)
+
+GetBaseClass(object, level)
+
+GetAllBaseClasses(object, excludeCurrent)
+
+IsClassChildOf(object, class)</source>
