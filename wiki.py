@@ -214,21 +214,19 @@ class Wiki:
 		return '\n'.join(result)
 
 	@retry(tries=tries)
-	def edit_event_page(self, title, jsonevent):
+	def edit_page(self, title, wikitext):
 
 		print(title)
 
 		if not self.logged:
 			self.login()
 
-		text = self.format_event_page(jsonevent)
-
 		data = {
 			'action': 'edit',
 			'title':  title,
 			'token':  self.get_csrf_token(),
 			'format': 'json',
-			'text':   text,
+			'text':   wikitext,
 		}
 
 		jsondata = self.session.post(self.api_url, data=data).json()
@@ -274,4 +272,5 @@ class Wiki:
 				}
 
 		for _, jsonevent in sorted(jsondata.items()):
-			self.edit_event_page(jsonevent['title'], jsonevent)
+			wikitext = self.format_event_page(jsonevent)
+			self.edit_page(jsonevent['title'], wikitext)
