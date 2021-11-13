@@ -142,6 +142,7 @@ zombie.network.GameServer;OnReceiveItemListNet;var3;var6;var2;var4;var5
 zombie.ZomboidFileSystem;OnModsModified
 zombie.spnetwork.SinglePlayerServer;OnClientCommand;var3;var4;var7;var6
 zombie.spnetwork.SinglePlayerClient;OnServerCommand;var1;var2;var4
+zombie.characters.IsoLivingCharacter;Attack;zombie.characters.IsoLivingCharacter;var1;var2) {
 zombie.characters.NetworkStrikeAI;OnWeaponHitXp;var0.player;var1;var0.zom;var0.damageSplit
 zombie.characters.NetworkStrikeAI;OnZombieDead;var0.zom
 zombie.characters.IsoSurvivor;OnCreateSurvivor;zombie.characters.IsoSurvivor
@@ -176,12 +177,15 @@ zombie.characters.IsoGameCharacter;LevelPerk;zombie.characters.IsoGameCharacter;
 zombie.characters.IsoGameCharacter;LevelPerk;zombie.characters.IsoGameCharacter;var1;var3.level;true
 zombie.characters.IsoGameCharacter;OnCharacterDeath;zombie.characters.IsoGameCharacter
 zombie.characters.IsoGameCharacter;OnWeaponHitCharacter;var2;zombie.characters.IsoGameCharacter;var1;var3
+zombie.characters.IsoGameCharacter;WeaponHitCharacter;var2;zombie.characters.IsoGameCharacter;var1;var3) {
 zombie.characters.IsoGameCharacter;OnZombieDead;zombie.characters.IsoGameCharacter
 zombie.characters.IsoGameCharacter;OnClothingUpdated;zombie.characters.IsoGameCharacter
 zombie.characters.IsoGameCharacter;OnClothingUpdated;zombie.characters.IsoGameCharacter
+zombie.characters.IsoGameCharacter;CalculateStats;zombie.characters.IsoGameCharacter) {
 zombie.characters.IsoGameCharacter;OnMechanicActionDone;zombie.characters.IsoGameCharacter;var20;var19;var22;var7;var6
 zombie.characters.IsoGameCharacter;OnContainerUpdate
 zombie.characters.IsoGameCharacter;OnContainerUpdate
+zombie.characters.IsoGameCharacter;AutoDrink;zombie.characters.IsoGameCharacter) {
 zombie.characters.IsoGameCharacter;OnClothingUpdated;zombie.characters.IsoGameCharacter
 zombie.characters.IsoGameCharacter;OnClothingUpdated;zombie.characters.IsoGameCharacter
 zombie.characters.IsoGameCharacter;OnClothingUpdated;zombie.characters.IsoGameCharacter
@@ -231,6 +235,7 @@ zombie.erosion.ErosionMain;OnInitSeasons;zombie.erosion.ErosionMain.Season
 zombie.ai.StateMachine;OnAIStateChange;zombie.ai.StateMachine.m_owner;zombie.ai.StateMachine.m_currentState;zombie.ai.StateMachine.m_previousState
 zombie.ai.states.ZombieOnGroundState;OnZombieDead;var0
 zombie.ai.states.SwipeStatePlayer;OnWeaponSwing;var1;var4
+zombie.ai.states.SwipeStatePlayer;WeaponSwing;var1;var4) {
 zombie.ai.states.SwipeStatePlayer;OnPlayerAttackFinished;var1;var5
 zombie.ai.states.SwipeStatePlayer;OnWeaponSwingHitPoint;var1;var2
 zombie.ai.states.SwipeStatePlayer;OnWeaponHitXp;var1;var2;var17;var34
