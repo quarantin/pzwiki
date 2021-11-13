@@ -169,10 +169,19 @@ class Wiki:
 
 		return '<syntaxhighlight lang="lua">' + output + '</syntaxhighlight>'
 
+	def format_event_name(self, jsonevent):
+
+		output = jsonevent['name']
+
+		if jsonevent['name'] in self.obsolete:
+			output = '<span style="color:#FF0000"><b>OBSOLETE</b></span><br>' + output
+
+		return output
+
 	def format_event_page(self, jsonevent):
 
 		output  = '{{Function\n'
-		output += '|name = %s\n'             % jsonevent['name']
+		output += '|name = %s\n'             % self.format_event_name(jsonevent)
 		output += '|description = %s\n'      % self.format_event_description(jsonevent)
 		output += '|parameters =\n%s\n'      % self.format_event_parameters(jsonevent)
 		output += '|example =\n%s\n'         % self.format_event_example(jsonevent)
@@ -279,3 +288,13 @@ class Wiki:
 		for _, jsonevent in sorted(jsondata.items()):
 			wikitext = self.format_event_page(jsonevent)
 			self.edit_page(jsonevent['title'], wikitext)
+
+	def update_pages(self, filename):
+
+		with open(filename, 'r') as fd:
+			lines = [ x for x in fd.read().split('\n') if x.strip() ]
+
+		for line in lines:
+			title, filename = line.split(sep, 1)
+			with open(filename) as fd:
+				self.edit_page(title, fd.read())
