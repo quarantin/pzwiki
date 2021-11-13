@@ -1,1 +1,0 @@
-{"description": "Triggered when connection to server has failed.", "parameters": ["[[String]] Connection failure reason."]}

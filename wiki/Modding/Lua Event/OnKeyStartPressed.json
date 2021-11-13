@@ -1,1 +1,0 @@
-{"description": "Called when key is initially pressed.", "parameters": ["[[Integer]] denoted key. (See Keyboard Class in java docs for more info.)"], "see_also": ["[[Modding:Lua Event/OnKeyPressed|OnKeyPressed]]", "[[Modding:Lua Event/OnKeyKeepPressed|OnKeyKeepPressed]]", "[[Modding:Lua Event/OnCustomUIKey|OnCustomUIKey]]"]}

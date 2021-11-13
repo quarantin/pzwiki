@@ -1,1 +1,0 @@
-{"description": "Triggered when an AI state is entered.", "parameters": ["[[IsoGameCharacter]] The character the state will execute on."]}

@@ -1,1 +1,0 @@
-{"description": "Called when [[IsoPlayer]] updates.", "parameters": ["[[IsoPlayer]] The IsoPlayer that is updating."], "see_also": ["[[Modding:Lua Event/OnNPCSurvivorUpdate|OnNPCSurvivorUpdate]]", "[[Modding:Lua Event/OnZombieUpdate|OnZombieUpdate]]"]}

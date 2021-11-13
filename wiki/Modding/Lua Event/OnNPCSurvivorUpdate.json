@@ -1,1 +1,0 @@
-{"description": "Called when [[IsoSurvivor]] updates.", "parameters": ["[[IsoSurvivor]] The IsoSurvivor that is updating."], "see_also": ["[[Modding:Lua Event/OnPlayerUpdate|OnPlayerUpdate]]", "[[Modding:Lua Event/OnZombieUpdate|OnZombieUpdate]]"]}

@@ -1,1 +1,0 @@
-{"description": "Lua event is called when the game/server is started or when mods are reloaded while the game is started.", "see_also": ["[[Modding:Lua Event/OnPreGameStart|OnPreGameStart]]", "[[Modding:Lua Event/OnGameStart|OnGameStart]]"]}

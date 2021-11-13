@@ -1,1 +1,0 @@
-{"description": "Triggered when a player is created.", "parameters": ["[[Integer]] The player's PlayerIndex.", "[[IsoPlayer]] The player which was created."]}
