@@ -50,7 +50,7 @@
 *[[Modding:Lua Events/OnCustomUIKey|OnCustomUIKey]]
 *[[Modding:Lua Events/OnCustomUIKeyPressed|OnCustomUIKeyPressed]]
 *[[Modding:Lua Events/OnCustomUIKeyReleased|OnCustomUIKeyReleased]]
-*<s>[[Modding:Lua Events/OnDawn|OnDawn]]</s>
+*[[Modding:Lua Events/OnDawn|OnDawn]]
 *[[Modding:Lua Events/OnDestroyIsoThumpable|OnDestroyIsoThumpable]]
 *[[Modding:Lua Events/OnDeviceText|OnDeviceText]]
 *[[Modding:Lua Events/OnDisconnect|OnDisconnect]]
@@ -58,7 +58,7 @@
 *<s>[[Modding:Lua Events/OnDoTileBuilding|OnDoTileBuilding]]</s>
 *[[Modding:Lua Events/OnDoTileBuilding2|OnDoTileBuilding2]]
 *[[Modding:Lua Events/OnDoTileBuilding3|OnDoTileBuilding3]]
-*<s>[[Modding:Lua Events/OnDusk|OnDusk]]</s>
+*[[Modding:Lua Events/OnDusk|OnDusk]]
 *[[Modding:Lua Events/OnDynamicMovableRecipe|OnDynamicMovableRecipe]]
 *[[Modding:Lua Events/OnEnterVehicle|OnEnterVehicle]]
 *[[Modding:Lua Events/OnEquipPrimary|OnEquipPrimary]]
