@@ -60,7 +60,7 @@ class Wiki:
 
 	def get_events(self):
 		with open('addevent.txt', 'r') as fd:
-			return fd.read().split('\n')
+			return [x for x in fd.read().split('\n') if x.strip() ]
 
 	def get_javadoc_url(self, type):
 
@@ -117,8 +117,8 @@ class Wiki:
 
 		event = jsonevent['name']
 		desc = jsonevent.get('description', 'TODO')
-		if event in self.descriptions:
-			desc = self.description[event]
+		if event in self.descriptions and self.descriptions[event]:
+			desc = self.descriptions[event]
 
 		if 'parameters' not in jsonevent:
 			return desc
@@ -259,5 +259,5 @@ class Wiki:
 					'title': 'Modding:Lua Events/' + event,
 				}
 
-		for title, jsonevent in sorted(jsondata.items()):
-			self.edit_event_page(title, jsonevent)
+		for _, jsonevent in sorted(jsondata.items()):
+			self.edit_event_page(jsonevent['title'], jsonevent)
