@@ -3,15 +3,11 @@ OnAIStateEnter
 OnAIStateExecute
 OnAIStateExit
 OnBeingHitByZombie
-OnChallengeQuery
-OnChangeWeather
 OnCharacterCreateStats
 OnCharacterMeet
 OnDawn
 OnDoTileBuilding
 OnDusk
-OnFillInventoryObjectContextMenu
-OnFillWorldObjectContextMenu
 OnIsoThumpableLoad
 OnIsoThumpableSave
 OnLoginState
@@ -27,7 +23,6 @@ OnPostFloorSquareDraw
 OnPostTileDraw
 OnPostTilesSquareDraw
 OnPostWallSquareDraw
-OnPreFillInventoryObjectContextMenu
 OnPreFillWorldObjectContextMenu
 OnPreGameStart
 OnRadioInteraction
