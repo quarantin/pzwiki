@@ -1,405 +1,965 @@
 {
-    "AcceptedFactionInvite": [
-    ],
-    "AcceptedSafehouseInvite": [
-    ],
-    "AcceptedTrade": [
-    ],
+    "AcceptedFactionInvite": [],
+    "AcceptedSafehouseInvite": [],
+    "AcceptedTrade": [],
     "AddXP": [
+        {
+            "description": "Game character earning XP.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "Type of XP?",
+            "name": "perks",
+            "type": "Perks"
+        },
+        {
+            "description": "Amount of XP.",
+            "name": "float",
+            "type": "Float"
+        }
     ],
-    "Attack": [
+    "Attack": [],
+    "AutoDrink": [],
+    "CalculateStats": [],
+    "DoSpecialTooltip": [],
+    "EveryDays": [
+        null
     ],
-    "AutoDrink": [
+    "EveryHours": [
+        null
     ],
-    "CalculateStats": [
+    "EveryOneMinute": [
+        null
     ],
-    "DoSpecialTooltip": [
+    "EveryTenMinutes": [
+        null
     ],
-    "EveryDays": [null],
-    "EveryHours": [null],
-    "EveryOneMinute": [null],
-    "EveryTenMinutes": [null],
     "LevelPerk": [
+        {
+            "description": "The character whose perk is being leveled up.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The perk being leveled up.",
+            "name": "perks",
+            "type": "Perks"
+        },
+        {
+            "description": "Perk level.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "LoadGridsquare": [
-    ],
-    "MngInvReceiveItems": [
-    ],
+    "LoadGridsquare": [],
+    "MngInvReceiveItems": [],
     "OnAIStateChange": [
+        {
+            "description": "The character that owns the state machine.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The new AI state.",
+            "name": "state",
+            "type": "State"
+        },
+        {
+            "description": "The previous AI state.",
+            "name": "state",
+            "type": "State"
+        }
     ],
     "OnAIStateEnter": [
+        {
+            "description": "The character the state will execute on.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        }
     ],
     "OnAIStateExecute": [
+        {
+            "description": "The character the state executed on.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        }
     ],
     "OnAIStateExit": [
+        {
+            "description": "The character the state was executed on.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        }
     ],
-    "OnAcceptInvite": [
+    "OnAcceptInvite": [],
+    "OnAddBuilding": [],
+    "OnAddMessage": [],
+    "OnAdminMessage": [],
+    "OnAmbientSound": [],
+    "OnBeingHitByZombie": [],
+    "OnCGlobalObjectSystemInit": [
+        null
     ],
-    "OnAddBuilding": [
-    ],
-    "OnAddMessage": [
-    ],
-    "OnAdminMessage": [
-    ],
-    "OnAmbientSound": [
-    ],
-    "OnBeingHitByZombie": [
-    ],
-    "OnCGlobalObjectSystemInit": [null],
-    "OnChallengeQuery": [
-    ],
-    "OnChangeWeather": [
-    ],
+    "OnChallengeQuery": [],
+    "OnChangeWeather": [],
     "OnCharacterCollide": [
+        {
+            "description": "this (person function is called with)",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "character collided with.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        }
     ],
     "OnCharacterCreateStats": [
+        {
+            "description": "Survivor description.",
+            "name": "survivorDesc",
+            "type": "SurvivorDesc"
+        }
     ],
-    "OnCharacterDeath": [
-    ],
+    "OnCharacterDeath": [],
     "OnCharacterMeet": [
+        {
+            "description": "The survivor meeting the character.",
+            "name": "survivor",
+            "type": "IsoSurvivor"
+        },
+        {
+            "description": "The character being met.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The number of times before this the two characters have met; if it is 0, this is the first time.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnChatWindowInit": [null],
-    "OnClientCommand": [
+    "OnChatWindowInit": [
+        null
     ],
-    "OnClimateManagerInit": [
-    ],
-    "OnClimateTick": [
-    ],
-    "OnClimateTickDebug": [
-    ],
+    "OnClientCommand": [],
+    "OnClimateManagerInit": [],
+    "OnClimateTick": [],
+    "OnClimateTickDebug": [],
     "OnClothingUpdated": [
+        {
+            "description": "The character whose clothing was updated.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        }
     ],
     "OnConnectFailed": [
+        {
+            "description": "Connection failure reason.",
+            "name": "string",
+            "type": "String"
+        }
     ],
-    "OnConnected": [null],
+    "OnConnected": [
+        null
+    ],
     "OnConnectionStateChanged": [
+        {
+            "description": "The State",
+            "name": "string",
+            "type": "String"
+        },
+        {
+            "description": "Message",
+            "name": "string",
+            "type": "String"
+        }
     ],
-    "OnContainerUpdate": [
-    ],
-    "OnCoopJoinFailed": [
-    ],
-    "OnCoopServerMessage": [
-    ],
+    "OnContainerUpdate": [],
+    "OnCoopJoinFailed": [],
+    "OnCoopServerMessage": [],
     "OnCreateLivingCharacter": [
+        {
+            "description": "The player or survivor being created.",
+            "name": "playerOrSurvivor",
+            "type": "IsoPlayer,IsoSurvivor"
+        },
+        {
+            "description": "The description of the player or survivor being created.",
+            "name": "survivorDesc",
+            "type": "SurvivorDesc"
+        }
     ],
     "OnCreatePlayer": [
+        {
+            "description": "The player's PlayerIndex.",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "The player which was created.",
+            "name": "player",
+            "type": "IsoPlayer"
+        }
     ],
     "OnCreateSurvivor": [
+        {
+            "description": "The survivor which was created.",
+            "name": "survivor",
+            "type": "IsoSurvivor"
+        }
     ],
-    "OnCreateUI": [null],
+    "OnCreateUI": [
+        null
+    ],
     "OnCustomUIKey": [
+        {
+            "description": "denoted key. (See Keyboard Class in java docs for more info.)",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnCustomUIKeyPressed": [
+    "OnCustomUIKeyPressed": [],
+    "OnCustomUIKeyReleased": [],
+    "OnDawn": [
+        null
     ],
-    "OnCustomUIKeyReleased": [
+    "OnDestroyIsoThumpable": [],
+    "OnDeviceText": [],
+    "OnDisconnect": [
+        null
     ],
-    "OnDawn": [null],
-    "OnDestroyIsoThumpable": [
+    "OnDistributionMerge": [
+        null
     ],
-    "OnDeviceText": [
-    ],
-    "OnDisconnect": [null],
-    "OnDistributionMerge": [null],
-    "OnDoTileBuilding": [
-    ],
+    "OnDoTileBuilding": [],
     "OnDoTileBuilding2": [
+        {
+            "description": "Cell player is on?",
+            "name": "cell",
+            "type": "IsoCell"
+        },
+        {
+            "description": "bRender",
+            "name": "boolean",
+            "type": "Boolean"
+        },
+        {
+            "description": "The picked tile on x?",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnDoTileBuilding3": [
+        {
+            "description": "Cell player is on?",
+            "name": "cell",
+            "type": "IsoCell"
+        },
+        {
+            "description": "bRender",
+            "name": "boolean",
+            "type": "Boolean"
+        },
+        {
+            "description": "???",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnDusk": [null],
-    "OnDynamicMovableRecipe": [
+    "OnDusk": [
+        null
     ],
-    "OnEnterVehicle": [
-    ],
+    "OnDynamicMovableRecipe": [],
+    "OnEnterVehicle": [],
     "OnEquipPrimary": [
+        {
+            "description": "The character which equipped the item.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The item which was equipped.",
+            "name": "inventoryItem",
+            "type": "InventoryItem"
+        }
     ],
     "OnEquipSecondary": [
+        {
+            "description": "The character which equipped the item.",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The item which was equipped.",
+            "name": "inventoryItem",
+            "type": "InventoryItem"
+        }
     ],
-    "OnExitVehicle": [
-    ],
+    "OnExitVehicle": [],
     "OnFETick": [
+        {
+            "description": ": Always 0, unknown use.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnFillContainer": [
-    ],
+    "OnFillContainer": [],
     "OnFillInventoryObjectContextMenu": [
+        {
+            "description": "player",
+            "name": "player",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "Context menu.",
+            "name": "???",
+            "type": "???"
+        },
+        {
+            "description": "Items",
+            "name": "???",
+            "type": "???"
+        }
     ],
     "OnFillWorldObjectContextMenu": [
+        {
+            "description": "The player who will see the menu.",
+            "name": "player",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "Context menu.",
+            "name": "iSContextMenu",
+            "type": "ISContextMenu"
+        },
+        {
+            "description": "World objects.",
+            "name": "kahluaTable",
+            "type": "KahluaTable"
+        },
+        {
+            "description": "True if called for the purpose of testing for nearby objects.",
+            "name": "boolean",
+            "type": "Boolean"
+        }
     ],
-    "OnGameBoot": [null],
-    "OnGameStart": [null],
-    "OnGameTimeLoaded": [null],
-    "OnGamepadConnect": [
+    "OnGameBoot": [
+        null
     ],
-    "OnGamepadDisconnect": [
+    "OnGameStart": [
+        null
     ],
-    "OnGetDBSchema": [
+    "OnGameTimeLoaded": [
+        null
     ],
-    "OnGetTableResult": [
+    "OnGamepadConnect": [],
+    "OnGamepadDisconnect": [],
+    "OnGetDBSchema": [],
+    "OnGetTableResult": [],
+    "OnGridBurnt": [],
+    "OnHitZombie": [],
+    "OnInitGlobalModData": [],
+    "OnInitModdedWeatherStage": [],
+    "OnInitRecordedMedia": [],
+    "OnInitSeasons": [],
+    "OnInitWorld": [
+        null
     ],
-    "OnGridBurnt": [
-    ],
-    "OnHitZombie": [
-    ],
-    "OnInitGlobalModData": [
-    ],
-    "OnInitModdedWeatherStage": [
-    ],
-    "OnInitRecordedMedia": [
-    ],
-    "OnInitSeasons": [
-    ],
-    "OnInitWorld": [null],
-    "OnIsoThumpableLoad": [
-    ],
-    "OnIsoThumpableSave": [
-    ],
+    "OnIsoThumpableLoad": [],
+    "OnIsoThumpableSave": [],
     "OnJoypadActivate": [
+        {
+            "description": "The ID of the activated controller.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnJoypadActivateUI": [
+    "OnJoypadActivateUI": [],
+    "OnJoypadBeforeDeactivate": [],
+    "OnJoypadBeforeReactivate": [],
+    "OnJoypadDeactivate": [],
+    "OnJoypadReactivate": [],
+    "OnJoypadRenderUI": [
+        null
     ],
-    "OnJoypadBeforeDeactivate": [
-    ],
-    "OnJoypadBeforeReactivate": [
-    ],
-    "OnJoypadDeactivate": [
-    ],
-    "OnJoypadReactivate": [
-    ],
-    "OnJoypadRenderUI": [null],
     "OnKeyKeepPressed": [
+        {
+            "description": "denoted key. (See Keyboard Class in java docs for more info.)",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnKeyPressed": [
+        {
+            "description": "denoted key. (See Keyboard Class in java docs for more info.)",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnKeyStartPressed": [
+        {
+            "description": "denoted key. (See Keyboard Class in java docs for more info.)",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnLoad": [null],
-    "OnLoadMapZones": [null],
-    "OnLoadRadioScripts": [
+    "OnLoad": [
+        null
     ],
-    "OnLoadSoundBanks": [null],
-    "OnLoadedTileDefinitions": [
+    "OnLoadMapZones": [
+        null
     ],
+    "OnLoadRadioScripts": [],
+    "OnLoadSoundBanks": [
+        null
+    ],
+    "OnLoadedTileDefinitions": [],
     "OnLoginState": [
+        {
+            "description": "login state",
+            "name": "loginState",
+            "type": "LoginState"
+        }
     ],
-    "OnLoginStateSuccess": [
+    "OnLoginStateSuccess": [],
+    "OnMainMenuEnter": [
+        null
     ],
-    "OnMainMenuEnter": [null],
-    "OnMakeItem": [
+    "OnMakeItem": [],
+    "OnMapLoadCreateIsoObject": [],
+    "OnMechanicActionDone": [],
+    "OnMiniScoreboardUpdate": [
+        null
     ],
-    "OnMapLoadCreateIsoObject": [
+    "OnModsModified": [
+        null
     ],
-    "OnMechanicActionDone": [
-    ],
-    "OnMiniScoreboardUpdate": [null],
-    "OnModsModified": [null],
     "OnMouseDown": [
+        {
+            "description": "Mouse position x",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse position y",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnMouseMove": [
+        {
+            "description": "Mouse x position.",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse y position.",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse x W?",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse y W?",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnMouseUp": [
+        {
+            "description": "Mouse position x",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse position y",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnMultiTriggerNPCEvent": [
+        {
+            "description": "Type of trigger.",
+            "name": "string",
+            "type": "String"
+        },
+        {
+            "description": "Data of trigger.",
+            "name": "kahluaTable",
+            "type": "KahluaTable"
+        },
+        {
+            "description": "Building definition of trigger (?)",
+            "name": "buildingDef",
+            "type": "BuildingDef"
+        }
     ],
     "OnNPCSurvivorUpdate": [
+        {
+            "description": "The IsoSurvivor that is updating.",
+            "name": "survivor",
+            "type": "IsoSurvivor"
+        }
     ],
-    "OnNewFire": [
-    ],
+    "OnNewFire": [],
     "OnNewGame": [
+        {
+            "description": "The player.",
+            "name": "player",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "The square where the player is located.",
+            "name": "square",
+            "type": "IsoGridSquare"
+        }
     ],
-    "OnNewSurvivorGroup": [
-    ],
-    "OnObjectAboutToBeRemoved": [
-    ],
-    "OnObjectAdded": [
-    ],
+    "OnNewSurvivorGroup": [],
+    "OnObjectAboutToBeRemoved": [],
+    "OnObjectAdded": [],
     "OnObjectCollide": [
+        {
+            "description": "this (person function is called with)",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "character collided with.",
+            "name": "object",
+            "type": "IsoObject"
+        }
     ],
     "OnObjectLeftMouseButtonDown": [
+        {
+            "description": "tile clicked.",
+            "name": "object",
+            "type": "IsoObject"
+        },
+        {
+            "description": "Mouse position X.",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse position Y.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnObjectLeftMouseButtonUp": [
+        {
+            "description": "tile clicked.",
+            "name": "object",
+            "type": "IsoObject"
+        },
+        {
+            "description": "Mouse position X.",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse position Y.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnObjectRightMouseButtonDown": [
+        {
+            "description": "tile clicked.",
+            "name": "object",
+            "type": "IsoObject"
+        },
+        {
+            "description": "Mouse position X.",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse position Y.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnObjectRightMouseButtonUp": [
+        {
+            "description": "tile clicked.",
+            "name": "object",
+            "type": "IsoObject"
+        },
+        {
+            "description": "Mouse position X.",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse position Y.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnPlayerAttackFinished": [
-    ],
+    "OnPlayerAttackFinished": [],
     "OnPlayerCancelTimedAction": [
+        {
+            "description": "action",
+            "name": "baseAction",
+            "type": "BaseAction"
+        }
     ],
     "OnPlayerDeath": [
+        {
+            "description": "The player which died.",
+            "name": "player",
+            "type": "IsoPlayer"
+        }
     ],
-    "OnPlayerMove": [
-    ],
+    "OnPlayerMove": [],
     "OnPlayerSetSafehouse": [
+        {
+            "description": "The survivor group safehouse is being set for.",
+            "name": "survivorGroup",
+            "type": "SurvivorGroup"
+        },
+        {
+            "description": "The building definition of the safehouse being set.",
+            "name": "buildingDef",
+            "type": "BuildingDef"
+        }
     ],
     "OnPlayerUpdate": [
+        {
+            "description": "The IsoPlayer that is updating.",
+            "name": "player",
+            "type": "IsoPlayer"
+        }
     ],
-    "OnPostCharactersSquareDraw": [
+    "OnPostCharactersSquareDraw": [],
+    "OnPostDistributionMerge": [
+        null
     ],
-    "OnPostDistributionMerge": [null],
     "OnPostFloorLayerDraw": [
+        {
+            "description": "The Z-index of the layer which was rendered.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnPostFloorSquareDraw": [
-    ],
+    "OnPostFloorSquareDraw": [],
     "OnPostMapLoad": [
+        {
+            "description": "The cell which was loaded.",
+            "name": "cell",
+            "type": "IsoCell"
+        },
+        {
+            "description": "The world X.",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "The world Y.",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnPostRender": [null],
-    "OnPostSave": [null],
-    "OnPostTileDraw": [
+    "OnPostRender": [
+        null
     ],
-    "OnPostTilesSquareDraw": [
+    "OnPostSave": [
+        null
     ],
-    "OnPostUIDraw": [null],
-    "OnPostWallSquareDraw": [
+    "OnPostTileDraw": [],
+    "OnPostTilesSquareDraw": [],
+    "OnPostUIDraw": [
+        null
     ],
-    "OnPreDistributionMerge": [null],
+    "OnPostWallSquareDraw": [],
+    "OnPreDistributionMerge": [
+        null
+    ],
     "OnPreFillInventoryObjectContextMenu": [
+        {
+            "description": "player",
+            "name": "player",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "Context menu.",
+            "name": "???",
+            "type": "???"
+        },
+        {
+            "description": "Items",
+            "name": "???",
+            "type": "???"
+        }
     ],
     "OnPreFillWorldObjectContextMenu": [
+        {
+            "description": "The player who will see the menu.",
+            "name": "player",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "Context menu.",
+            "name": "iSContextMenu",
+            "type": "ISContextMenu"
+        },
+        {
+            "description": "World objects.",
+            "name": "kahluaTable",
+            "type": "KahluaTable"
+        },
+        {
+            "description": "True if called for the purpose of testing for nearby objects.",
+            "name": "boolean",
+            "type": "Boolean"
+        }
     ],
-    "OnPreGameStart": [
+    "OnPreGameStart": [],
+    "OnPreMapLoad": [
+        null
     ],
-    "OnPreMapLoad": [null],
-    "OnPreUIDraw": [null],
-    "OnPressRackButton": [
+    "OnPreUIDraw": [
+        null
     ],
-    "OnPressReloadButton": [
+    "OnPressRackButton": [],
+    "OnPressReloadButton": [],
+    "OnRadioInteraction": [],
+    "OnRainStart": [],
+    "OnRainStop": [
+        null
     ],
-    "OnRadioInteraction": [
-    ],
-    "OnRainStart": [
-    ],
-    "OnRainStop": [null],
-    "OnReceiveGlobalModData": [
-    ],
-    "OnReceiveItemListNet": [
-    ],
-    "OnReceiveUserlog": [
-    ],
+    "OnReceiveGlobalModData": [],
+    "OnReceiveItemListNet": [],
+    "OnReceiveUserlog": [],
     "OnRefreshInventoryWindowContainers": [
+        {
+            "description": "The inventory page being refreshed.",
+            "name": "iSInventoryPage",
+            "type": "ISInventoryPage"
+        },
+        {
+            "description": "A string representing the state of the refresh process; can be any of \"begin\", \"beforeFloor\", \"buttonsAdded\", and \"end\".",
+            "name": "string",
+            "type": "String"
+        }
     ],
-    "OnRenderTick": [null],
-    "OnRenderUpdate": [
+    "OnRenderTick": [
+        null
     ],
-    "OnResetLua": [
-    ],
-    "OnResolutionChange": [
-    ],
+    "OnRenderUpdate": [],
+    "OnResetLua": [],
+    "OnResolutionChange": [],
     "OnRightMouseDown": [
+        {
+            "description": "Mouse position x",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse position y",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
     "OnRightMouseUp": [
+        {
+            "description": "Mouse position x",
+            "name": "integer",
+            "type": "Integer"
+        },
+        {
+            "description": "Mouse position y",
+            "name": "integer",
+            "type": "Integer"
+        }
     ],
-    "OnSGlobalObjectSystemInit": [null],
-    "OnSafehousesChanged": [null],
-    "OnSave": [null],
+    "OnSGlobalObjectSystemInit": [
+        null
+    ],
+    "OnSafehousesChanged": [
+        null
+    ],
+    "OnSave": [
+        null
+    ],
     "OnScoreboardUpdate": [
+        {
+            "description": "> Player names.",
+            "name": "string",
+            "type": "String"
+        },
+        {
+            "description": "> Steam ID.",
+            "name": "string",
+            "type": "String"
+        }
     ],
-    "OnSeeNewRoom": [
+    "OnSeeNewRoom": [],
+    "OnServerCommand": [],
+    "OnServerFinishSaving": [
+        null
     ],
-    "OnServerCommand": [
+    "OnServerStartSaving": [
+        null
     ],
-    "OnServerFinishSaving": [null],
-    "OnServerStartSaving": [null],
-    "OnServerStarted": [null],
-    "OnServerStatisticReceived": [null],
-    "OnServerWorkshopItems": [
+    "OnServerStarted": [
+        null
     ],
-    "OnSetDefaultTab": [
+    "OnServerStatisticReceived": [
+        null
     ],
+    "OnServerWorkshopItems": [],
+    "OnSetDefaultTab": [],
     "OnSpawnRegionsLoaded": [
+        {
+            "description": "A table containing spawn regions.",
+            "name": "kahluaTable",
+            "type": "KahluaTable"
+        }
     ],
-    "OnSteamFriendStatusChanged": [
+    "OnSteamFriendStatusChanged": [],
+    "OnSteamGameJoin": [
+        null
     ],
-    "OnSteamGameJoin": [null],
-    "OnSteamRefreshInternetServers": [null],
-    "OnSteamRulesRefreshComplete": [
+    "OnSteamRefreshInternetServers": [
+        null
     ],
-    "OnSteamServerFailedToRespond2": [
-    ],
-    "OnSteamServerResponded": [
-    ],
-    "OnSteamServerResponded2": [
-    ],
-    "OnSteamWorkshopItemCreated": [
-    ],
-    "OnSteamWorkshopItemNotCreated": [
-    ],
-    "OnSteamWorkshopItemNotUpdated": [
-    ],
-    "OnSteamWorkshopItemUpdated": [
-    ],
-    "OnSwitchVehicleSeat": [
-    ],
-    "OnTabAdded": [
-    ],
-    "OnTabRemoved": [
-    ],
-    "OnThunderEvent": [
-    ],
-    "OnTick": [
-    ],
-    "OnTickEvenPaused": [
-    ],
-    "OnTileRemoved": [
-    ],
+    "OnSteamRulesRefreshComplete": [],
+    "OnSteamServerFailedToRespond2": [],
+    "OnSteamServerResponded": [],
+    "OnSteamServerResponded2": [],
+    "OnSteamWorkshopItemCreated": [],
+    "OnSteamWorkshopItemNotCreated": [],
+    "OnSteamWorkshopItemNotUpdated": [],
+    "OnSteamWorkshopItemUpdated": [],
+    "OnSwitchVehicleSeat": [],
+    "OnTabAdded": [],
+    "OnTabRemoved": [],
+    "OnThunderEvent": [],
+    "OnTick": [],
+    "OnTickEvenPaused": [],
+    "OnTileRemoved": [],
     "OnTriggerNPCEvent": [
+        {
+            "description": "Type of trigger.",
+            "name": "string",
+            "type": "String"
+        },
+        {
+            "description": "Data of trigger.",
+            "name": "kahluaTable",
+            "type": "KahluaTable"
+        },
+        {
+            "description": "Building definition of trigger (?)",
+            "name": "buildingDef",
+            "type": "BuildingDef"
+        }
     ],
-    "OnUpdateModdedWeatherStage": [
-    ],
-    "OnUseVehicle": [
-    ],
-    "OnVehicleDamageTexture": [
-    ],
-    "OnVehicleHorn": [
-    ],
-    "OnWaterAmountChange": [
-    ],
+    "OnUpdateModdedWeatherStage": [],
+    "OnUseVehicle": [],
+    "OnVehicleDamageTexture": [],
+    "OnVehicleHorn": [],
+    "OnWaterAmountChange": [],
     "OnWeaponHitCharacter": [
+        {
+            "description": "attacker",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "target",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "weapon",
+            "name": "handWeapon",
+            "type": "HandWeapon"
+        },
+        {
+            "description": "damage split",
+            "name": "float",
+            "type": "Float"
+        }
     ],
     "OnWeaponHitTree": [
+        {
+            "description": "owner",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "weapon",
+            "name": "handWeapon",
+            "type": "HandWeapon"
+        }
     ],
-    "OnWeaponHitXp": [
-    ],
+    "OnWeaponHitXp": [],
     "OnWeaponSwing": [
+        {
+            "description": "attacker",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "weapon",
+            "name": "handWeapon",
+            "type": "HandWeapon"
+        }
     ],
     "OnWeaponSwingHitPoint": [
+        {
+            "description": "owner",
+            "name": "character",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "weapon",
+            "name": "handWeapon",
+            "type": "HandWeapon"
+        }
     ],
-    "OnWorldMessage": [
-    ],
+    "OnWorldMessage": [],
     "OnZombieDead": [
+        {
+            "description": "The zombie that was killed.",
+            "name": "zombie",
+            "type": "IsoZombie"
+        }
     ],
     "OnZombieUpdate": [
+        {
+            "description": "The IsoZombie that is updating.",
+            "name": "zombie",
+            "type": "IsoZombie"
+        }
     ],
-    "ReceiveFactionInvite": [
+    "ReceiveFactionInvite": [],
+    "ReceiveSafehouseInvite": [],
+    "RequestTrade": [],
+    "ReuseGridsquare": [],
+    "SendCustomModData": [
+        null
     ],
-    "ReceiveSafehouseInvite": [
+    "ServerPinged": [],
+    "SwitchChatStream": [
+        null
     ],
-    "RequestTrade": [
-    ],
-    "ReuseGridsquare": [
-    ],
-    "SendCustomModData": [null],
-    "ServerPinged": [
-    ],
-    "SwitchChatStream": [null],
-    "SyncFaction": [
-    ],
-    "TradingUIAddItem": [
-    ],
-    "TradingUIRemoveItem": [
-    ],
-    "TradingUIUpdateState": [
-    ],
-    "UseItem": [
-    ],
-    "ViewTickets": [
-    ],
-    "WeaponHitCharacter": [
-    ],
-    "WeaponSwing": [
-    ],
-    "WeaponSwingHitPoint": [
-    ],
-    "onLoadModDataFromServer": [
-    ]
+    "SyncFaction": [],
+    "TradingUIAddItem": [],
+    "TradingUIRemoveItem": [],
+    "TradingUIUpdateState": [],
+    "UseItem": [],
+    "ViewTickets": [],
+    "WeaponHitCharacter": [],
+    "WeaponSwing": [],
+    "WeaponSwingHitPoint": [],
+    "onLoadModDataFromServer": []
 }
