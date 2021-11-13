@@ -56,15 +56,16 @@ class Wiki:
 		return jsondata['query']['tokens']['csrftoken']
 
 	def get_descriptions(self):
-		with open('descriptions.json', 'r') as fd:
+		filename = join('data', 'json', 'descriptions.json')
+		with open(filename, 'r') as fd:
 			return json.loads(fd.read())
 
 	def get_events(self):
-		with open('addeventjava.txt', 'r') as fd:
+		filename = join('data', 'txt', 'events.txt')
+		with open(filename, 'r') as fd:
 			return [x for x in fd.read().split('\n') if x.strip() ]
 
 	def get_javadoc_url(self, type):
-
 
 		pkg = self.packages.get(type)
 		if type == '???' or not pkg:
@@ -90,7 +91,8 @@ class Wiki:
 		return jsondata['query']['tokens']['logintoken']
 
 	def get_obsolete_events(self):
-		with open('deprecated.txt', 'r') as fd:
+		filename = join('data', 'txt', 'deprecated.txt')
+		with open(filename, 'r') as fd:
 			return fd.read().split('\n')
 
 	def get_packages(self):

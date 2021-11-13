@@ -5,7 +5,7 @@ cd ..
 
 JAVAROOT=$(jq .java.root config.json | tr -d '"')
 
-OUTPUT="addeventjava.txt"
+OUTPUT="data/txt/addeventjava.txt"
 echo -n > "${OUTPUT}"
 
 while read LINE; do
