@@ -20,6 +20,6 @@ if __name__ == '__main__':
 	with open(WikiUpdater.config_file, 'r') as fd:
 		config = json.loads(fd.read())
 
-	chdir(join(dirname(realpath(__file__)), 'wiki'))
+	chdir(dirname(realpath(__file__)))
 
-	WikiUpdater(config=config).update_wiki()
+	WikiUpdater(config=config).update_events()
