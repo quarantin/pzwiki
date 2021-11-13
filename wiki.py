@@ -32,6 +32,7 @@ class Wiki:
 		self.password     = target['password']
 		self.username     = target['username']
 		self.saved_events = self.get_saved_events()
+		self.see_also     = self.get_see_also()
 		self.session      = requests.Session()
 
 		if not self.api_url.endswith(self.api_path):
@@ -99,6 +100,17 @@ class Wiki:
 	def get_saved_events(self):
 		with open('savedevents.json', 'r') as fd:
 			return json.loads(fd.read())
+
+	def get_see_also(self):
+		with open('see_also.json', 'r') as fd:
+			jsondata = json.loads(fd.read())
+
+		see_also = {}
+		for item in jsondata:
+			for ref in item:
+				see_also[ref] = item
+
+		return see_also
 
 	def login(self):
 
@@ -189,12 +201,13 @@ class Wiki:
 
 	def format_event_see_also(self, jsonevent):
 
-		if 'see_also' not in jsonevent:
-			return 'No related event.\n'
-
 		result = []
-		jsondata = jsonevent['see_also']
-		for see_also in jsondata:
+		event = jsonevent['name']
+
+		if name not in self.see_also or not self.see_also[name]:
+			return 'No related event.'
+
+		for see_also in self.see_also[name]:
 			result.append('* [[Modding:Lua Events/%s|%s]]' % (see_also, see_also))
 
 		return '\n'.join(result)
