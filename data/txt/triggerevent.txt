@@ -1,56 +1,56 @@
 lua.server.Seasons.season;OnChangeWeather;season.weather
-lua.server.Seasons.season; OnDusk-- we notify that we're on dusk for modding purpose
-lua.server.Seasons.season; OnDawn-- we notify that we're on dawn for modding purpose
-lua.server.RainBarrel.BuildingObjects.RainCollectorBarrel; OnObjectAdded,selfObject
+lua.server.Seasons.season;OnDusk
+lua.server.Seasons.season;OnDawn
+lua.server.RainBarrel.BuildingObjects.RainCollectorBarrel;OnObjectAdded,selfObject
 lua.server.MetalDrum.BuildingObjects.ISMetalDrum;OnObjectAdded;selfObject
 lua.server.Traps.BuildingObjects.TrapBO;OnObjectAdded;selfObject
-lua.client.ISUI.ISWorldObjectContextMenu; OnPreFillWorldObjectContextMenu,player;context;worldobjects;test
+lua.client.ISUI.ISWorldObjectContextMenu;OnPreFillWorldObjectContextMenu,player;context;worldobjects;test
 lua.client.ISUI.ISWorldObjectContextMenu;OnFillWorldObjectContextMenu;player;context;worldobjects;test
-lua.client.ISUI.ISInventoryPage; OnRefreshInventoryWindowContainers,self;"begin"
-lua.client.ISUI.ISInventoryPage; OnRefreshInventoryWindowContainers,self;"beforeFloor"
-lua.client.ISUI.ISInventoryPage; OnRefreshInventoryWindowContainers,self;"buttonsAdded"
-lua.client.ISUI.ISInventoryPage; OnRefreshInventoryWindowContainers,self;"end"
-lua.client.ISUI.ISMakeUpUI; OnClothingUpdated,self.character
-lua.client.ISUI.ISMakeUpUI; OnClothingUpdated,self.character
-lua.client.ISUI.ISMakeUpUI; OnClothingUpdated,self.character
+lua.client.ISUI.ISInventoryPage;OnRefreshInventoryWindowContainers,self;"begin"
+lua.client.ISUI.ISInventoryPage;OnRefreshInventoryWindowContainers,self;"beforeFloor"
+lua.client.ISUI.ISInventoryPage;OnRefreshInventoryWindowContainers,self;"buttonsAdded"
+lua.client.ISUI.ISInventoryPage;OnRefreshInventoryWindowContainers,self;"end"
+lua.client.ISUI.ISMakeUpUI;OnClothingUpdated,self.character
+lua.client.ISUI.ISMakeUpUI;OnClothingUpdated,self.character
+lua.client.ISUI.ISMakeUpUI;OnClothingUpdated,self.character
 lua.client.ISUI.ISInventoryPaneContextMenu;OnPreFillInventoryObjectContextMenu;player;context;items
 lua.client.ISUI.ISInventoryPaneContextMenu;OnFillInventoryObjectContextMenu;player;context;items
 lua.client.ISUI.ISInventoryPaneContextMenu;OnPreFillInventoryContextMenuNoItems;playerNum;context;isLoot
 lua.client.ISUI.ISInventoryPaneContextMenu;OnFillInventoryContextMenuNoItems;playerNum;context;isLoot
-lua.client.DebugUIs.DebugMenu.General.ISDebugBlood; OnClothingUpdated,playerObj
-lua.client.DebugUIs.DebugMenu.General.ISDebugBlood; OnClothingUpdated,playerObj
-lua.client.DebugUIs.DebugMenu.General.ISDebugBlood; OnClothingUpdated,playerObj
-lua.client.Vehicles.TimedActions.ISCloseVehicleDoor; OnContainerUpdate
-lua.client.Vehicles.TimedActions.ISOpenVehicleDoor; OnContainerUpdate
-lua.client.Vehicles.TimedActions.ISExitVehicle; OnExitVehicle,self.character
-lua.client.Vehicles.TimedActions.ISEnterVehicle; OnEnterVehicle,self.character
-lua.client.Vehicles.TimedActions.ISSwitchVehicleSeat; OnSwitchVehicleSeat,self.character
+lua.client.DebugUIs.DebugMenu.General.ISDebugBlood;OnClothingUpdated,playerObj
+lua.client.DebugUIs.DebugMenu.General.ISDebugBlood;OnClothingUpdated,playerObj
+lua.client.DebugUIs.DebugMenu.General.ISDebugBlood;OnClothingUpdated,playerObj
+lua.client.Vehicles.TimedActions.ISCloseVehicleDoor;OnContainerUpdate
+lua.client.Vehicles.TimedActions.ISOpenVehicleDoor;OnContainerUpdate
+lua.client.Vehicles.TimedActions.ISExitVehicle;OnExitVehicle,self.character
+lua.client.Vehicles.TimedActions.ISEnterVehicle;OnEnterVehicle,self.character
+lua.client.Vehicles.TimedActions.ISSwitchVehicleSeat;OnSwitchVehicleSeat,self.character
 lua.client.Moveables.ISMoveableSpriteProps;OnObjectAboutToBeRemoved;_object
-lua.client.Moveables.ISMoveableSpriteProps;OnObjectAboutToBeRemoved;_object -- Hack for RainCollectorBarrel;Trap;etc
+lua.client.Moveables.ISMoveableSpriteProps;OnObjectAboutToBeRemoved;_object
 lua.client.Moveables.ISMoveableSpriteProps;OnContainerUpdate
-lua.client.Moveables.ISMoveableSpriteProps;OnObjectAdded;obj -- for RainCollectorBarrel in singleplayer
+lua.client.Moveables.ISMoveableSpriteProps;OnObjectAdded;obj
 lua.client.Moveables.ISMoveableSpriteProps;OnContainerUpdate
-lua.client.TimedActions.ISInventoryTransferAction; OnClothingUpdated,self.character
-lua.client.TimedActions.ISRemovePatch; OnClothingUpdated,self.character
-lua.client.TimedActions.ISUnequipAction; OnClothingUpdated,self.character
-lua.client.TimedActions.ISWashYourself; OnClothingUpdated,self.character
-lua.client.TimedActions.ISCutHair; OnClothingUpdated,self.character
-lua.client.TimedActions.ISWashClothing; OnClothingUpdated,self.character
-lua.client.TimedActions.ISClothingExtraAction; OnClothingUpdated,playerObj
-lua.client.TimedActions.ISWearClothing; OnClothingUpdated,self.character
-lua.client.TimedActions.ISDyeHair; OnClothingUpdated,self.character
-lua.client.TimedActions.ISTrimBeard; OnClothingUpdated,self.character
-lua.client.TimedActions.ISRepairClothing; OnClothingUpdated,self.character
-lua.client.TimedActions.ISEquipWeaponAction; OnClothingUpdated,self.character
-lua.client.TimedActions.ISDestroyStuffAction; --Hack;should we do OnDestroyIsoThumpable here?
-lua.client.OptionScreens.WorkshopSubmitScreen; OnSteamWorkshopItemCreated,"1234";true
-lua.client.OptionScreens.WorkshopSubmitScreen;-- OnSteamWorkshopItemNotCreated,666
-lua.client.OptionScreens.WorkshopSubmitScreen; OnSteamWorkshopItemUpdated,true
-lua.client.OptionScreens.WorkshopSubmitScreen;-- OnSteamWorkshopItemNotUpdated,666
+lua.client.TimedActions.ISInventoryTransferAction;OnClothingUpdated,self.character
+lua.client.TimedActions.ISRemovePatch;OnClothingUpdated,self.character
+lua.client.TimedActions.ISUnequipAction;OnClothingUpdated,self.character
+lua.client.TimedActions.ISWashYourself;OnClothingUpdated,self.character
+lua.client.TimedActions.ISCutHair;OnClothingUpdated,self.character
+lua.client.TimedActions.ISWashClothing;OnClothingUpdated,self.character
+lua.client.TimedActions.ISClothingExtraAction;OnClothingUpdated,playerObj
+lua.client.TimedActions.ISWearClothing;OnClothingUpdated,self.character
+lua.client.TimedActions.ISDyeHair;OnClothingUpdated,self.character
+lua.client.TimedActions.ISTrimBeard;OnClothingUpdated,self.character
+lua.client.TimedActions.ISRepairClothing;OnClothingUpdated,self.character
+lua.client.TimedActions.ISEquipWeaponAction;OnClothingUpdated,self.character
+lua.client.TimedActions.ISDestroyStuffAction;
+lua.client.OptionScreens.WorkshopSubmitScreen;OnSteamWorkshopItemCreated,"1234";true
+lua.client.OptionScreens.WorkshopSubmitScreen;
+lua.client.OptionScreens.WorkshopSubmitScreen;OnSteamWorkshopItemUpdated,true
+lua.client.OptionScreens.WorkshopSubmitScreen;
 lua.client.OptionScreens.MainScreen;OnChallengeQuery
-lua.client.OptionScreens.ServerWorkshopItemScreen; OnConnectFailed,error;detail
-lua.shared.SpawnRegions; OnSpawnRegionsLoaded,regions
-lua.shared.Util.LuaNet;-- OnLuaNetInit;self 
+lua.client.OptionScreens.ServerWorkshopItemScreen;OnConnectFailed,error;detail
+lua.shared.SpawnRegions;OnSpawnRegionsLoaded,regions
+lua.shared.Util.LuaNet;
 zombie.util.AddCoopPlayer;OnCreatePlayer;zombie.util.AddCoopPlayer.player.PlayerIndex;zombie.util.AddCoopPlayer.player
 zombie.util.AddCoopPlayer;OnCoopJoinFailed;var1
 zombie.radio.media.RecordedMedia;OnInitRecordedMedia;zombie.radio.media.RecordedMedia
