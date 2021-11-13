@@ -16,7 +16,15 @@ ignored_packages = jsondata['java']['ignored_packages']
 
 chdir(jsondata['java']['root'])
 
-db = {}
+db = {
+	# Primitive types
+	'Boolean': 'java.lang.Boolean',
+	'Double':  'java.lang.Double',
+	'Float':   'java.lang.Float',
+	'Integer': 'java.lang.Integer',
+	'String':  'java.lang.String',
+}
+
 for root, subdirs, files in walk('.'):
 	root = root[2:].replace(sep, '.')
 	pkg = root.split('.')[0]
@@ -29,12 +37,11 @@ for root, subdirs, files in walk('.'):
 		f = f.replace('.java', '')
 		db[f] = root + '.' + f
 
-#for classname, dictionary in dict(db).items():
-#		for key, value in dictionary.items():
-#			if len(value) == 1:
-#				db[classname][key] = value[0]
+# Zomboid inner classes
+db['Perk'] = 'zombie.characters.skills.PerkFactory.Perk'
+db['Perks'] = 'zombie.characters.skills.PerkFactory.Perks'
 
 chdir(old_cwd)
 
 with open('class2pkg.json', 'w') as fd:
-	fd.write(json.dumps(db))
+	fd.write(json.dumps(db, sort_keys=True))
