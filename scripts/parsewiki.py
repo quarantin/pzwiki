@@ -10,12 +10,12 @@ from os.path import basename, dirname, join, realpath, sep
 chdir(dirname(realpath(__file__)))
 chdir('..')
 
-with open('addevent.txt', 'r') as fd:
-	events = [ x for x in fd.read().split('\n') if x.strip() ]
+with open('deprecated.txt', 'r') as fd:
+	deprecated = [ x for x in fd.read().split('\n') if x.strip() ]
 
-chdir('pzwiki/')
+chdir('pzwiki')
 
-PARAMS = {
+names = {
 	'IsoCell':          'cell',
 	'IsoGridSquare':    'square',
 	'IsoObject':        'object',
@@ -25,16 +25,13 @@ PARAMS = {
 	'IsoZombie':        'zombie',
 }
 
-def parse_name(string):
-	return re.search('<pre>(.*)</pre>', string).group(1)
-
 def parse_parameter(parameter):
 	m = re.search(r'\[\[(.*)\]\]|(\?\?\?)', parameter)
-	param = m.group(1) or m.group(2)
+	param = (m.group(1) or m.group(2)).split('|')[0]
 	delim = param == '???' and '???' or ']]'
 	return {
 		'type': param,
-		'name': PARAMS.get(param, param[0].lower() + param[1:]),
+		'name': names.get(param, param[0].lower() + param[1:]),
 		'description': parameter.split(delim)[1].strip(),
 	}
 
@@ -42,15 +39,18 @@ def parse_see_also(see_also):
 	return see_also.split('|')[1].replace(']]', '')
 
 db = {}
-for root, subdirs, files in walk('Modding/Lua Event/'):
+for root, subdirs, files in walk('Modding' + sep + 'Lua Event'):
 
 	for f in files:
 		f = join(root, f)
-		title = f.replace(sep, ':', 1).replace('.txt', '')
-		event = basename(f).replace('.txt', '')
-		events.remove(event)
+		name = basename(f).replace('.txt', '')
+		title = f.replace(sep, ':', 1).replace('Event', 'Events').replace('.txt', '')
 
-		db[title] = {}
+		db[name] = {
+			'title': title,
+			'obsolete': name in deprecated,
+		}
+
 		with open(f, 'r') as fd:
 			data = fd.read()
 
@@ -66,7 +66,6 @@ for root, subdirs, files in walk('Modding/Lua Event/'):
 			if line.startswith('{{Function'):
 				continue
 			if line.startswith('|name'):
-				db[title]['name'] = parse_name(line)
 				continue
 			if line.startswith('|parameter') and 'N/A' in line:
 				continue
@@ -78,62 +77,59 @@ for root, subdirs, files in walk('Modding/Lua Event/'):
 				continue
 
 			if line.startswith('|description'):
-				db[title]['description'] = line.split('=', 1)[1].strip()
+				db[name]['description'] = line.split('=', 1)[1].strip()
 				continue
 
 			if line.startswith('|additional_info'):
-				db[title]['additional_info'] = line.split('=', 1)[1].strip()
+				db[name]['additional_info'] = line.split('=', 1)[1].strip()
 				continue
 
 			if line.startswith('|parameter'):
-				db[title]['parameters'] = []
+				db[name]['parameters'] = []
 				continue
 
 			if line.startswith('#'):
 				param = parse_parameter(line)
-				name = param['name']
-				if name in params:
+				paramname = param['name']
+				if paramname in params:
 					param['name'] += str(counter)
 					counter += 1
-				db[title]['parameters'].append(param)
+				db[name]['parameters'].append(param)
 				params[name] = True
 				continue
 
 			if line.startswith('|see_also'):
-				db[title]['see_also'] = []
+				db[name]['see_also'] = []
 				continue
 
 			if line.startswith('*'):
-				db[title]['see_also'].append(parse_see_also(line))
+				db[name]['see_also'].append(parse_see_also(line))
 				continue
 
-			#print('PROBLEM: %s %s' % (event, line))
+			#print('PROBLEM: %s %s' % (name, line))
 
 		# Special case for OnCreateLivingCharacter which
 		# can take either an IsoPlayer or an IsoSurvivor
-		if event == 'OnCreateLivingCharacter':
-			param = db[title]['parameters'][0]
+		if name == 'OnCreateLivingCharacter':
+			db[name]['description'] = 'Called when a player or survivor is being created.'
+			param = db[name]['parameters'][0]
 			param['type'] = 'IsoPlayer,IsoSurvivor'
-			param['name'] = 'player_or_survivor'
+			param['name'] = 'playerOrSurvivor'
 			param['description'] = 'The player or survivor being created.'
-			db[title]['parameters'][1]['description'] = 'The description of the player or survivor being created.'
+			db[name]['parameters'][1]['description'] = 'The description of the player or survivor being created.'
 
-		if 'parameters' in db[title] and not db[title]['parameters']:
-			del(db[title]['parameters'])
+		if 'additional_info' in db[name] and not db[name]['additional_info']:
+			del(db[name]['additional_info'])
 
-		if 'see_also' in db[title]:
-			if db[title]['see_also']:
-				db[title]['see_also'] = sorted(db[title]['see_also'])
+		if 'parameters' in db[name] and not db[name]['parameters']:
+			del(db[name]['parameters'])
+
+		if 'see_also' in db[name]:
+			if db[name]['see_also']:
+				db[name]['see_also'] = sorted(db[name]['see_also'])
 			else:
-				del(db[title]['see_also'])
+				del(db[name]['see_also'])
 
 chdir('..')
-with open('events.json', 'w') as fd:
+with open('savedevents.json', 'w') as fd:
 	fd.write(json.dumps(db))
-
-"""
-for f, jsondata in db.items():
-	f = f.replace('.txt', '.json')
-	with open(f, 'w') as fd:
-		fd.write(json.dumps(jsondata))
-"""
