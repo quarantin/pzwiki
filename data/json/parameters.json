@@ -1,0 +1,405 @@
+{
+    "AcceptedFactionInvite": [
+    ],
+    "AcceptedSafehouseInvite": [
+    ],
+    "AcceptedTrade": [
+    ],
+    "AddXP": [
+    ],
+    "Attack": [
+    ],
+    "AutoDrink": [
+    ],
+    "CalculateStats": [
+    ],
+    "DoSpecialTooltip": [
+    ],
+    "EveryDays": [null],
+    "EveryHours": [null],
+    "EveryOneMinute": [null],
+    "EveryTenMinutes": [null],
+    "LevelPerk": [
+    ],
+    "LoadGridsquare": [
+    ],
+    "MngInvReceiveItems": [
+    ],
+    "OnAIStateChange": [
+    ],
+    "OnAIStateEnter": [
+    ],
+    "OnAIStateExecute": [
+    ],
+    "OnAIStateExit": [
+    ],
+    "OnAcceptInvite": [
+    ],
+    "OnAddBuilding": [
+    ],
+    "OnAddMessage": [
+    ],
+    "OnAdminMessage": [
+    ],
+    "OnAmbientSound": [
+    ],
+    "OnBeingHitByZombie": [
+    ],
+    "OnCGlobalObjectSystemInit": [null],
+    "OnChallengeQuery": [
+    ],
+    "OnChangeWeather": [
+    ],
+    "OnCharacterCollide": [
+    ],
+    "OnCharacterCreateStats": [
+    ],
+    "OnCharacterDeath": [
+    ],
+    "OnCharacterMeet": [
+    ],
+    "OnChatWindowInit": [null],
+    "OnClientCommand": [
+    ],
+    "OnClimateManagerInit": [
+    ],
+    "OnClimateTick": [
+    ],
+    "OnClimateTickDebug": [
+    ],
+    "OnClothingUpdated": [
+    ],
+    "OnConnectFailed": [
+    ],
+    "OnConnected": [null],
+    "OnConnectionStateChanged": [
+    ],
+    "OnContainerUpdate": [
+    ],
+    "OnCoopJoinFailed": [
+    ],
+    "OnCoopServerMessage": [
+    ],
+    "OnCreateLivingCharacter": [
+    ],
+    "OnCreatePlayer": [
+    ],
+    "OnCreateSurvivor": [
+    ],
+    "OnCreateUI": [null],
+    "OnCustomUIKey": [
+    ],
+    "OnCustomUIKeyPressed": [
+    ],
+    "OnCustomUIKeyReleased": [
+    ],
+    "OnDawn": [null],
+    "OnDestroyIsoThumpable": [
+    ],
+    "OnDeviceText": [
+    ],
+    "OnDisconnect": [null],
+    "OnDistributionMerge": [null],
+    "OnDoTileBuilding": [
+    ],
+    "OnDoTileBuilding2": [
+    ],
+    "OnDoTileBuilding3": [
+    ],
+    "OnDusk": [null],
+    "OnDynamicMovableRecipe": [
+    ],
+    "OnEnterVehicle": [
+    ],
+    "OnEquipPrimary": [
+    ],
+    "OnEquipSecondary": [
+    ],
+    "OnExitVehicle": [
+    ],
+    "OnFETick": [
+    ],
+    "OnFillContainer": [
+    ],
+    "OnFillInventoryObjectContextMenu": [
+    ],
+    "OnFillWorldObjectContextMenu": [
+    ],
+    "OnGameBoot": [null],
+    "OnGameStart": [null],
+    "OnGameTimeLoaded": [null],
+    "OnGamepadConnect": [
+    ],
+    "OnGamepadDisconnect": [
+    ],
+    "OnGetDBSchema": [
+    ],
+    "OnGetTableResult": [
+    ],
+    "OnGridBurnt": [
+    ],
+    "OnHitZombie": [
+    ],
+    "OnInitGlobalModData": [
+    ],
+    "OnInitModdedWeatherStage": [
+    ],
+    "OnInitRecordedMedia": [
+    ],
+    "OnInitSeasons": [
+    ],
+    "OnInitWorld": [null],
+    "OnIsoThumpableLoad": [
+    ],
+    "OnIsoThumpableSave": [
+    ],
+    "OnJoypadActivate": [
+    ],
+    "OnJoypadActivateUI": [
+    ],
+    "OnJoypadBeforeDeactivate": [
+    ],
+    "OnJoypadBeforeReactivate": [
+    ],
+    "OnJoypadDeactivate": [
+    ],
+    "OnJoypadReactivate": [
+    ],
+    "OnJoypadRenderUI": [null],
+    "OnKeyKeepPressed": [
+    ],
+    "OnKeyPressed": [
+    ],
+    "OnKeyStartPressed": [
+    ],
+    "OnLoad": [null],
+    "OnLoadMapZones": [null],
+    "OnLoadRadioScripts": [
+    ],
+    "OnLoadSoundBanks": [null],
+    "OnLoadedTileDefinitions": [
+    ],
+    "OnLoginState": [
+    ],
+    "OnLoginStateSuccess": [
+    ],
+    "OnMainMenuEnter": [null],
+    "OnMakeItem": [
+    ],
+    "OnMapLoadCreateIsoObject": [
+    ],
+    "OnMechanicActionDone": [
+    ],
+    "OnMiniScoreboardUpdate": [null],
+    "OnModsModified": [null],
+    "OnMouseDown": [
+    ],
+    "OnMouseMove": [
+    ],
+    "OnMouseUp": [
+    ],
+    "OnMultiTriggerNPCEvent": [
+    ],
+    "OnNPCSurvivorUpdate": [
+    ],
+    "OnNewFire": [
+    ],
+    "OnNewGame": [
+    ],
+    "OnNewSurvivorGroup": [
+    ],
+    "OnObjectAboutToBeRemoved": [
+    ],
+    "OnObjectAdded": [
+    ],
+    "OnObjectCollide": [
+    ],
+    "OnObjectLeftMouseButtonDown": [
+    ],
+    "OnObjectLeftMouseButtonUp": [
+    ],
+    "OnObjectRightMouseButtonDown": [
+    ],
+    "OnObjectRightMouseButtonUp": [
+    ],
+    "OnPlayerAttackFinished": [
+    ],
+    "OnPlayerCancelTimedAction": [
+    ],
+    "OnPlayerDeath": [
+    ],
+    "OnPlayerMove": [
+    ],
+    "OnPlayerSetSafehouse": [
+    ],
+    "OnPlayerUpdate": [
+    ],
+    "OnPostCharactersSquareDraw": [
+    ],
+    "OnPostDistributionMerge": [null],
+    "OnPostFloorLayerDraw": [
+    ],
+    "OnPostFloorSquareDraw": [
+    ],
+    "OnPostMapLoad": [
+    ],
+    "OnPostRender": [null],
+    "OnPostSave": [null],
+    "OnPostTileDraw": [
+    ],
+    "OnPostTilesSquareDraw": [
+    ],
+    "OnPostUIDraw": [null],
+    "OnPostWallSquareDraw": [
+    ],
+    "OnPreDistributionMerge": [null],
+    "OnPreFillInventoryObjectContextMenu": [
+    ],
+    "OnPreFillWorldObjectContextMenu": [
+    ],
+    "OnPreGameStart": [
+    ],
+    "OnPreMapLoad": [null],
+    "OnPreUIDraw": [null],
+    "OnPressRackButton": [
+    ],
+    "OnPressReloadButton": [
+    ],
+    "OnRadioInteraction": [
+    ],
+    "OnRainStart": [
+    ],
+    "OnRainStop": [null],
+    "OnReceiveGlobalModData": [
+    ],
+    "OnReceiveItemListNet": [
+    ],
+    "OnReceiveUserlog": [
+    ],
+    "OnRefreshInventoryWindowContainers": [
+    ],
+    "OnRenderTick": [null],
+    "OnRenderUpdate": [
+    ],
+    "OnResetLua": [
+    ],
+    "OnResolutionChange": [
+    ],
+    "OnRightMouseDown": [
+    ],
+    "OnRightMouseUp": [
+    ],
+    "OnSGlobalObjectSystemInit": [null],
+    "OnSafehousesChanged": [null],
+    "OnSave": [null],
+    "OnScoreboardUpdate": [
+    ],
+    "OnSeeNewRoom": [
+    ],
+    "OnServerCommand": [
+    ],
+    "OnServerFinishSaving": [null],
+    "OnServerStartSaving": [null],
+    "OnServerStarted": [null],
+    "OnServerStatisticReceived": [null],
+    "OnServerWorkshopItems": [
+    ],
+    "OnSetDefaultTab": [
+    ],
+    "OnSpawnRegionsLoaded": [
+    ],
+    "OnSteamFriendStatusChanged": [
+    ],
+    "OnSteamGameJoin": [null],
+    "OnSteamRefreshInternetServers": [null],
+    "OnSteamRulesRefreshComplete": [
+    ],
+    "OnSteamServerFailedToRespond2": [
+    ],
+    "OnSteamServerResponded": [
+    ],
+    "OnSteamServerResponded2": [
+    ],
+    "OnSteamWorkshopItemCreated": [
+    ],
+    "OnSteamWorkshopItemNotCreated": [
+    ],
+    "OnSteamWorkshopItemNotUpdated": [
+    ],
+    "OnSteamWorkshopItemUpdated": [
+    ],
+    "OnSwitchVehicleSeat": [
+    ],
+    "OnTabAdded": [
+    ],
+    "OnTabRemoved": [
+    ],
+    "OnThunderEvent": [
+    ],
+    "OnTick": [
+    ],
+    "OnTickEvenPaused": [
+    ],
+    "OnTileRemoved": [
+    ],
+    "OnTriggerNPCEvent": [
+    ],
+    "OnUpdateModdedWeatherStage": [
+    ],
+    "OnUseVehicle": [
+    ],
+    "OnVehicleDamageTexture": [
+    ],
+    "OnVehicleHorn": [
+    ],
+    "OnWaterAmountChange": [
+    ],
+    "OnWeaponHitCharacter": [
+    ],
+    "OnWeaponHitTree": [
+    ],
+    "OnWeaponHitXp": [
+    ],
+    "OnWeaponSwing": [
+    ],
+    "OnWeaponSwingHitPoint": [
+    ],
+    "OnWorldMessage": [
+    ],
+    "OnZombieDead": [
+    ],
+    "OnZombieUpdate": [
+    ],
+    "ReceiveFactionInvite": [
+    ],
+    "ReceiveSafehouseInvite": [
+    ],
+    "RequestTrade": [
+    ],
+    "ReuseGridsquare": [
+    ],
+    "SendCustomModData": [null],
+    "ServerPinged": [
+    ],
+    "SwitchChatStream": [null],
+    "SyncFaction": [
+    ],
+    "TradingUIAddItem": [
+    ],
+    "TradingUIRemoveItem": [
+    ],
+    "TradingUIUpdateState": [
+    ],
+    "UseItem": [
+    ],
+    "ViewTickets": [
+    ],
+    "WeaponHitCharacter": [
+    ],
+    "WeaponSwing": [
+    ],
+    "WeaponSwingHitPoint": [
+    ],
+    "onLoadModDataFromServer": [
+    ]
+}
