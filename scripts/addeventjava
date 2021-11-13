@@ -5,37 +5,15 @@ cd ..
 
 JAVAROOT=$(jq .java.root config.json | tr -d '"')
 
-CORE="$(find "${JAVAROOT}" -name Core.java)"
-if [ -z "${CORE}" ]; then
-	echo 'Cannot find Core.java!'
-	exit
-fi
+OUTPUT="addeventjava.txt"
+echo -n > "${OUTPUT}"
 
-VERSION="$(grep 'new GameVersion' "${CORE}" | cut -f2 -d'(' | awk -F',' '{ print $1 $2 }' | sed 's/[ ]\+/./')"
-if [ -z "${VERSION}" ]; then
-	echo 'Cannot find game version!'
-	exit
-fi
-
-OUTPUT1="addeventjava.txt"
-OUTPUT2="indexevents.txt"
-echo -n > "${OUTPUT1}"
-echo -n > "${OUTPUT2}"
-
-echo "== Version ${VERSION} ==" >> "${OUTPUT2}"
 while read LINE; do
 
 	if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
 		continue
 	fi
 
-	echo "${LINE}" >> "${OUTPUT1}"
-
-	DEPRECATED="$(grep "^${LINE}$" deprecated.txt)"
-	if [ -z "${DEPRECATED}" ]; then
-		echo "*[[Modding:Lua Events/$LINE|$LINE]]" >> "${OUTPUT2}"
-	else
-		echo "*<s>[[Modding:Lua Events/$LINE|$LINE]]</s>" >> "${OUTPUT2}"
-	fi
+	echo "${LINE}" >> "${OUTPUT}"
 
 done < <((echo OnPlayerCancelTimedAction; grep -R 'AddEvent("' "${JAVAROOT}" --include '*.java') | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
