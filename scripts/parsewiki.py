@@ -132,5 +132,6 @@ for root, subdirs, files in walk('Modding' + sep + 'Lua Event'):
 				del(db[name]['see_also'])
 
 chdir('..')
-with open('savedevents.json', 'w') as fd:
+output = join('data', 'json', 'savedevents.json')
+with open(output, 'w') as fd:
 	fd.write(json.dumps(db))

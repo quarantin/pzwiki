@@ -3,11 +3,11 @@
 import json
 
 from os import chdir, getcwd, walk
-from os.path import basename, dirname, realpath, sep
+from os.path import basename, dirname, join, realpath, sep
 
 chdir(dirname(realpath(__file__)))
 chdir('..')
-old_cwd = getcwd()
+wiki_root = getcwd()
 
 with open('config.json', 'r') as fd:
 	jsondata = json.loads(fd.read())
@@ -41,7 +41,8 @@ for root, subdirs, files in walk('.'):
 db['Perk'] = 'zombie.characters.skills.PerkFactory.Perk'
 db['Perks'] = 'zombie.characters.skills.PerkFactory.Perks'
 
-chdir(old_cwd)
+chdir(wiki_root)
 
-with open('class2pkg.json', 'w') as fd:
+output = join('data', 'json', 'class2pkg.json')
+with open(output, 'w') as fd:
 	fd.write(json.dumps(db, sort_keys=True))
