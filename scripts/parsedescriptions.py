@@ -17,7 +17,7 @@ with open('addevent.txt') as fd:
 db = {}
 
 for event in events:
-	db[event] = event in savedevents and savedevents[event]['description'] or 'TODO'
+	db[event] = event in savedevents and savedevents[event]['description'] or ''
 
 with open('descriptions.json', 'w') as fd:
 	fd.write(json.dumps(db, indent=4))
