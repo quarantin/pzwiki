@@ -30,7 +30,6 @@ for event in events:
 	if event not in db:
 		db[event] = event in savedevents and savedevents[event]['description'] or ''
 
-
 rename(output, output + '.old')
 
 with open(output, 'w') as fd:
