@@ -208,7 +208,8 @@ class Wiki:
 			return 'No related event.'
 
 		for see_also in self.see_also[name]:
-			result.append('* [[Modding:Lua Events/%s|%s]]' % (see_also, see_also))
+			if see_also != name:
+				result.append('* [[Modding:Lua Events/%s|%s]]' % (see_also, see_also))
 
 		return '\n'.join(result)
 
