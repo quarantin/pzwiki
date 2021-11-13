@@ -18,7 +18,7 @@ if [ -z "${VERSION}" ]; then
 fi
 
 OUTPUT1="addevent.txt"
-OUTPUT2="wiki/Modding/Lua Events.txt"
+OUTPUT2="indexevents.txt"
 echo -n > "${OUTPUT1}"
 echo -n > "${OUTPUT2}"
 
