@@ -202,7 +202,7 @@ class Wiki:
 	def format_event_see_also(self, jsonevent):
 
 		result = []
-		event = jsonevent['name']
+		name = jsonevent['name']
 
 		if name not in self.see_also or not self.see_also[name]:
 			return 'No related event.'
