@@ -16,4 +16,4 @@ while read LINE; do
 
 	echo "${LINE}" >> "${OUTPUT}"
 
-done < <((echo OnPlayerCancelTimedAction; grep -R 'AddEvent(' "${ZOMBOIDROOT}" --include '*.lua') | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
+done < <(grep -R 'AddEvent(' "${ZOMBOIDROOT}" --include '*.lua' | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed 's/--.*$//' | sort -u)
