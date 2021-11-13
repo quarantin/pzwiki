@@ -2,8 +2,8 @@
 
 import json
 
-from os import chdir
-from os.path import dirname, realpath
+from os import chdir, remove, rename
+from os.path import dirname, isfile, realpath
 
 chdir(dirname(realpath(__file__)))
 chdir('..')
@@ -12,12 +12,29 @@ with open('savedevents.json', 'r') as fd:
 	savedevents = json.loads(fd.read())
 
 with open('addeventjava.txt') as fd:
-	events = [ x for x in fd.read().split('\n') if x.strip() ]
+	javaevents = [ x for x in fd.read().split('\n') if x.strip() ]
+
+with open('addeventlua.txt') as fd:
+	luaevents = [ x for x in fd.read().split('\n') if x.strip() ]
 
 db = {}
 
-for event in events:
-	db[event] = event in savedevents and savedevents[event]['description'] or ''
+output = 'descriptions.json'
+if isfile(output):
+	with open(output, 'r') as fd:
+		descriptions = json.loads(fd.read())
 
-with open('descriptions.json', 'w') as fd:
-	fd.write(json.dumps(db, indent=4))
+	for event, description in descriptions.items():
+		db[event] = description
+
+for event in javaevents + luaevents:
+	if event not in db:
+		db[event] = event in savedevents and savedevents[event]['description'] or ''
+
+
+rename(output, output + '.old')
+
+with open(output, 'w') as fd:
+	fd.write(json.dumps(db, indent=4, sort_keys=True))
+
+remove(output + '.old')
