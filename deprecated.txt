@@ -1,6 +1,3 @@
-Attack
-AutoDrink
-CalculateStats
 OnAddBuilding
 OnAIStateEnter
 OnAIStateExecute
@@ -40,6 +37,4 @@ OnRenderUpdate
 OnSpawnRegionsLoaded
 OnWorldMessage
 UseItem
-WeaponHitCharacter
-WeaponSwing
 WeaponSwingHitPoint
