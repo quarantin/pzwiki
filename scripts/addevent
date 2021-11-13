@@ -1,0 +1,33 @@
+#!/bin/bash
+
+cd $(dirname "${0}")
+cd ..
+
+JAVAROOT=$(jq .java.root config.json | tr -d '"')
+
+CORE="$(find "${JAVAROOT}" -name Core.java)"
+if [ -z "${CORE}" ]; then
+	echo 'Cannot find Core.java!'
+	exit
+fi
+
+VERSION="$(grep 'new GameVersion' "${CORE}" | cut -f2 -d'(' | awk -F',' '{ print $1 $2 }' | sed 's/[ ]\+/./')"
+if [ -z "${VERSION}" ]; then
+	echo 'Cannot find game version!'
+	exit
+fi
+
+OUTPUT="events.txt"
+echo -n > "${OUTPUT}"
+
+echo "== Version ${VERSION} ==" >> "${OUTPUT}"
+while read LINE; do
+
+	DEPRECATED="$(grep "^${LINE}$" deprecated.txt)"
+	if [ -z "${DEPRECATED}" ]; then
+		echo "*[[Modding:Lua Events/$LINE|$LINE]]" >> "${OUTPUT}"
+	else
+		echo "*<s>[[Modding:Lua Events/$LINE|$LINE]]</s>" >> "${OUTPUT}"
+	fi
+
+done < <(cat addeventjava.txt addeventlua.txt | sort)
