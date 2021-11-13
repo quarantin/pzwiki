@@ -34,4 +34,4 @@ while read LINE; do
 		echo "*<s>[[Modding:Lua Events/$LINE|$LINE]]</s>" >> "${OUTPUT2}"
 	fi
 
-done < <(cat "data/txt/addeventjava.txt" "data/txt/addeventlua.txt" | sort)
+done < <(cat "data/txt/addeventjava.txt" "data/txt/addeventlua.txt" | sort -u)
