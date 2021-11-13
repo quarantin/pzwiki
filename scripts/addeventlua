@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cd $(dirname "${0}")
+cd ..
+
+ZOMBOIDROOT=$(jq .zomboid.root config.json | tr -d '"')
+
+OUTPUT="addeventlua.txt"
+echo -n > "${OUTPUT}"
+
+while read LINE; do
+
+	if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
+		continue
+	fi
+
+	echo "${LINE}" >> "${OUTPUT}"
+
+done < <((echo OnPlayerCancelTimedAction; grep -R 'AddEvent(' "${ZOMBOIDROOT}" --include '*.lua') | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
