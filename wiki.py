@@ -194,7 +194,7 @@ class Wiki:
 				javadoc_url = self.get_javadoc_url(type)
 				line = javadoc_url and '[%s %s]' % (javadoc_url, type) or '[[Modding:Lua Events/%s|%s]]' % (type, type)
 				types.append(line)
-			type = ' / '.join(types)
+			type = ' | '.join(types)
 			result.append('* %s %s' % (type, desc))
 
 		return '\n'.join(result)
