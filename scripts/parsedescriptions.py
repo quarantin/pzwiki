@@ -3,12 +3,13 @@
 import json
 
 from os import chdir, remove, rename
-from os.path import dirname, isfile, realpath
+from os.path import dirname, isfile, join, realpath
 
 chdir(dirname(realpath(__file__)))
 chdir('..')
 
-with open('savedevents.json', 'r') as fd:
+filename = join('data', 'json', 'savedevents.json')
+with open(filename, 'r') as fd:
 	savedevents = json.loads(fd.read())
 
 with open('addeventjava.txt') as fd:
@@ -19,7 +20,7 @@ with open('addeventlua.txt') as fd:
 
 db = {}
 
-output = 'descriptions.json'
+output = join('data', 'json', 'descriptions.json')
 if isfile(output):
 	with open(output, 'r') as fd:
 		descriptions = json.loads(fd.read())

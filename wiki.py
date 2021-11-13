@@ -94,15 +94,18 @@ class Wiki:
 			return fd.read().split('\n')
 
 	def get_packages(self):
-		with open('class2pkg.json', 'r') as fd:
+		filename = join('data', 'json', 'class2pkg.json')
+		with open(filename, 'r') as fd:
 			return json.loads(fd.read())
 
 	def get_saved_events(self):
-		with open('savedevents.json', 'r') as fd:
+		filename = join('data', 'json', 'savedevents.json')
+		with open(filename, 'r') as fd:
 			return json.loads(fd.read())
 
 	def get_see_also(self):
-		with open('see_also.json', 'r') as fd:
+		filename = join('data', 'json', 'see_also.json')
+		with open(filename, 'r') as fd:
 			jsondata = json.loads(fd.read())
 
 		see_also = {}
