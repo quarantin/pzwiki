@@ -20,16 +20,19 @@ class Wiki:
 
 		target = config.get('target', {})
 
-		self.api_path    = target.get('wiki_path', '/w/api.php')
-		self.api_url     = target['wiki_url'].strip('/')
-		self.logged      = False
-		self.javadoc_url = config['java']['javadoc_url']
-		self.obsolete    = self.get_obsolete_events()
-		self.oracle_url  = config['java']['oracle_url']
-		self.packages    = self.get_packages()
-		self.password    = target['password']
-		self.username    = target['username']
-		self.session     = requests.Session()
+		self.api_path     = target.get('wiki_path', '/w/api.php')
+		self.api_url      = target['wiki_url'].strip('/')
+		self.descriptions = self.get_descriptions()
+		self.events       = self.get_events()
+		self.logged       = False
+		self.javadoc_url  = config['java']['javadoc_url']
+		self.obsolete     = self.get_obsolete_events()
+		self.oracle_url   = config['java']['oracle_url']
+		self.packages     = self.get_packages()
+		self.password     = target['password']
+		self.username     = target['username']
+		self.saved_events = self.get_saved_events()
+		self.session      = requests.Session()
 
 		if not self.api_url.endswith(self.api_path):
 			self.api_url = urljoin(self.api_url, self.api_path)
@@ -50,6 +53,14 @@ class Wiki:
 
 		jsondata = self.session.get(self.api_url, params=params).json()
 		return jsondata['query']['tokens']['csrftoken']
+
+	def get_descriptions(self):
+		with open('descriptions.json', 'r') as fd:
+			return json.loads(fd.read())
+
+	def get_events(self):
+		with open('addevent.txt', 'r') as fd:
+			return fd.read().split('\n')
 
 	def get_javadoc_url(self, type):
 
@@ -85,6 +96,10 @@ class Wiki:
 		with open('class2pkg.json', 'r') as fd:
 			return json.loads(fd.read())
 
+	def get_saved_events(self):
+		with open('savedevents.json', 'r') as fd:
+			return json.loads(fd.read())
+
 	def login(self):
 
 		data = {
@@ -100,7 +115,11 @@ class Wiki:
 
 	def format_event_description(self, jsonevent):
 
+		event = jsonevent['name']
 		desc = jsonevent.get('description', 'TODO')
+		if event in self.descriptions:
+			desc = self.description[event]
+
 		if 'parameters' not in jsonevent:
 			return desc
 
@@ -231,8 +250,14 @@ class Wiki:
 
 	def update_events(self):
 
-		with open('events.json', 'r') as fd:
-			jsondata = json.loads(fd.read())
+		jsondata = dict(self.saved_events)
 
-		for title, jsonevent in jsondata.items():
+		for event in self.events:
+			if event not in jsondata:
+				jsondata[event] = {
+					'name': event,
+					'title': 'Modding:Lua Events/' + event,
+				}
+
+		for title, jsonevent in sorted(jsondata.items()):
 			self.edit_event_page(title, jsonevent)
