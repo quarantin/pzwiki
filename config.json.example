@@ -2,6 +2,7 @@
 	"java": {
 		"root": "/home/co/IdeaProjects/Zomboid/build/generated/sources/zomboid/",
 		"javadoc_url": "https://quarantin.github.io/zomboid-javadoc/41.56/",
+		"oracle_url": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/",
 		"ignored_packages": [
 			"astar",
 			"com",
@@ -9,8 +10,7 @@
 			"fmod",
 			"javax",
 			"N3D",
-			"org",
-			"se"
+			"org"
 		]
 	},
 	"target": {
