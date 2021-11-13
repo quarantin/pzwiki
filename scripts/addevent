@@ -18,7 +18,7 @@ if [ -z "${VERSION}" ]; then
 fi
 
 OUTPUT1="addevent.txt"
-OUTPUT2="wiki/Modding/Lua Event.txt"
+OUTPUT2="wiki/Modding/Lua Events.txt"
 echo -n > "${OUTPUT1}"
 echo -n > "${OUTPUT2}"
 
@@ -33,9 +33,9 @@ while read LINE; do
 
 	DEPRECATED="$(grep "^${LINE}$" deprecated.txt)"
 	if [ -z "${DEPRECATED}" ]; then
-		echo "*[[Modding:Lua Event/$LINE|$LINE]]" >> "${OUTPUT2}"
+		echo "*[[Modding:Lua Events/$LINE|$LINE]]" >> "${OUTPUT2}"
 	else
-		echo "*<s>[[Modding:Lua Event/$LINE|$LINE]]</s>" >> "${OUTPUT2}"
+		echo "*<s>[[Modding:Lua Events/$LINE|$LINE]]</s>" >> "${OUTPUT2}"
 	fi
 
 done < <((echo OnPlayerCancelTimedAction; grep -R 'AddEvent("' "${JAVAROOT}" --include '*.java') | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
