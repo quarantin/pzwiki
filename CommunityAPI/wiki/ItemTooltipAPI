@@ -1,0 +1,112 @@
+= ItemTooltipAPI =
+
+'''Developer:''' Konijima<br />
+'''Contributors:''' -
+
+== Description ==
+
+Make complex custom item tooltip for your new items.<br />
+Can be used to override existing vanilla item completely.
+
+== How to use ==
+
+# Create a directory <code>ItemTooltips</code> in your mod directory <code>media/lua/client</code>.
+# Create a file per item named <code>&lt;itemModule&gt;_&lt;itemName&gt;.lua</code> inside <code>ItemTooltips</code> directory.
+# Use <code>require(&quot;ItemTooltipAPI/Main&quot;)</code> in the scripts that use it.
+# Adding <code>require=CommunityAPI</code> to your <code>mod.info</code> to make sure the API is enabled as well.
+
+Tooltip can be reloaded via your file <code>ItemTooltips/&lt;itemModule&gt;_&lt;itemName&gt;.lua</code>
+
+'''Methods''' ## ItemTooltipAPI Methods
+
+<source lang="lua">ItemTooltipAPI.GetRGB(numberCurrent, numberMax) -- Get a color from Red to Green</source>
+<source lang="lua">ItemTooltipAPI.GetReversedRGB(numberCurrent, numberMax) -- Get a color from Green to Red</source>
+<source lang="lua">ItemTooltipAPI.GetFloatString(number) -- Return a decimal number as a string</source>
+<source lang="lua">local newTooltip = ItemTooltipAPI.CreateToolTip(itemFullType) -- Returns a tooltip instance</source>
+== Tooltip Instance Methods ==
+
+=== addField ===
+
+<source lang="lua">newTooltip:addField(labelText, getValueFunction) -- Dynamic field value
+newTooltip:addField(labelText, valueText, labelColor) -- Fixed field value</source>
+=== addProgress ===
+
+<source lang="lua">newTooltip:addProgress(labelText, getValueFunction) -- Dynamic progress bar value
+newTooltip:addProgress(labelText, numberValue) -- Fixed progress bar value</source>
+=== addLabel ===
+
+<source lang="lua">newTooltip:addLabel(labelText) -- Fixed label text
+newTooltip:addLabel(getValueFunction) -- Dynamic label text
+newTooltip:addLabel(labelText, labelColor) -- Fixed label text with fixed label color</source>
+=== addSpacer ===
+
+<source lang="lua">newTooltip:addSpacer() -- Add some space in between lines</source>
+=== Dynamic value parameter ‘getValueFunction’ ===
+
+Set the result of this field with this function that your define.
+
+<source lang="lua">local function myGetValueFunction(result, item)
+  result.value = 1 -- Set the value
+  result.color = { r=1.0, g=1.0, b=1.0, a=1.0 } -- Set the value color
+  result.labelColor = { r=1.0, g=1.0, b=1.0, a=1.0 } -- Set the label color
+  item:getModData() -- Use the InventoryItem to check data 
+  if instanceof(item, "HandWeapon") then end -- Verify if its the right item type
+end
+newTooltip:addField("New Field", myGetValueFunction)</source>
+=== Color Format ===
+
+<source lang="lua">local color = { r=1.0, g=1.0, b=1.0, a=1.0 }</source>
+== Example ==
+
+<source lang="lua">require("CommunityAPI")
+
+local ItemTooltipAPI = CommunityAPI.Client.ItemTooltip
+
+local function typeField(result, item)
+    result.value = item:getType()
+end
+
+local function dynamicField(result, item)
+    local usedDelta = item:getUsedDelta()
+    result.value = ItemTooltipAPI.GetFloatString(usedDelta)
+    result.color = ItemTooltipAPI.GetRGB(usedDelta, 1)
+end
+
+local function conditionProgress(result, item)
+    result.value = 0.33
+    result.color = ItemTooltipAPI.GetRGB(result.value, 1)
+end
+
+local function capacityProgress(result, item)
+    result.value = 0.85
+    result.color = ItemTooltipAPI.GetReversedRGB(result.value, 1)
+end
+
+local function customColorProgress(result, item)
+    result.value = 0.75
+    result.color = { r=0, g=0, b=0.6, a=0.8 }
+end
+
+local function dynamicLabel(result, item)
+    result.value = "This is a very long dynamic label that can change\ndepending of the items state or what ever you need!"
+    result.labelColor = { r=1, g=0, b=0.5, a=1 }
+end
+
+-- Create the new Tooltip
+
+local ItemTooltip = ItemTooltipAPI.CreateToolTip("Base.Axe")
+
+-- Add the field, progress, label or spacer
+
+ItemTooltip:addField("Type field", typeField)
+ItemTooltip:addField("Dynamic field", dynamicField)
+ItemTooltip:addField("Fixed Text field", "Some text", { r=0, g=1, b=0, a=1 }) -- Fixed label with custom label color
+ItemTooltip:addProgress("Progress", conditionProgress)
+ItemTooltip:addProgress("Reversed Progress", capacityProgress)
+ItemTooltip:addProgress("Fixed Progress", 0.5)
+ItemTooltip:addProgress("Custom Color Progress", customColorProgress)
+ItemTooltip:addSpacer()
+ItemTooltip:addLabel("This is some label between spacers!", { r=1, g=0, b=0, a=1 }) -- Fixed label with custom color
+ItemTooltip:addSpacer()
+ItemTooltip:addLabel(dynamicLabel) -- Dynamic label
+ItemTooltip:addSpacer()</source>

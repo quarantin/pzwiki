@@ -1,0 +1,26 @@
+= LightAPI =
+
+'''Developer:''' Konijima<br />
+'''Contributors:''' -
+
+== Description ==
+
+Easily add Lights at specific position categorized by unique name.<br />
+The API take care of disposing and recreating the light source if the square is unloaded and reloaded later.
+
+== Methods ==
+
+<source lang="lua">AddLightAt(name, x, y, z, radius, color)</source>
+<source lang="lua">SetLightColorAt(name, x, y, z, newColor)</source>
+<source lang="lua">SetLightRadiusAt(name, x, y, z, newRadius)</source>
+<source lang="lua">RemoveLightAt(name, x, y, z)</source>
+== Example ==
+
+<source lang="lua">require("CommunityAPI")
+
+local LightAPI = CommunityAPI.Client.Light
+
+LightAPI.AddLightAt("computer_screen", position.x, position.y, position.z, 2, { r=0.20, g=0.30, b=0.20 })
+LightAPI.SetLightColorAt("computer_screen", position.x, position.y, position.z, { r=0.20, g=0.30, b=0.20 })
+LightAPI.SetLightRadiusAt("computer_screen", position.x, position.y, position.z, 2)
+LightAPI.RemoveLightAt("computer_screen", position.x, position.y, position.z)</source>
