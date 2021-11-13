@@ -5,9 +5,7 @@ OnAIStateExit
 OnBeingHitByZombie
 OnCharacterCreateStats
 OnCharacterMeet
-OnDawn
 OnDoTileBuilding
-OnDusk
 OnIsoThumpableLoad
 OnIsoThumpableSave
 OnLoginState
