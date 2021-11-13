@@ -6,7 +6,7 @@ from os.path import dirname, realpath
 chdir(dirname(realpath(__file__)))
 chdir('..')
 
-with open('addevent.txt', 'r') as fd:
+with open('addeventjava.txt', 'r') as fd:
 
 	events = []
 	for event in fd.read().split('\n'):

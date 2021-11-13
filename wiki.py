@@ -60,7 +60,7 @@ class Wiki:
 			return json.loads(fd.read())
 
 	def get_events(self):
-		with open('addevent.txt', 'r') as fd:
+		with open('addeventjava.txt', 'r') as fd:
 			return [x for x in fd.read().split('\n') if x.strip() ]
 
 	def get_javadoc_url(self, type):

@@ -17,7 +17,7 @@ if [ -z "${VERSION}" ]; then
 	exit
 fi
 
-OUTPUT1="addevent.txt"
+OUTPUT1="addeventjava.txt"
 OUTPUT2="indexevents.txt"
 echo -n > "${OUTPUT1}"
 echo -n > "${OUTPUT2}"
