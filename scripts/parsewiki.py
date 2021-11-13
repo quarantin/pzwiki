@@ -10,7 +10,8 @@ from os.path import basename, dirname, join, realpath, sep
 chdir(dirname(realpath(__file__)))
 chdir('..')
 
-with open('deprecated.txt', 'r') as fd:
+filename = join('data', 'txt', 'deprecated.txt')
+with open(filename, 'r') as fd:
 	deprecated = [ x for x in fd.read().split('\n') if x.strip() ]
 
 chdir('pzwiki')

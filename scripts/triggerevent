@@ -6,7 +6,7 @@ cd ..
 JAVAROOT=$(jq .java.root config.json | tr -d '"')
 ZOMBOIDROOT=$(jq .zomboid.root config.json | tr -d '"')
 
-OUTPUT="triggerevent.txt"
+OUTPUT="data/txt/triggerevent.txt"
 echo -n > "${OUTPUT}"
 while read line; do
 

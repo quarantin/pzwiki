@@ -5,7 +5,7 @@ cd ..
 
 ZOMBOIDROOT=$(jq .zomboid.root config.json | tr -d '"')
 
-OUTPUT="addeventlua.txt"
+OUTPUT="data/txt/addeventlua.txt"
 echo -n > "${OUTPUT}"
 
 while read LINE; do

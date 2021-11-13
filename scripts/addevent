@@ -17,17 +17,21 @@ if [ -z "${VERSION}" ]; then
 	exit
 fi
 
-OUTPUT="events.txt"
-echo -n > "${OUTPUT}"
+OUTPUT1="data/txt/events.txt"
+OUTPUT2="data/wiki/events.wiki"
+echo -n > "${OUTPUT1}"
+echo -n > "${OUTPUT2}"
 
-echo "== Version ${VERSION} ==" >> "${OUTPUT}"
+echo "== Version ${VERSION} ==" >> "${OUTPUT2}"
 while read LINE; do
 
-	DEPRECATED="$(grep "^${LINE}$" deprecated.txt)"
+	echo "${LINE}" >> "${OUTPUT1}"
+
+	DEPRECATED="$(grep "^${LINE}$" "data/txt/deprecated.txt")"
 	if [ -z "${DEPRECATED}" ]; then
-		echo "*[[Modding:Lua Events/$LINE|$LINE]]" >> "${OUTPUT}"
+		echo "*[[Modding:Lua Events/$LINE|$LINE]]" >> "${OUTPUT2}"
 	else
-		echo "*<s>[[Modding:Lua Events/$LINE|$LINE]]</s>" >> "${OUTPUT}"
+		echo "*<s>[[Modding:Lua Events/$LINE|$LINE]]</s>" >> "${OUTPUT2}"
 	fi
 
-done < <(cat addeventjava.txt addeventlua.txt | sort)
+done < <(cat "data/txt/addeventjava.txt" "data/txt/addeventlua.txt" | sort)

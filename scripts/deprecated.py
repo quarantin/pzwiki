@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
 from os import chdir
-from os.path import dirname, realpath
+from os.path import dirname, join, realpath
 
 chdir(dirname(realpath(__file__)))
 chdir('..')
 
-with open('addeventjava.txt', 'r') as fd:
+filename = join('data', 'txt', 'addeventjava.txt')
+with open(filename, 'r') as fd:
 
 	events = []
 	for event in fd.read().split('\n'):
@@ -14,7 +15,8 @@ with open('addeventjava.txt', 'r') as fd:
 			continue
 		events.append(event)
 
-with open('triggerevent.txt', 'r') as fd:
+filename = join('data', 'txt', 'triggerevent.txt')
+with open(filename, 'r') as fd:
 
 	triggered_event = []
 	for event in fd.read().split('\n'):
@@ -23,7 +25,8 @@ with open('triggerevent.txt', 'r') as fd:
 
 		triggered_event.append(event.split(';')[1])
 
-with open('deprecated.txt', 'w') as fd:
+filename = join('data', 'txt', 'deprecated.txt')
+with open(filename, 'w') as fd:
 	for event in events:
 		if event not in triggered_event:
 			fd.write(event + '\n')

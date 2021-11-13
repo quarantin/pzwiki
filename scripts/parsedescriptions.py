@@ -12,10 +12,12 @@ filename = join('data', 'json', 'savedevents.json')
 with open(filename, 'r') as fd:
 	savedevents = json.loads(fd.read())
 
-with open('addeventjava.txt') as fd:
+filename = join('data', 'txt', 'addeventjava.txt')
+with open(filename, 'r') as fd:
 	javaevents = [ x for x in fd.read().split('\n') if x.strip() ]
 
-with open('addeventlua.txt') as fd:
+filename = join('data', 'txt', 'addeventlua.txt')
+with open(filename, 'r') as fd:
 	luaevents = [ x for x in fd.read().split('\n') if x.strip() ]
 
 db = {}
