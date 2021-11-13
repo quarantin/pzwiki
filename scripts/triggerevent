@@ -3,15 +3,12 @@
 cd $(dirname "${0}")
 cd ..
 
-JAVAROOT=$(jq .java.root config.json | tr -d '"')
-ZOMBOIDROOT=$(jq .zomboid.root config.json | tr -d '"')
-
 OUTPUT="data/txt/triggerevent.txt"
 echo -n > "${OUTPUT}"
 while read line; do
 
-	echo $line | sed 's/;[ ]\+/;/'
+	echo $line
 	CLASS=$(echo $line | cut -f1 -d';' | sed 's/\$/\\$/g')
-	echo $line | sed "s/this/${CLASS}/g" | sed 's/;[ ]\+/;/' >> "${OUTPUT}"
+	echo $line | sed "s/this/${CLASS}/g" >> "${OUTPUT}"
 
-done < <((grep -R 'triggerEvent(' --include '*.lua' "${ZOMBOIDROOT}"; grep -R 'LuaEventManager.triggerEvent\|LuaHookManager.TriggerHook' --include '*.java' "${JAVAROOT}") | sed -e "s#${JAVAROOT}##" -e "s#${ZOMBOIDROOT}##" | grep -v 'Binary' | grep 'triggerEvent\|LuaHookManager.TriggerHook' | sed 's/\//./g' | sed -e 's/\.java//' -e 's/\.lua//' | sed 's/[ ]\+//' | sed 's/\(LuaEventManager.triggerEvent\|if (!\?LuaHookManager.TriggerHook\|triggerEvent\)[^(]*//' | grep -v 'Lua.LuaEventManager\|LuaHookManager.TriggerHook' | sed 's/(//' | rev | sed 's/)//' | sed 's/;//' | rev | sed 's/"//' | sed 's/"//' | sed 's/:/;/' | sed 's/,[ ]* /;/g' | sed 's/--.*$//' | tr -d '\r')
+done < <(cat "data/txt/triggereventjava.txt" "data/txt/triggereventlua.txt" | sort -u)
