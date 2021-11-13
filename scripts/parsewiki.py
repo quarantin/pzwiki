@@ -47,6 +47,7 @@ for root, subdirs, files in walk('Modding' + sep + 'Lua Event'):
 		title = f.replace(sep, ':', 1).replace('Event', 'Events').replace('.txt', '')
 
 		db[name] = {
+			'name': name,
 			'title': title,
 			'obsolete': name in deprecated,
 		}
