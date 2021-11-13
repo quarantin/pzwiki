@@ -3,9 +3,9 @@
 *[[Modding:Lua Events/AcceptedSafehouseInvite|AcceptedSafehouseInvite]]
 *[[Modding:Lua Events/AcceptedTrade|AcceptedTrade]]
 *[[Modding:Lua Events/AddXP|AddXP]]
-*<s>[[Modding:Lua Events/Attack|Attack]]</s>
-*<s>[[Modding:Lua Events/AutoDrink|AutoDrink]]</s>
-*<s>[[Modding:Lua Events/CalculateStats|CalculateStats]]</s>
+*[[Modding:Lua Events/Attack|Attack]]
+*[[Modding:Lua Events/AutoDrink|AutoDrink]]
+*[[Modding:Lua Events/CalculateStats|CalculateStats]]
 *[[Modding:Lua Events/DoSpecialTooltip|DoSpecialTooltip]]
 *[[Modding:Lua Events/EveryDays|EveryDays]]
 *[[Modding:Lua Events/EveryHours|EveryHours]]
@@ -205,6 +205,6 @@
 *[[Modding:Lua Events/TradingUIUpdateState|TradingUIUpdateState]]
 *<s>[[Modding:Lua Events/UseItem|UseItem]]</s>
 *[[Modding:Lua Events/ViewTickets|ViewTickets]]
-*<s>[[Modding:Lua Events/WeaponHitCharacter|WeaponHitCharacter]]</s>
-*<s>[[Modding:Lua Events/WeaponSwing|WeaponSwing]]</s>
+*[[Modding:Lua Events/WeaponHitCharacter|WeaponHitCharacter]]
+*[[Modding:Lua Events/WeaponSwing|WeaponSwing]]
 *<s>[[Modding:Lua Events/WeaponSwingHitPoint|WeaponSwingHitPoint]]</s>
