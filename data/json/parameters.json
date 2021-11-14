@@ -575,7 +575,7 @@
             "type": "IsoPlayer"
         },
         {
-            "description": "The context menu to add entries to.",
+            "description": "The context menu to be filled.",
             "type": "context",
             "type": "ISContextMenu"
         },
