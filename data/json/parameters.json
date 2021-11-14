@@ -181,7 +181,7 @@
     ],
     "OnAdminMessage": [
         {
-            "description": "TODO",
+            "description": "The message being received from the admin.",
             "type": "String"
         },
         {
@@ -504,19 +504,19 @@
     "OnDusk": null,
     "OnDynamicMovableRecipe": [
         {
-            "description": "TODO",
+            "description": "The movable object resulting from using the recipe.",
             "type": "Moveable"
         },
         {
-            "description": "TODO",
+            "description": "The movable recipe that is being used.",
             "type": "MovableRecipe"
         },
         {
-            "description": "TODO",
+            "description": "The item from the player inventory.",
             "type": "InventoryItem"
         },
         {
-            "description": "TODO",
+            "description": "The character who's using the recipe.",
             "type": "IsoGameCharacter"
         }
     ],
@@ -1421,23 +1421,21 @@
     "OnWeaponHitXp": [],
     "OnWeaponSwing": [
         {
-            "description": "attacker",
-            "name": "character",
+            "description": "The character who's wielding the weapon.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "weapon",
-            "name": "handWeapon",
+            "description": "The hand weapon that is being wielded.",
             "type": "HandWeapon"
         }
     ],
     "OnWeaponSwingHitPoint": [
         {
-            "description": "The character whose weapon swing hit point.",
+            "description": "The character who's wielding the weapon.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "The hand weapon used by the character.",
+            "description": "The hand weapon that is being wielded.",
             "type": "HandWeapon"
         }
     ],
@@ -1532,11 +1530,52 @@
             "type": "Integer"
         }
     ],
-    "TradingUIUpdateState": [],
+    "TradingUIUpdateState": [
+        {
+            "description": "The player who's updating an item.",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "The index of the item that the player is updating.",
+            "name": "itemIndex",
+            "type": "Integer"
+        }
+    ],
     "UseItem": [],
-    "ViewTickets": [],
-    "WeaponHitCharacter": [],
-    "WeaponSwing": [],
+    "ViewTickets": [
+        {
+            "description": "TODO",
+            "type": "ByteBufferWriter"
+    ],
+    "WeaponHitCharacter": [
+        {
+            "description": "The character whose weapon hit another character.",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The character who's been hit by another character.",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The hand weapon used to hit the character.",
+            "type": "HandWeapon"
+        },
+        {
+            "description": "The damage inflicted to the character who's been hit.",
+            "name": "damage",
+            "type": "Float"
+        }
+     ],
+    "WeaponSwing": [
+        {
+            "description": "The character who's wielding the weapon.",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The hand weapon that is being wielded.",
+            "type": "HandWeapon"
+        }
+    ],
     "WeaponSwingHitPoint": [],
     "onLoadModDataFromServer": [
         {
