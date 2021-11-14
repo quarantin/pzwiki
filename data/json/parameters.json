@@ -505,7 +505,7 @@
     "OnDynamicMovableRecipe": [
         {
             "description": "TODO",
-            "type": "Movable"
+            "type": "Moveable"
         },
         {
             "description": "TODO",
