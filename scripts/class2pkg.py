@@ -17,12 +17,14 @@ ignored_packages = jsondata['java']['ignored_packages']
 chdir(jsondata['java']['root'])
 
 db = {
-	# Primitive types
-	'Boolean': 'java.lang.Boolean',
-	'Double':  'java.lang.Double',
-	'Float':   'java.lang.Float',
-	'Integer': 'java.lang.Integer',
-	'String':  'java.lang.String',
+	# Java types
+	'ArrayList': 'java.util.ArrayList',
+	'Boolean':   'java.lang.Boolean',
+	'Double':    'java.lang.Double',
+	'Float':     'java.lang.Float',
+	'Integer':   'java.lang.Integer',
+	'Short':     'java.lang.Short',
+	'String':    'java.lang.String',
 }
 
 for root, subdirs, files in walk('.'):
