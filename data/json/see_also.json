@@ -34,6 +34,10 @@
 		"WeaponSwingHitPoint"
 	],
 	[
+		"AutoDrink",
+		"OnWaterAmountChange"
+	],
+	[
 		"EveryDays",
 		"EveryHours",
 		"EveryOneMinute",
@@ -117,6 +121,10 @@
 		"OnCreateSurvivor"
 	],
 	[
+		"OnClientCommand",
+		"OnServerCommand"
+	],
+	[
 		"OnCreateUI",
 		"OnPostUIDraw",
 		"OnPreUIDraw"
@@ -142,6 +150,11 @@
 		"OnDistributionMerge",
 		"OnPostDistributionMerge",
 		"OnPreDistributionMerge"
+	],
+	[
+		"OnEnterVehicle",
+		"OnExitVehicle",
+		"OnVehicleDamageTexture"
 	],
 	[
 		"OnEquipPrimary",
@@ -181,7 +194,8 @@
 		"OnLoad",
 		"OnPostSave",
 		"OnPreGameStart",
-		"OnSave"
+		"OnSave",
+		"OnSpawnRegionsLoaded"
 	],
 	[
 		"OnGridBurnt",
@@ -201,10 +215,13 @@
 	],
 	[
 		"OnLoadedTileDefinitions",
+		"OnPostCharactersSquareDraw",
 		"OnPostTileDraw",
 		"OnPostTilesSquareDraw",
+		"OnPostWallSquareDraw",
 		"OnTileRemoved"
 	],
+
 	[
 		"OnLoadMapZones",
 		"OnMapLoadCreateIsoObject",
@@ -212,11 +229,16 @@
 		"OnPreMapLoad"
 	],
 	[
+		"OnLoginState",
+		"OnLoginStateSuccess"
+	],
+	[
 		"OnMultiTriggerNPCEvent",
 		"OnTriggerNPCEvent"
 	],
 	[
 		"OnNPCSurvivorUpdate",
+		"OnPlayerMove",
 		"OnPlayerUpdate",
 		"OnZombieUpdate"
 	],
@@ -231,5 +253,21 @@
 	[
 		"OnPostRender",
 		"OnRenderUpdate"
+	],
+	[
+		"OnPressRackButton",
+		"OnPressReloadButton"
+	],
+	[
+		"OnServerFinishSaving",
+		"OnServerStarted",
+		"OnServerStartSaving",
+		"OnServerStatisticReceived",
+		"OnServerWorkshopItems"
+	],
+	[
+		"OnSetDefaultTab",
+		"OnTabAdded",
+		"OnTabRemoved"
 	]
 ]
