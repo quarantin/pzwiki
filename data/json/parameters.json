@@ -1062,23 +1062,23 @@
     "OnPreUIDraw": null,
     "OnPressRackButton": [
         {
-            "description": "The player who's racking the gun.",
+            "description": "The player who's racking the firearm.",
             "type": "IsoPlayer"
         },
         {
-            "description": "The gun which is being racked.",
-            "name": "gun",
+            "description": "The firearm which is being racked.",
+            "name": "firearm",
             "type": "HandWeapon"
         }
     ],
     "OnPressReloadButton": [
         {
-            "description": "The player who's reloading the gun.",
+            "description": "The player who's reloading the firearm.",
             "type": "IsoPlayer"
         },
         {
-            "description": "The gun which is being reloaded.",
-            "name": "gun",
+            "description": "The firearm which is being reloaded.",
+            "name": "firearm",
             "type": "HandWeapon"
         }
     ],
