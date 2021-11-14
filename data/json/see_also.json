@@ -18,6 +18,10 @@
 		"TradingUIUpdateState"
 	],
 	[
+		"AddXP",
+		"LevelPerk"
+	],
+	[
 		"Attack",
 		"OnPlayerAttackFinished",
 		"OnWeaponHitCharacter",
@@ -33,9 +37,7 @@
 		"EveryDays",
 		"EveryHours",
 		"EveryOneMinute",
-		"EveryTenMinutes",
-		"OnDawn",
-		"OnDusk"
+		"EveryTenMinutes"
 	],
 	[
 		"LoadGridsquare",
@@ -126,6 +128,10 @@
 		"OnKeyKeepPressed",
 		"OnKeyPressed",
 		"OnKeyStartPressed"
+	],
+	[
+		"OnDawn",
+		"OnDusk"
 	],
 	[
 		"OnDestroyIsoThumpable",
