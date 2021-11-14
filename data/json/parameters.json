@@ -1206,16 +1206,16 @@
         {
             "description": "The player names being updated on the score board.",
             "name": "playerNames",
-            "type": "ArrayList<String>"
+            "type": "ArrayList"
         },
         {
             "description": "TODO",
-            "type": "ArrayList<String>"
+            "type": "ArrayList"
         },
         {
             "description": "The Steam identifiers of the players being updated on the score board.",
             "name": "steamIds",
-            "type": "ArrayList<String>"
+            "type": "ArrayList"
         }
     ],
     "OnSeeNewRoom": [
