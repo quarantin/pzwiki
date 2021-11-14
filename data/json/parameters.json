@@ -1,13 +1,4 @@
 {
-
-    "DUMMY": [
-        {
-            "description": "",
-            "name": "",
-            "type": ""
-        },
-        {}
-    ],
     "AcceptedFactionInvite": [
         {
             "description": "The name of the faction.",
@@ -230,12 +221,12 @@
     "OnChangeWeather": [],
     "OnCharacterCollide": [
         {
-            "description": "The moving object colliding with another object.",
-            "type": "IsoMovingObject"
+            "description": "The character colliding with another character.",
+            "type": "IsoGameCharacter"
         },
         {
-            "description": "The object being collided with.",
-            "type": "IsoObject"
+            "description": "The character being collided with.",
+            "type": "IsoGameCharacter"
         }
     ],
     "OnCharacterCreateStats": [
@@ -598,7 +589,7 @@
             "type": "IsoPlayer"
         },
         {
-            "description": "The context menu to add entries to.",
+            "description": "The context menu to be filled.",
             "name": "context",
             "type": "ISContextMenu"
         },
@@ -680,242 +671,316 @@
     "OnJoypadRenderUI": null,
     "OnKeyKeepPressed": [
         {
-            "description": "denoted key. (See Keyboard Class in java docs for more info.)",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that is being kept pressed.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnKeyPressed": [
         {
-            "description": "denoted key. (See Keyboard Class in java docs for more info.)",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that is being released.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnKeyStartPressed": [
         {
-            "description": "denoted key. (See Keyboard Class in java docs for more info.)",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that is being pressed.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnLoad": null,
     "OnLoadMapZones": null,
-    "OnLoadRadioScripts": [],
+    "OnLoadRadioScripts": [
+		{
+			"description": "The radio script manager.",
+			"type": "RadioScriptManager"
+		},
+		{
+			"description": "True if the world has already been initialized.",
+			"name": "worldInit",
+			"type": "Boolean"
+		}
+	],
     "OnLoadSoundBanks": null,
-    "OnLoadedTileDefinitions": [],
+    "OnLoadedTileDefinitions": [
+		{
+			"description": "The sprite manager.",
+			"type": "IsoSpriterManager"
+		}
+	],
     "OnLoginState": [
         {
-            "description": "login state",
-            "name": "loginState",
+            "description": "The current login state.",
             "type": "LoginState"
         }
     ],
-    "OnLoginStateSuccess": [],
+    "OnLoginStateSuccess": null,
     "OnMainMenuEnter": null,
-    "OnMakeItem": [],
+    "OnMakeItem": [
+		{
+			"description": "TODO",
+			"name": "item",
+			"type": "InventoryItem"
+		},
+		{
+			"description": "The item resulting from applying the recipe.",
+			"name": "resultItem",
+			"type": "InventoryItem"
+		},
+		{
+			"description": "The recipe to make the resulting item.",
+			"type": "Recipe"
+		}
+	],
     "OnMapLoadCreateIsoObject": [],
-    "OnMechanicActionDone": [],
+    "OnMechanicActionDone": [
+		{
+			"description": "The character who performed the mechanic action.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Boolean"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Long"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Boolean"
+		}
+	],
     "OnMiniScoreboardUpdate": null,
     "OnModsModified": null,
     "OnMouseDown": [
         {
-            "description": "Mouse position x",
-            "name": "integer",
+            "description": "The x coordinate where the mouse button was pressed down.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse position y",
-            "name": "integer",
+            "description": "The y coordinate where the mouse button was pressed down.",
+            "name": "y",
             "type": "Integer"
         }
     ],
     "OnMouseMove": [
         {
-            "description": "Mouse x position.",
-            "name": "integer",
+            "description": "The x coordinate of the mouse position.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse y position.",
-            "name": "integer",
+            "description": "The y coordinate of the mouse position.",
+            "name": "y",
             "type": "Integer"
         },
         {
-            "description": "Mouse x W?",
-            "name": "integer",
+            "description": "TODO: Mouse position deltaX?",
+            "name": "dx",
             "type": "Integer"
         },
         {
-            "description": "Mouse y W?",
-            "name": "integer",
+            "description": "TODO: Mouse position deltaY?",
+            "name": "dy",
             "type": "Integer"
         }
     ],
     "OnMouseUp": [
         {
-            "description": "Mouse position x",
-            "name": "integer",
+            "description": "The x coordinate of the mouse when the button was released.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse position y",
-            "name": "integer",
+            "description": "The y coordinate of the mouse when the button was released.",
+            "name": "y",
             "type": "Integer"
         }
     ],
     "OnMultiTriggerNPCEvent": [
         {
-            "description": "Type of trigger.",
-            "name": "string",
+            "description": "The type of this trigger.",
+            "name": "triggerType",
             "type": "String"
         },
         {
-            "description": "Data of trigger.",
-            "name": "kahluaTable",
+            "description": "The ModData of this trigger.",
+            "name": "modData",
             "type": "KahluaTable"
         },
         {
-            "description": "Building definition of trigger (?)",
-            "name": "buildingDef",
+            "description": "The building definition of this trigger.",
             "type": "BuildingDef"
         }
     ],
     "OnNPCSurvivorUpdate": [
         {
-            "description": "The IsoSurvivor that is updating.",
-            "name": "survivor",
+            "description": "The survivor that is being updated.",
             "type": "IsoSurvivor"
         }
     ],
-    "OnNewFire": [],
+    "OnNewFire": [
+		{
+			"description": "The fire object.",
+			"type": "IsoFire"
+		}
+	],
     "OnNewGame": [
         {
-            "description": "The player.",
-            "name": "player",
+            "description": "The player who's starting the game.",
             "type": "IsoPlayer"
         },
         {
-            "description": "The square where the player is located.",
-            "name": "square",
+            "description": "The grid square where the player is located.",
             "type": "IsoGridSquare"
         }
     ],
     "OnNewSurvivorGroup": [],
-    "OnObjectAboutToBeRemoved": [],
-    "OnObjectAdded": [],
+    "OnObjectAboutToBeRemoved": [
+		{
+			"description": "The object about to be removed.",
+			"type": "IsoObject"
+		}
+	],
+    "OnObjectAdded": [
+		{
+			"description": "The object that was added.",
+			"type": "IsoObject"
+		}
+	],
     "OnObjectCollide": [
         {
-            "description": "this (person function is called with)",
-            "name": "character",
+            "description": "The character colliding with another object.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "character collided with.",
-            "name": "object",
-            "type": "IsoObject"
+            "description": "The object being collided with.",
+            "type": "IsoDoor,IsoGridSquare,IsoThumpable,IsoWindow,IsoZombie"
         }
     ],
     "OnObjectLeftMouseButtonDown": [
         {
-            "description": "tile clicked.",
-            "name": "object",
+            "description": "The object on which the left mouse button was pressed down.",
             "type": "IsoObject"
         },
         {
-            "description": "Mouse position X.",
-            "name": "integer",
+            "description": "The x coordinate where the left mouse button was pressed down.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse position Y.",
-            "name": "integer",
+            "description": "The y coordinate where the left mouse button was pressed down.",
+            "name": "y",
             "type": "Integer"
         }
     ],
     "OnObjectLeftMouseButtonUp": [
         {
-            "description": "tile clicked.",
-            "name": "object",
+            "description": "The object on which the left mouse button was released.",
             "type": "IsoObject"
         },
         {
-            "description": "Mouse position X.",
-            "name": "integer",
+            "description": "The x coordinate where the left mouse button was released.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse position Y.",
-            "name": "integer",
+            "description": "The y coordinate where the left mouse button was released.",
+            "name": "y",
             "type": "Integer"
         }
     ],
     "OnObjectRightMouseButtonDown": [
         {
-            "description": "tile clicked.",
-            "name": "object",
+            "description": "The object on which the right mouse button was pressed down.",
             "type": "IsoObject"
         },
         {
-            "description": "Mouse position X.",
-            "name": "integer",
+            "description": "The x coordinate where the right mouse button was pressed down.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse position Y.",
-            "name": "integer",
+            "description": "The y coordinate where the right mouse button was pressed down.",
+            "name": "y",
             "type": "Integer"
         }
     ],
     "OnObjectRightMouseButtonUp": [
         {
-            "description": "tile clicked.",
-            "name": "object",
+            "description": "The object on which the right mouse button was released.",
             "type": "IsoObject"
         },
         {
-            "description": "Mouse position X.",
-            "name": "integer",
+            "description": "The x coordinate where the right mouse button was released.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse position Y.",
-            "name": "integer",
+            "description": "The x coordinate where the right mouse button was released.",
+            "name": "y",
             "type": "Integer"
         }
     ],
-    "OnPlayerAttackFinished": [],
+    "OnPlayerAttackFinished": [
+		{
+			"description": "The character who's finished attacking.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon used to perform the attack.",
+			"type": "HandWeapon"
+		}
+	],
     "OnPlayerCancelTimedAction": [
         {
-            "description": "action",
-            "name": "baseAction",
+            "description": "The action that was canceled.",
+			"name": "action",
             "type": "BaseAction"
         }
     ],
     "OnPlayerDeath": [
         {
-            "description": "The player which died.",
-            "name": "player",
+            "description": "The player who died.",
             "type": "IsoPlayer"
         }
     ],
-    "OnPlayerMove": [],
+    "OnPlayerMove": [
+        {
+            "description": "The player who's moving.",
+            "type": "IsoPlayer"
+        }
+	],
     "OnPlayerSetSafehouse": [
         {
-            "description": "The survivor group safehouse is being set for.",
-            "name": "survivorGroup",
+            "description": "The survivor group for which the safehouse is being set.",
             "type": "SurvivorGroup"
         },
         {
             "description": "The building definition of the safehouse being set.",
-            "name": "buildingDef",
             "type": "BuildingDef"
         }
     ],
     "OnPlayerUpdate": [
         {
-            "description": "The IsoPlayer that is updating.",
-            "name": "player",
+            "description": "The player who's being updated.",
             "type": "IsoPlayer"
         }
     ],
@@ -923,8 +988,8 @@
     "OnPostDistributionMerge": null,
     "OnPostFloorLayerDraw": [
         {
-            "description": "The Z-index of the layer which was rendered.",
-            "name": "integer",
+            "description": "The z coordinate of the layer which was rendered.",
+            "name": "z",
             "type": "Integer"
         }
     ],
@@ -932,17 +997,16 @@
     "OnPostMapLoad": [
         {
             "description": "The cell which was loaded.",
-            "name": "cell",
             "type": "IsoCell"
         },
         {
-            "description": "The world X.",
-            "name": "integer",
+            "description": "The world x coordinate of the cell which was loaded.",
+            "name": "worldX",
             "type": "Integer"
         },
         {
-            "description": "The world Y.",
-            "name": "integer",
+            "description": "The world y coordinate of the cell which was loaded.",
+            "name": "worldY",
             "type": "Integer"
         }
     ],
@@ -955,63 +1019,125 @@
     "OnPreDistributionMerge": null,
     "OnPreFillInventoryObjectContextMenu": [
         {
-            "description": "player",
-            "name": "player",
+            "description": "The player for which the context menu is being filled.",
             "type": "IsoPlayer"
         },
         {
-            "description": "Context menu.",
-            "name": "???",
-            "type": "???"
+            "description": "The context menu to be filled.",
+            "name": "context",
+            "type": "ISContextMenu"
         },
         {
-            "description": "Items",
-            "name": "???",
-            "type": "???"
+            "description": "The items available in the player inventory.",
+            "name": "items",
+            "type": "KahluaTable"
         }
     ],
     "OnPreFillWorldObjectContextMenu": [
         {
-            "description": "The player who will see the menu.",
+            "description": "The player for which the context menu is being filled.",
             "name": "player",
             "type": "IsoPlayer"
         },
         {
-            "description": "Context menu.",
-            "name": "iSContextMenu",
+            "description": "The context menu to be filled.",
+            "name": "context",
             "type": "ISContextMenu"
         },
         {
-            "description": "World objects.",
-            "name": "kahluaTable",
+            "description": "The world objects available nearby the player.",
+            "name": "worldObjects",
             "type": "KahluaTable"
         },
         {
             "description": "True if called for the purpose of testing for nearby objects.",
-            "name": "boolean",
+            "name": "test",
             "type": "Boolean"
         }
     ],
     "OnPreGameStart": [],
     "OnPreMapLoad": null,
     "OnPreUIDraw": null,
-    "OnPressRackButton": [],
-    "OnPressReloadButton": [],
+    "OnPressRackButton": [
+		{
+			"description": "The player who's racking the gun.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The gun which is being racked.",
+			"name": "gun",
+			"type": "HandWeapon"
+		}
+	],
+    "OnPressReloadButton": [
+		{
+			"description": "The player who's reloading the gun.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The gun which is being reloaded.",
+			"name": "gun",
+			"type": "HandWeapon"
+		}
+	],
     "OnRadioInteraction": [],
     "OnRainStart": [],
     "OnRainStop": null,
-    "OnReceiveGlobalModData": [],
-    "OnReceiveItemListNet": [],
-    "OnReceiveUserlog": [],
+    "OnReceiveGlobalModData": [
+		{
+			"description": "The key for the ModData that has been received.",
+			"name": "key",
+			"type": "String"
+		},
+		{
+			"description": "The ModData that has been received.",
+			"name": "modData",
+			"type": "KahluaTable"
+		}
+	],
+    "OnReceiveItemListNet": [
+		{
+			"description": "The player who's receiving the item list.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The list of items that is being received.",
+			"name": "itemList",
+			"type": "ArrayList"
+		},
+		{
+			"description": "The player who's sending the item list.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "TODO",
+			"name": "string1",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "string2",
+			"type": "String"
+		}
+	],
+    "OnReceiveUserlog": [
+		{
+			"description": "TODO",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"type": "ByteBuffer"
+		}
+	],
     "OnRefreshInventoryWindowContainers": [
         {
             "description": "The inventory page being refreshed.",
-            "name": "iSInventoryPage",
             "type": "ISInventoryPage"
         },
         {
-            "description": "A string representing the state of the refresh process; can be any of \"begin\", \"beforeFloor\", \"buttonsAdded\", and \"end\".",
-            "name": "string",
+            "description": "The current state of the refresh process. Possible values are `begin`, `beforeFloor`, `buttonsAdded`, or `end`.",
+            "name": "state",
             "type": "String"
         }
     ],
