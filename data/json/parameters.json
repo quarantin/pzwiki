@@ -38,7 +38,7 @@
         },
         {
             "description": "The perk that is being leveled up.",
-            "type": "Perk"
+            "type": "PerkFactory.Perk"
         },
         {
             "description": "The perk level gained.",
@@ -95,7 +95,7 @@
         },
         {
             "description": "The perk being leveled up or down.",
-            "type": "Perk"
+            "type": "PerkFactory.Perk"
         },
         {
             "description": "Perk level.",
