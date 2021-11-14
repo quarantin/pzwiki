@@ -38,6 +38,7 @@
         },
         {
             "description": "The perk that is being leveled up.",
+            "name": "perk",
             "type": "PerkFactory.Perk"
         },
         {
@@ -95,6 +96,7 @@
         },
         {
             "description": "The perk being leveled up or down.",
+            "name": "perk",
             "type": "PerkFactory.Perk"
         },
         {
@@ -693,23 +695,23 @@
     "OnLoad": null,
     "OnLoadMapZones": null,
     "OnLoadRadioScripts": [
-		{
-			"description": "The radio script manager.",
-			"type": "RadioScriptManager"
-		},
-		{
-			"description": "True if the world has not yet been initialized.",
-			"name": "worldInit",
-			"type": "Boolean"
-		}
-	],
+        {
+            "description": "The radio script manager.",
+            "type": "RadioScriptManager"
+        },
+        {
+            "description": "True if the world has not yet been initialized.",
+            "name": "worldInit",
+            "type": "Boolean"
+        }
+    ],
     "OnLoadSoundBanks": null,
     "OnLoadedTileDefinitions": [
-		{
-			"description": "The sprite manager.",
-			"type": "IsoSpriterManager"
-		}
-	],
+        {
+            "description": "The sprite manager.",
+            "type": "IsoSpriterManager"
+        }
+    ],
     "OnLoginState": [
         {
             "description": "The current login state.",
@@ -719,53 +721,53 @@
     "OnLoginStateSuccess": null,
     "OnMainMenuEnter": null,
     "OnMakeItem": [
-		{
-			"description": "TODO",
-			"name": "item",
-			"type": "InventoryItem"
-		},
-		{
-			"description": "The item that is being created when applying the recipe.",
-			"name": "resultItem",
-			"type": "InventoryItem"
-		},
-		{
-			"description": "The recipe to make the resulting item.",
-			"type": "Recipe"
-		}
-	],
+        {
+            "description": "TODO",
+            "name": "item",
+            "type": "InventoryItem"
+        },
+        {
+            "description": "The item that is being created when applying the recipe.",
+            "name": "resultItem",
+            "type": "InventoryItem"
+        },
+        {
+            "description": "The recipe to make the resulting item.",
+            "type": "Recipe"
+        }
+    ],
     "OnMapLoadCreateIsoObject": [],
     "OnMechanicActionDone": [
-		{
-			"description": "The character who performed the mechanic action.",
-			"type": "IsoGameCharacter"
-		},
-		{
-			"description": "TODO",
-			"name": "TODO",
-			"type": "Boolean"
-		},
-		{
-			"description": "TODO",
-			"name": "TODO",
-			"type": "Integer"
-		},
-		{
-			"description": "TODO",
-			"name": "TODO",
-			"type": "String"
-		},
-		{
-			"description": "TODO",
-			"name": "TODO",
-			"type": "Long"
-		},
-		{
-			"description": "TODO",
-			"name": "TODO",
-			"type": "Boolean"
-		}
-	],
+        {
+            "description": "The character who performed the mechanic action.",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "TODO",
+            "name": "TODO",
+            "type": "Boolean"
+        },
+        {
+            "description": "TODO",
+            "name": "TODO",
+            "type": "Integer"
+        },
+        {
+            "description": "TODO",
+            "name": "TODO",
+            "type": "String"
+        },
+        {
+            "description": "TODO",
+            "name": "TODO",
+            "type": "Long"
+        },
+        {
+            "description": "TODO",
+            "name": "TODO",
+            "type": "Boolean"
+        }
+    ],
     "OnMiniScoreboardUpdate": null,
     "OnModsModified": null,
     "OnMouseDown": [
@@ -837,11 +839,11 @@
         }
     ],
     "OnNewFire": [
-		{
-			"description": "The fire object.",
-			"type": "IsoFire"
-		}
-	],
+        {
+            "description": "The fire object.",
+            "type": "IsoFire"
+        }
+    ],
     "OnNewGame": [
         {
             "description": "The player who's starting the game.",
@@ -854,17 +856,17 @@
     ],
     "OnNewSurvivorGroup": [],
     "OnObjectAboutToBeRemoved": [
-		{
-			"description": "The object about to be removed.",
-			"type": "IsoObject"
-		}
-	],
+        {
+            "description": "The object about to be removed.",
+            "type": "IsoObject"
+        }
+    ],
     "OnObjectAdded": [
-		{
-			"description": "The object that was added.",
-			"type": "IsoObject"
-		}
-	],
+        {
+            "description": "The object that was added.",
+            "type": "IsoObject"
+        }
+    ],
     "OnObjectCollide": [
         {
             "description": "The character who's colliding with another object.",
@@ -940,19 +942,19 @@
         }
     ],
     "OnPlayerAttackFinished": [
-		{
-			"description": "The character who's finished attacking.",
-			"type": "IsoGameCharacter"
-		},
-		{
-			"description": "The hand weapon used to perform the attack.",
-			"type": "HandWeapon"
-		}
-	],
+        {
+            "description": "The character who's finished attacking.",
+            "type": "IsoGameCharacter"
+        },
+        {
+            "description": "The hand weapon used to perform the attack.",
+            "type": "HandWeapon"
+        }
+    ],
     "OnPlayerCancelTimedAction": [
         {
             "description": "The action that was canceled.",
-			"name": "action",
+            "name": "action",
             "type": "BaseAction"
         }
     ],
@@ -967,7 +969,7 @@
             "description": "The player who's moving.",
             "type": "IsoPlayer"
         }
-	],
+    ],
     "OnPlayerSetSafehouse": [
         {
             "description": "The survivor group for which the safehouse is being set.",
@@ -1059,77 +1061,77 @@
     "OnPreMapLoad": null,
     "OnPreUIDraw": null,
     "OnPressRackButton": [
-		{
-			"description": "The player who's racking the gun.",
-			"type": "IsoPlayer"
-		},
-		{
-			"description": "The gun which is being racked.",
-			"name": "gun",
-			"type": "HandWeapon"
-		}
-	],
+        {
+            "description": "The player who's racking the gun.",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "The gun which is being racked.",
+            "name": "gun",
+            "type": "HandWeapon"
+        }
+    ],
     "OnPressReloadButton": [
-		{
-			"description": "The player who's reloading the gun.",
-			"type": "IsoPlayer"
-		},
-		{
-			"description": "The gun which is being reloaded.",
-			"name": "gun",
-			"type": "HandWeapon"
-		}
-	],
+        {
+            "description": "The player who's reloading the gun.",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "The gun which is being reloaded.",
+            "name": "gun",
+            "type": "HandWeapon"
+        }
+    ],
     "OnRadioInteraction": [],
     "OnRainStart": [],
     "OnRainStop": null,
     "OnReceiveGlobalModData": [
-		{
-			"description": "The key for the ModData that has been received.",
-			"name": "key",
-			"type": "String"
-		},
-		{
-			"description": "The ModData that has been received.",
-			"name": "modData",
-			"type": "KahluaTable"
-		}
-	],
+        {
+            "description": "The key for the ModData that has been received.",
+            "name": "key",
+            "type": "String"
+        },
+        {
+            "description": "The ModData that has been received.",
+            "name": "modData",
+            "type": "KahluaTable"
+        }
+    ],
     "OnReceiveItemListNet": [
-		{
-			"description": "The player who's receiving the item list.",
-			"type": "IsoPlayer"
-		},
-		{
-			"description": "The list of items that is being received.",
-			"name": "itemList",
-			"type": "ArrayList"
-		},
-		{
-			"description": "The player who's sending the item list.",
-			"type": "IsoPlayer"
-		},
-		{
-			"description": "TODO",
-			"name": "string1",
-			"type": "String"
-		},
-		{
-			"description": "TODO",
-			"name": "string2",
-			"type": "String"
-		}
-	],
+        {
+            "description": "The player who's receiving the item list.",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "The list of items that is being received.",
+            "name": "itemList",
+            "type": "ArrayList"
+        },
+        {
+            "description": "The player who's sending the item list.",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "TODO",
+            "name": "string1",
+            "type": "String"
+        },
+        {
+            "description": "TODO",
+            "name": "string2",
+            "type": "String"
+        }
+    ],
     "OnReceiveUserlog": [
-		{
-			"description": "TODO",
-			"type": "String"
-		},
-		{
-			"description": "TODO",
-			"type": "ByteBuffer"
-		}
-	],
+        {
+            "description": "TODO",
+            "type": "String"
+        },
+        {
+            "description": "TODO",
+            "type": "ByteBuffer"
+        }
+    ],
     "OnRefreshInventoryWindowContainers": [
         {
             "description": "The inventory page being refreshed.",
@@ -1144,35 +1146,35 @@
     "OnRenderTick": null,
     "OnRenderUpdate": [],
     "OnResetLua": [
-		{
-			"description": "The reason why Lua was reset.",
-			"name": "reason",
-			"type": "String"
-		}
-	],
+        {
+            "description": "The reason why Lua was reset.",
+            "name": "reason",
+            "type": "String"
+        }
+    ],
     "OnResolutionChange": [
-		{
-			"description": "The old width of the screen.",
-			"name": "oldWidth",
-			"type": "Integer"
-		},
-		{
+        {
+            "description": "The old width of the screen.",
+            "name": "oldWidth",
+            "type": "Integer"
+        },
+        {
 
-			"description": "The old height of the screen.",
-			"name": "oldHeight",
-			"type": "Integer"
-		},
-		{
-			"description": "The new width of the screen.",
-			"name": "newWidth",
-			"type": "Integer"
-		},
-		{
-			"description": "The new height of the screen.",
-			"name": "newHeight",
-			"type": "Integer"
-		}
-	],
+            "description": "The old height of the screen.",
+            "name": "oldHeight",
+            "type": "Integer"
+        },
+        {
+            "description": "The new width of the screen.",
+            "name": "newWidth",
+            "type": "Integer"
+        },
+        {
+            "description": "The new height of the screen.",
+            "name": "newHeight",
+            "type": "Integer"
+        }
+    ],
     "OnRightMouseDown": [
         {
             "description": "The x coordinate where the right mouse button was pressed down.",
@@ -1207,21 +1209,21 @@
             "type": "ArrayList<String>"
         },
         {
-			"description": "TODO",
+            "description": "TODO",
             "type": "ArrayList<String>"
         },
-		{
+        {
             "description": "The Steam identifiers of the players being updated on the score board.",
             "name": "steamIds",
             "type": "ArrayList<String>"
-		}
+        }
     ],
     "OnSeeNewRoom": [
-		{
-			"description": "The room being seen for the first time by any player.",
-			"type": "IsoRoom"
-		}
-	],
+        {
+            "description": "The room being seen for the first time by any player.",
+            "type": "IsoRoom"
+        }
+    ],
     "OnServerCommand": [
         {
             "description": "TODO",
@@ -1229,48 +1231,48 @@
             "type": "String"
         },
         {
-			"description": "TODO",
+            "description": "TODO",
             "name": "string2",
             "type": "String"
         },
-		{
+        {
             "description": "TODO",
             "name": "table",
             "type": "KahluaTable"
-		}
-	],
+        }
+    ],
     "OnServerFinishSaving": null,
     "OnServerStartSaving": null,
     "OnServerStarted": null,
     "OnServerStatisticReceived": null,
     "OnServerWorkshopItems": [
-		{
-			"description": "TODO: Required => ArrayList, Details => ArrayList, Error => String, Error = (Long, String), Success => No param, Progress => (String(Steam ID), Long, Long)",
-			"name": "state",
-			"type": "String"
-		},
-		{
-			"description": "TODO",
-			"name": "data",
-			"type": "ArrayList,Long,String"
-		},
-		{
-			"description": "TODO",
-			"name": "data2",
-			"type": "Long,String"
-		},
-		{
-			"description": "TODO",
-			"name": "data3",
-			"type": "Long"
-		}
-	],
+        {
+            "description": "TODO: Required => ArrayList, Details => ArrayList, Error => String, Error = (Long, String), Success => No param, Progress => (String(Steam ID), Long, Long)",
+            "name": "state",
+            "type": "String"
+        },
+        {
+            "description": "TODO",
+            "name": "data",
+            "type": "ArrayList,Long,String"
+        },
+        {
+            "description": "TODO",
+            "name": "data2",
+            "type": "Long,String"
+        },
+        {
+            "description": "TODO",
+            "name": "data3",
+            "type": "Long"
+        }
+    ],
     "OnSetDefaultTab": [
-		{
-			"description": "The chat tab that is being set as default.",
-			"type": "ChatTab"
-		}
-	],
+        {
+            "description": "The chat tab that is being set as default.",
+            "type": "ChatTab"
+        }
+    ],
     "OnSpawnRegionsLoaded": [
         {
             "description": "A table of spawn regions that have been loaded.",
@@ -1279,11 +1281,11 @@
         }
     ],
     "OnSteamFriendStatusChanged": [
-		{
-			"description": "TODO: A Long converted to a String. Steam ID?",
-			"type": "String"
-		}
-	],
+        {
+            "description": "TODO: A Long converted to a String. Steam ID?",
+            "type": "String"
+        }
+    ],
     "OnSteamGameJoin": null,
     "OnSteamRefreshInternetServers": null,
     "OnSteamRulesRefreshComplete": [],
@@ -1295,11 +1297,11 @@
     "OnSteamWorkshopItemNotUpdated": [],
     "OnSteamWorkshopItemUpdated": [],
     "OnSwitchVehicleSeat": [
-		{
-			"description": "The player who's switching seat in the vehicle.",
-			"type": "IsoPlayer"
-		}
-	],
+        {
+            "description": "The player who's switching seat in the vehicle.",
+            "type": "IsoPlayer"
+        }
+    ],
     "OnTabAdded": [],
     "OnTabRemoved": [],
     "OnThunderEvent": [],
@@ -1323,69 +1325,70 @@
         }
     ],
     "OnUpdateModdedWeatherStage": [
-		{
-			"description": "The current weather period.",
-			"type": "WeatherPeriod"
-		},
-		{
-			"description": "The current stage of the weather.",
-			"type": "WeatherPeriod.WeatherStage"
-		},
-		{
-			"description": "The strength of the air front.",
-			"name": "strength",
-			"type": "Float"
-		}
-	],
+        {
+            "description": "The current weather period.",
+            "type": "WeatherPeriod"
+        },
+        {
+            "description": "The current stage of the weather.",
+            "name": "weatherStage",
+            "type": "WeatherPeriod.WeatherStage"
+        },
+        {
+            "description": "The strength of the air front.",
+            "name": "strength",
+            "type": "Float"
+        }
+    ],
     "OnUseVehicle": [
-		{
-			"description": "The player who's driving the vehicle.",
-			"type": "IsoPlayer"
-		},
-		{
-			"description": "The vehicle that the player is driving.",
-			"type": "BaseVehicle"
-		},
-		{
-			"description": "TODO: Whether the player has been driving for more than 0.5 what?",
-			"name": "TODO",
-			"type": "Boolean"
-		}
-	],
+        {
+            "description": "The player who's driving the vehicle.",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "The vehicle that the player is driving.",
+            "type": "BaseVehicle"
+        },
+        {
+            "description": "TODO: Whether the player has been driving for more than 0.5 what?",
+            "name": "TODO",
+            "type": "Boolean"
+        }
+    ],
     "OnVehicleDamageTexture": [
-		{
-			"description": "The player who's driving the vehicle.",
-			"type": "IsoGameCharacter"
-		}
-	],
+        {
+            "description": "The player who's driving the vehicle.",
+            "type": "IsoGameCharacter"
+        }
+    ],
     "OnVehicleHorn": [
-		{
-			"description": "The player who's driving the vehicle.",
-			"type": "IsoPlayer"
-		},
-		{
+        {
+            "description": "The player who's driving the vehicle.",
+            "type": "IsoPlayer"
+        },
+        {
 
-			"description": "The vehicle that the player is driving.",
-			"type": "BaseVehicle"
-		},
-		{
+            "description": "The vehicle that the player is driving.",
+            "type": "BaseVehicle"
+        },
+        {
 
-			"description": "Whether the vehicle horn is being pressed.",
-			"name": "pressed",
-			"type": "Boolean"
-		}
-	],
+            "description": "Whether the vehicle horn is being pressed.",
+            "name": "pressed",
+            "type": "Boolean"
+        }
+    ],
     "OnWaterAmountChange": [
-		{
-			"description": "The object in which the water amount is changing.",
-			"type": "IsoObject"
-		},
-		{
-			"description": "The amount of water that is being added or removed from the water container.",
-			"name": "waterAmount",
-			"type": "Integer"
-		}
-	],
+        {
+            "description": "The object in which the water amount is changing.",
+            "type": "IsoObject"
+        },
+        {
+            "description": "The amount of water that is being added or removed from the water container.",
+            "name": "waterAmount",
+            "type": "Integer"
+        }
+    ],
     "OnWeaponHitCharacter": [
         {
             "description": "The character whose weapon hit another character.",
@@ -1442,7 +1445,7 @@
     "OnZombieDead": [
         {
             "description": "The zombie who's about to get killed.",
-			"name": "zombie",
+            "name": "zombie",
             "type": "IsoZombie"
         }
     ],
@@ -1453,28 +1456,28 @@
         }
     ],
     "ReceiveFactionInvite": [
-		{
+        {
             "description": "The name of the faction for which the player received an invitation.",
             "name": "factionName",
             "type": "String"
-		},
-		{
+        },
+        {
             "description": "The name of the player who's been invited to join the faction.",
-			"name": "playerName",
-			"type": "String"
-		}
-	],
+            "name": "playerName",
+            "type": "String"
+        }
+    ],
     "ReceiveSafehouseInvite": [
-		{
-			"description": "The safehouse for which the player received an invitation.",
-			"type": "SafeHouse"
-		},
-		{
+        {
+            "description": "The safehouse for which the player received an invitation.",
+            "type": "SafeHouse"
+        },
+        {
             "description": "The name of the player who's been invited to join the safehouse.",
-			"name": "playerName",
-			"type": "String"
-		}
-	],
+            "name": "playerName",
+            "type": "String"
+        }
+    ],
     "RequestTrade": [
         {
             "description": "The player who's requesting the trade.",
@@ -1482,53 +1485,53 @@
         }
     ],
     "ReuseGridsquare": [
-		{
-			"description": "The grid square that is going to be reused.",
-			"type": "IsoGridSquare"
-		}
-	],
+        {
+            "description": "The grid square that is going to be reused.",
+            "type": "IsoGridSquare"
+        }
+    ],
     "SendCustomModData": null,
     "ServerPinged": [
-		{
-			"description": "TODO",
-			"name": "string1",
-			"type": "String"
-		},
-		{
-			"description": "TODO",
-			"name": "string2",
-			"type": "String"
-		}
-	],
+        {
+            "description": "TODO",
+            "name": "string1",
+            "type": "String"
+        },
+        {
+            "description": "TODO",
+            "name": "string2",
+            "type": "String"
+        }
+    ],
     "SwitchChatStream": null,
     "SyncFaction": [
-		{
-			"description": "The name of the faction which is going to get synchronized.",
-			"name": "factionName",
-			"type": "String"
-		}
-	],
+        {
+            "description": "The name of the faction which is going to get synchronized.",
+            "name": "factionName",
+            "type": "String"
+        }
+    ],
     "TradingUIAddItem": [
-		{
-			"description": "The player who's adding an item to the trade.",
-			"type": "IsoPlayer"
-		},
-		{
-			"description": "The item that the player is adding to the trade.",
-			"type": "InventoryItem"
-		}
-	],
+        {
+            "description": "The player who's adding an item to the trade.",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "The item that the player is adding to the trade.",
+            "type": "InventoryItem"
+        }
+    ],
     "TradingUIRemoveItem": [
-		{
-			"description": "The player who's removing an item from the trade.",
-			"type": "IsoPlayer"
-		},
-		{
-			"description": "The index of the item that the player is removing from the trade.",
-			"name": "itemIndex",
-			"type": "Integer"
-		}
-	],
+        {
+            "description": "The player who's removing an item from the trade.",
+            "type": "IsoPlayer"
+        },
+        {
+            "description": "The index of the item that the player is removing from the trade.",
+            "name": "itemIndex",
+            "type": "Integer"
+        }
+    ],
     "TradingUIUpdateState": [],
     "UseItem": [],
     "ViewTickets": [],
@@ -1536,9 +1539,9 @@
     "WeaponSwing": [],
     "WeaponSwingHitPoint": [],
     "onLoadModDataFromServer": [
-		{
-			"description": "The grid square whose ModData is getting loaded from the server.",
-			"type": "IsoGridSquare"
-		}
-	]
+        {
+            "description": "The grid square whose ModData is getting loaded from the server.",
+            "type": "IsoGridSquare"
+        }
+    ]
 }
