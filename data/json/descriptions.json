@@ -42,7 +42,7 @@
     "OnConnectionStateChanged": "When a player is connecting to the server, the connection is going through different stages. This event is triggered for each of these stages of the initial connection.",
     "OnContainerUpdate": "Triggered when a container is being updated.",
     "OnCoopJoinFailed": "Triggered when a player fails to join a cooperative game.",
-    "OnCoopServerMessage": "Triggered when the player receive a server message during a cooperative game.",
+    "OnCoopServerMessage": "Triggered when the player receives a server message during a cooperative game.",
     "OnCreateLivingCharacter": "Triggered when either a player or survivor is being created.",
     "OnCreatePlayer": "Triggered when a player is being created.",
     "OnCreateSurvivor": "Triggered when a survivor is being created.",
