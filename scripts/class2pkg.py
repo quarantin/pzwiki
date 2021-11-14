@@ -23,6 +23,7 @@ db = {
 	'Double':    'java.lang.Double',
 	'Float':     'java.lang.Float',
 	'Integer':   'java.lang.Integer',
+	'Long':      'java.lang.Long',
 	'Short':     'java.lang.Short',
 	'String':    'java.lang.String',
 }
@@ -37,11 +38,12 @@ for root, subdirs, files in walk('.'):
 		if not f.endswith('.java'):
 			continue
 		f = f.replace('.java', '')
-		db[f] = root + '.' + f
+		db[f] = root
 
 # Zomboid inner classes
-db['Perk'] = 'zombie.characters.skills.PerkFactory.Perk'
-db['Perks'] = 'zombie.characters.skills.PerkFactory.Perks'
+db['PerkFactory.Perk']           = 'zombie.characters.skills'
+db['PerkFactory.Perks']          = 'zombie.characters.skills'
+db['WeatherPeriod.WeatherStage'] = 'zombie.iso.weather'
 
 chdir(wiki_root)
 
