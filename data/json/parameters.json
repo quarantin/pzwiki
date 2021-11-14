@@ -1,24 +1,24 @@
 {
     "AcceptedFactionInvite": [
         {
-            "description": "The name of the faction.",
+            "description": "The name of the faction in which the player is being invited.",
             "name": "factionName",
             "type": "String"
         },
         {
-            "description": "The name of the player.",
+            "description": "The name of the player who's being invited to the faction.",
             "name": "playerName",
             "type": "String"
         }
     ],
     "AcceptedSafehouseInvite": [
         {
-            "description": "The name of the safehouse.",
+            "description": "The name of the safehouse in which the player is being invited.",
             "name": "safehouseName",
             "type": "String"
         },
         {
-            "description": "The name of the player.",
+            "description": "The name of the player who's being invited to the safehouse.",
             "name": "playerName",
             "type": "String"
         }
@@ -32,7 +32,7 @@
     ],
     "AddXP": [
         {
-            "description": "The character gaining XP.",
+            "description": "The character who's gaining XP.",
             "name": "character",
             "type": "IsoGameCharacter"
         },
@@ -41,18 +41,18 @@
             "type": "Perk"
         },
         {
-            "description": "Perk level.",
+            "description": "The perk level gained.",
             "name": "level",
             "type": "Float"
         }
     ],
     "Attack": [
         {
-            "description": "The character performing the attack.",
+            "description": "The character who's performing the attack.",
             "type": "IsoLivingCharacter"
         },
         {
-            "description": "TODO",
+            "description": "The charge time of the weapon used to perform the attack.",
             "name": "chargeTime",
             "type": "Float"
         },
@@ -63,7 +63,7 @@
     ],
     "AutoDrink": [
         {
-            "description": "The character who's drinking.",
+            "description": "The character who needs to drink.",
             "type": "IsoGameCharacter"
         }
     ],
@@ -76,11 +76,11 @@
     "DoSpecialTooltip": [
 
         {
-            "description": "The tooltip object.",
+            "description": "The tooltip object to be filled.",
             "type": "ObjectTooltip"
         },
         {
-            "description": "TODO",
+            "description": "The grid square on which the tooltip has been triggered.",
             "type": "IsoGridSquare"
         }
     ],
@@ -110,14 +110,14 @@
     ],
     "LoadGridsquare": [
          {
-            "description": "The grid square being loaded.",
+            "description": "The grid square that is being loaded.",
             "type": "IsoGridSquare"
         }
     ],
     "MngInvReceiveItems": [
         {
-            "description": "The items being received.",
-            "name": "inventory",
+            "description": "The items that are being received.",
+            "name": "items",
             "type": "KahluaTable"
         }
     ],
@@ -132,7 +132,7 @@
             "type": "State"
         },
         {
-            "description": "The previous AI state.",
+            "description": "The old AI state.",
             "name": "oldState",
             "type": "State"
         }
@@ -221,17 +221,17 @@
     "OnChangeWeather": [],
     "OnCharacterCollide": [
         {
-            "description": "The character colliding with another character.",
+            "description": "The character who's colliding with another character.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "The character being collided with.",
+            "description": "The character who's being collided with.",
             "type": "IsoGameCharacter"
         }
     ],
     "OnCharacterCreateStats": [
         {
-            "description": "The survivor description being created.",
+            "description": "The survivor whose description is being created.",
             "type": "SurvivorDesc"
         }
     ],
@@ -247,11 +247,11 @@
             "type": "IsoSurvivor"
         },
         {
-            "description": "The character being met.",
+            "description": "The character who's being met.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "The number of times the two characters already met. If zero, then this is their first time.",
+            "description": "The number of times the two characters already met. If zero, then this is their first encounter.",
             "name": "encounters",
             "type": "Integer"
         }
@@ -277,7 +277,7 @@
     ],
     "OnClimateManagerInit": [
         {
-            "description": "The climate manager being initialized.",
+            "description": "The climate manager which is being initialized.",
             "type": "ClimateManager"
         }
     ],
@@ -310,19 +310,19 @@
     "OnConnected": null,
     "OnConnectionStateChanged": [
         {
-            "description": "The current state of the connection that changed.",
+            "description": "The current state of the connection that has changed.",
             "name": "state",
             "type": "String"
         },
         {
-            "description": "TODO. Can be null.",
-            "name": "message",
+            "description": "The reason leading to the state change. It can be null.",
+            "name": "reason",
             "type": "String"
         }
     ],
     "OnContainerUpdate": [
         {
-            "description": "The container being updated.",
+            "description": "The container which is being updated.",
             "name": "container",
             "type": "Food,IsoDeadBody,IsoGridSquare,IsoWorldInventoryObject"
         }
@@ -336,67 +336,67 @@
     ],
     "OnCoopServerMessage": [
         {
-            "description": "The type of message received by the server. Can be either `ping`, `pong`, `steam-id`, or `server-address`.",
+            "description": "The type of message received from the server. Can be either `ping`, `pong`, `steam-id`, or `server-address`.",
             "name": "messageType",
             "type": "String"
         },
         {
-            "description": "The nick of the player sending the message.",
+            "description": "The nick of the player who's sending the message.",
             "name": "playerNick",
             "type": "String"
         },
         {
-            "description": "The Steam identifier of the player sending the message.",
+            "description": "The Steam identifier of the player who's sending the message.",
             "name": "steamId",
             "type": "String"
         }
     ],
     "OnCreateLivingCharacter": [
         {
-            "description": "The player or survivor being created.",
+            "description": "The player or survivor who's being created.",
             "name": "playerOrSurvivor",
             "type": "IsoPlayer,IsoSurvivor"
         },
         {
-            "description": "The description of the player or survivor being created.",
+            "description": "The survivor description of the player or survivor who's being created.",
             "type": "SurvivorDesc"
         }
     ],
     "OnCreatePlayer": [
         {
-            "description": "The index of the player being created.",
+            "description": "The index of the player who's being created.",
             "name": "playerIndex",
             "type": "Integer"
         },
         {
-            "description": "The player being created.",
+            "description": "The player who's being created.",
             "type": "IsoPlayer"
         }
     ],
     "OnCreateSurvivor": [
         {
-            "description": "The survivor being created.",
+            "description": "The survivor who's being created.",
             "type": "IsoSurvivor"
         }
     ],
     "OnCreateUI": null,
     "OnCustomUIKey": [
         {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key has been released.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnCustomUIKeyPressed": [
          {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key has been pressed.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been pressed.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnCustomUIKeyReleased": [
         {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key has been released.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
             "name": "key",
             "type": "Integer"
         }
@@ -404,13 +404,13 @@
     "OnDawn": null,
     "OnDestroyIsoThumpable": [
         {
-            "description": "The thumpable object being destroyed.",
+            "description": "The thumpable object which is being destroyed.",
             "type": "IsoThumpable"
         }
     ],
     "OnDeviceText": [
         {
-            "description": "The text displayed by the media device.",
+            "description": "The text that is being displayed by the media device.",
             "name": "text",
             "type": "String,ChatMessage"
         },
@@ -435,7 +435,7 @@
             "type": "String"
         },
         {
-            "description": "The media device displaying the text.",
+            "description": "The media device that is displaying the text.",
             "name": "device",
             "type": "IsoWaveSignal,Radio,VehiclePart"
         }
@@ -445,7 +445,7 @@
     "OnDoTileBuilding": [],
     "OnDoTileBuilding2": [
         {
-            "description": "The chunk where the tile is being set.",
+            "description": "The chunk in which the tile is being set.",
             "type": "IsoChunk"
         },
         {
@@ -475,7 +475,7 @@
     ],
     "OnDoTileBuilding3": [
         {
-            "description": "The chunk where the tile is being set.",
+            "description": "The chunk in which the tile is being set.",
             "type": "IsoChunk"
         },
         {
@@ -530,7 +530,7 @@
             "type": "IsoGameCharacter"
         },
         {
-            "description": "The item being equipped in the primary slot.",
+            "description": "The item that is being equipped in the primary slot.",
             "type": "InventoryItem"
         }
     ],
@@ -540,7 +540,7 @@
             "type": "IsoGameCharacter"
         },
         {
-            "description": "The item being equipped in the secondary slot.",
+            "description": "The item that is being equipped in the secondary slot.",
             "type": "InventoryItem"
         }
     ],
@@ -553,17 +553,17 @@
     "OnFETick": [],
     "OnFillContainer": [
         {
-            "description": "TODO",
+            "description": "The room name in which the container is installed.",
             "name": "roomName",
             "type": "String"
         },
         {
-            "description": "The type of container being filled.",
+            "description": "The type of the container that is being filled.",
             "name": "containerType",
             "type": "String"
         },
         {
-            "description": "The container being filled.",
+            "description": "The container that is being filled.",
             "type": "ItemContainer"
         }
     ],
@@ -609,21 +609,21 @@
     "OnGameTimeLoaded": null,
     "OnGamepadConnect": [
         {
-            "description": "The identifier of the gamepad that has been connected.",
+            "description": "The identifier of the gamepad which has been connected.",
             "name": "controllerID",
             "type": "Integer"
         }
     ],
     "OnGamepadDisconnect": [
         {
-            "description": "The identifier of the gamepad that has been disconnected.",
+            "description": "The identifier of the gamepad which has been disconnected.",
             "name": "controllerID",
             "type": "Integer"
         }
     ],
     "OnGetDBSchema": [
         {
-            "description": "The database schema for the game client.",
+            "description": "The database schema of the game client.",
             "name": "dbSchema",
             "type": "KahluaTable"
         }
@@ -658,7 +658,7 @@
     "OnIsoThumpableSave": [],
     "OnJoypadActivate": [
         {
-            "description": "The identifier of the joypad that has been activated.",
+            "description": "The identifier of the joypad which has been activated.",
             "name": "controllerId",
             "type": "Integer"
         }
@@ -671,21 +671,21 @@
     "OnJoypadRenderUI": null,
     "OnKeyKeepPressed": [
         {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that is being kept pressed.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been kept pressed.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnKeyPressed": [
         {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that is being released.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnKeyStartPressed": [
         {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that is being pressed.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been pressed.",
             "name": "key",
             "type": "Integer"
         }
@@ -698,7 +698,7 @@
 			"type": "RadioScriptManager"
 		},
 		{
-			"description": "True if the world has already been initialized.",
+			"description": "True if the world has not yet been initialized.",
 			"name": "worldInit",
 			"type": "Boolean"
 		}
@@ -725,7 +725,7 @@
 			"type": "InventoryItem"
 		},
 		{
-			"description": "The item resulting from applying the recipe.",
+			"description": "The item that is being created when applying the recipe.",
 			"name": "resultItem",
 			"type": "InventoryItem"
 		},
@@ -804,19 +804,19 @@
     ],
     "OnMouseUp": [
         {
-            "description": "The x coordinate of the mouse when the button was released.",
+            "description": "The x coordinate where the mouse button was released.",
             "name": "x",
             "type": "Integer"
         },
         {
-            "description": "The y coordinate of the mouse when the button was released.",
+            "description": "The y coordinate where the mouse button was released.",
             "name": "y",
             "type": "Integer"
         }
     ],
     "OnMultiTriggerNPCEvent": [
         {
-            "description": "The type of this trigger.",
+            "description": "The type of trigger of this NPC event.",
             "name": "triggerType",
             "type": "String"
         },
@@ -832,7 +832,7 @@
     ],
     "OnNPCSurvivorUpdate": [
         {
-            "description": "The survivor that is being updated.",
+            "description": "The survivor who's being updated.",
             "type": "IsoSurvivor"
         }
     ],
@@ -867,11 +867,11 @@
 	],
     "OnObjectCollide": [
         {
-            "description": "The character colliding with another object.",
+            "description": "The character who's colliding with another object.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "The object being collided with.",
+            "description": "The object that is being collided with.",
             "type": "IsoDoor,IsoGridSquare,IsoThumpable,IsoWindow,IsoZombie"
         }
     ],
@@ -958,7 +958,7 @@
     ],
     "OnPlayerDeath": [
         {
-            "description": "The player who died.",
+            "description": "The player who's about to die.",
             "type": "IsoPlayer"
         }
     ],
@@ -974,7 +974,7 @@
             "type": "SurvivorGroup"
         },
         {
-            "description": "The building definition of the safehouse being set.",
+            "description": "The building definition of the safehouse that is being set.",
             "type": "BuildingDef"
         }
     ],
@@ -1218,7 +1218,7 @@
     ],
     "OnSeeNewRoom": [
 		{
-			"description": "The room being seen for the first time by a player.",
+			"description": "The room being seen for the first time by any player.",
 			"type": "IsoRoom"
 		}
 	],
@@ -1280,7 +1280,7 @@
     ],
     "OnSteamFriendStatusChanged": [
 		{
-			"description": "TODO: A Long converted to a String",
+			"description": "TODO: A Long converted to a String. Steam ID?",
 			"type": "String"
 		}
 	],
@@ -1308,57 +1308,110 @@
     "OnTileRemoved": [],
     "OnTriggerNPCEvent": [
         {
-            "description": "Type of trigger.",
-            "name": "string",
+            "description": "The type of trigger of this NPC event.",
+            "name": "triggerType",
             "type": "String"
         },
         {
-            "description": "Data of trigger.",
-            "name": "kahluaTable",
+            "description": "The ModData of this trigger.",
+            "name": "modData",
             "type": "KahluaTable"
         },
         {
-            "description": "Building definition of trigger (?)",
-            "name": "buildingDef",
+            "description": "The building definition of this trigger.",
             "type": "BuildingDef"
         }
     ],
-    "OnUpdateModdedWeatherStage": [],
-    "OnUseVehicle": [],
-    "OnVehicleDamageTexture": [],
-    "OnVehicleHorn": [],
-    "OnWaterAmountChange": [],
+    "OnUpdateModdedWeatherStage": [
+		{
+			"description": "The current weather period.",
+			"type": "WeatherPeriod"
+		},
+		{
+			"description": "The current stage of the weather.",
+			"type": "WeatherPeriod.WeatherStage"
+		},
+		{
+			"description": "The strength of the air front.",
+			"name": "strength",
+			"type": "Float"
+		}
+	],
+    "OnUseVehicle": [
+		{
+			"description": "The player who's driving the vehicle.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The vehicle that the player is driving.",
+			"type": "BaseVehicle"
+		},
+		{
+			"description": "TODO: Whether the player has been driving for more than 0.5 what?",
+			"name": "TODO",
+			"type": "Boolean"
+		}
+	],
+    "OnVehicleDamageTexture": [
+		{
+			"description": "The player who's driving the vehicle.",
+			"type": "IsoGameCharacter"
+		}
+	],
+    "OnVehicleHorn": [
+		{
+			"description": "The player who's driving the vehicle.",
+			"type": "IsoPlayer"
+		},
+		{
+
+			"description": "The vehicle that the player is driving.",
+			"type": "BaseVehicle"
+		},
+		{
+
+			"description": "Whether the vehicle horn is being pressed.",
+			"name": "pressed",
+			"type": "Boolean"
+		}
+	],
+    "OnWaterAmountChange": [
+		{
+			"description": "The object in which the water amount is changing.",
+			"type": "IsoObject"
+		},
+		{
+			"description": "The amount of water that is being added or removed from the water container.",
+			"name": "waterAmount",
+			"type": "Integer"
+		}
+	],
     "OnWeaponHitCharacter": [
         {
-            "description": "attacker",
-            "name": "character",
+            "description": "The character whose weapon hit another character.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "target",
-            "name": "character",
+            "description": "The character who's been hit by another character.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "weapon",
-            "name": "handWeapon",
+            "description": "The hand weapon used to hit the character.",
             "type": "HandWeapon"
         },
         {
-            "description": "damage split",
-            "name": "float",
+            "description": "The damage inflicted to the character who's been hit.",
+            "name": "damage",
             "type": "Float"
         }
     ],
     "OnWeaponHitTree": [
         {
-            "description": "owner",
-            "name": "character",
+            "description": "The character whose weapon hit a tree.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "weapon",
-            "name": "handWeapon",
+            "description": "The hand weapon used to hit the tree.",
             "type": "HandWeapon"
         }
     ],
@@ -1377,52 +1430,115 @@
     ],
     "OnWeaponSwingHitPoint": [
         {
-            "description": "owner",
-            "name": "character",
+            "description": "The character whose weapon swing hit point.",
             "type": "IsoGameCharacter"
         },
         {
-            "description": "weapon",
-            "name": "handWeapon",
+            "description": "The hand weapon used by the character.",
             "type": "HandWeapon"
         }
     ],
     "OnWorldMessage": [],
     "OnZombieDead": [
         {
-            "description": "The zombie that was killed.",
-            "name": "zombie",
+            "description": "The zombie who's about to get killed.",
+			"name": "zombie",
             "type": "IsoZombie"
         }
     ],
     "OnZombieUpdate": [
         {
-            "description": "The IsoZombie that is updating.",
-            "name": "zombie",
+            "description": "The zombie who's being updated.",
             "type": "IsoZombie"
         }
     ],
-    "ReceiveFactionInvite": [],
-    "ReceiveSafehouseInvite": [],
+    "ReceiveFactionInvite": [
+		{
+            "description": "The name of the faction for which the player received an invitation.",
+            "name": "factionName",
+            "type": "String"
+		},
+		{
+            "description": "The name of the player who's been invited to join the faction.",
+			"name": "playerName",
+			"type": "String"
+		}
+	],
+    "ReceiveSafehouseInvite": [
+		{
+			"description": "The safehouse for which the player received an invitation.",
+			"type": "SafeHouse"
+		},
+		{
+            "description": "The name of the player who's been invited to join the safehouse.",
+			"name": "playerName",
+			"type": "String"
+		}
+	],
     "RequestTrade": [
         {
-            "description": "The player making the trade request.?",
-            "name": "player",
+            "description": "The player who's requesting the trade.",
             "type": "IsoPlayer"
         }
     ],
-    "ReuseGridsquare": [],
+    "ReuseGridsquare": [
+		{
+			"description": "The grid square that is going to be reused.",
+			"type": "IsoGridSquare"
+		}
+	],
     "SendCustomModData": null,
-    "ServerPinged": [],
+    "ServerPinged": [
+		{
+			"description": "TODO",
+			"name": "string1",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "string2",
+			"type": "String"
+		}
+	],
     "SwitchChatStream": null,
-    "SyncFaction": [],
-    "TradingUIAddItem": [],
-    "TradingUIRemoveItem": [],
+    "SyncFaction": [
+		{
+			"description": "The name of the faction which is going to get synchronized.",
+			"name": "factionName",
+			"type": "String"
+		}
+	],
+    "TradingUIAddItem": [
+		{
+			"description": "The player who's adding an item to the trade.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The item that the player is adding to the trade.",
+			"type": "InventoryItem"
+		}
+	],
+    "TradingUIRemoveItem": [
+		{
+			"description": "The player who's removing an item from the trade.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The index of the item that the player is removing from the trade.",
+			"name": "itemIndex",
+			"type": "Integer"
+		}
+	],
     "TradingUIUpdateState": [],
     "UseItem": [],
     "ViewTickets": [],
     "WeaponHitCharacter": [],
     "WeaponSwing": [],
     "WeaponSwingHitPoint": [],
-    "onLoadModDataFromServer": []
+    "onLoadModDataFromServer": [
+		{
+			"description": "The grid square whose ModData is getting loaded from the server.",
+			"type": "IsoGridSquare"
+		}
+	]
 }
