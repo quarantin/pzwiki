@@ -37,7 +37,7 @@
             "type": "IsoGameCharacter"
         },
         {
-            "description": "The perk being leveled up.",
+            "description": "The perk that is being leveled up.",
             "type": "Perk"
         },
         {
