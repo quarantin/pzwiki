@@ -11,7 +11,7 @@ if [ -z "${CORE}" ]; then
 	exit
 fi
 
-VERSION="$(grep 'new GameVersion' "${CORE}" | cut -f2 -d'(' | awk -F',' '{ print $1 $2 }' | sed 's/[ ]\+/./')"
+VERSION="$(grep 'new GameVersion' "${CORE}" | cut -f2 -d'(' | awk -F, '{ print $1 $2 }' | tr ' ' '.')"
 if [ -z "${VERSION}" ]; then
 	echo 'Cannot find game version!'
 	exit
