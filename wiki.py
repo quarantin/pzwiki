@@ -84,7 +84,8 @@ class Wiki:
 				print('MISSING TYPE: %s %s' % (type, pkg))
 			return ''
 
-		pkg_url = pkg.replace('.', '/') + '.html'
+		pkg_url = join(pkg.replace('.', '/'), type + '.html')
+		# TODO: Implement a better way to select the proper javadoc base URL
 		javadoc_url = pkg.startswith('zomb') and self.javadoc_url or self.oracle_url
 		return urljoin(javadoc_url, pkg_url)
 
