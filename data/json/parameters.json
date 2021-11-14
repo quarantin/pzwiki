@@ -1143,29 +1143,57 @@
     ],
     "OnRenderTick": null,
     "OnRenderUpdate": [],
-    "OnResetLua": [],
-    "OnResolutionChange": [],
+    "OnResetLua": [
+		{
+			"description": "The reason why Lua was reset.",
+			"name": "reason",
+			"type": "String"
+		}
+	],
+    "OnResolutionChange": [
+		{
+			"description": "The old width of the screen.",
+			"name": "oldWidth",
+			"type": "Integer"
+		},
+		{
+
+			"description": "The old height of the screen.",
+			"name": "oldHeight",
+			"type": "Integer"
+		},
+		{
+			"description": "The new width of the screen.",
+			"name": "newWidth",
+			"type": "Integer"
+		},
+		{
+			"description": "The new height of the screen.",
+			"name": "newHeight",
+			"type": "Integer"
+		}
+	],
     "OnRightMouseDown": [
         {
-            "description": "Mouse position x",
-            "name": "integer",
+            "description": "The x coordinate where the right mouse button was pressed down.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse position y",
-            "name": "integer",
+            "description": "The y coordinate where the right mouse button was pressed down.",
+            "name": "y",
             "type": "Integer"
         }
     ],
     "OnRightMouseUp": [
         {
-            "description": "Mouse position x",
-            "name": "integer",
+            "description": "The x coordinate where the right mouse button was released.",
+            "name": "x",
             "type": "Integer"
         },
         {
-            "description": "Mouse position y",
-            "name": "integer",
+            "description": "The y coordinate where the right mouse button was released.",
+            "name": "y",
             "type": "Integer"
         }
     ],
@@ -1174,32 +1202,88 @@
     "OnSave": null,
     "OnScoreboardUpdate": [
         {
-            "description": "> Player names.",
-            "name": "string",
+            "description": "The player names being updated on the score board.",
+            "name": "playerNames",
+            "type": "ArrayList<String>"
+        },
+        {
+			"description": "TODO",
+            "type": "ArrayList<String>"
+        },
+		{
+            "description": "The Steam identifiers of the players being updated on the score board.",
+            "name": "steamIds",
+            "type": "ArrayList<String>"
+		}
+    ],
+    "OnSeeNewRoom": [
+		{
+			"description": "The room being seen for the first time by a player.",
+			"type": "IsoRoom"
+		}
+	],
+    "OnServerCommand": [
+        {
+            "description": "TODO",
+            "name": "string1",
             "type": "String"
         },
         {
-            "description": "> Steam ID.",
-            "name": "string",
+			"description": "TODO",
+            "name": "string2",
             "type": "String"
-        }
-    ],
-    "OnSeeNewRoom": [],
-    "OnServerCommand": [],
+        },
+		{
+            "description": "TODO",
+            "name": "table",
+            "type": "KahluaTable"
+		}
+	],
     "OnServerFinishSaving": null,
     "OnServerStartSaving": null,
     "OnServerStarted": null,
     "OnServerStatisticReceived": null,
-    "OnServerWorkshopItems": [],
-    "OnSetDefaultTab": [],
+    "OnServerWorkshopItems": [
+		{
+			"description": "TODO: Required => ArrayList, Details => ArrayList, Error => String, Error = (Long, String), Success => No param, Progress => (String(Steam ID), Long, Long)",
+			"name": "state",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "data",
+			"type": "ArrayList,Long,String"
+		},
+		{
+			"description": "TODO",
+			"name": "data2",
+			"type": "Long,String"
+		},
+		{
+			"description": "TODO",
+			"name": "data3",
+			"type": "Long"
+		}
+	],
+    "OnSetDefaultTab": [
+		{
+			"description": "The chat tab that is being set as default.",
+			"type": "ChatTab"
+		}
+	],
     "OnSpawnRegionsLoaded": [
         {
-            "description": "A table containing spawn regions.",
-            "name": "kahluaTable",
+            "description": "A table of spawn regions that have been loaded.",
+            "name": "spawnRegions",
             "type": "KahluaTable"
         }
     ],
-    "OnSteamFriendStatusChanged": [],
+    "OnSteamFriendStatusChanged": [
+		{
+			"description": "TODO: A Long converted to a String",
+			"type": "String"
+		}
+	],
     "OnSteamGameJoin": null,
     "OnSteamRefreshInternetServers": null,
     "OnSteamRulesRefreshComplete": [],
@@ -1210,7 +1294,12 @@
     "OnSteamWorkshopItemNotCreated": [],
     "OnSteamWorkshopItemNotUpdated": [],
     "OnSteamWorkshopItemUpdated": [],
-    "OnSwitchVehicleSeat": [],
+    "OnSwitchVehicleSeat": [
+		{
+			"description": "The player who's switching seat in the vehicle.",
+			"type": "IsoPlayer"
+		}
+	],
     "OnTabAdded": [],
     "OnTabRemoved": [],
     "OnThunderEvent": [],
