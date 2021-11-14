@@ -206,6 +206,11 @@ class Wiki:
 		output += '}}\n\n'
 		output += '[[Category:Lua Events]]\n'
 
+		if jsonevent['name'] in self.obsolete:
+			output += '[[Category:Obsolete Lua Events]]\n'
+		else:
+			output += '[[Category:Current Lua Events]]\n'
+
 		return output
 
 	def format_event_parameter_name(self, jsonparam):
@@ -258,7 +263,10 @@ class Wiki:
 
 		for see_also in self.see_also[name]:
 			if see_also != name:
-				result.append('* [[Modding:Lua Events/%s|%s]]' % (see_also, see_also))
+				prefix, suffix = '', ''
+				if name in self.obsolete:
+					prefix, suffix = '<s>', '</s>'
+				result.append('* %s[[Modding:Lua Events/%s|%s]]%s' % (prefix, see_also, see_also, suffix))
 
 		return '\n'.join(result)
 
