@@ -18,14 +18,15 @@ chdir(jsondata['java']['root'])
 
 db = {
 	# Java types
-	'ArrayList': 'java.util.ArrayList',
-	'Boolean':   'java.lang.Boolean',
-	'Double':    'java.lang.Double',
-	'Float':     'java.lang.Float',
-	'Integer':   'java.lang.Integer',
-	'Long':      'java.lang.Long',
-	'Short':     'java.lang.Short',
-	'String':    'java.lang.String',
+	'ArrayList':  'java.util',
+	'Boolean':    'java.lang',
+	'ByteBuffer': 'java.nio',
+	'Double':     'java.lang',
+	'Float':      'java.lang',
+	'Integer':    'java.lang',
+	'Long':       'java.lang',
+	'Short':      'java.lang',
+	'String':     'java.lang',
 }
 
 for root, subdirs, files in walk('.'):
