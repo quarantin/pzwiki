@@ -132,7 +132,7 @@
     ],
     "OnAIStateChange": [
         {
-            "description": "The character whose AI state has changed.",
+            "description": "The character whose AI state is being changed.",
             "type": "IsoGameCharacter"
         },
         {
@@ -391,21 +391,21 @@
     "OnCreateUI": null,
     "OnCustomUIKey": [
         {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key being released.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key has been released.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnCustomUIKeyPressed": [
          {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key being pressed.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key has been pressed.",
             "name": "key",
             "type": "Integer"
         }
     ],
     "OnCustomUIKeyReleased": [
         {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key being released.",
+            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key has been released.",
             "name": "key",
             "type": "Integer"
         }
