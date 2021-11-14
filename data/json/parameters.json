@@ -709,7 +709,7 @@
     "OnLoadedTileDefinitions": [
         {
             "description": "The sprite manager.",
-            "type": "IsoSpriterManager"
+            "type": "IsoSpriteManager"
         }
     ],
     "OnLoginState": [
