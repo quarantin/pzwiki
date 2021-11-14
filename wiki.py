@@ -15,6 +15,16 @@ class Wiki:
 
 	config_file = 'config.json'
 	default_sleep = 0.2
+	names = {
+		'IsoCell':          'cell',
+		'IsoGridSquare':    'square',
+		'IsoObject':        'object',
+		'IsoPlayer':        'player',
+		'IsoGameCharacter': 'character',
+		'IsoSurvivor':      'survivor',
+		'IsoZombie':        'zombie',
+		'KahluaTable':      'table',
+	}
 
 	def __init__(self, config):
 
@@ -29,6 +39,7 @@ class Wiki:
 		self.obsolete     = self.get_obsolete_events()
 		self.oracle_url   = config['java']['oracle_url']
 		self.packages     = self.get_packages()
+		self.parameters   = self.get_parameters()
 		self.password     = target['password']
 		self.username     = target['username']
 		self.saved_events = self.get_saved_events()
@@ -100,6 +111,11 @@ class Wiki:
 		with open(filename, 'r') as fd:
 			return json.loads(fd.read())
 
+	def get_parameters(self):
+		filename = join('data', 'json', 'parameters.json')
+		with open(filename, 'r') as fd:
+			return json.loads(fd.read())
+
 	def get_saved_events(self):
 		filename = join('data', 'json', 'savedevents.json')
 		with open(filename, 'r') as fd:
@@ -156,10 +172,10 @@ class Wiki:
 		output  = ''
 		output += 'function ' + func + '('
 
-		if 'parameters' in jsonevent:
+		if event in self.parameters and self.parameters[event] != None:
 			params = []
-			for param in jsonevent['parameters']:
-				params.append(param['name'])
+			for jsonparam in self.parameters[event]:
+				params.append(self.format_event_parameter_name(jsonparam))
 			output += ', '.join(params)
 
 		output += ')\n'
@@ -191,16 +207,33 @@ class Wiki:
 
 		return output
 
+	def format_event_parameter_name(self, jsonparam):
+
+		name = jsonparam.get('name')
+		if name:
+			return name
+
+		type = jsonparam.get('type')
+		if type in self.names:
+			return self.names[type]
+
+		name = type[0].lower() + type[1:]
+		return name
+
 	def format_event_parameters(self, jsonevent):
 
-		if 'parameters' not in jsonevent:
-			return 'No parameter.\n'
+		name = jsonevent['name']
+		if name not in self.parameters or self.parameters[name] == None:
+			return 'No parameter.'
+
+		if not self.parameters[name]:
+			return 'TODO'
 
 		result = []
-		jsonparams = jsonevent['parameters']
+		jsonparams = self.parameters[name]
 		for jsonparam in jsonparams:
 			desc = jsonparam.get('description', '')
-			name = jsonparam['name']
+			name = self.format_event_parameter_name(jsonparam)
 			types = []
 			for type in jsonparam['type'].split(','):
 				desc = desc.replace('[[' + type + ']]', name)
@@ -211,7 +244,8 @@ class Wiki:
 			type = ' {{!}} '.join(types)
 			result.append('* %s %s' % (type, desc))
 
-		return '\n'.join(result)
+		output = '\n'.join(result)
+		return output
 
 	def format_event_see_also(self, jsonevent):
 
