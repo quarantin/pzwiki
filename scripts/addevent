@@ -3,36 +3,38 @@
 cd $(dirname "${0}")
 cd ..
 
-JAVAROOT=$(jq .java.root config.json | tr -d '"')
-
-CORE="$(find "${JAVAROOT}" -name Core.java)"
-if [ -z "${CORE}" ]; then
-	echo 'Cannot find Core.java!'
-	exit
+if [ -z "${1}" ]; then
+	VERSIONS=($(jq '.versions[]' config.json | tr -d '"'))
+else
+	VERSIONS=("${1}")
 fi
 
-VERSION="$(grep 'new GameVersion' "${CORE}" | cut -f2 -d'(' | awk -F, '{ print $1 $2 }' | tr ' ' '.')"
-if [ -z "${VERSION}" ]; then
-	echo 'Cannot find game version!'
-	exit
-fi
+for VERSION in "${VERSIONS[@]}"; do
 
-OUTPUT1="data/txt/events.txt"
-OUTPUT2="data/wiki/events.wiki"
-OUTPUT3="data/wiki/eventscurrent.wiki"
-OUTPUT4="data/wiki/eventsobsolete.wiki"
-echo -n > "${OUTPUT1}"
+	echo "Processing v${VERSION}"
 
-echo "== Version ${VERSION} ==" | tee "${OUTPUT2}" "${OUTPUT3}" "${OUTPUT4}"
-while read LINE; do
+	OUTDIR1="data/txt/${VERSION}"
+	OUTDIR2="data/wiki/${VERSION}"
+	mkdir -p "${OUTDIR1}" "${OUTDIR2}"
 
-	echo "${LINE}" >> "${OUTPUT1}"
+	OUTPUT1="${OUTDIR1}/events.txt"
+	OUTPUT2="${OUTDIR2}/events.wiki"
+	OUTPUT3="${OUTDIR2}/eventscurrent.wiki"
+	OUTPUT4="${OUTDIR2}/eventsobsolete.wiki"
 
-	DEPRECATED="$(grep "^${LINE}$" "data/txt/deprecated.txt")"
-	if [ -z "${DEPRECATED}" ]; then
-		echo "*[[Modding:Lua Events/$LINE|$LINE]]" | tee -a "${OUTPUT2}" "${OUTPUT3}"
-	else
-		echo "*<s>[[Modding:Lua Events/$LINE|$LINE]]</s>" | tee -a "${OUTPUT2}" "${OUTPUT4}"
-	fi
+	echo -n > "${OUTPUT1}"
 
-done < <(cat "data/txt/addeventjava.txt" "data/txt/addeventlua.txt" | sort -u)
+	echo "== Version ${VERSION} ==" | tee "${OUTPUT2}" "${OUTPUT3}" "${OUTPUT4}" >/dev/null
+	while read LINE; do
+
+		echo "${LINE}" >> "${OUTPUT1}"
+
+		DEPRECATED="$(grep "^${LINE}$" "data/txt/deprecated.txt")"
+		if [ -z "${DEPRECATED}" ]; then
+			echo "*[[Modding:Lua Events/$LINE|$LINE]]" | tee -a "${OUTPUT2}" "${OUTPUT3}" >/dev/null
+		else
+			echo "*<s>[[Modding:Lua Events/$LINE|$LINE]]</s>" | tee -a "${OUTPUT2}" "${OUTPUT4}" >/dev/null
+		fi
+
+	done < <(cat "${OUTDIR1}/addeventjava.txt" "${OUTDIR1}/addeventlua.txt" | sort -u)
+done

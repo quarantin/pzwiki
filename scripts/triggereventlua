@@ -3,14 +3,29 @@
 cd $(dirname "${0}")
 cd ..
 
-ZOMBOIDROOT=$(jq .zomboid.root config.json | tr -d '"')
+BASEROOT=$(jq .source config.json | tr -d '"')
 
-OUTPUT="data/txt/triggereventlua.txt"
-echo -n > "${OUTPUT}"
-while read line; do
+if [ -z "${1}" ]; then
+	VERSIONS=($(jq '.versions[]' config.json | tr -d '"'))
+else
+	VERSIONS=("${1}")
+fi
 
-	echo $line | sed 's/;[ ]\+/;/'
-	CLASS=$(echo $line | cut -f1 -d';' | sed 's/\$/\\$/g')
-	echo $line | sed "s/this/${CLASS}/g" | sed 's/;[ ]\+/;/' >> "${OUTPUT}"
+for VERSION in "${VERSIONS[@]}"; do
 
-done < <(grep -R 'triggerEvent(' --include '*.lua' "${ZOMBOIDROOT}" | sed "s#${ZOMBOIDROOT}##" | grep 'triggerEvent' | sed 's/\//./g' | sed 's/\.lua//' | sed 's/[ ]\+//' | sed 's/triggerEvent[^(]*//' | sed 's/(//' | rev | sed 's/)//' | sed 's/;//' | rev | sed 's/"//' | sed 's/"//' | sed 's/:/;/' | sed 's/,[ ]*/;/g' | sed 's/--.*$//' | tr -d '\r')
+	echo "Processing v${VERSION}"
+
+	OUTDIR="data/txt/${VERSION}"
+	mkdir -p "${OUTDIR}"
+
+	OUTPUT="${OUTDIR}/triggereventlua.txt"
+	echo -n > "${OUTPUT}"
+
+	LUAROOT="${BASEROOT}/${VERSION}/lua/"
+	while read line; do
+
+		CLASS=$(echo $line | cut -f1 -d';' | sed 's/\$/\\$/g')
+		echo $line | sed "s/this/${CLASS}/g" | sed 's/;[ ]\+/;/' >> "${OUTPUT}"
+
+	done < <(grep -R 'triggerEvent(' --include '*.lua' "${LUAROOT}" | sed "s#${LUAROOT}##" | grep 'triggerEvent' | sed 's/\//./g' | sed 's/\.lua//' | sed 's/[ ]\+//' | sed 's/triggerEvent[^(]*//' | sed 's/(//' | rev | sed 's/)//' | sed 's/;//' | rev | sed 's/"//' | sed 's/"//' | sed 's/:/;/' | sed 's/,[ ]*/;/g' | sed 's/--.*$//' | tr -d '\r')
+done
