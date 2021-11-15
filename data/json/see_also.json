@@ -162,7 +162,7 @@
 		"OnEquipSecondary"
 	],
 	[
-		"OnFETTick",
+		"OnFETick",
 		"OnRenderTick",
 		"OnTick",
 		"OnTickEvenPaused"
