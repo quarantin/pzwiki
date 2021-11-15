@@ -552,7 +552,13 @@
             "type": "IsoGameCharacter"
         }
     ],
-    "OnFETick": [],
+    "OnFETick": [
+		{
+			"Description": "Always zero.",
+			"name": "numberTicks",
+			"type": "Double"
+		}
+	],
     "OnFillContainer": [
         {
             "description": "The room name in which the container is installed.",
@@ -1083,7 +1089,7 @@
         }
     ],
     "OnRadioInteraction": [],
-    "OnRainStart": [],
+    "OnRainStart": null,
     "OnRainStop": null,
     "OnReceiveGlobalModData": [
         {
@@ -1305,8 +1311,18 @@
     "OnTabAdded": [],
     "OnTabRemoved": [],
     "OnThunderEvent": [],
-    "OnTick": [],
-    "OnTickEvenPaused": [],
+    "OnTick": [
+		{	"description": "The number of ticks.",
+			"name": "numberTicks",
+			"type": "Double"
+		}
+	],
+    "OnTickEvenPaused": [
+		{	"description": "The number of ticks.",
+			"name": "numberTicks",
+			"type": "Double"
+		}
+	],
     "OnTileRemoved": [],
     "OnTriggerNPCEvent": [
         {
@@ -1439,7 +1455,28 @@
             "type": "HandWeapon"
         }
     ],
-    "OnWorldMessage": [],
+    "OnWorldMessage": [
+		{
+			"description": "The user who's sending the message.",
+			"name": "user",
+			"type": "String"
+		},
+		{
+			"description": "The message that is being sent",
+			"name": "message",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "bool1",
+			"type": "Boolean"
+		},
+		{
+			"description": "TODO",
+			"name": "bool2",
+			"type": "Boolean"
+		}
+	],
     "OnZombieDead": [
         {
             "description": "The zombie who's about to get killed.",
