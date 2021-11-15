@@ -1,1461 +1,1461 @@
 {
-    "AcceptedFactionInvite": [
-        {
-            "description": "The name of the faction in which the player is being invited.",
-            "name": "factionName",
-            "type": "String"
-        },
-        {
-            "description": "The name of the player who's being invited to the faction.",
-            "name": "playerName",
-            "type": "String"
-        }
-    ],
-    "AcceptedSafehouseInvite": [
-        {
-            "description": "The name of the safehouse in which the player is being invited.",
-            "name": "safehouseName",
-            "type": "String"
-        },
-        {
-            "description": "The name of the player who's being invited to the safehouse.",
-            "name": "playerName",
-            "type": "String"
-        }
-    ],
-    "AcceptedTrade": [
-        {
-            "description": "Whether the trade was accepted or not.",
-            "name": "accepted",
-            "type": "Boolean"
-        }
-    ],
-    "AddXP": [
-        {
-            "description": "The character who's gaining XP.",
-            "name": "character",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The perk that is being leveled up.",
-            "name": "perk",
-            "type": "PerkFactory.Perk"
-        },
-        {
-            "description": "The perk level gained.",
-            "name": "level",
-            "type": "Float"
-        }
-    ],
-    "Attack": [
-        {
-            "description": "The character who's performing the attack.",
-            "type": "IsoLivingCharacter"
-        },
-        {
-            "description": "The charge time of the weapon used to perform the attack.",
-            "name": "chargeTime",
-            "type": "Float"
-        },
-        {
-            "description": "The hand weapon used to perform the attack.",
-            "type": "HandWeapon"
-        }
-    ],
-    "AutoDrink": [
-        {
-            "description": "The character who needs to drink.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "CalculateStats": [
-        {
-            "description": "The character whose stats are being calculated.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "DoSpecialTooltip": [
+	"AcceptedFactionInvite": [
+		{
+			"description": "The name of the faction in which the player is being invited.",
+			"name": "factionName",
+			"type": "String"
+		},
+		{
+			"description": "The name of the player who's being invited to the faction.",
+			"name": "playerName",
+			"type": "String"
+		}
+	],
+	"AcceptedSafehouseInvite": [
+		{
+			"description": "The name of the safehouse in which the player is being invited.",
+			"name": "safehouseName",
+			"type": "String"
+		},
+		{
+			"description": "The name of the player who's being invited to the safehouse.",
+			"name": "playerName",
+			"type": "String"
+		}
+	],
+	"AcceptedTrade": [
+		{
+			"description": "Whether the trade was accepted or not.",
+			"name": "accepted",
+			"type": "Boolean"
+		}
+	],
+	"AddXP": [
+		{
+			"description": "The character who's gaining XP.",
+			"name": "character",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The perk that is being leveled up.",
+			"name": "perk",
+			"type": "PerkFactory.Perk"
+		},
+		{
+			"description": "The perk level gained.",
+			"name": "level",
+			"type": "Float"
+		}
+	],
+	"Attack": [
+		{
+			"description": "The character who's performing the attack.",
+			"type": "IsoLivingCharacter"
+		},
+		{
+			"description": "The charge time of the weapon used to perform the attack.",
+			"name": "chargeTime",
+			"type": "Float"
+		},
+		{
+			"description": "The hand weapon used to perform the attack.",
+			"type": "HandWeapon"
+		}
+	],
+	"AutoDrink": [
+		{
+			"description": "The character who needs to drink.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"CalculateStats": [
+		{
+			"description": "The character whose stats are being calculated.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"DoSpecialTooltip": [
 
-        {
-            "description": "The tooltip object to be filled.",
-            "type": "ObjectTooltip"
-        },
-        {
-            "description": "The grid square on which the tooltip has been triggered.",
-            "type": "IsoGridSquare"
-        }
-    ],
-    "EveryDays": null,
-    "EveryHours": null,
-    "EveryOneMinute": null,
-    "EveryTenMinutes": null,
-    "LevelPerk": [
-        {
-            "description": "The character whose perk is being leveled up or down.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The perk being leveled up or down.",
-            "name": "perk",
-            "type": "PerkFactory.Perk"
-        },
-        {
-            "description": "Perk level.",
-            "name": "level",
-            "type": "Integer"
-        },
-        {
-            "description": "Whether the perk is being leveled up.",
-            "name": "levelUp",
-            "type": "Boolean"
-        }
-    ],
-    "LoadGridsquare": [
-         {
-            "description": "The grid square that is being loaded.",
-            "type": "IsoGridSquare"
-        }
-    ],
-    "MngInvReceiveItems": [
-        {
-            "description": "The items that are being received.",
-            "name": "items",
-            "type": "KahluaTable"
-        }
-    ],
-    "OnAIStateChange": [
-        {
-            "description": "The character whose AI state is being changed.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The new AI state.",
-            "name": "newState",
-            "type": "State"
-        },
-        {
-            "description": "The old AI state.",
-            "name": "oldState",
-            "type": "State"
-        }
-    ],
-    "OnAIStateEnter": [
-        {
-            "description": "The character whose AI state is being entered.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnAIStateExecute": [
-        {
-            "description": "The character whose AI state is being executed.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnAIStateExit": [
-        {
-            "description": "The character whose AI state is being exited.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnAcceptInvite": [
-        {
-            "description": "TODO",
-            "type": "Long"
-        },
-        {
-            "description": "TODO",
-            "type": "String"
-        }
-    ],
-    "OnAddBuilding": [],
-    "OnAddMessage": [
-        {
-            "description": "The chat message being added.",
-            "type": "ChatMessage"
-        },
-        {
-            "description": "The identifier of the tab in which the message is being added.",
-            "name": "tabId",
-            "type": "Short"
-        }
-    ],
-    "OnAdminMessage": [
-        {
-            "description": "The message being received from the admin.",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "name": "int1",
-            "type": "Integer"
-        },
-        {
-            "description": "TODO",
-            "name": "int2",
-            "type": "Integer"
-        },
-        {
-            "description": "TODO",
-            "name": "int3",
-            "type": "Integer"
-        }
-    ],
-    "OnAmbientSound": [
-        {
-            "description": "The name of the ambient sound.",
-            "name": "name",
-            "type": "String"
-        },
-        {
-            "description": "The x coordinate of the ambient sound.",
-            "name": "x",
-            "type": "Float"
-        },
-        {
-            "description": "The y coordinate of the ambient sound.",
-            "name": "y",
-            "type": "Float"
-        }
-    ],
-    "OnBeingHitByZombie": [],
-    "OnCGlobalObjectSystemInit": null,
-    "OnChallengeQuery": [],
-    "OnChangeWeather": [],
-    "OnCharacterCollide": [
-        {
-            "description": "The character who's colliding with another character.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The character who's being collided with.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnCharacterCreateStats": [
-        {
-            "description": "The survivor whose description is being created.",
-            "type": "SurvivorDesc"
-        }
-    ],
-    "OnCharacterDeath": [
-        {
-            "description": "The character who's about to die.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnCharacterMeet": [
-        {
-            "description": "The survivor who's meeting another character.",
-            "type": "IsoSurvivor"
-        },
-        {
-            "description": "The character who's being met.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The number of times the two characters already met. If zero, then this is their first encounter.",
-            "name": "encounters",
-            "type": "Integer"
-        }
-    ],
-    "OnChatWindowInit": null,
-    "OnClientCommand": [
-        {
-            "description": "TODO",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "TODO",
-            "type": "KahluaTable"
-        }
-    ],
-    "OnClimateManagerInit": [
-        {
-            "description": "The climate manager which is being initialized.",
-            "type": "ClimateManager"
-        }
-    ],
-    "OnClimateTick": [
-        {
-            "description": "The climate manager which is ticking.",
-            "type": "ClimateManager"
-        }
-    ],
-    "OnClimateTickDebug": [
-        {
-            "description": "The climate manager which is ticking.",
-            "type": "ClimateManager"
-        }
-    ],
-    "OnClothingUpdated": [
-        {
-            "description": "The character whose clothing has been updated.",
-            "name": "playerOrCharacter",
-            "type": "IsoPlayer,IsoGameCharacter"
-        }
-    ],
-    "OnConnectFailed": [
-        {
-            "description": "The error message describing the reason for the connection failure.",
-            "name": "error",
-            "type": "String"
-        }
-    ],
-    "OnConnected": null,
-    "OnConnectionStateChanged": [
-        {
-            "description": "The current state of the connection that has changed.",
-            "name": "state",
-            "type": "String"
-        },
-        {
-            "description": "The reason leading to the state change. It can be null.",
-            "name": "reason",
-            "type": "String"
-        }
-    ],
-    "OnContainerUpdate": [
-        {
-            "description": "The container which is being updated.",
-            "name": "container",
-            "type": "Food,IsoDeadBody,IsoGridSquare,IsoWorldInventoryObject"
-        }
-    ],
-    "OnCoopJoinFailed": [
-        {
-            "description": "The identifier of the player who was denied access to join the cooperative game. It can be either 0, 1, 2, or 3.",
-            "name": "playerId",
-            "type": "Integer"
-        }
-    ],
-    "OnCoopServerMessage": [
-        {
-            "description": "The type of message received from the server. Can be either `ping`, `pong`, `steam-id`, or `server-address`.",
-            "name": "messageType",
-            "type": "String"
-        },
-        {
-            "description": "The nick of the player who's sending the message.",
-            "name": "playerNick",
-            "type": "String"
-        },
-        {
-            "description": "The Steam identifier of the player who's sending the message.",
-            "name": "steamId",
-            "type": "String"
-        }
-    ],
-    "OnCreateLivingCharacter": [
-        {
-            "description": "The player or survivor who's being created.",
-            "name": "playerOrSurvivor",
-            "type": "IsoPlayer,IsoSurvivor"
-        },
-        {
-            "description": "The survivor description of the player or survivor who's being created.",
-            "type": "SurvivorDesc"
-        }
-    ],
-    "OnCreatePlayer": [
-        {
-            "description": "The index of the player who's being created.",
-            "name": "playerIndex",
-            "type": "Integer"
-        },
-        {
-            "description": "The player who's being created.",
-            "type": "IsoPlayer"
-        }
-    ],
-    "OnCreateSurvivor": [
-        {
-            "description": "The survivor who's being created.",
-            "type": "IsoSurvivor"
-        }
-    ],
-    "OnCreateUI": null,
-    "OnCustomUIKey": [
-        {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
-            "name": "key",
-            "type": "Integer"
-        }
-    ],
-    "OnCustomUIKeyPressed": [
-         {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been pressed.",
-            "name": "key",
-            "type": "Integer"
-        }
-    ],
-    "OnCustomUIKeyReleased": [
-        {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
-            "name": "key",
-            "type": "Integer"
-        }
-    ],
-    "OnDawn": null,
-    "OnDestroyIsoThumpable": [
-        {
-            "description": "The thumpable object which is being destroyed.",
-            "type": "IsoThumpable"
-        }
-    ],
-    "OnDeviceText": [
-        {
-            "description": "The text that is being displayed by the media device.",
-            "name": "text",
-            "type": "String,ChatMessage"
-        },
-        {
-            "description": "The x coordinate of the media device displaying the text.",
-            "name": "x",
-            "type": "Float"
-        },
-        {
-            "description": "The y coordinate of the media device displaying the text.",
-            "name": "y",
-            "type": "Float"
-        },
-        {
-            "description": "The z coordinate of the media device displaying the text.",
-            "name": "z",
-            "type": "Float"
-        },
-        {
-            "description": "TODO",
-            "name": "",
-            "type": "String"
-        },
-        {
-            "description": "The media device that is displaying the text.",
-            "name": "device",
-            "type": "IsoWaveSignal,Radio,VehiclePart"
-        }
-    ],
-    "OnDisconnect": null,
-    "OnDistributionMerge": null,
-    "OnDoTileBuilding": [],
-    "OnDoTileBuilding2": [
-        {
-            "description": "The chunk in which the tile is being set.",
-            "type": "IsoChunk"
-        },
-        {
-            "description": "Whether the tile should be rendered or not.",
-            "name": "render",
-            "type": "Boolean"
-        },
-        {
-            "description": "The x coordinate of the tile being set.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate of the tile being set.",
-            "name": "y",
-            "type": "Integer"
-        },
-        {
-            "description": "The z coordinate of the tile being set.",
-            "name": "z",
-            "type": "Integer"
-        },
-        {
-            "description": "The grid square where the tile is being set.",
-            "type": "IsoGridSquare"
-        }
-    ],
-    "OnDoTileBuilding3": [
-        {
-            "description": "The chunk in which the tile is being set.",
-            "type": "IsoChunk"
-        },
-        {
-            "description": "Whether the tile should be rendered or not.",
-            "name": "render",
-            "type": "Boolean"
-        },
-        {
-            "description": "The x coordinate of the tile being set.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate of the tile being set.",
-            "name": "y",
-            "type": "Integer"
-        },
-        {
-            "description": "The z coordinate of the tile being set.",
-            "name": "z",
-            "type": "Integer"
-        }
-    ],
-    "OnDusk": null,
-    "OnDynamicMovableRecipe": [
-        {
-            "description": "The movable object resulting from using the recipe.",
-            "type": "Moveable"
-        },
-        {
-            "description": "The movable recipe that is being used.",
-            "type": "MovableRecipe"
-        },
-        {
-            "description": "The item from the player inventory.",
-            "type": "InventoryItem"
-        },
-        {
-            "description": "The character who's using the recipe.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnEnterVehicle": [
-        {
-            "description": "The character who's entering the vehicle.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnEquipPrimary": [
-        {
-            "description": "The character who's equipping the item.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The item that is being equipped in the primary slot.",
-            "type": "InventoryItem"
-        }
-    ],
-    "OnEquipSecondary": [
-        {
-            "description": "The character who's equipping the item.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The item that is being equipped in the secondary slot.",
-            "type": "InventoryItem"
-        }
-    ],
-    "OnExitVehicle": [
-        {
-            "description": "The character who's exiting the vehicle.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnFETick": [
+		{
+			"description": "The tooltip object to be filled.",
+			"type": "ObjectTooltip"
+		},
+		{
+			"description": "The grid square on which the tooltip has been triggered.",
+			"type": "IsoGridSquare"
+		}
+	],
+	"EveryDays": null,
+	"EveryHours": null,
+	"EveryOneMinute": null,
+	"EveryTenMinutes": null,
+	"LevelPerk": [
+		{
+			"description": "The character whose perk is being leveled up or down.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The perk being leveled up or down.",
+			"name": "perk",
+			"type": "PerkFactory.Perk"
+		},
+		{
+			"description": "Perk level.",
+			"name": "level",
+			"type": "Integer"
+		},
+		{
+			"description": "Whether the perk is being leveled up.",
+			"name": "levelUp",
+			"type": "Boolean"
+		}
+	],
+	"LoadGridsquare": [
+		 {
+			"description": "The grid square that is being loaded.",
+			"type": "IsoGridSquare"
+		}
+	],
+	"MngInvReceiveItems": [
+		{
+			"description": "The items that are being received.",
+			"name": "items",
+			"type": "KahluaTable"
+		}
+	],
+	"OnAIStateChange": [
+		{
+			"description": "The character whose AI state is being changed.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The new AI state.",
+			"name": "newState",
+			"type": "State"
+		},
+		{
+			"description": "The old AI state.",
+			"name": "oldState",
+			"type": "State"
+		}
+	],
+	"OnAIStateEnter": [
+		{
+			"description": "The character whose AI state is being entered.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnAIStateExecute": [
+		{
+			"description": "The character whose AI state is being executed.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnAIStateExit": [
+		{
+			"description": "The character whose AI state is being exited.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnAcceptInvite": [
+		{
+			"description": "TODO",
+			"type": "Long"
+		},
+		{
+			"description": "TODO",
+			"type": "String"
+		}
+	],
+	"OnAddBuilding": [],
+	"OnAddMessage": [
+		{
+			"description": "The chat message being added.",
+			"type": "ChatMessage"
+		},
+		{
+			"description": "The identifier of the tab in which the message is being added.",
+			"name": "tabId",
+			"type": "Short"
+		}
+	],
+	"OnAdminMessage": [
+		{
+			"description": "The message being received from the admin.",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "int1",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"name": "int2",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"name": "int3",
+			"type": "Integer"
+		}
+	],
+	"OnAmbientSound": [
+		{
+			"description": "The name of the ambient sound.",
+			"name": "name",
+			"type": "String"
+		},
+		{
+			"description": "The x coordinate of the ambient sound.",
+			"name": "x",
+			"type": "Float"
+		},
+		{
+			"description": "The y coordinate of the ambient sound.",
+			"name": "y",
+			"type": "Float"
+		}
+	],
+	"OnBeingHitByZombie": [],
+	"OnCGlobalObjectSystemInit": null,
+	"OnChallengeQuery": [],
+	"OnChangeWeather": [],
+	"OnCharacterCollide": [
+		{
+			"description": "The character who's colliding with another character.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The character who's being collided with.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnCharacterCreateStats": [
+		{
+			"description": "The survivor whose description is being created.",
+			"type": "SurvivorDesc"
+		}
+	],
+	"OnCharacterDeath": [
+		{
+			"description": "The character who's about to die.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnCharacterMeet": [
+		{
+			"description": "The survivor who's meeting another character.",
+			"type": "IsoSurvivor"
+		},
+		{
+			"description": "The character who's being met.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The number of times the two characters already met. If zero, then this is their first encounter.",
+			"name": "encounters",
+			"type": "Integer"
+		}
+	],
+	"OnChatWindowInit": null,
+	"OnClientCommand": [
+		{
+			"description": "TODO",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "TODO",
+			"type": "KahluaTable"
+		}
+	],
+	"OnClimateManagerInit": [
+		{
+			"description": "The climate manager which is being initialized.",
+			"type": "ClimateManager"
+		}
+	],
+	"OnClimateTick": [
+		{
+			"description": "The climate manager which is ticking.",
+			"type": "ClimateManager"
+		}
+	],
+	"OnClimateTickDebug": [
+		{
+			"description": "The climate manager which is ticking.",
+			"type": "ClimateManager"
+		}
+	],
+	"OnClothingUpdated": [
+		{
+			"description": "The character whose clothing has been updated.",
+			"name": "playerOrCharacter",
+			"type": "IsoPlayer,IsoGameCharacter"
+		}
+	],
+	"OnConnectFailed": [
+		{
+			"description": "The error message describing the reason for the connection failure.",
+			"name": "error",
+			"type": "String"
+		}
+	],
+	"OnConnected": null,
+	"OnConnectionStateChanged": [
+		{
+			"description": "The current state of the connection that has changed.",
+			"name": "state",
+			"type": "String"
+		},
+		{
+			"description": "The reason leading to the state change. It can be null.",
+			"name": "reason",
+			"type": "String"
+		}
+	],
+	"OnContainerUpdate": [
+		{
+			"description": "The container which is being updated.",
+			"name": "container",
+			"type": "Food,IsoDeadBody,IsoGridSquare,IsoWorldInventoryObject"
+		}
+	],
+	"OnCoopJoinFailed": [
+		{
+			"description": "The identifier of the player who was denied access to join the cooperative game. It can be either 0, 1, 2, or 3.",
+			"name": "playerId",
+			"type": "Integer"
+		}
+	],
+	"OnCoopServerMessage": [
+		{
+			"description": "The type of message received from the server. Can be either `ping`, `pong`, `steam-id`, or `server-address`.",
+			"name": "messageType",
+			"type": "String"
+		},
+		{
+			"description": "The nick of the player who's sending the message.",
+			"name": "playerNick",
+			"type": "String"
+		},
+		{
+			"description": "The Steam identifier of the player who's sending the message.",
+			"name": "steamId",
+			"type": "String"
+		}
+	],
+	"OnCreateLivingCharacter": [
+		{
+			"description": "The player or survivor who's being created.",
+			"name": "playerOrSurvivor",
+			"type": "IsoPlayer,IsoSurvivor"
+		},
+		{
+			"description": "The survivor description of the player or survivor who's being created.",
+			"type": "SurvivorDesc"
+		}
+	],
+	"OnCreatePlayer": [
+		{
+			"description": "The index of the player who's being created.",
+			"name": "playerIndex",
+			"type": "Integer"
+		},
+		{
+			"description": "The player who's being created.",
+			"type": "IsoPlayer"
+		}
+	],
+	"OnCreateSurvivor": [
+		{
+			"description": "The survivor who's being created.",
+			"type": "IsoSurvivor"
+		}
+	],
+	"OnCreateUI": null,
+	"OnCustomUIKey": [
+		{
+			"description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
+			"name": "key",
+			"type": "Integer"
+		}
+	],
+	"OnCustomUIKeyPressed": [
+		 {
+			"description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been pressed.",
+			"name": "key",
+			"type": "Integer"
+		}
+	],
+	"OnCustomUIKeyReleased": [
+		{
+			"description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
+			"name": "key",
+			"type": "Integer"
+		}
+	],
+	"OnDawn": null,
+	"OnDestroyIsoThumpable": [
+		{
+			"description": "The thumpable object which is being destroyed.",
+			"type": "IsoThumpable"
+		}
+	],
+	"OnDeviceText": [
+		{
+			"description": "The text that is being displayed by the media device.",
+			"name": "text",
+			"type": "String,ChatMessage"
+		},
+		{
+			"description": "The x coordinate of the media device displaying the text.",
+			"name": "x",
+			"type": "Float"
+		},
+		{
+			"description": "The y coordinate of the media device displaying the text.",
+			"name": "y",
+			"type": "Float"
+		},
+		{
+			"description": "The z coordinate of the media device displaying the text.",
+			"name": "z",
+			"type": "Float"
+		},
+		{
+			"description": "TODO",
+			"name": "",
+			"type": "String"
+		},
+		{
+			"description": "The media device that is displaying the text.",
+			"name": "device",
+			"type": "IsoWaveSignal,Radio,VehiclePart"
+		}
+	],
+	"OnDisconnect": null,
+	"OnDistributionMerge": null,
+	"OnDoTileBuilding": [],
+	"OnDoTileBuilding2": [
+		{
+			"description": "The chunk in which the tile is being set.",
+			"type": "IsoChunk"
+		},
+		{
+			"description": "Whether the tile should be rendered or not.",
+			"name": "render",
+			"type": "Boolean"
+		},
+		{
+			"description": "The x coordinate of the tile being set.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate of the tile being set.",
+			"name": "y",
+			"type": "Integer"
+		},
+		{
+			"description": "The z coordinate of the tile being set.",
+			"name": "z",
+			"type": "Integer"
+		},
+		{
+			"description": "The grid square where the tile is being set.",
+			"type": "IsoGridSquare"
+		}
+	],
+	"OnDoTileBuilding3": [
+		{
+			"description": "The chunk in which the tile is being set.",
+			"type": "IsoChunk"
+		},
+		{
+			"description": "Whether the tile should be rendered or not.",
+			"name": "render",
+			"type": "Boolean"
+		},
+		{
+			"description": "The x coordinate of the tile being set.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate of the tile being set.",
+			"name": "y",
+			"type": "Integer"
+		},
+		{
+			"description": "The z coordinate of the tile being set.",
+			"name": "z",
+			"type": "Integer"
+		}
+	],
+	"OnDusk": null,
+	"OnDynamicMovableRecipe": [
+		{
+			"description": "The movable object resulting from using the recipe.",
+			"type": "Moveable"
+		},
+		{
+			"description": "The movable recipe that is being used.",
+			"type": "MovableRecipe"
+		},
+		{
+			"description": "The item from the player inventory.",
+			"type": "InventoryItem"
+		},
+		{
+			"description": "The character who's using the recipe.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnEnterVehicle": [
+		{
+			"description": "The character who's entering the vehicle.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnEquipPrimary": [
+		{
+			"description": "The character who's equipping the item.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The item that is being equipped in the primary slot.",
+			"type": "InventoryItem"
+		}
+	],
+	"OnEquipSecondary": [
+		{
+			"description": "The character who's equipping the item.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The item that is being equipped in the secondary slot.",
+			"type": "InventoryItem"
+		}
+	],
+	"OnExitVehicle": [
+		{
+			"description": "The character who's exiting the vehicle.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnFETick": [
 		{
 			"description": "Always zero.",
 			"name": "numberTicks",
 			"type": "Double"
 		}
 	],
-    "OnFillContainer": [
-        {
-            "description": "The room name in which the container is installed.",
-            "name": "roomName",
-            "type": "String"
-        },
-        {
-            "description": "The type of the container that is being filled.",
-            "name": "containerType",
-            "type": "String"
-        },
-        {
-            "description": "The container that is being filled.",
-            "type": "ItemContainer"
-        }
-    ],
-    "OnFillInventoryObjectContextMenu": [
-        {
-            "description": "The player for which the context menu is being filled.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The context menu to be filled.",
-            "type": "context",
-            "type": "ISContextMenu"
-        },
-        {
-            "description": "The items available in the player inventory.",
-            "name": "items",
-            "type": "KahluaTable"
-        }
-    ],
-    "OnFillWorldObjectContextMenu": [
-        {
-            "description": "The player for which the context menu is being filled.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The context menu to be filled.",
-            "name": "context",
-            "type": "ISContextMenu"
-        },
-        {
-            "description": "The world objects available nearby the player.",
-            "name": "worldObjects",
-            "type": "KahluaTable"
-        },
-        {
-            "description": "Set to true if called for the purpose of testing for nearby objects.",
-            "name": "test",
-            "type": "Boolean"
-        }
-    ],
-    "OnGameBoot": null,
-    "OnGameStart": null,
-    "OnGameTimeLoaded": null,
-    "OnGamepadConnect": [
-        {
-            "description": "The identifier of the gamepad which has been connected.",
-            "name": "controllerID",
-            "type": "Integer"
-        }
-    ],
-    "OnGamepadDisconnect": [
-        {
-            "description": "The identifier of the gamepad which has been disconnected.",
-            "name": "controllerID",
-            "type": "Integer"
-        }
-    ],
-    "OnGetDBSchema": [
-        {
-            "description": "The database schema of the game client.",
-            "name": "dbSchema",
-            "type": "KahluaTable"
-        }
-    ],
-    "OnGetTableResult": [
-        {
-            "description": "TODO",
-            "type": "ArrayList"
-        },
-        {
-            "description": "TODO",
-            "type": "Integer"
-        },
-        {
-            "description": "TODO",
-            "type": "String"
-        }
-    ],
-    "OnGridBurnt": [
-        {
-            "description": "The grid square that is burning.",
-            "type": "IsoGridSquare"
-        }
-    ],
-    "OnHitZombie": [],
-    "OnInitGlobalModData": [],
-    "OnInitModdedWeatherStage": [],
-    "OnInitRecordedMedia": [],
-    "OnInitSeasons": [],
-    "OnInitWorld": null,
-    "OnIsoThumpableLoad": [],
-    "OnIsoThumpableSave": [],
-    "OnJoypadActivate": [
-        {
-            "description": "The identifier of the joypad which has been activated.",
-            "name": "controllerId",
-            "type": "Integer"
-        }
-    ],
-    "OnJoypadActivateUI": [],
-    "OnJoypadBeforeDeactivate": [],
-    "OnJoypadBeforeReactivate": [],
-    "OnJoypadDeactivate": [],
-    "OnJoypadReactivate": [],
-    "OnJoypadRenderUI": null,
-    "OnKeyKeepPressed": [
-        {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been kept pressed.",
-            "name": "key",
-            "type": "Integer"
-        }
-    ],
-    "OnKeyPressed": [
-        {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
-            "name": "key",
-            "type": "Integer"
-        }
-    ],
-    "OnKeyStartPressed": [
-        {
-            "description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been pressed.",
-            "name": "key",
-            "type": "Integer"
-        }
-    ],
-    "OnLoad": null,
-    "OnLoadMapZones": null,
-    "OnLoadRadioScripts": [
-        {
-            "description": "The radio script manager.",
-            "type": "RadioScriptManager"
-        },
-        {
-            "description": "True if the world has not yet been initialized.",
-            "name": "worldInit",
-            "type": "Boolean"
-        }
-    ],
-    "OnLoadSoundBanks": null,
-    "OnLoadedTileDefinitions": [
-        {
-            "description": "The sprite manager.",
-            "type": "IsoSpriteManager"
-        }
-    ],
-    "OnLoginState": [
-        {
-            "description": "The current login state.",
-            "type": "LoginState"
-        }
-    ],
-    "OnLoginStateSuccess": null,
-    "OnMainMenuEnter": null,
-    "OnMakeItem": [
-        {
-            "description": "TODO",
-            "name": "item",
-            "type": "InventoryItem"
-        },
-        {
-            "description": "The item that is being created when applying the recipe.",
-            "name": "resultItem",
-            "type": "InventoryItem"
-        },
-        {
-            "description": "The recipe to make the resulting item.",
-            "type": "Recipe"
-        }
-    ],
-    "OnMapLoadCreateIsoObject": [],
-    "OnMechanicActionDone": [
-        {
-            "description": "The character who performed the mechanic action.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "TODO",
-            "name": "TODO",
-            "type": "Boolean"
-        },
-        {
-            "description": "TODO",
-            "name": "TODO",
-            "type": "Integer"
-        },
-        {
-            "description": "TODO",
-            "name": "TODO",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "name": "TODO",
-            "type": "Long"
-        },
-        {
-            "description": "TODO",
-            "name": "TODO",
-            "type": "Boolean"
-        }
-    ],
-    "OnMiniScoreboardUpdate": null,
-    "OnModsModified": null,
-    "OnMouseDown": [
-        {
-            "description": "The x coordinate where the mouse button was pressed down.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate where the mouse button was pressed down.",
-            "name": "y",
-            "type": "Integer"
-        }
-    ],
-    "OnMouseMove": [
-        {
-            "description": "The x coordinate of the mouse position.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate of the mouse position.",
-            "name": "y",
-            "type": "Integer"
-        },
-        {
-            "description": "TODO: Mouse position deltaX?",
-            "name": "dx",
-            "type": "Integer"
-        },
-        {
-            "description": "TODO: Mouse position deltaY?",
-            "name": "dy",
-            "type": "Integer"
-        }
-    ],
-    "OnMouseUp": [
-        {
-            "description": "The x coordinate where the mouse button was released.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate where the mouse button was released.",
-            "name": "y",
-            "type": "Integer"
-        }
-    ],
-    "OnMultiTriggerNPCEvent": [
-        {
-            "description": "The type of trigger of this NPC event.",
-            "name": "triggerType",
-            "type": "String"
-        },
-        {
-            "description": "The ModData of this trigger.",
-            "name": "modData",
-            "type": "KahluaTable"
-        },
-        {
-            "description": "The building definition of this trigger.",
-            "type": "BuildingDef"
-        }
-    ],
-    "OnNPCSurvivorUpdate": [
-        {
-            "description": "The survivor who's being updated.",
-            "type": "IsoSurvivor"
-        }
-    ],
-    "OnNewFire": [
-        {
-            "description": "The fire object.",
-            "type": "IsoFire"
-        }
-    ],
-    "OnNewGame": [
-        {
-            "description": "The player who's starting the game.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The grid square where the player is located.",
-            "type": "IsoGridSquare"
-        }
-    ],
-    "OnNewSurvivorGroup": [],
-    "OnObjectAboutToBeRemoved": [
-        {
-            "description": "The object about to be removed.",
-            "type": "IsoObject"
-        }
-    ],
-    "OnObjectAdded": [
-        {
-            "description": "The object that was added.",
-            "type": "IsoObject"
-        }
-    ],
-    "OnObjectCollide": [
-        {
-            "description": "The character who's colliding with another object.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The object that is being collided with.",
-            "type": "IsoDoor,IsoGridSquare,IsoThumpable,IsoWindow,IsoZombie"
-        }
-    ],
-    "OnObjectLeftMouseButtonDown": [
-        {
-            "description": "The object on which the left mouse button was pressed down.",
-            "type": "IsoObject"
-        },
-        {
-            "description": "The x coordinate where the left mouse button was pressed down.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate where the left mouse button was pressed down.",
-            "name": "y",
-            "type": "Integer"
-        }
-    ],
-    "OnObjectLeftMouseButtonUp": [
-        {
-            "description": "The object on which the left mouse button was released.",
-            "type": "IsoObject"
-        },
-        {
-            "description": "The x coordinate where the left mouse button was released.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate where the left mouse button was released.",
-            "name": "y",
-            "type": "Integer"
-        }
-    ],
-    "OnObjectRightMouseButtonDown": [
-        {
-            "description": "The object on which the right mouse button was pressed down.",
-            "type": "IsoObject"
-        },
-        {
-            "description": "The x coordinate where the right mouse button was pressed down.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate where the right mouse button was pressed down.",
-            "name": "y",
-            "type": "Integer"
-        }
-    ],
-    "OnObjectRightMouseButtonUp": [
-        {
-            "description": "The object on which the right mouse button was released.",
-            "type": "IsoObject"
-        },
-        {
-            "description": "The x coordinate where the right mouse button was released.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The x coordinate where the right mouse button was released.",
-            "name": "y",
-            "type": "Integer"
-        }
-    ],
-    "OnPlayerAttackFinished": [
-        {
-            "description": "The character who's finished attacking.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The hand weapon used to perform the attack.",
-            "type": "HandWeapon"
-        }
-    ],
-    "OnPlayerCancelTimedAction": [
-        {
-            "description": "The action that was canceled.",
-            "name": "action",
-            "type": "BaseAction"
-        }
-    ],
-    "OnPlayerDeath": [
-        {
-            "description": "The player who's about to die.",
-            "type": "IsoPlayer"
-        }
-    ],
-    "OnPlayerMove": [
-        {
-            "description": "The player who's moving.",
-            "type": "IsoPlayer"
-        }
-    ],
-    "OnPlayerSetSafehouse": [
-        {
-            "description": "The survivor group for which the safehouse is being set.",
-            "type": "SurvivorGroup"
-        },
-        {
-            "description": "The building definition of the safehouse that is being set.",
-            "type": "BuildingDef"
-        }
-    ],
-    "OnPlayerUpdate": [
-        {
-            "description": "The player who's being updated.",
-            "type": "IsoPlayer"
-        }
-    ],
-    "OnPostCharactersSquareDraw": [],
-    "OnPostDistributionMerge": null,
-    "OnPostFloorLayerDraw": [
-        {
-            "description": "The z coordinate of the layer which was rendered.",
-            "name": "z",
-            "type": "Integer"
-        }
-    ],
-    "OnPostFloorSquareDraw": [],
-    "OnPostMapLoad": [
-        {
-            "description": "The cell which was loaded.",
-            "type": "IsoCell"
-        },
-        {
-            "description": "The world x coordinate of the cell which was loaded.",
-            "name": "worldX",
-            "type": "Integer"
-        },
-        {
-            "description": "The world y coordinate of the cell which was loaded.",
-            "name": "worldY",
-            "type": "Integer"
-        }
-    ],
-    "OnPostRender": null,
-    "OnPostSave": null,
-    "OnPostTileDraw": [],
-    "OnPostTilesSquareDraw": [],
-    "OnPostUIDraw": null,
-    "OnPostWallSquareDraw": [],
-    "OnPreDistributionMerge": null,
-    "OnPreFillInventoryObjectContextMenu": [
-        {
-            "description": "The player for which the context menu is being filled.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The context menu to be filled.",
-            "name": "context",
-            "type": "ISContextMenu"
-        },
-        {
-            "description": "The items available in the player inventory.",
-            "name": "items",
-            "type": "KahluaTable"
-        }
-    ],
-    "OnPreFillWorldObjectContextMenu": [
-        {
-            "description": "The player for which the context menu is being filled.",
-            "name": "player",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The context menu to be filled.",
-            "name": "context",
-            "type": "ISContextMenu"
-        },
-        {
-            "description": "The world objects available nearby the player.",
-            "name": "worldObjects",
-            "type": "KahluaTable"
-        },
-        {
-            "description": "True if called for the purpose of testing for nearby objects.",
-            "name": "test",
-            "type": "Boolean"
-        }
-    ],
-    "OnPreGameStart": [],
-    "OnPreMapLoad": null,
-    "OnPreUIDraw": null,
-    "OnPressRackButton": [
-        {
-            "description": "The player who's racking the firearm.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The firearm which is being racked.",
-            "name": "firearm",
-            "type": "HandWeapon"
-        }
-    ],
-    "OnPressReloadButton": [
-        {
-            "description": "The player who's reloading the firearm.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The firearm which is being reloaded.",
-            "name": "firearm",
-            "type": "HandWeapon"
-        }
-    ],
-    "OnRadioInteraction": [],
-    "OnRainStart": null,
-    "OnRainStop": null,
-    "OnReceiveGlobalModData": [
-        {
-            "description": "The key for the ModData that has been received.",
-            "name": "key",
-            "type": "String"
-        },
-        {
-            "description": "The ModData that has been received.",
-            "name": "modData",
-            "type": "KahluaTable"
-        }
-    ],
-    "OnReceiveItemListNet": [
-        {
-            "description": "The player who's receiving the item list.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The list of items that is being received.",
-            "name": "itemList",
-            "type": "ArrayList"
-        },
-        {
-            "description": "The player who's sending the item list.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "TODO",
-            "name": "string1",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "name": "string2",
-            "type": "String"
-        }
-    ],
-    "OnReceiveUserlog": [
-        {
-            "description": "TODO",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "type": "ByteBuffer"
-        }
-    ],
-    "OnRefreshInventoryWindowContainers": [
-        {
-            "description": "The inventory page being refreshed.",
-            "type": "ISInventoryPage"
-        },
-        {
-            "description": "The current state of the refresh process. Possible values are `begin`, `beforeFloor`, `buttonsAdded`, or `end`.",
-            "name": "state",
-            "type": "String"
-        }
-    ],
-    "OnRenderTick": null,
-    "OnRenderUpdate": [],
-    "OnResetLua": [
-        {
-            "description": "The reason why Lua was reset.",
-            "name": "reason",
-            "type": "String"
-        }
-    ],
-    "OnResolutionChange": [
-        {
-            "description": "The old width of the screen.",
-            "name": "oldWidth",
-            "type": "Integer"
-        },
-        {
+	"OnFillContainer": [
+		{
+			"description": "The room name in which the container is installed.",
+			"name": "roomName",
+			"type": "String"
+		},
+		{
+			"description": "The type of the container that is being filled.",
+			"name": "containerType",
+			"type": "String"
+		},
+		{
+			"description": "The container that is being filled.",
+			"type": "ItemContainer"
+		}
+	],
+	"OnFillInventoryObjectContextMenu": [
+		{
+			"description": "The player for which the context menu is being filled.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The context menu to be filled.",
+			"type": "context",
+			"type": "ISContextMenu"
+		},
+		{
+			"description": "The items available in the player inventory.",
+			"name": "items",
+			"type": "KahluaTable"
+		}
+	],
+	"OnFillWorldObjectContextMenu": [
+		{
+			"description": "The player for which the context menu is being filled.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The context menu to be filled.",
+			"name": "context",
+			"type": "ISContextMenu"
+		},
+		{
+			"description": "The world objects available nearby the player.",
+			"name": "worldObjects",
+			"type": "KahluaTable"
+		},
+		{
+			"description": "Set to true if called for the purpose of testing for nearby objects.",
+			"name": "test",
+			"type": "Boolean"
+		}
+	],
+	"OnGameBoot": null,
+	"OnGameStart": null,
+	"OnGameTimeLoaded": null,
+	"OnGamepadConnect": [
+		{
+			"description": "The identifier of the gamepad which has been connected.",
+			"name": "controllerID",
+			"type": "Integer"
+		}
+	],
+	"OnGamepadDisconnect": [
+		{
+			"description": "The identifier of the gamepad which has been disconnected.",
+			"name": "controllerID",
+			"type": "Integer"
+		}
+	],
+	"OnGetDBSchema": [
+		{
+			"description": "The database schema of the game client.",
+			"name": "dbSchema",
+			"type": "KahluaTable"
+		}
+	],
+	"OnGetTableResult": [
+		{
+			"description": "TODO",
+			"type": "ArrayList"
+		},
+		{
+			"description": "TODO",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"type": "String"
+		}
+	],
+	"OnGridBurnt": [
+		{
+			"description": "The grid square that is burning.",
+			"type": "IsoGridSquare"
+		}
+	],
+	"OnHitZombie": [],
+	"OnInitGlobalModData": [],
+	"OnInitModdedWeatherStage": [],
+	"OnInitRecordedMedia": [],
+	"OnInitSeasons": [],
+	"OnInitWorld": null,
+	"OnIsoThumpableLoad": [],
+	"OnIsoThumpableSave": [],
+	"OnJoypadActivate": [
+		{
+			"description": "The identifier of the joypad which has been activated.",
+			"name": "controllerId",
+			"type": "Integer"
+		}
+	],
+	"OnJoypadActivateUI": [],
+	"OnJoypadBeforeDeactivate": [],
+	"OnJoypadBeforeReactivate": [],
+	"OnJoypadDeactivate": [],
+	"OnJoypadReactivate": [],
+	"OnJoypadRenderUI": null,
+	"OnKeyKeepPressed": [
+		{
+			"description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been kept pressed.",
+			"name": "key",
+			"type": "Integer"
+		}
+	],
+	"OnKeyPressed": [
+		{
+			"description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been released.",
+			"name": "key",
+			"type": "Integer"
+		}
+	],
+	"OnKeyStartPressed": [
+		{
+			"description": "The [http://legacy.lwjgl.org/javadoc/org/lwjgl/input/Keyboard.html Keyboard] key that has been pressed.",
+			"name": "key",
+			"type": "Integer"
+		}
+	],
+	"OnLoad": null,
+	"OnLoadMapZones": null,
+	"OnLoadRadioScripts": [
+		{
+			"description": "The radio script manager.",
+			"type": "RadioScriptManager"
+		},
+		{
+			"description": "True if the world has not yet been initialized.",
+			"name": "worldInit",
+			"type": "Boolean"
+		}
+	],
+	"OnLoadSoundBanks": null,
+	"OnLoadedTileDefinitions": [
+		{
+			"description": "The sprite manager.",
+			"type": "IsoSpriteManager"
+		}
+	],
+	"OnLoginState": [
+		{
+			"description": "The current login state.",
+			"type": "LoginState"
+		}
+	],
+	"OnLoginStateSuccess": null,
+	"OnMainMenuEnter": null,
+	"OnMakeItem": [
+		{
+			"description": "TODO",
+			"name": "item",
+			"type": "InventoryItem"
+		},
+		{
+			"description": "The item that is being created when applying the recipe.",
+			"name": "resultItem",
+			"type": "InventoryItem"
+		},
+		{
+			"description": "The recipe to make the resulting item.",
+			"type": "Recipe"
+		}
+	],
+	"OnMapLoadCreateIsoObject": [],
+	"OnMechanicActionDone": [
+		{
+			"description": "The character who performed the mechanic action.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Boolean"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Long"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Boolean"
+		}
+	],
+	"OnMiniScoreboardUpdate": null,
+	"OnModsModified": null,
+	"OnMouseDown": [
+		{
+			"description": "The x coordinate where the mouse button was pressed down.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate where the mouse button was pressed down.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
+	"OnMouseMove": [
+		{
+			"description": "The x coordinate of the mouse position.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate of the mouse position.",
+			"name": "y",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO: Mouse position deltaX?",
+			"name": "dx",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO: Mouse position deltaY?",
+			"name": "dy",
+			"type": "Integer"
+		}
+	],
+	"OnMouseUp": [
+		{
+			"description": "The x coordinate where the mouse button was released.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate where the mouse button was released.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
+	"OnMultiTriggerNPCEvent": [
+		{
+			"description": "The type of trigger of this NPC event.",
+			"name": "triggerType",
+			"type": "String"
+		},
+		{
+			"description": "The ModData of this trigger.",
+			"name": "modData",
+			"type": "KahluaTable"
+		},
+		{
+			"description": "The building definition of this trigger.",
+			"type": "BuildingDef"
+		}
+	],
+	"OnNPCSurvivorUpdate": [
+		{
+			"description": "The survivor who's being updated.",
+			"type": "IsoSurvivor"
+		}
+	],
+	"OnNewFire": [
+		{
+			"description": "The fire object.",
+			"type": "IsoFire"
+		}
+	],
+	"OnNewGame": [
+		{
+			"description": "The player who's starting the game.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The grid square where the player is located.",
+			"type": "IsoGridSquare"
+		}
+	],
+	"OnNewSurvivorGroup": [],
+	"OnObjectAboutToBeRemoved": [
+		{
+			"description": "The object about to be removed.",
+			"type": "IsoObject"
+		}
+	],
+	"OnObjectAdded": [
+		{
+			"description": "The object that was added.",
+			"type": "IsoObject"
+		}
+	],
+	"OnObjectCollide": [
+		{
+			"description": "The character who's colliding with another object.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The object that is being collided with.",
+			"type": "IsoDoor,IsoGridSquare,IsoThumpable,IsoWindow,IsoZombie"
+		}
+	],
+	"OnObjectLeftMouseButtonDown": [
+		{
+			"description": "The object on which the left mouse button was pressed down.",
+			"type": "IsoObject"
+		},
+		{
+			"description": "The x coordinate where the left mouse button was pressed down.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate where the left mouse button was pressed down.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
+	"OnObjectLeftMouseButtonUp": [
+		{
+			"description": "The object on which the left mouse button was released.",
+			"type": "IsoObject"
+		},
+		{
+			"description": "The x coordinate where the left mouse button was released.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate where the left mouse button was released.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
+	"OnObjectRightMouseButtonDown": [
+		{
+			"description": "The object on which the right mouse button was pressed down.",
+			"type": "IsoObject"
+		},
+		{
+			"description": "The x coordinate where the right mouse button was pressed down.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate where the right mouse button was pressed down.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
+	"OnObjectRightMouseButtonUp": [
+		{
+			"description": "The object on which the right mouse button was released.",
+			"type": "IsoObject"
+		},
+		{
+			"description": "The x coordinate where the right mouse button was released.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The x coordinate where the right mouse button was released.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
+	"OnPlayerAttackFinished": [
+		{
+			"description": "The character who's finished attacking.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon used to perform the attack.",
+			"type": "HandWeapon"
+		}
+	],
+	"OnPlayerCancelTimedAction": [
+		{
+			"description": "The action that was canceled.",
+			"name": "action",
+			"type": "BaseAction"
+		}
+	],
+	"OnPlayerDeath": [
+		{
+			"description": "The player who's about to die.",
+			"type": "IsoPlayer"
+		}
+	],
+	"OnPlayerMove": [
+		{
+			"description": "The player who's moving.",
+			"type": "IsoPlayer"
+		}
+	],
+	"OnPlayerSetSafehouse": [
+		{
+			"description": "The survivor group for which the safehouse is being set.",
+			"type": "SurvivorGroup"
+		},
+		{
+			"description": "The building definition of the safehouse that is being set.",
+			"type": "BuildingDef"
+		}
+	],
+	"OnPlayerUpdate": [
+		{
+			"description": "The player who's being updated.",
+			"type": "IsoPlayer"
+		}
+	],
+	"OnPostCharactersSquareDraw": [],
+	"OnPostDistributionMerge": null,
+	"OnPostFloorLayerDraw": [
+		{
+			"description": "The z coordinate of the layer which was rendered.",
+			"name": "z",
+			"type": "Integer"
+		}
+	],
+	"OnPostFloorSquareDraw": [],
+	"OnPostMapLoad": [
+		{
+			"description": "The cell which was loaded.",
+			"type": "IsoCell"
+		},
+		{
+			"description": "The world x coordinate of the cell which was loaded.",
+			"name": "worldX",
+			"type": "Integer"
+		},
+		{
+			"description": "The world y coordinate of the cell which was loaded.",
+			"name": "worldY",
+			"type": "Integer"
+		}
+	],
+	"OnPostRender": null,
+	"OnPostSave": null,
+	"OnPostTileDraw": [],
+	"OnPostTilesSquareDraw": [],
+	"OnPostUIDraw": null,
+	"OnPostWallSquareDraw": [],
+	"OnPreDistributionMerge": null,
+	"OnPreFillInventoryObjectContextMenu": [
+		{
+			"description": "The player for which the context menu is being filled.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The context menu to be filled.",
+			"name": "context",
+			"type": "ISContextMenu"
+		},
+		{
+			"description": "The items available in the player inventory.",
+			"name": "items",
+			"type": "KahluaTable"
+		}
+	],
+	"OnPreFillWorldObjectContextMenu": [
+		{
+			"description": "The player for which the context menu is being filled.",
+			"name": "player",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The context menu to be filled.",
+			"name": "context",
+			"type": "ISContextMenu"
+		},
+		{
+			"description": "The world objects available nearby the player.",
+			"name": "worldObjects",
+			"type": "KahluaTable"
+		},
+		{
+			"description": "True if called for the purpose of testing for nearby objects.",
+			"name": "test",
+			"type": "Boolean"
+		}
+	],
+	"OnPreGameStart": [],
+	"OnPreMapLoad": null,
+	"OnPreUIDraw": null,
+	"OnPressRackButton": [
+		{
+			"description": "The player who's racking the firearm.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The firearm which is being racked.",
+			"name": "firearm",
+			"type": "HandWeapon"
+		}
+	],
+	"OnPressReloadButton": [
+		{
+			"description": "The player who's reloading the firearm.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The firearm which is being reloaded.",
+			"name": "firearm",
+			"type": "HandWeapon"
+		}
+	],
+	"OnRadioInteraction": [],
+	"OnRainStart": null,
+	"OnRainStop": null,
+	"OnReceiveGlobalModData": [
+		{
+			"description": "The key for the ModData that has been received.",
+			"name": "key",
+			"type": "String"
+		},
+		{
+			"description": "The ModData that has been received.",
+			"name": "modData",
+			"type": "KahluaTable"
+		}
+	],
+	"OnReceiveItemListNet": [
+		{
+			"description": "The player who's receiving the item list.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The list of items that is being received.",
+			"name": "itemList",
+			"type": "ArrayList"
+		},
+		{
+			"description": "The player who's sending the item list.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "TODO",
+			"name": "string1",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "string2",
+			"type": "String"
+		}
+	],
+	"OnReceiveUserlog": [
+		{
+			"description": "TODO",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"type": "ByteBuffer"
+		}
+	],
+	"OnRefreshInventoryWindowContainers": [
+		{
+			"description": "The inventory page being refreshed.",
+			"type": "ISInventoryPage"
+		},
+		{
+			"description": "The current state of the refresh process. Possible values are `begin`, `beforeFloor`, `buttonsAdded`, or `end`.",
+			"name": "state",
+			"type": "String"
+		}
+	],
+	"OnRenderTick": null,
+	"OnRenderUpdate": [],
+	"OnResetLua": [
+		{
+			"description": "The reason why Lua was reset.",
+			"name": "reason",
+			"type": "String"
+		}
+	],
+	"OnResolutionChange": [
+		{
+			"description": "The old width of the screen.",
+			"name": "oldWidth",
+			"type": "Integer"
+		},
+		{
 
-            "description": "The old height of the screen.",
-            "name": "oldHeight",
-            "type": "Integer"
-        },
-        {
-            "description": "The new width of the screen.",
-            "name": "newWidth",
-            "type": "Integer"
-        },
-        {
-            "description": "The new height of the screen.",
-            "name": "newHeight",
-            "type": "Integer"
-        }
-    ],
-    "OnRightMouseDown": [
-        {
-            "description": "The x coordinate where the right mouse button was pressed down.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate where the right mouse button was pressed down.",
-            "name": "y",
-            "type": "Integer"
-        }
-    ],
-    "OnRightMouseUp": [
-        {
-            "description": "The x coordinate where the right mouse button was released.",
-            "name": "x",
-            "type": "Integer"
-        },
-        {
-            "description": "The y coordinate where the right mouse button was released.",
-            "name": "y",
-            "type": "Integer"
-        }
-    ],
-    "OnSGlobalObjectSystemInit": null,
-    "OnSafehousesChanged": null,
-    "OnSave": null,
-    "OnScoreboardUpdate": [
-        {
-            "description": "The player names being updated on the score board.",
-            "name": "playerNames",
-            "type": "ArrayList"
-        },
-        {
-            "description": "TODO",
-            "type": "ArrayList"
-        },
-        {
-            "description": "The Steam identifiers of the players being updated on the score board.",
-            "name": "steamIds",
-            "type": "ArrayList"
-        }
-    ],
-    "OnSeeNewRoom": [
-        {
-            "description": "The room being seen for the first time by any player.",
-            "type": "IsoRoom"
-        }
-    ],
-    "OnServerCommand": [
-        {
-            "description": "TODO",
-            "name": "string1",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "name": "string2",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "name": "table",
-            "type": "KahluaTable"
-        }
-    ],
-    "OnServerFinishSaving": null,
-    "OnServerStartSaving": null,
-    "OnServerStarted": null,
-    "OnServerStatisticReceived": null,
-    "OnServerWorkshopItems": [
-        {
-            "description": "TODO: Required => ArrayList, Details => ArrayList, Error => String, Error = (Long, String), Success => No param, Progress => (String(Steam ID), Long, Long)",
-            "name": "state",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "name": "data",
-            "type": "ArrayList,Long,String"
-        },
-        {
-            "description": "TODO",
-            "name": "data2",
-            "type": "Long,String"
-        },
-        {
-            "description": "TODO",
-            "name": "data3",
-            "type": "Long"
-        }
-    ],
-    "OnSetDefaultTab": [
-        {
-            "description": "The chat tab that is being set as default.",
-            "type": "ChatTab"
-        }
-    ],
-    "OnSpawnRegionsLoaded": [
-        {
-            "description": "A table of spawn regions that have been loaded.",
-            "name": "spawnRegions",
-            "type": "KahluaTable"
-        }
-    ],
-    "OnSteamFriendStatusChanged": [
-        {
-            "description": "TODO: A Long converted to a String. Steam ID?",
-            "type": "String"
-        }
-    ],
-    "OnSteamGameJoin": null,
-    "OnSteamRefreshInternetServers": null,
-    "OnSteamRulesRefreshComplete": [],
-    "OnSteamServerFailedToRespond2": [],
-    "OnSteamServerResponded": [],
-    "OnSteamServerResponded2": [],
-    "OnSteamWorkshopItemCreated": [],
-    "OnSteamWorkshopItemNotCreated": [],
-    "OnSteamWorkshopItemNotUpdated": [],
-    "OnSteamWorkshopItemUpdated": [],
-    "OnSwitchVehicleSeat": [
-        {
-            "description": "The player who's switching seat in the vehicle.",
-            "type": "IsoPlayer"
-        }
-    ],
-    "OnTabAdded": [],
-    "OnTabRemoved": [],
-    "OnThunderEvent": [],
-    "OnTick": [
+			"description": "The old height of the screen.",
+			"name": "oldHeight",
+			"type": "Integer"
+		},
+		{
+			"description": "The new width of the screen.",
+			"name": "newWidth",
+			"type": "Integer"
+		},
+		{
+			"description": "The new height of the screen.",
+			"name": "newHeight",
+			"type": "Integer"
+		}
+	],
+	"OnRightMouseDown": [
+		{
+			"description": "The x coordinate where the right mouse button was pressed down.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate where the right mouse button was pressed down.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
+	"OnRightMouseUp": [
+		{
+			"description": "The x coordinate where the right mouse button was released.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate where the right mouse button was released.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
+	"OnSGlobalObjectSystemInit": null,
+	"OnSafehousesChanged": null,
+	"OnSave": null,
+	"OnScoreboardUpdate": [
+		{
+			"description": "The player names being updated on the score board.",
+			"name": "playerNames",
+			"type": "ArrayList"
+		},
+		{
+			"description": "TODO",
+			"type": "ArrayList"
+		},
+		{
+			"description": "The Steam identifiers of the players being updated on the score board.",
+			"name": "steamIds",
+			"type": "ArrayList"
+		}
+	],
+	"OnSeeNewRoom": [
+		{
+			"description": "The room being seen for the first time by any player.",
+			"type": "IsoRoom"
+		}
+	],
+	"OnServerCommand": [
+		{
+			"description": "TODO",
+			"name": "string1",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "string2",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "table",
+			"type": "KahluaTable"
+		}
+	],
+	"OnServerFinishSaving": null,
+	"OnServerStartSaving": null,
+	"OnServerStarted": null,
+	"OnServerStatisticReceived": null,
+	"OnServerWorkshopItems": [
+		{
+			"description": "TODO: Required => ArrayList, Details => ArrayList, Error => String, Error = (Long, String), Success => No param, Progress => (String(Steam ID), Long, Long)",
+			"name": "state",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "data",
+			"type": "ArrayList,Long,String"
+		},
+		{
+			"description": "TODO",
+			"name": "data2",
+			"type": "Long,String"
+		},
+		{
+			"description": "TODO",
+			"name": "data3",
+			"type": "Long"
+		}
+	],
+	"OnSetDefaultTab": [
+		{
+			"description": "The chat tab that is being set as default.",
+			"type": "ChatTab"
+		}
+	],
+	"OnSpawnRegionsLoaded": [
+		{
+			"description": "A table of spawn regions that have been loaded.",
+			"name": "spawnRegions",
+			"type": "KahluaTable"
+		}
+	],
+	"OnSteamFriendStatusChanged": [
+		{
+			"description": "TODO: A Long converted to a String. Steam ID?",
+			"type": "String"
+		}
+	],
+	"OnSteamGameJoin": null,
+	"OnSteamRefreshInternetServers": null,
+	"OnSteamRulesRefreshComplete": [],
+	"OnSteamServerFailedToRespond2": [],
+	"OnSteamServerResponded": [],
+	"OnSteamServerResponded2": [],
+	"OnSteamWorkshopItemCreated": [],
+	"OnSteamWorkshopItemNotCreated": [],
+	"OnSteamWorkshopItemNotUpdated": [],
+	"OnSteamWorkshopItemUpdated": [],
+	"OnSwitchVehicleSeat": [
+		{
+			"description": "The player who's switching seat in the vehicle.",
+			"type": "IsoPlayer"
+		}
+	],
+	"OnTabAdded": [],
+	"OnTabRemoved": [],
+	"OnThunderEvent": [],
+	"OnTick": [
 		{	"description": "The number of ticks.",
 			"name": "numberTicks",
 			"type": "Double"
 		}
 	],
-    "OnTickEvenPaused": [
+	"OnTickEvenPaused": [
 		{	"description": "The number of ticks.",
 			"name": "numberTicks",
 			"type": "Double"
 		}
 	],
-    "OnTileRemoved": [],
-    "OnTriggerNPCEvent": [
-        {
-            "description": "The type of trigger of this NPC event.",
-            "name": "triggerType",
-            "type": "String"
-        },
-        {
-            "description": "The ModData of this trigger.",
-            "name": "modData",
-            "type": "KahluaTable"
-        },
-        {
-            "description": "The building definition of this trigger.",
-            "type": "BuildingDef"
-        }
-    ],
-    "OnUpdateModdedWeatherStage": [
-        {
-            "description": "The current weather period.",
-            "type": "WeatherPeriod"
-        },
-        {
-            "description": "The current stage of the weather.",
-            "name": "weatherStage",
-            "type": "WeatherPeriod.WeatherStage"
-        },
-        {
-            "description": "The strength of the air front.",
-            "name": "strength",
-            "type": "Float"
-        }
-    ],
-    "OnUseVehicle": [
-        {
-            "description": "The player who's driving the vehicle.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The vehicle that the player is driving.",
-            "type": "BaseVehicle"
-        },
-        {
-            "description": "TODO: Whether the player has been driving for more than 0.5 what?",
-            "name": "TODO",
-            "type": "Boolean"
-        }
-    ],
-    "OnVehicleDamageTexture": [
-        {
-            "description": "The player who's driving the vehicle.",
-            "type": "IsoGameCharacter"
-        }
-    ],
-    "OnVehicleHorn": [
-        {
-            "description": "The player who's driving the vehicle.",
-            "type": "IsoPlayer"
-        },
-        {
+	"OnTileRemoved": [],
+	"OnTriggerNPCEvent": [
+		{
+			"description": "The type of trigger of this NPC event.",
+			"name": "triggerType",
+			"type": "String"
+		},
+		{
+			"description": "The ModData of this trigger.",
+			"name": "modData",
+			"type": "KahluaTable"
+		},
+		{
+			"description": "The building definition of this trigger.",
+			"type": "BuildingDef"
+		}
+	],
+	"OnUpdateModdedWeatherStage": [
+		{
+			"description": "The current weather period.",
+			"type": "WeatherPeriod"
+		},
+		{
+			"description": "The current stage of the weather.",
+			"name": "weatherStage",
+			"type": "WeatherPeriod.WeatherStage"
+		},
+		{
+			"description": "The strength of the air front.",
+			"name": "strength",
+			"type": "Float"
+		}
+	],
+	"OnUseVehicle": [
+		{
+			"description": "The player who's driving the vehicle.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The vehicle that the player is driving.",
+			"type": "BaseVehicle"
+		},
+		{
+			"description": "TODO: Whether the player has been driving for more than 0.5 what?",
+			"name": "TODO",
+			"type": "Boolean"
+		}
+	],
+	"OnVehicleDamageTexture": [
+		{
+			"description": "The player who's driving the vehicle.",
+			"type": "IsoGameCharacter"
+		}
+	],
+	"OnVehicleHorn": [
+		{
+			"description": "The player who's driving the vehicle.",
+			"type": "IsoPlayer"
+		},
+		{
 
-            "description": "The vehicle that the player is driving.",
-            "type": "BaseVehicle"
-        },
-        {
+			"description": "The vehicle that the player is driving.",
+			"type": "BaseVehicle"
+		},
+		{
 
-            "description": "Whether the vehicle horn is being pressed.",
-            "name": "pressed",
-            "type": "Boolean"
-        }
-    ],
-    "OnWaterAmountChange": [
-        {
-            "description": "The object in which the water amount is changing.",
-            "type": "IsoObject"
-        },
-        {
-            "description": "The amount of water that is being added or removed from the water container.",
-            "name": "waterAmount",
-            "type": "Integer"
-        }
-    ],
-    "OnWeaponHitCharacter": [
-        {
-            "description": "The character whose weapon hit another character.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The character who's been hit by another character.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The hand weapon used to hit the character.",
-            "type": "HandWeapon"
-        },
-        {
-            "description": "The damage inflicted to the character who's been hit.",
-            "name": "damage",
-            "type": "Float"
-        }
-    ],
-    "OnWeaponHitTree": [
-        {
-            "description": "The character whose weapon hit a tree.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The hand weapon used to hit the tree.",
-            "type": "HandWeapon"
-        }
-    ],
-    "OnWeaponHitXp": [],
-    "OnWeaponSwing": [
-        {
-            "description": "The character who's wielding the weapon.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The hand weapon that is being wielded.",
-            "type": "HandWeapon"
-        }
-    ],
-    "OnWeaponSwingHitPoint": [
-        {
-            "description": "The character who's wielding the weapon.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The hand weapon that is being wielded.",
-            "type": "HandWeapon"
-        }
-    ],
-    "OnWorldMessage": [
+			"description": "Whether the vehicle horn is being pressed.",
+			"name": "pressed",
+			"type": "Boolean"
+		}
+	],
+	"OnWaterAmountChange": [
+		{
+			"description": "The object in which the water amount is changing.",
+			"type": "IsoObject"
+		},
+		{
+			"description": "The amount of water that is being added or removed from the water container.",
+			"name": "waterAmount",
+			"type": "Integer"
+		}
+	],
+	"OnWeaponHitCharacter": [
+		{
+			"description": "The character whose weapon hit another character.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The character who's been hit by another character.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon used to hit the character.",
+			"type": "HandWeapon"
+		},
+		{
+			"description": "The damage inflicted to the character who's been hit.",
+			"name": "damage",
+			"type": "Float"
+		}
+	],
+	"OnWeaponHitTree": [
+		{
+			"description": "The character whose weapon hit a tree.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon used to hit the tree.",
+			"type": "HandWeapon"
+		}
+	],
+	"OnWeaponHitXp": [],
+	"OnWeaponSwing": [
+		{
+			"description": "The character who's wielding the weapon.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon that is being wielded.",
+			"type": "HandWeapon"
+		}
+	],
+	"OnWeaponSwingHitPoint": [
+		{
+			"description": "The character who's wielding the weapon.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon that is being wielded.",
+			"type": "HandWeapon"
+		}
+	],
+	"OnWorldMessage": [
 		{
 			"description": "The user who's sending the message.",
 			"name": "user",
@@ -1477,148 +1477,148 @@
 			"type": "Boolean"
 		}
 	],
-    "OnZombieDead": [
-        {
-            "description": "The zombie who's about to get killed.",
-            "name": "zombie",
-            "type": "IsoZombie"
-        }
-    ],
-    "OnZombieUpdate": [
-        {
-            "description": "The zombie who's being updated.",
-            "type": "IsoZombie"
-        }
-    ],
-    "ReceiveFactionInvite": [
-        {
-            "description": "The name of the faction for which the player received an invitation.",
-            "name": "factionName",
-            "type": "String"
-        },
-        {
-            "description": "The name of the player who's been invited to join the faction.",
-            "name": "playerName",
-            "type": "String"
-        }
-    ],
-    "ReceiveSafehouseInvite": [
-        {
-            "description": "The safehouse for which the player received an invitation.",
-            "type": "SafeHouse"
-        },
-        {
-            "description": "The name of the player who's been invited to join the safehouse.",
-            "name": "playerName",
-            "type": "String"
-        }
-    ],
-    "RequestTrade": [
-        {
-            "description": "The player who's requesting the trade.",
-            "type": "IsoPlayer"
-        }
-    ],
-    "ReuseGridsquare": [
-        {
-            "description": "The grid square that is going to be reused.",
-            "type": "IsoGridSquare"
-        }
-    ],
-    "SendCustomModData": null,
-    "ServerPinged": [
-        {
-            "description": "TODO",
-            "name": "string1",
-            "type": "String"
-        },
-        {
-            "description": "TODO",
-            "name": "string2",
-            "type": "String"
-        }
-    ],
-    "SwitchChatStream": null,
-    "SyncFaction": [
-        {
-            "description": "The name of the faction which is going to get synchronized.",
-            "name": "factionName",
-            "type": "String"
-        }
-    ],
-    "TradingUIAddItem": [
-        {
-            "description": "The player who's adding an item to the trade.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The item that the player is adding to the trade.",
-            "type": "InventoryItem"
-        }
-    ],
-    "TradingUIRemoveItem": [
-        {
-            "description": "The player who's removing an item from the trade.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The index of the item that the player is removing from the trade.",
-            "name": "itemIndex",
-            "type": "Integer"
-        }
-    ],
-    "TradingUIUpdateState": [
-        {
-            "description": "The player who's updating an item.",
-            "type": "IsoPlayer"
-        },
-        {
-            "description": "The index of the item that the player is updating.",
-            "name": "itemIndex",
-            "type": "Integer"
-        }
-    ],
-    "UseItem": [],
-    "ViewTickets": [
-        {
-            "description": "TODO",
-            "type": "ByteBufferWriter"
-        }
-    ],
-    "WeaponHitCharacter": [
-        {
-            "description": "The character whose weapon hit another character.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The character who's been hit by another character.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The hand weapon used to hit the character.",
-            "type": "HandWeapon"
-        },
-        {
-            "description": "The damage inflicted to the character who's been hit.",
-            "name": "damage",
-            "type": "Float"
-        }
-     ],
-    "WeaponSwing": [
-        {
-            "description": "The character who's wielding the weapon.",
-            "type": "IsoGameCharacter"
-        },
-        {
-            "description": "The hand weapon that is being wielded.",
-            "type": "HandWeapon"
-        }
-    ],
-    "WeaponSwingHitPoint": [],
-    "onLoadModDataFromServer": [
-        {
-            "description": "The grid square whose ModData is getting loaded from the server.",
-            "type": "IsoGridSquare"
-        }
-    ]
+	"OnZombieDead": [
+		{
+			"description": "The zombie who's about to get killed.",
+			"name": "zombie",
+			"type": "IsoZombie"
+		}
+	],
+	"OnZombieUpdate": [
+		{
+			"description": "The zombie who's being updated.",
+			"type": "IsoZombie"
+		}
+	],
+	"ReceiveFactionInvite": [
+		{
+			"description": "The name of the faction for which the player received an invitation.",
+			"name": "factionName",
+			"type": "String"
+		},
+		{
+			"description": "The name of the player who's been invited to join the faction.",
+			"name": "playerName",
+			"type": "String"
+		}
+	],
+	"ReceiveSafehouseInvite": [
+		{
+			"description": "The safehouse for which the player received an invitation.",
+			"type": "SafeHouse"
+		},
+		{
+			"description": "The name of the player who's been invited to join the safehouse.",
+			"name": "playerName",
+			"type": "String"
+		}
+	],
+	"RequestTrade": [
+		{
+			"description": "The player who's requesting the trade.",
+			"type": "IsoPlayer"
+		}
+	],
+	"ReuseGridsquare": [
+		{
+			"description": "The grid square that is going to be reused.",
+			"type": "IsoGridSquare"
+		}
+	],
+	"SendCustomModData": null,
+	"ServerPinged": [
+		{
+			"description": "TODO",
+			"name": "string1",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "string2",
+			"type": "String"
+		}
+	],
+	"SwitchChatStream": null,
+	"SyncFaction": [
+		{
+			"description": "The name of the faction which is going to get synchronized.",
+			"name": "factionName",
+			"type": "String"
+		}
+	],
+	"TradingUIAddItem": [
+		{
+			"description": "The player who's adding an item to the trade.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The item that the player is adding to the trade.",
+			"type": "InventoryItem"
+		}
+	],
+	"TradingUIRemoveItem": [
+		{
+			"description": "The player who's removing an item from the trade.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The index of the item that the player is removing from the trade.",
+			"name": "itemIndex",
+			"type": "Integer"
+		}
+	],
+	"TradingUIUpdateState": [
+		{
+			"description": "The player who's updating an item.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The index of the item that the player is updating.",
+			"name": "itemIndex",
+			"type": "Integer"
+		}
+	],
+	"UseItem": [],
+	"ViewTickets": [
+		{
+			"description": "TODO",
+			"type": "ByteBufferWriter"
+		}
+	],
+	"WeaponHitCharacter": [
+		{
+			"description": "The character whose weapon hit another character.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The character who's been hit by another character.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon used to hit the character.",
+			"type": "HandWeapon"
+		},
+		{
+			"description": "The damage inflicted to the character who's been hit.",
+			"name": "damage",
+			"type": "Float"
+		}
+	 ],
+	"WeaponSwing": [
+		{
+			"description": "The character who's wielding the weapon.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon that is being wielded.",
+			"type": "HandWeapon"
+		}
+	],
+	"WeaponSwingHitPoint": [],
+	"onLoadModDataFromServer": [
+		{
+			"description": "The grid square whose ModData is getting loaded from the server.",
+			"type": "IsoGridSquare"
+		}
+	]
 }
