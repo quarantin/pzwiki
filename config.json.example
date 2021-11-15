@@ -1,30 +1,24 @@
 {
-	"java": {
-		"root": "/home/co/IdeaProjects/Sources/build/generated/sources/zomboid/",
-		"javadoc_url": "https://quarantin.github.io/zomboid-javadoc/41.56/",
-		"oracle_url": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/",
-		"ignored_packages": [
-			"astar",
-			"com",
-			"de",
-			"fmod",
-			"javax",
-			"N3D",
-			"org"
-		]
-	},
-	"target": {
-		"username": "YOUR_USERNAME",
-		"password": "YOUR_PASSWORD",
-		"wiki_url": "YOUR_WIKI_URL"
-	},
-	"source": {
-		"wiki_url": "https://pzwiki.net/",
-		"namespaces": [
-			"Modding:Lua Event"
-		]
-	},
-	"zomboid": {
-		"root": "/home/co/.steam/steam/steamapps/common/ProjectZomboid/projectzomboid/media/"
+	"ignored_packages": [ "astar", "com", "de", "fmod", "javax", "N3D", "org" ],
+	"javadoc_oracle_url": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/",
+	"javadoc_zomboid_url": "https://quarantin.github.io/zomboid-javadoc/",
+	"source": "/home/co/Zomboid/sources/",
+	"versions": [
+		"41.56",
+		"40.43",
+		"39.67",
+		"38.30"
+	],
+	"wiki": {
+		"offical": {
+			"username": "YOUR_USERNAME",
+			"password": "YOUR_PASSWORD",
+			"url": "https://pzwiki.net/"
+		},
+		"unofficial": {
+			"username": "YOUR_USERNAME",
+			"password": "YOUR_PASSWORD",
+			"url": "https://pzwiki.miraheze.org/"
+		}
 	}
 }
