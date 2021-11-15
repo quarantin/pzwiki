@@ -1,0 +1,2026 @@
+{
+	"AcceptedFactionInvite": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"AcceptedSafehouseInvite": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"AcceptedTrade": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"AddXP": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"Attack": {
+		"available": [
+			"41.56"
+		],
+		"missing": [
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"AutoDrink": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"CalculateStats": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"DoSpecialTooltip": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"EveryDays": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"EveryHours": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"EveryOneMinute": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"EveryTenMinutes": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"LevelPerk": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"LoadGridsquare": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"MngInvReceiveItems": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnAIStateChange": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnAIStateEnter": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnAIStateExecute": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnAIStateExit": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnAcceptInvite": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnAddBuilding": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnAddMessage": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnAdminMessage": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnAmbientSound": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnBeingHitByZombie": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnCGlobalObjectSystemInit": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnChallengeQuery": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnChangeWeather": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCharacterCollide": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCharacterCreateStats": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnCharacterDeath": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCharacterMeet": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnChatWindowInit": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnClientCommand": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnClimateManagerInit": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnClimateTick": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnClimateTickDebug": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnClothingUpdated": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnConnectFailed": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnConnected": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnConnectionStateChanged": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnContainerUpdate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCoopJoinFailed": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCoopServerMessage": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCreateLivingCharacter": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCreatePlayer": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCreateSurvivor": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCreateUI": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCustomUIKey": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCustomUIKeyPressed": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnCustomUIKeyReleased": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDawn": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDestroyIsoThumpable": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDeviceText": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDisconnect": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDistributionMerge": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDoTileBuilding": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnDoTileBuilding2": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDoTileBuilding3": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDusk": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnDynamicMovableRecipe": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnEnterVehicle": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnEquipPrimary": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnEquipSecondary": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnExitVehicle": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnFETick": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnFillContainer": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnFillInventoryObjectContextMenu": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnFillWorldObjectContextMenu": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnGameBoot": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnGameStart": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnGameTimeLoaded": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnGamepadConnect": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnGamepadDisconnect": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnGetDBSchema": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnGetTableResult": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnGridBurnt": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnHitZombie": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnInitGlobalModData": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnInitModdedWeatherStage": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnInitRecordedMedia": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnInitSeasons": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnInitWorld": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnIsoThumpableLoad": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnIsoThumpableSave": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnJoypadActivate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnJoypadActivateUI": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnJoypadBeforeDeactivate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnJoypadBeforeReactivate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnJoypadDeactivate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnJoypadReactivate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnJoypadRenderUI": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnKeyKeepPressed": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnKeyPressed": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnKeyStartPressed": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnLoad": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnLoadMapZones": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnLoadRadioScripts": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnLoadSoundBanks": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnLoadedTileDefinitions": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnLoginState": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnLoginStateSuccess": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnMainMenuEnter": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnMakeItem": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnMapLoadCreateIsoObject": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnMechanicActionDone": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnMiniScoreboardUpdate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnModsModified": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnMouseDown": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnMouseMove": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnMouseUp": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnMultiTriggerNPCEvent": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnNPCSurvivorUpdate": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnNewFire": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnNewGame": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnNewSurvivorGroup": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnObjectAboutToBeRemoved": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnObjectAdded": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnObjectCollide": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnObjectLeftMouseButtonDown": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnObjectLeftMouseButtonUp": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnObjectRightMouseButtonDown": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnObjectRightMouseButtonUp": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPlayerAttackFinished": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPlayerCancelTimedAction": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnPlayerDeath": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPlayerMove": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPlayerSetSafehouse": {
+		"available": [
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56"
+		]
+	},
+	"OnPlayerUpdate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPostCharactersSquareDraw": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnPostDistributionMerge": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPostFloorLayerDraw": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPostFloorSquareDraw": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnPostMapLoad": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPostRender": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPostSave": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPostTileDraw": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnPostTilesSquareDraw": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnPostUIDraw": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPostWallSquareDraw": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnPreDistributionMerge": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPreFillInventoryObjectContextMenu": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPreFillWorldObjectContextMenu": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPreGameStart": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnPreMapLoad": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPreUIDraw": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPressRackButton": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnPressReloadButton": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnRadioInteraction": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnRainStart": {
+		"available": [
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56",
+			"40.43"
+		]
+	},
+	"OnRainStop": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnReceiveGlobalModData": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnReceiveItemListNet": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnReceiveUserlog": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnRefreshInventoryWindowContainers": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnRenderTick": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnRenderUpdate": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnResetLua": {
+		"available": [
+			"41.56"
+		],
+		"missing": [
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnResolutionChange": {
+		"available": [
+			"41.56"
+		],
+		"missing": [
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"OnRightMouseDown": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnRightMouseUp": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSGlobalObjectSystemInit": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSafehousesChanged": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSave": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnScoreboardUpdate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSeeNewRoom": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnServerCommand": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnServerFinishSaving": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnServerStartSaving": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnServerStarted": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnServerStatisticReceived": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnServerWorkshopItems": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSetDefaultTab": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSpawnRegionsLoaded": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamFriendStatusChanged": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamGameJoin": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamRefreshInternetServers": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamRulesRefreshComplete": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamServerFailedToRespond2": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamServerResponded": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamServerResponded2": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamWorkshopItemCreated": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamWorkshopItemNotCreated": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamWorkshopItemNotUpdated": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSteamWorkshopItemUpdated": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnSwitchVehicleSeat": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnTabAdded": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnTabRemoved": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnThunderEvent": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnTick": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnTickEvenPaused": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnTileRemoved": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnTriggerNPCEvent": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnUpdateModdedWeatherStage": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnUseVehicle": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnVehicleDamageTexture": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnVehicleHorn": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnWaterAmountChange": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnWeaponHitCharacter": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnWeaponHitTree": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnWeaponHitXp": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnWeaponSwing": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnWeaponSwingHitPoint": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnWorldMessage": {
+		"available": [
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"41.56",
+			"40.43"
+		]
+	},
+	"OnZombieDead": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"OnZombieUpdate": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"ReceiveFactionInvite": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"ReceiveSafehouseInvite": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"RequestTrade": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"ReuseGridsquare": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"SendCustomModData": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"ServerPinged": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"SwitchChatStream": {
+		"available": [
+			"41.56",
+			"39.67",
+			"38.30"
+		],
+		"missing": [
+			"40.43"
+		]
+	},
+	"SyncFaction": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"TradingUIAddItem": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"TradingUIRemoveItem": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"TradingUIUpdateState": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"UseItem": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"ViewTickets": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"WeaponHitCharacter": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67"
+		],
+		"missing": [
+			"38.30"
+		]
+	},
+	"WeaponSwing": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	},
+	"WeaponSwingHitPoint": {
+		"available": [],
+		"missing": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		]
+	},
+	"onLoadModDataFromServer": {
+		"available": [
+			"41.56",
+			"40.43",
+			"39.67",
+			"38.30"
+		],
+		"missing": []
+	}
+}
