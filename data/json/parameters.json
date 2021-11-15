@@ -554,7 +554,7 @@
     ],
     "OnFETick": [
 		{
-			"Description": "Always zero.",
+			"description": "Always zero.",
 			"name": "numberTicks",
 			"type": "Double"
 		}
