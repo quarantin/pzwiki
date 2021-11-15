@@ -28,20 +28,21 @@ class Wiki:
 
 	def __init__(self, config):
 
-		target = config.get('target', {})
+		self.versions     = config['versions']
+		self.version      = self.versions[0]
 
-		self.api_path     = target.get('wiki_path', '/w/api.php')
-		self.api_url      = target['wiki_url'].strip('/')
+		self.api_path     = config['wiki'].get('path', '/w/api.php')
+		self.api_url      = config['wiki']['unofficial']['url'].strip('/')
 		self.descriptions = self.get_descriptions()
 		self.events       = self.get_events()
 		self.logged       = False
-		self.javadoc_url  = config['java']['javadoc_url']
+		self.javadoc_url  = config['javadoc_zomboid_url']
 		self.obsolete     = self.get_obsolete_events()
-		self.oracle_url   = config['java']['oracle_url']
+		self.oracle_url   = config['javadoc_oracle_url']
 		self.packages     = self.get_packages()
 		self.parameters   = self.get_parameters()
-		self.password     = target['password']
-		self.username     = target['username']
+		self.password     = config['wiki']['unofficial']['password']
+		self.username     = config['wiki']['unofficial']['username']
 		self.saved_events = self.get_saved_events()
 		self.see_also     = self.get_see_also()
 		self.session      = requests.Session()
@@ -72,7 +73,7 @@ class Wiki:
 			return json.loads(fd.read())
 
 	def get_events(self):
-		filename = join('data', 'txt', 'events.txt')
+		filename = join('data', 'txt', self.version, 'events.txt')
 		with open(filename, 'r') as fd:
 			return [x for x in fd.read().split('\n') if x.strip() ]
 
@@ -103,12 +104,12 @@ class Wiki:
 		return jsondata['query']['tokens']['logintoken']
 
 	def get_obsolete_events(self):
-		filename = join('data', 'txt', 'deprecated.txt')
+		filename = join('data', 'txt', self.version, 'deprecated.txt')
 		with open(filename, 'r') as fd:
 			return fd.read().split('\n')
 
 	def get_packages(self):
-		filename = join('data', 'json', 'class2pkg.json')
+		filename = join('data', 'json', self.version, 'class2pkg.json')
 		with open(filename, 'r') as fd:
 			return json.loads(fd.read())
 
