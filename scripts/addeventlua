@@ -3,17 +3,32 @@
 cd $(dirname "${0}")
 cd ..
 
-ZOMBOIDROOT=$(jq .zomboid.root config.json | tr -d '"')
+BASEROOT="$(jq .source config.json | tr -d '"')"
 
-OUTPUT="data/txt/addeventlua.txt"
-echo -n > "${OUTPUT}"
+if [ -z "${1}" ]; then
+	VERSIONS=($(jq '.versions[]' config.json | tr -d '"'))
+else
+	VERSIONS=("${1}")
+fi
 
-while read LINE; do
+for VERSION in "${VERSIONS[@]}"; do
 
-	if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
-		continue
-	fi
+	echo "Processing v${VERSION}"
 
-	echo "${LINE}" >> "${OUTPUT}"
+	OUTDIR="data/txt/${VERSION}"
+	mkdir -p "${OUTDIR}"
 
-done < <(grep -R 'AddEvent(' "${ZOMBOIDROOT}" --include '*.lua' | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed 's/--.*$//' | sort -u)
+	OUTPUT="${OUTDIR}/addeventlua.txt"
+	echo -n > "${OUTPUT}"
+
+	LUAROOT="${BASEROOT}/${VERSION}/lua"
+	while read LINE; do
+
+		if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
+			continue
+		fi
+
+		echo "${LINE}" >> "${OUTPUT}"
+
+	done < <(grep -R 'AddEvent(' "${LUAROOT}" --include '*.lua' | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed 's/--.*$//' | sort -u)
+done

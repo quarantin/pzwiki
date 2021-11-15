@@ -3,17 +3,32 @@
 cd $(dirname "${0}")
 cd ..
 
-JAVAROOT=$(jq .java.root config.json | tr -d '"')
+BASEROOT="$(jq .source config.json | tr -d '"')"
 
-OUTPUT="data/txt/addeventjava.txt"
-echo -n > "${OUTPUT}"
+if [ -z "${1}" ]; then
+	VERSIONS=($(jq '.versions[]' config.json | tr -d '"'))
+else
+	VERSIONS=("${1}")
+fi
 
-while read LINE; do
+for VERSION in "${VERSIONS[@]}"; do
 
-	if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
-		continue
-	fi
+	echo "Processing v${VERSION}"
 
-	echo "${LINE}" >> "${OUTPUT}"
+	OUTDIR="data/txt/${VERSION}"
+	mkdir -p "${OUTDIR}"
 
-done < <((echo OnPlayerCancelTimedAction; grep -R 'AddEvent("' "${JAVAROOT}" --include '*.java') | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort)
+	OUTPUT="${OUTDIR}/addeventjava.txt"
+	echo -n > "${OUTPUT}"
+
+	JAVAROOT="${BASEROOT}/${VERSION}/java"
+	while read LINE; do
+
+		if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
+			continue
+		fi
+
+		echo "${LINE}" >> "${OUTPUT}"
+
+	done < <((echo OnPlayerCancelTimedAction; grep -R 'AddEvent("' "${JAVAROOT}" --include '*.java') | cut -f2 -d: | sed 's/^[ ]\+//' | cut -f2 -d'"' | sed '' | sort -u)
+done
