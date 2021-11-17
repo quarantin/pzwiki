@@ -167,7 +167,12 @@
 			"type": "String"
 		}
 	],
-	"OnAddBuilding": [],
+	"OnAddBuilding": [
+		{
+			"description": "The building definition that is being added.",
+			"type": "BuildingDef"
+		}
+	],
 	"OnAddMessage": [
 		{
 			"description": "The chat message being added.",
@@ -217,10 +222,21 @@
 			"type": "Float"
 		}
 	],
-	"OnBeingHitByZombie": [],
+	"OnBeingHitByZombie": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnCGlobalObjectSystemInit": null,
-	"OnChallengeQuery": [],
-	"OnChangeWeather": [],
+	"OnChallengeQuery": null,
+	"OnChangeWeather": [
+		{
+			"description": "A string representing the weather. Can be either: \"normal\", \"cloud\", \"rain\", or \"sunny\" ",
+			"name": "weather",
+			"type": "String"
+		}
+	],
 	"OnCharacterCollide": [
 		{
 			"description": "The character who's colliding with another character.",
@@ -433,7 +449,7 @@
 		},
 		{
 			"description": "TODO",
-			"name": "",
+			"name": "TODO",
 			"type": "String"
 		},
 		{
@@ -444,7 +460,36 @@
 	],
 	"OnDisconnect": null,
 	"OnDistributionMerge": null,
-	"OnDoTileBuilding": [],
+	"OnDoTileBuilding": [
+		{
+			"description": "True when the ghost image of what is to be build should be drawn. False when the building should actually be started/done.",
+			"name": "isRender",
+			"type": "Boolean"
+		},
+		{
+			"description": "The x coordinate of the square where to draw the building tile.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate of the square where to draw the building tile.",
+			"name": "y",
+			"type": "Integer"
+		},
+		{
+			"description": "The z coordinate of the square where to draw the building tile.",
+			"name": "z",
+			"type": "Integer"
+		},
+		{
+			"description": "The square where to draw the building tile.",
+			"type": "IsoGridSquare"
+		},
+		{
+			"description": "The inventory item on the cursor to define what has to be built.",
+			"type": "InventoryItem"
+		}
+	],
 	"OnDoTileBuilding2": [
 		{
 			"description": "The chunk in which the tile is being set.",
@@ -674,13 +719,50 @@
 			"type": "HandWeapon"
 		}
 	],
-	"OnInitGlobalModData": [],
-	"OnInitModdedWeatherStage": [],
-	"OnInitRecordedMedia": [],
-	"OnInitSeasons": [],
+	"OnInitGlobalModData": [
+		{
+			"description": "Whether this is a new game or not.",
+			"name": "isNewGame",
+			"type": "Boolean"
+		}
+	],
+	"OnInitModdedWeatherStage": [
+		{
+			"description": "The weather period of this weather stage.",
+			"type": "WeatherPeriod"
+		},
+		{
+			"description": "The weather stage to be initialized.",
+			"type": "WeatherPeriod.WeatherStage"
+		},
+		{
+			"name": "airFrontStrength",
+			"type": "Float"
+		}
+	],
+	"OnInitRecordedMedia": [
+		{
+			"description": "The recorded media to be initialized.",
+			"type": "RecordedMedia"
+		}
+	],
+	"OnInitSeasons": [
+		{
+			"description": "The season to be initialized.",
+			"type": "ErosionSeason"
+		}
+	],
 	"OnInitWorld": null,
-	"OnIsoThumpableLoad": [],
-	"OnIsoThumpableSave": [],
+	"OnIsoThumpableLoad": [
+		"description": "TODO: EVENT NOT FOUND.",
+		"type": "Boolean"
+	],
+	"OnIsoThumpableSave": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnJoypadActivate": [
 		{
 			"description": "The identifier of the joypad which has been activated.",
@@ -688,11 +770,41 @@
 			"type": "Integer"
 		}
 	],
-	"OnJoypadActivateUI": [],
-	"OnJoypadBeforeDeactivate": [],
-	"OnJoypadBeforeReactivate": [],
-	"OnJoypadDeactivate": [],
-	"OnJoypadReactivate": [],
+	"OnJoypadActivateUI": [
+		{
+			"description": "The identifier of the joypad.",
+			"name": "joypadId",
+			"type": "Integer"
+		}
+	],
+	"OnJoypadBeforeDeactivate": [
+		{
+			"description": "The identifier of the joypad.",
+			"name": "joypadId",
+			"type": "Double"
+		}
+	],
+	"OnJoypadBeforeReactivate": [
+		{
+			"description": "The identifier of the joypad.",
+			"name": "joypadId",
+			"type": "Double"
+		}
+	],
+	"OnJoypadDeactivate": [
+		{
+			"description": "The identifier of the joypad.",
+			"name": "joypadId",
+			"type": "Double"
+		}
+	],
+	"OnJoypadReactivate": [
+		{
+			"description": "The identifier of the joypad.",
+			"name": "joypadId",
+			"type": "Double"
+		}
+	],
 	"OnJoypadRenderUI": null,
 	"OnKeyKeepPressed": [
 		{
@@ -759,7 +871,12 @@
 			"type": "Recipe"
 		}
 	],
-	"OnMapLoadCreateIsoObject": [],
+	"OnMapLoadCreateIsoObject": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnMechanicActionDone": [
 		{
 			"description": "The character who performed the mechanic action.",
@@ -877,7 +994,22 @@
 			"type": "IsoGridSquare"
 		}
 	],
-	"OnNewSurvivorGroup": [],
+	"OnNewSurvivorGroup": [
+		{
+			"description": "The new survivor group.",
+			"type": "SurvivorGroup"
+		},
+		{
+			"description": "The x coordinate of the survivor group.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate of the survivor group.",
+			"name": "y",
+			"type": "Integer"
+		}
+	],
 	"OnObjectAboutToBeRemoved": [
 		{
 			"description": "The object about to be removed.",
@@ -1009,7 +1141,12 @@
 			"type": "IsoPlayer"
 		}
 	],
-	"OnPostCharactersSquareDraw": [],
+	"OnPostCharactersSquareDraw": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnPostDistributionMerge": null,
 	"OnPostFloorLayerDraw": [
 		{
@@ -1018,7 +1155,12 @@
 			"type": "Integer"
 		}
 	],
-	"OnPostFloorSquareDraw": [],
+	"OnPostFloorSquareDraw": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnPostMapLoad": [
 		{
 			"description": "The cell which was loaded.",
@@ -1037,10 +1179,22 @@
 	],
 	"OnPostRender": null,
 	"OnPostSave": null,
-	"OnPostTileDraw": [],
-	"OnPostTilesSquareDraw": [],
+	"OnPostTileDraw": [
+
+	],
+	"OnPostTilesSquareDraw": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnPostUIDraw": null,
-	"OnPostWallSquareDraw": [],
+	"OnPostWallSquareDraw": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnPreDistributionMerge": null,
 	"OnPreFillInventoryObjectContextMenu": [
 		{
@@ -1080,7 +1234,12 @@
 			"type": "Boolean"
 		}
 	],
-	"OnPreGameStart": [],
+	"OnPreGameStart": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnPreMapLoad": null,
 	"OnPreUIDraw": null,
 	"OnPressRackButton": [
@@ -1105,7 +1264,27 @@
 			"type": "HandWeapon"
 		}
 	],
-	"OnRadioInteraction": [],
+	"OnRadioInteraction": [
+		{
+			"description": "The player who's interacting with the radio.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The line of text to be displayed by the radio.",
+			"name": "line",
+			"type": "String"
+		},
+		{
+			"description": "The color of the line of text to be displayed by the radio.",
+			"name": "color",
+			"type": "HaloTextHelper.ColorRGB"
+		},
+		{
+			"description": "TODO",
+			"name": "codesOutput",
+			"type": "KahluaTable"
+		}
+	],
 	"OnRainStart": null,
 	"OnRainStop": null,
 	"OnReceiveGlobalModData": [
@@ -1167,7 +1346,12 @@
 		}
 	],
 	"OnRenderTick": null,
-	"OnRenderUpdate": [],
+	"OnRenderUpdate": [
+		{
+			"description": "TODO: EVENT NOT FOUND.",
+			"type": "Boolean"
+		}
+	],
 	"OnResetLua": [
 		{
 			"description": "The reason why Lua was reset.",
@@ -1311,23 +1495,148 @@
 	],
 	"OnSteamGameJoin": null,
 	"OnSteamRefreshInternetServers": null,
-	"OnSteamRulesRefreshComplete": [],
-	"OnSteamServerFailedToRespond2": [],
-	"OnSteamServerResponded": [],
-	"OnSteamServerResponded2": [],
-	"OnSteamWorkshopItemCreated": [],
-	"OnSteamWorkshopItemNotCreated": [],
-	"OnSteamWorkshopItemNotUpdated": [],
-	"OnSteamWorkshopItemUpdated": [],
+	"OnSteamRulesRefreshComplete": [
+		{
+			"description": "TODO",
+			"name": "host",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "port",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"name": "rulesTable",
+			"type": "KahluaTable"
+		}
+	],
+	"OnSteamServerFailedToRespond2": [
+		{
+			"description": "TODO",
+			"name": "host",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "port",
+			"type": "Integer"
+		}
+	],
+	"OnSteamServerResponded": [
+		{
+			"description": "TODO",
+			"name": "serverIndex",
+			"type": "Integer"
+		}
+	],
+	"OnSteamServerResponded2": [
+		{
+			"description": "TODO",
+			"name": "host",
+			"type": "String"
+		},
+		{
+			"description": "TODO",
+			"name": "port",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"type": "Server"
+		}
+	],
+	"OnSteamWorkshopItemCreated": [
+		{
+			"description": "The Steam identifier of the user who created the workshop item.",
+			"name": "steamId",
+			"type": "String"
+		},
+		{
+			"description": "Whether the user has to accept the workshop legal agreement.",
+			"name": "userNeedsToAcceptWorkshopLegalAgreement",
+			"type": "Boolean"
+		}
+	],
+	"OnSteamWorkshopItemNotCreated": [
+		{
+			"description": "The result code indicating why the workshop item was not created.",
+			"name": "result",
+			"type": "Integer"
+		}
+	],
+	"OnSteamWorkshopItemNotUpdated": [
+		{
+			"description": "The result code indicating why the workshop item was not updated.",
+			"name": "result",
+			"type": "Integer"
+		}
+	],
+	"OnSteamWorkshopItemUpdated": [
+		{
+			"description": "Whether the user has to accept the workshop legal agreement.",
+			"name": "userNeedsToAcceptWorkshopLegalAgreement",
+			"type": "Boolean"
+		}
+	],
 	"OnSwitchVehicleSeat": [
 		{
 			"description": "The player who's switching seat in the vehicle.",
 			"type": "IsoPlayer"
 		}
 	],
-	"OnTabAdded": [],
-	"OnTabRemoved": [],
-	"OnThunderEvent": [],
+	"OnTabAdded": [
+		{
+			"description": "The name of the chat tab which was added.",
+			"name": "tabTitle",
+			"type": "String"
+		},
+		{
+			"description": "The identifier of the chat tab which was added.",
+			"name": "tabId",
+			"type": "Integer"
+		}
+	],
+	"OnTabRemoved": [
+		{
+			"description": "The name of the chat tab which was added.",
+			"name": "tabTitle",
+			"type": "String"
+		},
+		{
+			"description": "The identifier of the chat tab which was added.",
+			"name": "tabId",
+			"type": "Integer"
+		}
+	],
+	"OnThunderEvent": [
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Integer"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Boolean"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Boolean"
+		},
+		{
+			"description": "TODO",
+			"name": "TODO",
+			"type": "Boolean"
+		}
+	],
 	"OnTick": [
 		{	"description": "The number of ticks.",
 			"name": "numberTicks",
@@ -1340,7 +1649,12 @@
 			"type": "Double"
 		}
 	],
-	"OnTileRemoved": [],
+	"OnTileRemoved": [
+		{
+			"description": "The object to be removed.",
+			"name": "object",
+			"type": "IsoObject"
+	],
 	"OnTriggerNPCEvent": [
 		{
 			"description": "The type of trigger of this NPC event.",
@@ -1451,7 +1765,25 @@
 			"type": "HandWeapon"
 		}
 	],
-	"OnWeaponHitXp": [],
+	"OnWeaponHitXp": [
+		{
+			"description": "The player who's wielding the weapon.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The hand weapon used to perform the attack.",
+			"type": "HandWeapon"
+		},
+		{
+			"description": "The character who's being hit.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The damage split of the hit.",
+			"name": "damageSplit",
+			"type": "Float"
+		}
+	],
 	"OnWeaponSwing": [
 		{
 			"description": "The character who's wielding the weapon.",
@@ -1595,7 +1927,16 @@
 			"type": "Integer"
 		}
 	],
-	"UseItem": [],
+	"UseItem": [
+		{
+			"description": "The player who's using the item.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "The item which the player is using.",
+			"type": "InventoryItem"
+		}
+	],
 	"ViewTickets": [
 		{
 			"description": "TODO",
@@ -1631,7 +1972,16 @@
 			"type": "HandWeapon"
 		}
 	],
-	"WeaponSwingHitPoint": [],
+	"WeaponSwingHitPoint": [
+		{
+			"description": "The character who's swinging the weapon.",
+			"type": "IsoGameCharacter"
+		},
+		{
+			"description": "The hand weapon which the user is swinging.",
+			"type": "HandWeapon"
+		}
+	],
 	"onLoadModDataFromServer": [
 		{
 			"description": "The grid square whose ModData is getting loaded from the server.",
