@@ -48,6 +48,7 @@ for version in jsondata['versions']:
 	print(version)
 
 	# Zomboid inner classes
+	db['HaloTextHelper.ColorRGB']    = 'zombie.characters'
 	db['PerkFactory.Perk']           = 'zombie.characters.skills'
 	db['PerkFactory.Perks']          = 'zombie.characters.skills'
 	db['WeatherPeriod.WeatherStage'] = 'zombie.iso.weather'
