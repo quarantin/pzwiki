@@ -16,13 +16,8 @@ class Wiki:
 	config_file = 'config.json'
 	default_sleep = 0.2
 	names = {
-		'IsoCell':          'cell',
 		'IsoGridSquare':    'square',
-		'IsoObject':        'object',
-		'IsoPlayer':        'player',
 		'IsoGameCharacter': 'character',
-		'IsoSurvivor':      'survivor',
-		'IsoZombie':        'zombie',
 		'KahluaTable':      'table',
 	}
 
@@ -77,12 +72,11 @@ class Wiki:
 		with open(filename, 'r') as fd:
 			return [x for x in fd.read().split('\n') if x.strip() ]
 
-	def get_javadoc_url(self, type):
+	def get_javadoc_url(self, event, type):
 
 		pkg = self.packages.get(type)
 		if type == '???' or not pkg:
-			if type != '???':
-				print('MISSING TYPE: %s %s' % (type, pkg))
+			print('WARNING: Missing type for event : %s %s' % (event, type, pkg))
 			return ''
 
 		pkg_url = join(pkg.replace('.', '/'), type + '.html')
@@ -176,7 +170,10 @@ class Wiki:
 		if event in self.parameters and self.parameters[event] != None:
 			params = []
 			for jsonparam in self.parameters[event]:
-				params.append(self.format_event_parameter_name(jsonparam))
+				param = self.format_event_parameter_name(jsonparam)
+				if param:
+					params.append(param)
+
 			output += ', '.join(params)
 
 		output += ')\n'
@@ -220,8 +217,14 @@ class Wiki:
 			return name
 
 		type = jsonparam.get('type')
+		if not type:
+			return None
+
 		if type in self.names:
 			return self.names[type]
+
+		if type.startswith('Iso'):
+			type = type[3:]
 
 		name = type[0].lower() + type[1:]
 		return name
@@ -240,15 +243,19 @@ class Wiki:
 		for jsonparam in jsonparams:
 			desc = jsonparam.get('description', '')
 			name = self.format_event_parameter_name(jsonparam)
-			types = []
-			for type in jsonparam['type'].split(','):
-				desc = desc.replace('[[' + type + ']]', name)
-				desc = desc.replace(type, name.replace('_', ' '))
-				javadoc_url = self.get_javadoc_url(type)
-				line = javadoc_url and '[%s %s]' % (javadoc_url, type) or '[[Modding:Lua Events/%s|%s]]' % (type, type)
-				types.append(line)
-			type = ' {{!}} '.join(types)
-			result.append('* %s %s' % (type, desc))
+			if not name:
+				print('WARNING: Missing parameter name for event ' + event)
+			typesstr = jsonparam.get('type')
+			if name and typesstr:
+				types = []
+				for type in typesstr.split(','):
+					desc = desc.replace('[[' + type + ']]', name)
+					desc = desc.replace(type, name.replace('_', ' '))
+					javadoc_url = self.get_javadoc_url(name, type)
+					line = javadoc_url and '[%s %s]' % (javadoc_url, type) or '[[Modding:Lua Events/%s|%s]]' % (type, type)
+					types.append(line)
+				type = ' {{!}} '.join(types)
+				result.append('* %s %s' % (type, desc))
 
 		output = '\n'.join(result)
 		return output
@@ -311,7 +318,7 @@ class Wiki:
 		if not jsondata.get('delete'):
 			err = 'The page you specified doesn\'t exist.'
 			if jsondata['error']['info'] == err:
-				print('Page Missing!')
+				print('WARNING: Page missing!')
 			else:
 				self.error(jsondata)
 
