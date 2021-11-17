@@ -86,9 +86,8 @@ class Wiki:
 			return ''
 
 		pkg_url = join(pkg.replace('.', '/'), type + '.html')
-		# TODO: Implement a better way to select the proper javadoc base URL
-		javadoc_url = pkg.startswith('zomb') and self.javadoc_url or self.oracle_url
-		return urljoin(javadoc_url, pkg_url)
+		javadoc_url, version = pkg.startswith('zomb') and (self.javadoc_url, self.version) or (self.oracle_url, '')
+		return urljoin(javadoc_url, join(version, pkg_url))
 
 	@retry(tries=tries)
 	def get_login_token(self):
