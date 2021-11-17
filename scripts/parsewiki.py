@@ -17,22 +17,21 @@ with open(filename, 'r') as fd:
 chdir('pzwiki')
 
 names = {
-	'IsoCell':          'cell',
 	'IsoGridSquare':    'square',
-	'IsoObject':        'object',
-	'IsoPlayer':        'player',
 	'IsoGameCharacter': 'character',
-	'IsoSurvivor':      'survivor',
-	'IsoZombie':        'zombie',
 }
 
 def parse_parameter(parameter):
 	m = re.search(r'\[\[(.*)\]\]|(\?\?\?)', parameter)
 	param = (m.group(1) or m.group(2)).split('|')[0]
 	delim = param == '???' and '???' or ']]'
+	if param in names:
+		param = names[param]
+	if param.startswith('Iso'):
+		param = param[3:]
 	return {
 		'type': param,
-		'name': names.get(param, param[0].lower() + param[1:]),
+		'name': param[0].lower() + param[1:]),
 		'description': parameter.split(delim)[1].strip(),
 	}
 
