@@ -160,10 +160,7 @@
 	"OnAcceptInvite": [
 		{
 			"description": "TODO",
-			"type": "Long"
-		},
-		{
-			"description": "TODO",
+			"name": "connectionString",
 			"type": "String"
 		}
 	],
@@ -186,22 +183,23 @@
 	],
 	"OnAdminMessage": [
 		{
-			"description": "The message being received from the admin.",
+			"description": "The text of the message being received from the admin.",
+			"name": "text",
 			"type": "String"
 		},
 		{
 			"description": "TODO",
-			"name": "int1",
+			"name": "x",
 			"type": "Integer"
 		},
 		{
 			"description": "TODO",
-			"name": "int2",
+			"name": "y",
 			"type": "Integer"
 		},
 		{
 			"description": "TODO",
-			"name": "int3",
+			"name": "z",
 			"type": "Integer"
 		}
 	],
@@ -224,8 +222,7 @@
 	],
 	"OnBeingHitByZombie": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnCGlobalObjectSystemInit": null,
@@ -278,10 +275,12 @@
 	"OnClientCommand": [
 		{
 			"description": "TODO",
+			"name": "module",
 			"type": "String"
 		},
 		{
 			"description": "TODO",
+			"name": "command",
 			"type": "String"
 		},
 		{
@@ -428,9 +427,9 @@
 	],
 	"OnDeviceText": [
 		{
-			"description": "The text that is being displayed by the media device.",
-			"name": "text",
-			"type": "String,ChatMessage"
+			"description": "TODO",
+			"name": "interactCodes",
+			"type": "String"
 		},
 		{
 			"description": "The x coordinate of the media device displaying the text.",
@@ -448,8 +447,8 @@
 			"type": "Float"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "The line of text which the media device is displaying.",
+			"name": "line",
 			"type": "String"
 		},
 		{
@@ -684,14 +683,17 @@
 	"OnGetTableResult": [
 		{
 			"description": "TODO",
+			"name": "result",
 			"type": "ArrayList"
 		},
 		{
 			"description": "TODO",
+			"name": "rowId",
 			"type": "Integer"
 		},
 		{
 			"description": "TODO",
+			"name": "tableName",
 			"type": "String"
 		}
 	],
@@ -754,13 +756,13 @@
 	],
 	"OnInitWorld": null,
 	"OnIsoThumpableLoad": [
-		"description": "TODO: EVENT NOT FOUND.",
-		"type": "Boolean"
+		{
+			"description": "TODO: EVENT NOT FOUND."
+		}
 	],
 	"OnIsoThumpableSave": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnJoypadActivate": [
@@ -857,12 +859,12 @@
 	"OnMainMenuEnter": null,
 	"OnMakeItem": [
 		{
-			"description": "TODO",
+			"description": "The item used to make the item.",
 			"name": "item",
 			"type": "InventoryItem"
 		},
 		{
-			"description": "The item that is being created when applying the recipe.",
+			"description": "The resulting item that is being created from applying the recipe.",
 			"name": "resultItem",
 			"type": "InventoryItem"
 		},
@@ -873,8 +875,7 @@
 	],
 	"OnMapLoadCreateIsoObject": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnMechanicActionDone": [
@@ -883,28 +884,28 @@
 			"type": "IsoGameCharacter"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "Whether the machanic action was successful or not.",
+			"name": "success",
 			"type": "Boolean"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "The identifier of the vehicle on which the mechanic action is being performed.",
+			"name": "vehicleId",
 			"type": "Integer"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "The vehicle part identifier that is being installed or removed.",
+			"name": "partId",
 			"type": "String"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "The item identifier used to perform the mechanic action.",
+			"name": "itemId",
 			"type": "Long"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "Whether the vehicle part is being installed or removed.",
+			"name": "installing",
 			"type": "Boolean"
 		}
 	],
@@ -1143,8 +1144,7 @@
 	],
 	"OnPostCharactersSquareDraw": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnPostDistributionMerge": null,
@@ -1157,8 +1157,7 @@
 	],
 	"OnPostFloorSquareDraw": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnPostMapLoad": [
@@ -1184,15 +1183,13 @@
 	],
 	"OnPostTilesSquareDraw": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnPostUIDraw": null,
 	"OnPostWallSquareDraw": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnPreDistributionMerge": null,
@@ -1236,8 +1233,7 @@
 	],
 	"OnPreGameStart": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnPreMapLoad": null,
@@ -1301,7 +1297,7 @@
 	],
 	"OnReceiveItemListNet": [
 		{
-			"description": "The player who's receiving the item list.",
+			"description": "The player who's sending the item list.",
 			"type": "IsoPlayer"
 		},
 		{
@@ -1310,27 +1306,29 @@
 			"type": "ArrayList"
 		},
 		{
-			"description": "The player who's sending the item list.",
+			"description": "The player who's receiving the item list.",
 			"type": "IsoPlayer"
 		},
 		{
 			"description": "TODO",
-			"name": "string1",
+			"name": "sessionId",
 			"type": "String"
 		},
 		{
 			"description": "TODO",
-			"name": "string2",
+			"name": "custom",
 			"type": "String"
 		}
 	],
 	"OnReceiveUserlog": [
 		{
-			"description": "TODO",
+			"description": "The username for which we're receiving the log.",
+			"name": "username",
 			"type": "String"
 		},
 		{
-			"description": "TODO",
+			"description": "The resulting log.",
+			"name": "result",
 			"type": "ByteBuffer"
 		}
 	],
@@ -1348,8 +1346,7 @@
 	"OnRenderTick": null,
 	"OnRenderUpdate": [
 		{
-			"description": "TODO: EVENT NOT FOUND.",
-			"type": "Boolean"
+			"description": "TODO: EVENT NOT FOUND."
 		}
 	],
 	"OnResetLua": [
@@ -1411,16 +1408,17 @@
 	"OnSave": null,
 	"OnScoreboardUpdate": [
 		{
-			"description": "The player names being updated on the score board.",
+			"description": "The list of player names which are being updated on the score board.",
 			"name": "playerNames",
 			"type": "ArrayList"
 		},
 		{
-			"description": "TODO",
+			"description": "The list of display names for the players which are being updated on the score board.",
+			"name": "displayNames",
 			"type": "ArrayList"
 		},
 		{
-			"description": "The Steam identifiers of the players being updated on the score board.",
+			"description": "The list of Steam identifiers of the players which are being updated on the score board.",
 			"name": "steamIds",
 			"type": "ArrayList"
 		}
@@ -1434,17 +1432,17 @@
 	"OnServerCommand": [
 		{
 			"description": "TODO",
-			"name": "string1",
+			"name": "module",
 			"type": "String"
 		},
 		{
-			"description": "TODO",
-			"name": "string2",
+			"description": "The text of the actual server command.",
+			"name": "command",
 			"type": "String"
 		},
 		{
-			"description": "TODO",
-			"name": "table",
+			"description": "The list of arguments of the server command.",
+			"name": "arguments",
 			"type": "KahluaTable"
 		}
 	],
@@ -1489,7 +1487,8 @@
 	],
 	"OnSteamFriendStatusChanged": [
 		{
-			"description": "TODO: A Long converted to a String. Steam ID?",
+			"description": "Steam identifier of the user who's friend status has changed.",
+			"name": "steamId",
 			"type": "String"
 		}
 	],
@@ -1612,28 +1611,28 @@
 	],
 	"OnThunderEvent": [
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "The x coordinate where the thunder event is going to take place.",
+			"name": "x",
 			"type": "Integer"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "The y coordinate where the thunder event is going to take place.",
+			"name": "y",
 			"type": "Integer"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "Whether the thunder event will strike.",
+			"name": "strike",
 			"type": "Boolean"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "Whether the thunder event will emit light.",
+			"name": "light",
 			"type": "Boolean"
 		},
 		{
-			"description": "TODO",
-			"name": "TODO",
+			"description": "Whether the thunder event will rumble.",
+			"name": "rumble",
 			"type": "Boolean"
 		}
 	],
@@ -1654,6 +1653,7 @@
 			"description": "The object to be removed.",
 			"name": "object",
 			"type": "IsoObject"
+		}
 	],
 	"OnTriggerNPCEvent": [
 		{
@@ -1693,12 +1693,12 @@
 			"type": "IsoPlayer"
 		},
 		{
-			"description": "The vehicle that the player is driving.",
+			"description": "The vehicle which the player is driving.",
 			"type": "BaseVehicle"
 		},
 		{
-			"description": "TODO: Whether the player has been driving for more than 0.5 what?",
-			"name": "TODO",
+			"description": "Whether the player had been keeping the accelerator pressed or if it was just a tap.",
+			"name": "pressedNotTapped",
 			"type": "Boolean"
 		}
 	],
@@ -1806,23 +1806,23 @@
 	],
 	"OnWorldMessage": [
 		{
-			"description": "The user who's sending the message.",
+			"description": "The user sending the message.",
 			"name": "user",
 			"type": "String"
 		},
 		{
-			"description": "The message that is being sent",
+			"description": "The message that is being sent.",
 			"name": "message",
 			"type": "String"
 		},
 		{
-			"description": "TODO",
-			"name": "bool1",
+			"description": "Whether the message should be displayed as local.",
+			"name": "addLocal",
 			"type": "Boolean"
 		},
 		{
-			"description": "TODO",
-			"name": "bool2",
+			"description": "Whether the message should be prefixed with the timestamp.",
+			"name": "addTimestamp",
 			"type": "Boolean"
 		}
 	],
@@ -1877,13 +1877,13 @@
 	"SendCustomModData": null,
 	"ServerPinged": [
 		{
-			"description": "TODO",
-			"name": "string1",
+			"description": "The IP address of the user who pinged the server.",
+			"name": "ipAddress",
 			"type": "String"
 		},
 		{
-			"description": "TODO",
-			"name": "string2",
+			"description": "The name of the user who pinged the server.",
+			"name": "user",
 			"type": "String"
 		}
 	],
@@ -1939,7 +1939,8 @@
 	],
 	"ViewTickets": [
 		{
-			"description": "TODO",
+			"description": "The buffer where to write the tickets.",
+			"name": "tickets",
 			"type": "ByteBufferWriter"
 		}
 	],
