@@ -1,24 +1,24 @@
 {
 	"AcceptedFactionInvite": [
 		{
-			"description": "The name of the faction in which the player is being invited.",
+			"description": "The name of the faction the player accepted to join.",
 			"name": "factionName",
 			"type": "String"
 		},
 		{
-			"description": "The name of the player who's being invited to the faction.",
+			"description": "The name of the player who accepted the invitation.",
 			"name": "playerName",
 			"type": "String"
 		}
 	],
 	"AcceptedSafehouseInvite": [
 		{
-			"description": "The name of the safehouse in which the player is being invited.",
+			"description": "The name of the safehouse the player accepted to join.",
 			"name": "safehouseName",
 			"type": "String"
 		},
 		{
-			"description": "The name of the player who's being invited to the safehouse.",
+			"description": "The name of the player who accepted the invitation.",
 			"name": "playerName",
 			"type": "String"
 		}
@@ -159,7 +159,7 @@
 	],
 	"OnAcceptInvite": [
 		{
-			"description": "TODO",
+			"description": "The connection string.",
 			"name": "connectionString",
 			"type": "String"
 		}
@@ -188,17 +188,17 @@
 			"type": "String"
 		},
 		{
-			"description": "TODO",
+			"description": "The x coordinate where to display the message.",
 			"name": "x",
 			"type": "Integer"
 		},
 		{
-			"description": "TODO",
+			"description": "The y coordinate where to display the message.",
 			"name": "y",
 			"type": "Integer"
 		},
 		{
-			"description": "TODO",
+			"description": "The z coordinate where to display the message.",
 			"name": "z",
 			"type": "Integer"
 		}
@@ -274,21 +274,22 @@
 	"OnChatWindowInit": null,
 	"OnClientCommand": [
 		{
-			"description": "TODO",
+			"description": "The name of the module for this client command.",
 			"name": "module",
 			"type": "String"
 		},
 		{
-			"description": "TODO",
+			"description": "The text of the actual client command.",
 			"name": "command",
 			"type": "String"
 		},
 		{
-			"description": "TODO",
+			"description": "The player who initiated the client command.",
 			"type": "IsoPlayer"
 		},
 		{
-			"description": "TODO",
+			"description": "The arguments of the client command.",
+			"name": "args",
 			"type": "KahluaTable"
 		}
 	],
@@ -427,7 +428,7 @@
 	],
 	"OnDeviceText": [
 		{
-			"description": "TODO",
+			"description": "The interaction codes of the media device.",
 			"name": "interactCodes",
 			"type": "String"
 		},
@@ -682,17 +683,17 @@
 	],
 	"OnGetTableResult": [
 		{
-			"description": "TODO",
+			"description": "The row data of the table result.",
 			"name": "result",
 			"type": "ArrayList"
 		},
 		{
-			"description": "TODO",
+			"description": "The row identifier of the table result.",
 			"name": "rowId",
 			"type": "Integer"
 		},
 		{
-			"description": "TODO",
+			"description": "The name of the table result.",
 			"name": "tableName",
 			"type": "String"
 		}
@@ -1276,7 +1277,7 @@
 			"type": "HaloTextHelper.ColorRGB"
 		},
 		{
-			"description": "TODO",
+			"description": "The interaction codes output of the radio.",
 			"name": "codesOutput",
 			"type": "KahluaTable"
 		}
@@ -1310,7 +1311,7 @@
 			"type": "IsoPlayer"
 		},
 		{
-			"description": "TODO",
+			"description": "The session identifier for the transaction.",
 			"name": "sessionId",
 			"type": "String"
 		},
@@ -1431,7 +1432,7 @@
 	],
 	"OnServerCommand": [
 		{
-			"description": "TODO",
+			"description": "The name of the module for this server command.",
 			"name": "module",
 			"type": "String"
 		},
