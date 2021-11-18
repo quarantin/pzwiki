@@ -628,7 +628,7 @@
 		{
 			"description": "The context menu to be filled.",
 			"type": "context",
-			"type": "ISContextMenu"
+			"type": "KahluaTable"
 		},
 		{
 			"description": "The items available in the player inventory.",
@@ -644,7 +644,7 @@
 		{
 			"description": "The context menu to be filled.",
 			"name": "context",
-			"type": "ISContextMenu"
+			"type": "KahluaTable"
 		},
 		{
 			"description": "The world objects available nearby the player.",
@@ -852,6 +852,7 @@
 	],
 	"OnLoginState": [
 		{
+			"max_version": "40.43",
 			"description": "The current login state.",
 			"type": "LoginState"
 		}
@@ -1202,7 +1203,7 @@
 		{
 			"description": "The context menu to be filled.",
 			"name": "context",
-			"type": "ISContextMenu"
+			"type": "KahluaTable"
 		},
 		{
 			"description": "The items available in the player inventory.",
@@ -1219,7 +1220,7 @@
 		{
 			"description": "The context menu to be filled.",
 			"name": "context",
-			"type": "ISContextMenu"
+			"type": "KahluaTable"
 		},
 		{
 			"description": "The world objects available nearby the player.",
