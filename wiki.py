@@ -72,7 +72,7 @@ class Wiki:
 		with open(filename, 'r') as fd:
 			return [x for x in fd.read().split('\n') if x.strip() ]
 
-	def get_javadoc_url(self, event, type):
+	def get_javadoc_url(self, event, type, max_version):
 
 		pkg = self.packages.get(type)
 		if type == '???' or not pkg:
@@ -81,6 +81,9 @@ class Wiki:
 
 		pkg_url = join(pkg.replace('.', '/'), type + '.html')
 		javadoc_url, version = pkg.startswith('zomb') and (self.javadoc_url, self.version) or (self.oracle_url, '')
+		if max_version:
+			version = max_version
+
 		return urljoin(javadoc_url, join(version, pkg_url))
 
 	@retry(tries=tries)
@@ -251,7 +254,7 @@ class Wiki:
 				for type in typesstr.split(','):
 					desc = desc.replace('[[' + type + ']]', name)
 					desc = desc.replace(type, name.replace('_', ' '))
-					javadoc_url = self.get_javadoc_url(name, type)
+					javadoc_url = self.get_javadoc_url(name, type, jsonparam.get('max_version'))
 					line = javadoc_url and '[%s %s]' % (javadoc_url, type) or '[[Modding:Lua Events/%s|%s]]' % (type, type)
 					types.append(line)
 				type = ' {{!}} '.join(types)
