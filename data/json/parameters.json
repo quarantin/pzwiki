@@ -237,6 +237,7 @@
 	"OnCharacterCollide": [
 		{
 			"description": "The character who's colliding with another character.",
+			"name": "player",
 			"type": "IsoGameCharacter"
 		},
 		{
