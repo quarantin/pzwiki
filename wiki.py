@@ -76,7 +76,7 @@ class Wiki:
 
 		pkg = self.packages.get(type)
 		if type == '???' or not pkg:
-			print('WARNING: Missing type for event : %s %s' % (event, type, pkg))
+			print('WARNING: Missing type for event %s: %s %s' % (event, type, pkg))
 			return ''
 
 		pkg_url = join(pkg.replace('.', '/'), type + '.html')
@@ -244,7 +244,7 @@ class Wiki:
 			desc = jsonparam.get('description', '')
 			name = self.format_event_parameter_name(jsonparam)
 			if not name:
-				print('WARNING: Missing parameter name for event ' + event)
+				print('WARNING: Missing parameter name for event ' + jsonevent['name'])
 			typesstr = jsonparam.get('type')
 			if name and typesstr:
 				types = []
