@@ -3,6 +3,7 @@
 	"javadoc_oracle_url": "https://docs.oracle.com/en/java/javase/15/docs/api/java.base/",
 	"javadoc_zomboid_url": "https://quarantin.github.io/zomboid-javadoc/",
 	"source": "/home/co/Zomboid/sources/",
+	"target_wiki": "unofficial",
 	"versions": [ "41.56", "40.43", "39.67", "38.30" ],
 	"wiki": {
 		"official": {
