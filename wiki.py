@@ -199,7 +199,7 @@ class Wiki:
 
 	def format_event_page(self, jsonevent):
 
-		output  = '{{Function\n'
+		output  = '{{ModdingFunction\n'
 		output += '|name = %s\n'             % self.format_event_name(jsonevent)
 		output += '|description = %s\n'      % self.format_event_description(jsonevent)
 		output += '|parameters =\n%s\n'      % self.format_event_parameters(jsonevent)
