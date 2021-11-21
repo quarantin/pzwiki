@@ -23,13 +23,14 @@ class Wiki:
 
 	def __init__(self, config):
 
+		self.target       = config.get('target_wiki', 'unoffical')
 		self.versions     = config['versions']
 		self.version      = self.versions[0]
 
 		self.api_path     = config['wiki'].get('path', '/w/api.php')
-		self.api_url      = config['wiki']['unofficial']['url'].strip('/')
+		self.api_url      = config['wiki'][self.target]['url'].strip('/')
 		self.descriptions = self.get_descriptions()
-		self.edit_delay   = config['wiki']['unofficial'].get('edit_delay', self.default_edit_delay)
+		self.edit_delay   = config['wiki'][self.target].get('edit_delay', self.default_edit_delay)
 		self.events       = self.get_events()
 		self.logged       = False
 		self.javadoc_url  = config['javadoc_zomboid_url']
@@ -37,8 +38,8 @@ class Wiki:
 		self.oracle_url   = config['javadoc_oracle_url']
 		self.packages     = self.get_packages()
 		self.parameters   = self.get_parameters()
-		self.password     = config['wiki']['unofficial']['password']
-		self.username     = config['wiki']['unofficial']['username']
+		self.password     = config['wiki'][self.target]['password']
+		self.username     = config['wiki'][self.target]['username']
 		self.saved_events = self.get_saved_events()
 		self.see_also     = self.get_see_also()
 		self.session      = requests.Session()
