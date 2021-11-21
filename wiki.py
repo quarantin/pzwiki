@@ -52,7 +52,7 @@ class Wiki:
 		errorinfo = jsondata['error']['info']
 		raise Exception(errorcode + ': ' + errorinfo)
 
-	@retry(tries=tries)
+	@retry(tries=tries, delay=2)
 	def get_csrf_token(self):
 
 		params = {
@@ -88,7 +88,7 @@ class Wiki:
 
 		return urljoin(javadoc_url, join(version, pkg_url))
 
-	@retry(tries=tries)
+	@retry(tries=tries, delay=2)
 	def get_login_token(self):
 
 		params = {
@@ -282,7 +282,7 @@ class Wiki:
 
 		return '\n'.join(result)
 
-	@retry(tries=tries)
+	@retry(tries=tries, delay=2)
 	def edit_page(self, title, wikitext):
 
 		print(title)
@@ -304,7 +304,7 @@ class Wiki:
 
 		time.sleep(self.edit_delay)
 
-	@retry(tries=tries)
+	@retry(tries=tries, delay=2)
 	def delete_page(self, title):
 
 		print(title)
