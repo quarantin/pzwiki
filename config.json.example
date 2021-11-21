@@ -8,12 +8,14 @@
 		"official": {
 			"username": "YOUR_USERNAME",
 			"password": "YOUR_PASSWORD",
-			"url": "https://pzwiki.net/"
+			"url": "https://pzwiki.net/",
+			"edit_delay": 2
 		},
 		"unofficial": {
 			"username": "YOUR_USERNAME",
 			"password": "YOUR_PASSWORD",
-			"url": "https://pzwiki.miraheze.org/"
+			"url": "https://pzwiki.miraheze.org/",
+			"edit_delay": 0.5
 		}
 	}
 }
