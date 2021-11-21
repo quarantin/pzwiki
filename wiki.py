@@ -14,7 +14,7 @@ tries = 5
 class Wiki:
 
 	config_file = 'config.json'
-	default_sleep = 0.2
+	default_edit_delay = 0.2
 	names = {
 		'IsoGridSquare':    'square',
 		'IsoGameCharacter': 'character',
@@ -29,6 +29,7 @@ class Wiki:
 		self.api_path     = config['wiki'].get('path', '/w/api.php')
 		self.api_url      = config['wiki']['unofficial']['url'].strip('/')
 		self.descriptions = self.get_descriptions()
+		self.edit_delay   = config['wiki']['unofficial'].get('edit_delay', self.default_edit_delay)
 		self.events       = self.get_events()
 		self.logged       = False
 		self.javadoc_url  = config['javadoc_zomboid_url']
@@ -300,7 +301,7 @@ class Wiki:
 		if jsondata.get('edit', {}).get('result') != 'Success':
 			self.error(jsondata)
 
-		time.sleep(self.default_sleep)
+		time.sleep(self.edit_delay)
 
 	@retry(tries=tries)
 	def delete_page(self, title):
@@ -325,7 +326,7 @@ class Wiki:
 			else:
 				self.error(jsondata)
 
-		time.sleep(self.default_sleep)
+		time.sleep(self.edit_delay)
 
 	def update_events(self):
 
