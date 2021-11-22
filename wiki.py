@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
+import sys
 import json
 import time
 import requests
 
-from os import walk
-from os.path import basename, join, sep
+from os import chdir, walk
+from os.path import basename, dirname, isfile, join, realpath, sep
 from urllib.parse import urljoin
 from retry import retry
 
@@ -13,7 +14,7 @@ tries = 5
 
 class Wiki:
 
-	config_file = 'config.json'
+	default_config_file = 'config.json'
 	default_edit_delay = 0.2
 	names = {
 		'IsoGridSquare':    'square',
@@ -21,7 +22,18 @@ class Wiki:
 		'KahluaTable':      'table',
 	}
 
-	def __init__(self, config):
+	def __init__(self):
+
+		chdir(dirname(realpath(__file__)))
+
+		self.config_file  = len(sys.argv) > 1 and sys.argv[1] or self.default_config_file
+
+		if not isfile(self.config_file):
+			print('Can\'t find %s. Please copy the file config.json.example to config.json and edit the missing values.' % self.config_file, file=sys.stderr)
+			sys.exit(-1)
+
+		with open(self.config_file, 'r') as fd:
+			config = json.loads(fd.read())
 
 		self.target       = config.get('target_wiki', 'unoffical')
 		self.versions     = config['versions']
@@ -44,6 +56,7 @@ class Wiki:
 		self.see_also     = self.get_see_also()
 		self.session      = requests.Session()
 
+		print('Updating Wiki: ' + self.api_url)
 		if not self.api_url.endswith(self.api_path):
 			self.api_url = urljoin(self.api_url, self.api_path)
 
@@ -340,9 +353,15 @@ class Wiki:
 					'title': 'Modding:Lua Events/' + event,
 				}
 
+		first = 'LevelPerk'
+		first_ok = True
+
 		for _, jsonevent in sorted(jsondata.items()):
-			wikitext = self.format_event_page(jsonevent)
-			self.edit_page(jsonevent['title'], wikitext)
+			if first_ok:
+				wikitext = self.format_event_page(jsonevent)
+				self.edit_page(jsonevent['title'], wikitext)
+			elif jsonevent['name'] == first:
+				first_ok = True
 
 	def update_pages(self, filename):
 
