@@ -96,7 +96,7 @@
 		]
 	},
 	"DoSpecialTooltip": {
-		"description": "TODO",
+		"description": "Triggered when a special tooltip is being rendered, after a user right-clicked an object.",
 		"parameters": [
 			{
 				"description": "The tooltip object to be filled.",
@@ -109,19 +109,19 @@
 		]
 	},
 	"EveryDays": {
-		"description": "Triggered every day at midnight.",
+		"description": "Triggered every day at midnight (in-game).",
 		"parameters": null
 	},
 	"EveryHours": {
-		"description": "Triggered every hour.",
+		"description": "Triggered every hour (in-game).",
 		"parameters": null
 	},
 	"EveryOneMinute": {
-		"description": "Triggered every minute.",
+		"description": "Triggered every minute (in-game).",
 		"parameters": null
 	},
 	"EveryTenMinutes": {
-		"description": "Triggered every ten minutes.",
+		"description": "Triggered every ten minutes (in-game).",
 		"parameters": null
 	},
 	"LevelPerk": {
@@ -158,7 +158,7 @@
 		]
 	},
 	"MngInvReceiveItems": {
-		"description": "TODO",
+		"description": "Triggered when the game client is receiving inventory items from the server.",
 		"parameters": [
 			{
 				"description": "The items that are being received.",
@@ -214,7 +214,7 @@
 		]
 	},
 	"OnAcceptInvite": {
-		"description": "TODO",
+		"description": "Triggered when a Steam invite has been accepted.",
 		"parameters": [
 			{
 				"description": "The connection string.",
@@ -300,7 +300,7 @@
 		]
 	},
 	"OnCGlobalObjectSystemInit": {
-		"description": "TODO",
+		"description": "Triggered when the client global object system is being initialized.",
 		"parameters": null
 	},
 	"OnChallengeQuery": {
@@ -728,7 +728,7 @@
 		"parameters": null
 	},
 	"OnDynamicMovableRecipe": {
-		"description": "TODO",
+		"description": "Triggered when a dynamic recipe for a movable inventory item is being used.",
 		"parameters": [
 			{
 				"description": "The movable object resulting from using the recipe.",
@@ -896,7 +896,7 @@
 		]
 	},
 	"OnGetDBSchema": {
-		"description": "TODO",
+		"description": "Triggered when the game client is receiving a database schema from the server.",
 		"parameters": [
 			{
 				"description": "The database schema of the game client.",
@@ -906,7 +906,7 @@
 		]
 	},
 	"OnGetTableResult": {
-		"description": "TODO",
+		"description": "Triggered when the game client is receiving a table result from the server.",
 		"parameters": [
 			{
 				"description": "The row data of the table result.",
@@ -966,7 +966,7 @@
 		]
 	},
 	"OnInitModdedWeatherStage": {
-		"description": "TODO",
+		"description": "Triggered when the modded weather state is being initialized.",
 		"parameters": [
 			{
 				"description": "The weather period of this weather stage.",
@@ -1021,7 +1021,7 @@
 		]
 	},
 	"OnJoypadActivate": {
-		"description": "Triggered when a controller is activated.",
+		"description": "Triggered when a joypad is activated in-game.",
 		"parameters": [
 			{
 				"description": "The identifier of the joypad which has been activated.",
@@ -1031,7 +1031,7 @@
 		]
 	},
 	"OnJoypadActivateUI": {
-		"description": "TODO",
+		"description": "Triggered when joypad is activated from main screen.",
 		"parameters": [
 			{
 				"description": "The identifier of the joypad.",
@@ -1041,7 +1041,7 @@
 		]
 	},
 	"OnJoypadBeforeDeactivate": {
-		"description": "TODO",
+		"description": "Triggered when a joypad was disconnected, just before being deactivated.",
 		"parameters": [
 			{
 				"description": "The identifier of the joypad.",
@@ -1051,7 +1051,7 @@
 		]
 	},
 	"OnJoypadBeforeReactivate": {
-		"description": "TODO",
+		"description": "Triggered when a joypad was connected, just before being activated.",
 		"parameters": [
 			{
 				"description": "The identifier of the joypad.",
@@ -1061,7 +1061,7 @@
 		]
 	},
 	"OnJoypadDeactivate": {
-		"description": "TODO",
+		"description": "Triggered when a joypad was disconnected, just after it's been deactivated.",
 		"parameters": [
 			{
 				"description": "The identifier of the joypad.",
@@ -1071,7 +1071,7 @@
 		]
 	},
 	"OnJoypadReactivate": {
-		"description": "TODO",
+		"description": "Triggered when a joypad was connected, just after it's been activated.",
 		"parameters": [
 			{
 				"description": "The identifier of the joypad.",
@@ -1081,7 +1081,7 @@
 		]
 	},
 	"OnJoypadRenderUI": {
-		"description": "TODO",
+		"description": "Triggered every time the screen is being rendered, whether in-game or on main screen.",
 		"parameters": null
 	},
 	"OnKeyKeepPressed": {
@@ -1168,7 +1168,7 @@
 		"parameters": null
 	},
 	"OnMakeItem": {
-		"description": "TODO",
+		"description": "Triggered when a player is crafting an item.",
 		"parameters": [
 			{
 				"description": "The item used to make the item.",
@@ -1187,7 +1187,7 @@
 		]
 	},
 	"OnMapLoadCreateIsoObject": {
-		"description": "TODO",
+		"description": "No trigger found for this event.",
 		"parameters": [
 			{
 				"description": "TODO: EVENT NOT FOUND."
@@ -1195,7 +1195,7 @@
 		]
 	},
 	"OnMechanicActionDone": {
-		"description": "TODO",
+		"description": "Triggered when a player finished a mechanic action.",
 		"parameters": [
 			{
 				"description": "The character who performed the mechanic action.",
@@ -1229,11 +1229,11 @@
 		]
 	},
 	"OnMiniScoreboardUpdate": {
-		"description": "TODO",
+		"description": "Triggered when the mini scoreboard is being updated.",
 		"parameters": null
 	},
 	"OnModsModified": {
-		"description": "TODO",
+		"description": "Triggered when a mod has been modified on the filesystem.",
 		"parameters": null
 	},
 	"OnMouseDown": {
@@ -1292,7 +1292,7 @@
 		]
 	},
 	"OnMultiTriggerNPCEvent": {
-		"description": "TODO",
+		"description": "Called when a player enters the trigger area of a NPC event.",
 		"parameters": [
 			{
 				"description": "The type of trigger of this NPC event.",
@@ -1342,7 +1342,7 @@
 		]
 	},
 	"OnNewSurvivorGroup": {
-		"description": "TODO",
+		"description": "Triggered when a new survivor group is being created.",
 		"parameters": [
 			{
 				"description": "The new survivor group.",
@@ -1361,7 +1361,7 @@
 		]
 	},
 	"OnObjectAboutToBeRemoved": {
-		"description": "TODO",
+		"description": "Triggered when an object is about to get removed.",
 		"parameters": [
 			{
 				"description": "The object about to be removed.",
@@ -1531,7 +1531,7 @@
 		]
 	},
 	"OnPostCharactersSquareDraw": {
-		"description": "TODO",
+		"description": "No trigger found for this event.",
 		"parameters": [
 			{
 				"description": "TODO: EVENT NOT FOUND."
@@ -1539,7 +1539,7 @@
 		]
 	},
 	"OnPostDistributionMerge": {
-		"description": "TODO",
+		"description": "Triggered after the distribution merge.",
 		"parameters": null
 	},
 	"OnPostFloorLayerDraw": {
@@ -1553,7 +1553,7 @@
 		]
 	},
 	"OnPostFloorSquareDraw": {
-		"description": "TODO",
+		"description": "No trigger found for this event.",
 		"parameters": [
 			{
 				"description": "TODO: EVENT NOT FOUND."
@@ -1580,7 +1580,7 @@
 		]
 	},
 	"OnPostRender": {
-		"description": "TODO",
+		"description": "Triggered every time after a frame is rendered in-game.",
 		"parameters": null
 	},
 	"OnPostSave": {
@@ -1588,11 +1588,11 @@
 		"parameters": null
 	},
 	"OnPostTileDraw": {
-		"description": "TODO",
+		"description": "No trigger found for this event.",
 		"parameters": []
 	},
 	"OnPostTilesSquareDraw": {
-		"description": "TODO",
+		"description": "No trigger found for this event.",
 		"parameters": [
 			{
 				"description": "TODO: EVENT NOT FOUND."
@@ -1604,7 +1604,7 @@
 		"parameters": null
 	},
 	"OnPostWallSquareDraw": {
-		"description": "TODO",
+		"description": "No trigger found for this event.",
 		"parameters": [
 			{
 				"description": "TODO: EVENT NOT FOUND."
@@ -1612,7 +1612,7 @@
 		]
 	},
 	"OnPreDistributionMerge": {
-		"description": "TODO",
+		"description": "Triggered before the distribution merge.",
 		"parameters": null
 	},
 	"OnPreFillInventoryObjectContextMenu": {
@@ -1704,7 +1704,7 @@
 		]
 	},
 	"OnRadioInteraction": {
-		"description": "TODO",
+		"description": "Triggered when a radio is displaying a new line of text.",
 		"parameters": [
 			{
 				"description": "The player who's interacting with the radio.",
@@ -1736,7 +1736,7 @@
 		"parameters": null
 	},
 	"OnReceiveGlobalModData": {
-		"description": "TODO",
+		"description": "Triggered when the game client is receiving GlobalModData from the server.",
 		"parameters": [
 			{
 				"description": "The key for the ModData that has been received.",
@@ -1751,7 +1751,7 @@
 		]
 	},
 	"OnReceiveItemListNet": {
-		"description": "TODO",
+		"description": "Triggered when a player is receiving a list of items from another player.",
 		"parameters": [
 			{
 				"description": "The player who's sending the item list.",
@@ -1779,7 +1779,7 @@
 		]
 	},
 	"OnReceiveUserlog": {
-		"description": "TODO",
+		"description": "Triggered when the game client is receiving user log from the server.",
 		"parameters": [
 			{
 				"description": "The username for which we're receiving the log.",
@@ -1808,11 +1808,11 @@
 		]
 	},
 	"OnRenderTick": {
-		"description": "TODO",
+		"description": "Triggered every time the display is being rendered.",
 		"parameters": null
 	},
 	"OnRenderUpdate": {
-		"description": "Triggered every time Display.update() is called..",
+		"description": "Triggered every time Display.update() is called.",
 		"parameters": [
 			{
 				"description": "TODO: EVENT NOT FOUND."
@@ -1820,7 +1820,7 @@
 		]
 	},
 	"OnResetLua": {
-		"description": "TODO",
+		"description": "Triggered when Lua is being reset.",
 		"parameters": [
 			{
 				"description": "The reason why Lua was reset.",
@@ -1885,7 +1885,7 @@
 		]
 	},
 	"OnSGlobalObjectSystemInit": {
-		"description": "TODO",
+		"description": "Triggered when the server global object system is being initialized.",
 		"parameters": null
 	},
 	"OnSafehousesChanged": {
@@ -1926,7 +1926,7 @@
 		]
 	},
 	"OnServerCommand": {
-		"description": "TODO",
+		"description": "Triggered when a command from the server is being received.",
 		"parameters": [
 			{
 				"description": "The name of the module for this server command.",
@@ -1946,19 +1946,19 @@
 		]
 	},
 	"OnServerFinishSaving": {
-		"description": "TODO",
+		"description": "Triggered when the server is done saving.",
 		"parameters": null
 	},
 	"OnServerStartSaving": {
-		"description": "TODO",
+		"description": "Triggered when the server starts saving.",
 		"parameters": null
 	},
 	"OnServerStarted": {
-		"description": "TODO",
+		"description": "Triggered when the game server has started.",
 		"parameters": null
 	},
 	"OnServerStatisticReceived": {
-		"description": "TODO",
+		"description": "Triggered when the game client receives statistics from the server.",
 		"parameters": null
 	},
 	"OnServerWorkshopItems": {
@@ -1987,7 +1987,7 @@
 		]
 	},
 	"OnSetDefaultTab": {
-		"description": "TODO",
+		"description": "Triggered when the default chat tab has been set.",
 		"parameters": [
 			{
 				"description": "The chat tab that is being set as default.",
@@ -2006,7 +2006,7 @@
 		]
 	},
 	"OnSteamFriendStatusChanged": {
-		"description": "TODO",
+		"description": "Triggered when the status of a friend changed on Steam.",
 		"parameters": [
 			{
 				"description": "Steam identifier of the user who's friend status has changed.",
@@ -2020,7 +2020,7 @@
 		"parameters": null
 	},
 	"OnSteamRefreshInternetServers": {
-		"description": "TODO",
+		"description": "Triggered when the list of public Internet servers is being refreshed.",
 		"parameters": null
 	},
 	"OnSteamRulesRefreshComplete": {
@@ -2088,7 +2088,7 @@
 		]
 	},
 	"OnSteamWorkshopItemCreated": {
-		"description": "TODO",
+		"description": "Triggered after a new Steam workshop item was successfully created.",
 		"parameters": [
 			{
 				"description": "The Steam identifier of the user who created the workshop item.",
@@ -2103,7 +2103,7 @@
 		]
 	},
 	"OnSteamWorkshopItemNotCreated": {
-		"description": "TODO",
+		"description": "Triggered when a Steam workshop item couldn't be created.",
 		"parameters": [
 			{
 				"description": "The result code indicating why the workshop item was not created.",
@@ -2113,7 +2113,7 @@
 		]
 	},
 	"OnSteamWorkshopItemNotUpdated": {
-		"description": "TODO",
+		"description": "Triggered when a Steam workshop item couldn't be updated.",
 		"parameters": [
 			{
 				"description": "The result code indicating why the workshop item was not updated.",
@@ -2123,7 +2123,7 @@
 		]
 	},
 	"OnSteamWorkshopItemUpdated": {
-		"description": "TODO",
+		"description": "Triggered after a Steam workship item was successfully updated.",
 		"parameters": [
 			{
 				"description": "Whether the user has to accept the workshop legal agreement.",
@@ -2133,7 +2133,7 @@
 		]
 	},
 	"OnSwitchVehicleSeat": {
-		"description": "TODO",
+		"description": "Triggered when a character is switching seat in a vehicle.",
 		"parameters": [
 			{
 				"description": "The player who's switching seat in the vehicle.",
@@ -2232,7 +2232,7 @@
 		]
 	},
 	"OnTriggerNPCEvent": {
-		"description": "Called when a NPC event is triggered.",
+		"description": "Called when a player enters the trigger area of a NPC event.",
 		"parameters": [
 			{
 				"description": "The type of trigger of this NPC event.",
@@ -2251,7 +2251,7 @@
 		]
 	},
 	"OnUpdateModdedWeatherStage": {
-		"description": "TODO",
+		"description": "Triggered when the modded weather sage is being updated.",
 		"parameters": [
 			{
 				"description": "The current weather period.",
@@ -2288,7 +2288,7 @@
 		]
 	},
 	"OnVehicleDamageTexture": {
-		"description": "TODO",
+		"description": "Triggered when the texture of a vehicle part is changed after being damaged.",
 		"parameters": [
 			{
 				"description": "The player who's driving the vehicle.",
@@ -2364,7 +2364,7 @@
 		]
 	},
 	"OnWeaponHitXp": {
-		"description": "TODO",
+		"description": "Triggered when a player is gaining XP for a successful hit.",
 		"parameters": [
 			{
 				"description": "The player who's wielding the weapon.",
@@ -2494,7 +2494,7 @@
 		]
 	},
 	"ReuseGridsquare": {
-		"description": "TODO",
+		"description": "Triggered when a grid square is being reused.",
 		"parameters": [
 			{
 				"description": "The grid square that is going to be reused.",
@@ -2503,11 +2503,11 @@
 		]
 	},
 	"SendCustomModData": {
-		"description": "TODO",
+		"description": "Triggered when the game server is sending custom ModData to the client.",
 		"parameters": null
 	},
 	"ServerPinged": {
-		"description": "TODO",
+		"description": "Triggered when the game client receives the response after intiating a ping to a server.",
 		"parameters": [
 			{
 				"description": "The IP address of the user who pinged the server.",
@@ -2522,11 +2522,11 @@
 		]
 	},
 	"SwitchChatStream": {
-		"description": "TODO",
+		"description": "Triggered when a user presses TAB on his keyboard to switch chat stream.",
 		"parameters": null
 	},
 	"SyncFaction": {
-		"description": "TODO",
+		"description": "Triggered when a faction is being synced by the server on client side.",
 		"parameters": [
 			{
 				"description": "The name of the faction which is going to get synchronized.",
@@ -2536,20 +2536,20 @@
 		]
 	},
 	"TradingUIAddItem": {
-		"description": "TODO",
+		"description": "Triggered when a player adds an item to a trade.",
 		"parameters": [
 			{
 				"description": "The player who's adding an item to the trade.",
 				"type": "IsoPlayer"
 			},
 			{
-				"description": "The item that the player is adding to the trade.",
+				"description": "The item which the player is adding to the trade.",
 				"type": "InventoryItem"
 			}
 		]
 	},
 	"TradingUIRemoveItem": {
-		"description": "TODO",
+		"description": "Triggered when a player removes an item from a trade.",
 		"parameters": [
 			{
 				"description": "The player who's removing an item from the trade.",
@@ -2563,7 +2563,7 @@
 		]
 	},
 	"TradingUIUpdateState": {
-		"description": "TODO",
+		"description": "Triggered when a player updates the item state of a trade.",
 		"parameters": [
 			{
 				"description": "The player who's updating an item.",
@@ -2577,7 +2577,7 @@
 		]
 	},
 	"UseItem": {
-		"description": "TODO",
+		"description": "Triggered when a player is using an item.",
 		"parameters": [
 			{
 				"description": "The player who's using the item.",
@@ -2590,7 +2590,7 @@
 		]
 	},
 	"ViewTickets": {
-		"description": "TODO",
+		"description": "Triggered when the game client is receiving tickets from the server.",
 		"parameters": [
 			{
 				"description": "The buffer where to write the tickets.",
@@ -2600,7 +2600,7 @@
 		]
 	},
 	"WeaponHitCharacter": {
-		"description": "TODO",
+		"description": "Triggered when a character is being hit with a hand weapon.",
 		"parameters": [
 			{
 				"description": "The character whose weapon hit another character.",
@@ -2622,7 +2622,7 @@
 		]
 	},
 	"WeaponSwing": {
-		"description": "TODO",
+		"description": "Triggered when a character enters the swipe state.",
 		"parameters": [
 			{
 				"description": "The character who's wielding the weapon.",
@@ -2635,7 +2635,7 @@
 		]
 	},
 	"WeaponSwingHitPoint": {
-		"description": "TODO",
+		"description": "Triggered when a character gains XP from a successful hit with a hand weapon.",
 		"parameters": [
 			{
 				"description": "The character who's swinging the weapon.",
