@@ -1904,7 +1904,7 @@
 			"type": "IsoPlayer"
 		},
 		{
-			"description": "The item that the player is adding to the trade.",
+			"description": "The item which the player is adding to the trade.",
 			"type": "InventoryItem"
 		}
 	],
