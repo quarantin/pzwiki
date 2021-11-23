@@ -1742,6 +1742,7 @@
 	"OnWeaponHitCharacter": [
 		{
 			"description": "The character whose weapon hit another character.",
+			"name": "wielder",
 			"type": "IsoGameCharacter"
 		},
 		{
