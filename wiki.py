@@ -207,7 +207,7 @@ class Wiki:
 		output += '\n\n'
 		output += 'Events.%s.Add(%s)' % (event, func)
 
-		return '<pre<!---->>' + output + '</pre>'
+		return '<pre<!----> class="code">' + output + '</pre>'
 
 	def format_event_name(self, jsonevent):
 
