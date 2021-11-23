@@ -1755,6 +1755,7 @@
 		"parameters": [
 			{
 				"description": "The player who's sending the item list.",
+				"name": "sender",
 				"type": "IsoPlayer"
 			},
 			{
@@ -1764,6 +1765,7 @@
 			},
 			{
 				"description": "The player who's receiving the item list.",
+				"name": "receiver",
 				"type": "IsoPlayer"
 			},
 			{
@@ -2605,6 +2607,7 @@
 		"parameters": [
 			{
 				"description": "The character whose weapon hit another character.",
+				"name": "wielder",
 				"type": "IsoGameCharacter"
 			},
 			{
