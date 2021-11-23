@@ -408,7 +408,7 @@
 		"description": "Triggered for every climate tick.",
 		"parameters": [
 			{
-				"description": "The climate manager which is ticking.",
+				"description": "The climate manager.",
 				"type": "ClimateManager"
 			}
 		]
@@ -417,7 +417,7 @@
 		"description": "Triggered for every climate tick but only when debug mode is enabled.",
 		"parameters": [
 			{
-				"description": "The climate manager which is ticking.",
+				"description": "The climate manager.",
 				"type": "ClimateManager"
 			}
 		]
@@ -2333,6 +2333,7 @@
 		"parameters": [
 			{
 				"description": "The character whose weapon hit another character.",
+				"name": "wielder",
 				"type": "IsoGameCharacter"
 			},
 			{
