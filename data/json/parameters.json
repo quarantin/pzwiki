@@ -302,13 +302,13 @@
 	],
 	"OnClimateTick": [
 		{
-			"description": "The climate manager which is ticking.",
+			"description": "The climate manager.",
 			"type": "ClimateManager"
 		}
 	],
 	"OnClimateTickDebug": [
 		{
-			"description": "The climate manager which is ticking.",
+			"description": "The climate manager.",
 			"type": "ClimateManager"
 		}
 	],
