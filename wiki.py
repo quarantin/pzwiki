@@ -177,13 +177,18 @@ class Wiki:
 		additional_info = jsonevent.get('additional_info', '')
 		return '\n'.join([desc, additional_info])
 
+	def format_span(self, css, text):
+		return '<span class="%s">%s</span>' % (css, text)
+
 	def format_event_example(self, jsonevent):
 
 		event = jsonevent['name']
 		func = event[0].lower() + event[1:]
 
-		output  = ''
-		output += 'function ' + func + '('
+		output  = self.format_span('keyword', 'function')
+		output += ' '
+		output += self.format_span('function', func)
+		output += '('
 
 		if event in self.parameters and self.parameters[event] != None:
 			params = []
@@ -195,18 +200,21 @@ class Wiki:
 			output += ', '.join(params)
 
 		output += ')\n'
-		output += '\t-- Your code here\n'
-		output += 'end\n\n'
-		output += 'Events.' + event + '.Add(' + func + ')'
+		output += '\t'
+		output += self.format_span('comment', '-- Your code here')
+		output += '\n'
+		output += self.format_span('keyword', 'end')
+		output += '\n\n'
+		output += 'Events.%s.Add(%s)' % (event, func)
 
-		return '<syntaxhighlight lang="lua">' + output + '</syntaxhighlight>'
+		return '<pre<!---->>' + output + '</pre>'
 
 	def format_event_name(self, jsonevent):
 
 		output = jsonevent['name']
 
 		if jsonevent['name'] in self.obsolete:
-			output = '<span style="color:#FF0000"><b>OBSOLETE</b></span><br>' + output
+			output = '<span class="obsolete"><b>OBSOLETE</b></span><br>' + output
 
 		return output
 
