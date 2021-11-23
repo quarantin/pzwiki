@@ -1,23 +1,22 @@
-code {
+pre {
 	background-color: #f8f9fa;
 	border: 1px solid #eaecf0;
 	color: #000000;
-	/*font-size: calc(1em * 0.875);*/
 	line-height: 1.3;
 	padding: 1em;
 	tab-size: 4;
 }
-code span.comment {
+pre.code span.comment {
 	color: #408080;
 	font-style: italic;
 }
-code span.function {
+pre.code span.function {
 	color: #0000ff;
 }
-code span.keyword {
+pre.code span.keyword {
 	color: #008000;
 	font-weight: bold;
 }
-code span.obsolete {
+span.obsolete {
 	color: #FF0000;
 }
