@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+cd $(dirname "${0}")
+cd ..
+
+REPODIR=$(pwd)
+MODROOT="$(jq -r .mods config.json)"
+
+OUTDIR="data/txt/"
+mkdir -p "${OUTDIR}"
+
+OUTPUT="${REPODIR}/${OUTDIR}/modaddeventlua.txt"
+echo -n > "${OUTPUT}"
+
+cd "${MODROOT}"
+grep -Rn 'Events\.[_a-zA-Z0-9]\+\.Add(' | tr -d '\r' > "${OUTPUT}"
