@@ -1430,7 +1430,7 @@
 	],
 	"OnSeeNewRoom": [
 		{
-			"description": "The room being seen for the first time by any player.",
+			"description": "The room about to get spawned.",
 			"type": "IsoRoom"
 		}
 	],
