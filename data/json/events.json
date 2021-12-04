@@ -1919,10 +1919,10 @@
 		]
 	},
 	"OnSeeNewRoom": {
-		"description": "Triggered when a room is being seen by a character for the first time.",
+		"description": "Triggered for each room about to get spawned, the first time a character gets close enough to the building where the room is located.",
 		"parameters": [
 			{
-				"description": "The room being seen for the first time by any player.",
+				"description": "The room about to get spawned.",
 				"type": "IsoRoom"
 			}
 		]
