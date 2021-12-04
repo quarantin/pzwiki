@@ -164,7 +164,7 @@
 	"OnSafehousesChanged": "Triggered when the safehouse is being changed.",
 	"OnSave": "Triggered during the game's saving process.",
 	"OnScoreboardUpdate": "Triggered when multiplayer scoreboard is updated.",
-	"OnSeeNewRoom": "Triggered when a room is being seen by a character for the first time.",
+	"OnSeeNewRoom": "Triggered for each room about to get spawned, the first time a character gets close enough to the building where the room is located.",
 	"OnServerCommand": "Triggered when a command from the server is being received.",
 	"OnServerFinishSaving": "Triggered when the server is done saving.",
 	"OnServerStartSaving": "Triggered when the server starts saving.",
