@@ -1,0 +1,4 @@
+name=Debug Lua Events
+id=DebugLuaEvents
+description=A simple mod to help understand when each Lua event is triggered.
+poster=poster.png
