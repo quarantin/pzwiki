@@ -14,11 +14,13 @@
 
 import json
 
-from os import chdir
+from os import chdir, makedirs
 from os.path import dirname, realpath
 
 chdir(dirname(realpath(__file__)))
 chdir('..')
+
+mod_id = 'DebugLuaEvents'
 
 invalid = [
 	'Attack',
@@ -101,93 +103,98 @@ def generate_param_table(args):
 	code += '\n'
 
 	for arg in args:
-		code += '\t\t\t{ name = "%s", value = %s },\n' % (arg, arg)
+		code += '\t\t\t\t{ name = "%s", value = %s },\n' % (arg, arg)
 
 	return code + '\t\t'
 
 def write_config(fd):
 
-	code = """local config = {}
+	code = \
+"""return function(folder)
 
-config.lineEnding = "\\n"
+	local config = {}
 
-config.speakType = "normal"
+	config.lineEnding = "\\n"
 
-config.speakEvents = true
+	config.speakType = "normal"
 
-config.output = getFileOutput("DebugLuaEvents.txt")
+	config.speakEvents = true
 
-config.doPrintToFile = true
+	config.output = getFileOutput("DebugLuaEvents.txt")
 
-config.doPrintToConsole = true
+	config.doPrintToFile = true
 
-config.print = function(message, prefix)
+	config.doPrintToConsole = true
 
-	if config.doPrintToFile then
-		config.output:writeChars(message .. config.lineEnding)
+	config.print = function(message, prefix)
+
+		if config.doPrintToFile then
+			config.output:writeChars(message .. config.lineEnding)
+		end
+
+		if config.doPrintToConsole then
+			prefix = prefix or '  # '
+			print(prefix .. message)
+		end
 	end
 
-	if config.doPrintToConsole then
-		prefix = prefix or '  # '
-		print(prefix .. message)
+	config.debug = function(event, params)
+
+		if config.disabled[event] ~= nil then
+			return
+		end
+
+		if config.throttled[event] ~= nil then
+			return
+		end
+
+		config.print(event .. " (" .. (folder:gsub("^%l", string.upper)) .. " side)")
+
+		for i, param in ipairs(params) do
+			config.print("  - param: " .. param.name .. " = " .. tostring(param.value))
+		end
+
+		config.print('', '')
+
+		if not config.speakEvents then
+			return
+		end
+
+		local player = getPlayer()
+		if not player then
+			return
+		end
+
+		if config.speakType == "normal" then
+			player:Say(event)
+
+		elseif config.speakType == "halo" then
+			player:setHaloNote(event)
+
+		elseif config.speakType == "whisper" then
+			player:SayShout(event)
+
+		elseif config.speakType == "shout" then
+			player:SayWhisper(event)
+		end
 	end
-end
 
-config.debug = function(event, params)
+	config.disabled = {}
 
-	if config.disabled[event] ~= nil then
-		return
-	end
-
-	if config.throttled[event] ~= nil then
-		return
-	end
-
-	config.print(event)
-
-  	for i, param in ipairs(params) do
-	  	config.print("  - param: " .. param.name .. " = " .. tostring(param.value))
-	end
-
-	config.print('', '')
-
-	if not config.speakEvents then
-		return
-	end
-
-	local player = getPlayer()
-	if not player then
-		return
-	end
-
-	if config.speakType == "normal" then
-		player:Say(event)
-
-	elseif config.speakType == "halo" then
-		player:setHaloNote(event)
-
-	elseif config.speakType == "whisper" then
-		player:SayShout(event)
-
-	elseif config.speakType == "shout" then
-		player:SayWhisper(event)
-	end
-end
-
-config.disabled = {}
-
-config.throttled = {
+	config.throttled = {
 """
+
 	for event in throttled:
-		code += '\t%s = true,\n' % event
+		code += '\t\t%s = true,\n' % event
 
-	code += """}
+	code += """\t}
 
-return config
+	return config
+end
 """
 	fd.write(code)
 
-def write_event_callback(fd, event, jsonevent):
+def write_callback(fd, event, jsonevent):
 
 	args = []
 
@@ -200,49 +207,89 @@ def write_event_callback(fd, event, jsonevent):
 
 		args.append(arg)
 
-	code = """
-	-- %s
-	--
-	-- %s
-	-- https://pzwiki.net/wiki/Modding:Lua_Events/%s
-	%s = function (%s)
-		config.debug("%s", {""" % (event, jsonevent['description'], event, event, ', '.join(args), event)
+	code = \
+"""
+		-- %s
+		--
+		-- %s
+		-- https://pzwiki.net/wiki/Modding:Lua_Events/%s
+		%s = function (%s)
+			config.debug("%s", {""" % (event, jsonevent['description'], event, event, ', '.join(args), event)
 
 	code += generate_param_table(args)
 
-	code += """})
-	end,
+	code += """	})
+		end,
 """
 	fd.write(code)
 
-def write_register_event(fd, event):
-	fd.write('Events.%s.Add(callbacks.%s)\n' % (event, event))
+def write_register_callback(fd, event):
+	fd.write('\tEvents.%s.Add(callbacks.%s)\n' % (event, event))
+
+def create_folders(folder):
+	dirpath = 'mods/%s/media/lua/%s/%s/' % (mod_id, folder, mod_id)
+	makedirs(dirpath, exist_ok=True)
+
+def write_mod_info():
+	output = 'mods/%s/mod.info' % mod_id
+	with open(output, 'w') as fd:
+
+		output = \
+"""name=Debug Lua Events
+id=DebugLuaEvents
+description=A simple mod to help understand when each Lua event is triggered.
+poster=poster.png
+"""
+		fd.write(output)
+
+def write_configs(folder):
+
+	output = 'mods/%s/media/lua/%s/%s/%s_Config.lua' % (mod_id, folder, mod_id, mod_id)
+	with open(output, 'w') as fd:
+		write_config(fd)
+
+def write_callbacks(folder, events):
+
+	output = 'mods/%s/media/lua/%s/%s/%s_Callbacks.lua' % (mod_id, folder, mod_id, mod_id)
+	with open(output, 'w') as fd:
+		fd.write('return function(folder)\n\n')
+		fd.write('\tlocal config = require("DebugLuaEvents/DebugLuaEvents_Config")(folder)\n\n')
+		fd.write('\treturn {\n')
+		for event, jsonevent in events.items():
+			if event not in invalid:
+				write_callback(fd, event, jsonevent)
+		fd.write('\t}\n')
+		fd.write('end\n')
+
+def write_register_callbacks(folder, events):
+
+	output = 'mods/%s/media/lua/%s/%s/%s_Register.lua' % (mod_id, folder, mod_id, mod_id)
+	with open(output, 'w') as fd:
+		fd.write('return function(folder)\n\n')
+		fd.write('\tlocal callbacks = require("DebugLuaEvents/DebugLuaEvents_Callbacks")(folder)\n\n')
+		for event in events:
+			if event not in invalid:
+				write_register_callback(fd, event)
+		fd.write("end\n")
+
+def write_main(folder):
+
+	output = 'mods/%s/media/lua/%s/%s/%s_%s.lua' % (mod_id, folder, mod_id, mod_id, folder.title())
+	with open(output, 'w') as fd:
+		code = 'require("%s/%s_Register")("%s")\n' % (mod_id, mod_id, folder)
+		fd.write(code)
 
 with open('data/json/events.json') as fd:
 	events = json.loads(fd.read())
 
-mod_id = 'DebugLuaEvents'
+create_folders('client')
+create_folders('server')
+create_folders('shared')
 
-# Writing event callbacks
-output = 'mods/%s/media/lua/client/%s/%s_Callbacks.lua' % (mod_id, mod_id, mod_id)
-with open(output, 'w') as fd:
-	fd.write('local config = require("DebugLuaEvents/DebugLuaEvents_Config")\n\n')
-	fd.write('local callbacks = {\n')
-	for event, jsonevent in events.items():
-		if event not in invalid:
-			write_event_callback(fd, event, jsonevent)
-	fd.write('}\n\n')
-	fd.write('return callbacks')
+write_mod_info()
 
-# Writing register event
-output = 'mods/%s/media/lua/client/%s/%s_Register.lua' % (mod_id, mod_id, mod_id)
-with open(output, 'w') as fd:
-	fd.write('local callbacks = require("DebugLuaEvents/DebugLuaEvents_Callbacks")\n\n')
-	for event in events:
-		if event not in invalid:
-			write_register_event(fd, event)
-
-# Writing config
-output = 'mods/%s/media/lua/client/%s/%s_Config.lua' % (mod_id, mod_id, mod_id)
-with open(output, 'w') as fd:
-	write_config(fd)
+write_configs('shared')
+write_callbacks('shared', events)
+write_register_callbacks('shared', events)
+write_main('client')
+write_main('server')
