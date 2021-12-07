@@ -1,0 +1,5648 @@
+{
+	"AddNoiseToken": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "gridSquare",
+				"type": "IsoGridSquare"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"AddWorldSound": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"InvMngGetItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "long1",
+				"type": "long"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"InvMngRemoveItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "long1",
+				"type": "long"
+			},
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"Render3DItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "inventoryItem",
+				"type": "InventoryItem"
+			},
+			{
+				"description": "TODO",
+				"name": "gridSquare",
+				"type": "IsoGridSquare"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float4",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"SendCommandToServer": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"SyncXp": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"ZombRand": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "double1",
+				"type": "double"
+			},
+			{
+				"description": "TODO",
+				"name": "double2",
+				"type": "double"
+			}
+		],
+		"return": "double"
+	},
+	"ZombRandBetween": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "double1",
+				"type": "double"
+			},
+			{
+				"description": "TODO",
+				"name": "double2",
+				"type": "double"
+			}
+		],
+		"return": "double"
+	},
+	"ZombRandFloat": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"acceptFactionInvite": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "faction",
+				"type": "Faction"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"acceptSafehouseInvite": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "safeHouse",
+				"type": "SafeHouse"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"acceptTrading": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "player2",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"activateSteamOverlayToWebPage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"activateSteamOverlayToWorkshop": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"activateSteamOverlayToWorkshopItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"activateSteamOverlayToWorkshopUser": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"addAllBurntVehicles": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"addAllSmashedVehicles": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"addAllVehicles": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"addBloodSplat": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "gridSquare",
+				"type": "IsoGridSquare"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"addCarCrash": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"addPhysicsObject": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "BaseVehicle"
+	},
+	"addSound": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "IsoObject"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int4",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int5",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"addTicket": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"addUserlog": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"addVehicle": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "BaseVehicle"
+	},
+	"addVehicleDebug": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "directions",
+				"type": "IsoDirections"
+			},
+			{
+				"description": "TODO",
+				"name": "integer",
+				"type": "Integer"
+			},
+			{
+				"description": "TODO",
+				"name": "gridSquare",
+				"type": "IsoGridSquare"
+			}
+		],
+		"return": "BaseVehicle"
+	},
+	"addVirtualZombie": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"addWarningPoint": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"addZombieSitting": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"addZombiesEating": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int4",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"addZombiesInBuilding": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "buildingDef",
+				"type": "BuildingDef"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "roomDef",
+				"type": "RoomDef"
+			},
+			{
+				"description": "TODO",
+				"name": "integer",
+				"type": "Integer"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"addZombiesInOutfit": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int4",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "integer",
+				"type": "Integer"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"addZombiesInOutfitArea": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int4",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int5",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int6",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "integer",
+				"type": "Integer"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"assaultPlayer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"attachTrailerToPlayerVehicle": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"backToSinglePlayer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"breakpoint": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"canInviteFriends": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"canModifyPlayerScoreboard": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"canModifyPlayerStats": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"canSeePlayerStats": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"checkPlayerCanUseChat": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "Boolean"
+	},
+	"checkSaveFileExists": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"checkSaveFolderExists": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"checkSavePlayerExists": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"cloneItemType": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			}
+		],
+		"return": "Item"
+	},
+	"configureLighting": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"connectToServerStateCallback": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"copyTable": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"createHordeFromTo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float4",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"createHordeInAreaTo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int4",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int5",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int6",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int7",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"createNewScriptItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string4",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string5",
+				"type": "String"
+			}
+		],
+		"return": "Item"
+	},
+	"createRandomDeadBody": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "gridSquare",
+				"type": "IsoGridSquare"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "IsoDeadBody"
+	},
+	"createRegionFile": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"createStory": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"createTile": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "gridSquare",
+				"type": "IsoGridSquare"
+			}
+		],
+		"return": "void"
+	},
+	"createWorld": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"createZombie": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "survivorDesc",
+				"type": "SurvivorDesc"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "directions",
+				"type": "IsoDirections"
+			}
+		],
+		"return": "IsoZombie"
+	},
+	"debugFullyStreamedIn": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"debugLuaTable": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "void"
+	},
+	"deleteAllGameModeSaves": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"deletePlayerSave": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"deleteSandboxPreset": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"deleteSave": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"disconnect": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"doChallenge": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			}
+		],
+		"return": "void"
+	},
+	"doKeyPress": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"doTutorial": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			}
+		],
+		"return": "void"
+	},
+	"drawOverheadMap": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "uIElement",
+				"type": "UIElement"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"endFileInput": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"endFileOutput": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"endHelicopter": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"endTextFileInput": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"executeQuery": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			}
+		],
+		"return": "void"
+	},
+	"fileExists": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"focusOnTab": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "Short1",
+				"type": "Short"
+			}
+		],
+		"return": "void"
+	},
+	"forceChangeState": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "gameState",
+				"type": "GameState"
+			}
+		],
+		"return": "void"
+	},
+	"forceDisconnect": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"forceSnowCheck": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"getAbsoluteSaveFolderName": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getAccessLevel": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getActivatedMods": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getAllBeardStyles": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getAllDecalNamesForItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "inventoryItem",
+				"type": "InventoryItem"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"getAllHairStyles": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"getAllItems": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getAllItemsForBodyLocation": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"getAllOutfits": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"getAllRecipes": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getAllSavedPlayers": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "IOException",
+				"type": "throws"
+			}
+		],
+		"return": "List"
+	},
+	"getAmbientStreamManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "BaseAmbientStreamManager"
+	},
+	"getAnimationViewerState": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "AnimationViewerState"
+	},
+	"getAttachmentEditorState": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "AttachmentEditorState"
+	},
+	"getAverageFPS": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "Double"
+	},
+	"getBeardStylesInstance": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "BeardStyles"
+	},
+	"getBehaviourDebugPlayer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "IsoGameCharacter"
+	},
+	"getButtonCount": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getCallframeTop": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			}
+		],
+		"return": "int"
+	},
+	"getCameraOffX": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "float"
+	},
+	"getCameraOffY": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "float"
+	},
+	"getCell": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "IsoCell"
+	},
+	"getClassField": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "Field"
+	},
+	"getClassFieldVal": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "field",
+				"type": "Field"
+			}
+		],
+		"return": "Object"
+	},
+	"getClassFunction": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "Method"
+	},
+	"getClientUsername": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getClimateManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ClimateManager"
+	},
+	"getConnectedPlayers": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getContainerOverlays": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ContainerOverlays"
+	},
+	"getControllerAxisCount": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getControllerAxisValue": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "float"
+	},
+	"getControllerButtonCount": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getControllerCount": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getControllerDeadZone": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "float"
+	},
+	"getControllerGUID": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "String"
+	},
+	"getControllerName": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "String"
+	},
+	"getControllerPovX": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "float"
+	},
+	"getControllerPovY": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "float"
+	},
+	"getCore": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "Core"
+	},
+	"getCoroutineCallframeStack": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "LuaCallFrame"
+	},
+	"getCoroutineObjStack": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "Object"
+	},
+	"getCoroutineObjStackWithBase": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "Object"
+	},
+	"getCoroutineTop": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			}
+		],
+		"return": "int"
+	},
+	"getCurrentCoroutine": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "Coroutine"
+	},
+	"getCurrentUserProfileName": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getCurrentUserSteamID": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getDBSchema": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"getDebug": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"getDebugOptions": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "DebugOptions"
+	},
+	"getDirectionTo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "gameCharacter",
+				"type": "IsoGameCharacter"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "IsoObject"
+			}
+		],
+		"return": "IsoDirections"
+	},
+	"getEditVehicleState": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "EditVehicleState"
+	},
+	"getErosion": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"getEvolvedRecipes": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "Stack"
+	},
+	"getFMODSoundBank": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "BaseSoundBank"
+	},
+	"getFileInput": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string throws IOException",
+				"type": "String"
+			}
+		],
+		"return": "DataInputStream"
+	},
+	"getFileOutput": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "DataOutputStream"
+	},
+	"getFileReader": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1 throws IOException",
+				"type": "boolean"
+			}
+		],
+		"return": "BufferedReader"
+	},
+	"getFileSeparator": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getFileWriter": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean2",
+				"type": "boolean"
+			}
+		],
+		"return": "LuaManager.GlobalObject.LuaFileWriter"
+	},
+	"getFilenameOfCallframe": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "luaCallFrame",
+				"type": "LuaCallFrame"
+			}
+		],
+		"return": "String"
+	},
+	"getFilenameOfClosure": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "luaClosure",
+				"type": "LuaClosure"
+			}
+		],
+		"return": "String"
+	},
+	"getFirstLineOfClosure": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "luaClosure",
+				"type": "LuaClosure"
+			}
+		],
+		"return": "int"
+	},
+	"getFriendsList": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getFullSaveDirectoryTable": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getGameClient": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "GameClient"
+	},
+	"getGameFilesInput": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "DataInputStream"
+	},
+	"getGameFilesTextInput": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "BufferedReader"
+	},
+	"getGameSpeed": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getGameTime": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "GameTime"
+	},
+	"getGametimeTimestamp": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "long"
+	},
+	"getHairStylesInstance": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "HairStyles"
+	},
+	"getHourMinute": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getItemNameFromFullType": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getItemText": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getJoypadAButton": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getJoypadAimingAxisX": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "float"
+	},
+	"getJoypadAimingAxisY": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "float"
+	},
+	"getJoypadBButton": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getJoypadBackButton": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getJoypadLBumper": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getJoypadMovementAxisX": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "float"
+	},
+	"getJoypadMovementAxisY": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "float"
+	},
+	"getJoypadRBumper": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getJoypadStartButton": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getJoypadXButton": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getJoypadYButton": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getKeyCode": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "int"
+	},
+	"getKeyName": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "String"
+	},
+	"getLastPlayedDate": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getLastStandPlayerFileNames": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "IOException",
+				"type": "throws"
+			}
+		],
+		"return": "List"
+	},
+	"getLastStandPlayersDirectory": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getLatestSave": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getLineNumber": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "luaCallFrame",
+				"type": "LuaCallFrame"
+			}
+		],
+		"return": "int"
+	},
+	"getLoadedLua": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "String"
+	},
+	"getLoadedLuaCount": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getLocalVarCount": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			}
+		],
+		"return": "int"
+	},
+	"getLocalVarName": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "String"
+	},
+	"getLocalVarStack": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getLotDirectories": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getLuaDebuggerErrorCount": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getLuaDebuggerErrors": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getMapDirectoryTable": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getMapFoldersForMod": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"getMapInfo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"getMaxActivePlayers": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getMethodParameter": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "method",
+				"type": "Method"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "String"
+	},
+	"getMethodParameterCount": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "method",
+				"type": "Method"
+			}
+		],
+		"return": "int"
+	},
+	"getModDirectoryTable": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getModFileReader": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1 throws IOException",
+				"type": "boolean"
+			}
+		],
+		"return": "BufferedReader"
+	},
+	"getModFileWriter": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean2",
+				"type": "boolean"
+			}
+		],
+		"return": "LuaManager.GlobalObject.LuaFileWriter"
+	},
+	"getModInfo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "ChooseGameInfo.Mod"
+	},
+	"getModInfoByID": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "ChooseGameInfo.Mod"
+	},
+	"getMouseX": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getMouseXScaled": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getMouseY": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getMouseYScaled": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getMyDocumentFolder": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getNumActivePlayers": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"getNumClassFields": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "int"
+	},
+	"getNumClassFunctions": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "int"
+	},
+	"getOnlinePlayers": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getOnlineUsername": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getPacketCounts": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"getPerformance": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "PerformanceSettings"
+	},
+	"getPlayer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "IsoPlayer"
+	},
+	"getPlayerByOnlineID": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "IsoPlayer"
+	},
+	"getPlayerFromUsername": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "IsoPlayer"
+	},
+	"getPlayerInfo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"getPlayerScreenHeight": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getPlayerScreenLeft": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getPlayerScreenTop": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getPlayerScreenWidth": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "int"
+	},
+	"getPublicServersList": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getPuddlesManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "IsoPuddles"
+	},
+	"getRadioAPI": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "RadioAPI"
+	},
+	"getRadioText": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getRadioTranslators": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "language",
+				"type": "Language"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"getRandomUUID": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getRecipeDisplayName": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getRenderer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "SpriteRenderer"
+	},
+	"getSLSoundManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "SLSoundManager"
+	},
+	"getSandboxFileWriter": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean2",
+				"type": "boolean"
+			}
+		],
+		"return": "LuaManager.GlobalObject.LuaFileWriter"
+	},
+	"getSandboxOptions": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "SandboxOptions"
+	},
+	"getSandboxPresets": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "IOException",
+				"type": "throws"
+			}
+		],
+		"return": "List"
+	},
+	"getSaveDirectory": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"getSaveDirectoryTable": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getSaveInfo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"getScriptManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ScriptManager"
+	},
+	"getServerAddressFromArgs": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getServerList": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getServerListFile": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getServerModData": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"getServerName": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getServerOptions": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ServerOptions"
+	},
+	"getServerPasswordFromArgs": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "String"
+	},
+	"getServerSavedWorldVersion": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "int"
+	},
+	"getServerSettingsManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ServerSettingsManager"
+	},
+	"getServerSpawnRegions": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getServerStatistic": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "KahluaTable"
+	},
+	"getServerStatisticEnable": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"getShortenedFilename": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getSleepingEvent": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "SleepingEvent"
+	},
+	"getSoundManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "BaseSoundManager"
+	},
+	"getSpecificPlayer": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "IsoPlayer"
+	},
+	"getSprite": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "IsoSprite"
+	},
+	"getSpriteManager": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "IsoSpriteManager"
+	},
+	"getSquare": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "double1",
+				"type": "double"
+			},
+			{
+				"description": "TODO",
+				"name": "double2",
+				"type": "double"
+			},
+			{
+				"description": "TODO",
+				"name": "double3",
+				"type": "double"
+			}
+		],
+		"return": "IsoGridSquare"
+	},
+	"getSteamAvatarFromSteamID": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "Texture"
+	},
+	"getSteamAvatarFromUsername": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "Texture"
+	},
+	"getSteamIDFromUsername": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getSteamModeActive": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "Boolean"
+	},
+	"getSteamProfileNameFromSteamID": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getSteamProfileNameFromUsername": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getSteamScoreboard": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"getSteamWorkshopItemIDs": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getSteamWorkshopItemMods": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"getSteamWorkshopStagedItems": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ArrayList"
+	},
+	"getTableResult": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"getText": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object2",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object3",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object4",
+				"type": "Object"
+			}
+		],
+		"return": "String"
+	},
+	"getTextManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "TextManager"
+	},
+	"getTextMediaEN": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"getTextOrNull": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object2",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object3",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object4",
+				"type": "Object"
+			}
+		],
+		"return": "String"
+	},
+	"getTexture": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "Texture"
+	},
+	"getTextureFromSaveDir": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			}
+		],
+		"return": "Texture"
+	},
+	"getTickets": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"getTileOverlays": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "TileOverlays"
+	},
+	"getTimeInMillis": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "long"
+	},
+	"getTimestamp": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "long"
+	},
+	"getTimestampMs": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "long"
+	},
+	"getTranslatorCredits": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "language",
+				"type": "Language"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"getUrlInputStream": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "DataInputStream"
+	},
+	"getVehicleById": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "BaseVehicle"
+	},
+	"getVehicleInfo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "baseVehicle",
+				"type": "BaseVehicle"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"getVehicleZoneAt": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			}
+		],
+		"return": "IsoMetaGrid.VehicleZone"
+	},
+	"getWorld": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "IsoWorld"
+	},
+	"getWorldMarkers": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "WorldMarkers"
+	},
+	"getWorldSoundManager": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "WorldSoundManager"
+	},
+	"getZombieInfo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "zombie",
+				"type": "IsoZombie"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"getZomboidRadio": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ZomboidRadio"
+	},
+	"getZone": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			}
+		],
+		"return": "IsoMetaGrid.Zone"
+	},
+	"getZones": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			}
+		],
+		"return": "ArrayList"
+	},
+	"hasBreakpoint": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"hasDataBreakpoint": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "boolean"
+	},
+	"hasDataReadBreakpoint": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "boolean"
+	},
+	"initUISystem": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"instanceItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "InventoryItem"
+	},
+	"instanceof": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"inviteFriend": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"is64bit": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isAccessLevel": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"isAdmin": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isAltKeyDown": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isClient": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isControllerConnected": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isCoopHost": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isCtrlKeyDown": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isCurrentExecutionPoint": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isDebugEnabled": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isDemo": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isDesktopOpenSupported": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isGamePaused": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isIngameState": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isJoypadConnected": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadDown": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadLBPressed": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadLeft": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadPressed": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadRBPressed": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadRTPressed": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadRight": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadUp": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isKeyDown": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isKeyPressed": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isModActive": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "mod",
+				"type": "ChooseGameInfo.Mod"
+			}
+		],
+		"return": "boolean"
+	},
+	"isMouseButtonDown": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"isPublicServerListAllowed": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isServer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isServerSoftReset": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isShiftKeyDown": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isSoundPlaying": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "boolean"
+	},
+	"isSteamOverlayEnabled": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isSystemLinux": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isSystemMacOS": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isSystemWindows": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isValidSteamID": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"isValidUserName": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"isXBOXController": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isoRegionsRenderer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "IsoRegionsRenderer"
+	},
+	"isoToScreenX": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"isoToScreenY": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"istype": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"loadSkinnedZomboidModel": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			}
+		],
+		"return": "Model"
+	},
+	"loadStaticZomboidModel": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			}
+		],
+		"return": "Model"
+	},
+	"loadVehicleModel": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			}
+		],
+		"return": "Model"
+	},
+	"loadZomboidModel": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string4",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "Model"
+	},
+	"localVarName": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "coroutine",
+				"type": "Coroutine"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "String"
+	},
+	"luaDebug": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"manipulateSavefile": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"moduleDotType": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"openUrl": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"pauseSoundAndMusic": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"ping": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string4",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"playServerSound": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "gridSquare",
+				"type": "IsoGridSquare"
+			}
+		],
+		"return": "void"
+	},
+	"proceedFactionMessage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"proceedPM": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"processAdminChatMessage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"processGeneralMessage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"processSafehouseMessage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"processSayMessage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"processShoutMessage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"querySteamWorkshopItemDetails": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "arrayList",
+				"type": "ArrayList"
+			},
+			{
+				"description": "TODO",
+				"name": "luaClosure",
+				"type": "LuaClosure"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "void"
+	},
+	"rainConfig": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"reactivateJoypadAfterResetLua": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"reloadControllerConfigFiles": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"reloadEngineRPM": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"reloadLuaFile": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"reloadModelsMatching": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"reloadServerLuaFile": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"reloadSoundFiles": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"reloadVehicleTextures": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"reloadVehicles": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"removeTicket": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"removeUserlog": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"renderIsoCircle": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float4",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float5",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float6",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float7",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float8",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"replaceWith": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"requestPacketCounts": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"requestTrading": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "player2",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"requestUserlog": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"require": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "Object"
+	},
+	"resetRegionFile": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"resumeSoundAndMusic": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"revertToKeyboardAndMouse": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"sanitizeWorldName": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "String"
+	},
+	"save": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"saveControllerSettings": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"saveGame": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"saveModsFile": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"scoreboardUpdate": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"screenToIsoX": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"screenToIsoY": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"screenZoomIn": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"screenZoomOut": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"sendAddXp": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "perk",
+				"type": "PerkFactory.Perk"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean2",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"sendAdditionalPain": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"sendBandage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean2",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"sendCataplasm": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"sendCleanBurn": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"sendClientCommand": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			}
+		],
+		"return": "void"
+	},
+	"sendDisinfect": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"sendFactionInvite": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "faction",
+				"type": "Faction"
+			},
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"sendItemListNet": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "arrayList",
+				"type": "ArrayList"
+			},
+			{
+				"description": "TODO",
+				"name": "player2",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"sendItemsInContainer": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "IsoObject"
+			},
+			{
+				"description": "TODO",
+				"name": "itemContainer",
+				"type": "ItemContainer"
+			}
+		],
+		"return": "void"
+	},
+	"sendPersonalColor": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"sendPing": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"sendPlayerExtraInfo": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"sendPlayerStatsChange": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"sendRemoveBullet": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"sendRemoveGlass": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"sendRequestInventory": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"sendSafehouseInvite": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "safeHouse",
+				"type": "SafeHouse"
+			},
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"sendServerCommand": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			}
+		],
+		"return": "void"
+	},
+	"sendSplint": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"sendStitch": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"sendVisual": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"sendWoundInfection": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"serverConnect": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string4",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string5",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string6",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"serverConnectCoop": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"serverFileExists": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"setActivePlayer": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"setAdmin": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"setAggroTarget": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int3",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"setBehaviorStep": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"setControllerDeadZone": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"setDebugToggleControllerPluggedIn": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"setGameSpeed": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"setModelMetaData": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string3",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string4",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"setMouseXY": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"setPlayerJoypad": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"setPlayerMouse": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"setPlayerMovementActive": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"setProgressBarValue": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"setPuddles": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			}
+		],
+		"return": "void"
+	},
+	"setSavefilePlayer1": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"setServerStatisticEnable": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"setShowPausedMessage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"showAnimationViewer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"showAttachmentEditor": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"showChunkDebugger": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"showFolderInDesktop": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"showGlobalObjectDebugger": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"showVehicleEditor": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"showWrongChatTabMessage": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"sledgeDestroy": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "IsoObject"
+			}
+		],
+		"return": "void"
+	},
+	"spawnHorde": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float4",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float5",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"spawnpointsExistsForMod": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			}
+		],
+		"return": "boolean"
+	},
+	"steamGetInternetServerDetails": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "Server"
+	},
+	"steamGetInternetServersCount": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "int"
+	},
+	"steamReleaseInternetServersRequest": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"steamRequestInternetServersList": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"steamRequestServerDetails": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"steamRequestServerRules": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"stopPing": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"stopSound": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "long1",
+				"type": "long"
+			}
+		],
+		"return": "void"
+	},
+	"tabToX": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "String"
+	},
+	"takeScreenshot": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"testHelicopter": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"testSound": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"timSort": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "void"
+	},
+	"toInt": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "double1",
+				"type": "double"
+			}
+		],
+		"return": "int"
+	},
+	"toggleBreakOnChange": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "void"
+	},
+	"toggleBreakOnRead": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "kahluaTable",
+				"type": "KahluaTable"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			}
+		],
+		"return": "void"
+	},
+	"toggleBreakpoint": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"toggleModActive": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "mod",
+				"type": "ChooseGameInfo.Mod"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"toggleSafetyServer": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			}
+		],
+		"return": "void"
+	},
+	"toggleVehicleRenderToTexture": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"tradingUISendAddItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "player2",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "inventoryItem",
+				"type": "InventoryItem"
+			}
+		],
+		"return": "void"
+	},
+	"tradingUISendRemoveItem": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "player2",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"tradingUISendUpdateState": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "player2",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"transformIntoKahluaTable": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "hashMap",
+				"type": "HashMap"
+			}
+		],
+		"return": "KahluaTable"
+	},
+	"translatePointXInOverheadMapToWindow": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "uIElement",
+				"type": "UIElement"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"translatePointXInOverheadMapToWorld": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "uIElement",
+				"type": "UIElement"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"translatePointYInOverheadMapToWindow": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "uIElement",
+				"type": "UIElement"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"translatePointYInOverheadMapToWorld": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "float1",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "uIElement",
+				"type": "UIElement"
+			},
+			{
+				"description": "TODO",
+				"name": "float2",
+				"type": "float"
+			},
+			{
+				"description": "TODO",
+				"name": "float3",
+				"type": "float"
+			}
+		],
+		"return": "float"
+	},
+	"triggerEvent": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "object",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object2",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object3",
+				"type": "Object"
+			},
+			{
+				"description": "TODO",
+				"name": "object4",
+				"type": "Object"
+			}
+		],
+		"return": "void"
+	},
+	"updateChatSettings": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			},
+			{
+				"description": "TODO",
+				"name": "boolean2",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"updateFire": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "void"
+	},
+	"useStaticErosionRand": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"useTextureFiltering": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "boolean1",
+				"type": "boolean"
+			}
+		],
+		"return": "void"
+	},
+	"wasKeyDown": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			}
+		],
+		"return": "boolean"
+	},
+	"wasMouseActiveMoreRecentlyThanJoypad": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "boolean"
+	},
+	"writeLog": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "string",
+				"type": "String"
+			},
+			{
+				"description": "TODO",
+				"name": "string2",
+				"type": "String"
+			}
+		],
+		"return": "void"
+	},
+	"zpopClearZombies": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"zpopNewRenderer": {
+		"description": "TODO",
+		"parameters": [],
+		"return": "ZombiePopulationRenderer"
+	},
+	"zpopSpawnNow": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	},
+	"zpopSpawnTimeToZero": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO",
+				"name": "int1",
+				"type": "int"
+			},
+			{
+				"description": "TODO",
+				"name": "int2",
+				"type": "int"
+			}
+		],
+		"return": "void"
+	}
+}
