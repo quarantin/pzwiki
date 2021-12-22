@@ -29,7 +29,7 @@ for VERSION in "${VERSIONS[@]}"; do
 
 		echo "${LINE}" >> "${OUTPUT1}"
 
-		DEPRECATED="$(grep "^${LINE}$" "data/txt/deprecated.txt")"
+		DEPRECATED="$(grep "^${LINE}$" "data/txt/${VERSION}/deprecated.txt")"
 		if [ -z "${DEPRECATED}" ]; then
 			echo "*[[Modding:Lua Events/$LINE|$LINE]]" | tee -a "${OUTPUT2}" "${OUTPUT3}" >/dev/null
 		else
