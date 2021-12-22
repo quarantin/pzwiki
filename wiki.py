@@ -3,6 +3,7 @@
 import sys
 import json
 import time
+import signal
 import logging
 import requests
 
@@ -15,6 +16,8 @@ tries = 5
 
 class Wiki:
 
+	interrupted = False
+
 	logger = logging.getLogger(__name__)
 
 	default_config_file = 'config.json'
@@ -26,6 +29,8 @@ class Wiki:
 	}
 
 	def __init__(self):
+
+		signal.signal(signal.SIGINT, self.sigint_handler)
 
 		chdir(dirname(realpath(__file__)))
 
@@ -67,6 +72,9 @@ class Wiki:
 		errorcode = jsondata['error']['code']
 		errorinfo = jsondata['error']['info']
 		raise Exception(errorcode + ': ' + errorinfo)
+
+	def sigint_handler(self, sig, frame):
+		self.interrupted = True
 
 	@retry(tries=tries, delay=2, logger=logger)
 	def get_csrf_token(self):
@@ -377,6 +385,10 @@ class Wiki:
 		first_ok = True
 
 		for _, jsonevent in sorted(jsondata.items()):
+
+			if self.interrupted:
+				break
+
 			if first_ok:
 				wikitext = self.format_event_page(jsonevent)
 				self.edit_page(jsonevent['title'], wikitext)
