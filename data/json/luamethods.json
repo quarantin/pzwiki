@@ -1,5646 +1,7670 @@
 {
-	"AddNoiseToken": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "gridSquare",
-				"type": "IsoGridSquare"
-			},
-			{
-				"description": "TODO",
-				"name": "int1",
-				"type": "int"
-			}
-		],
-		"return": "void"
-	},
-	"AddWorldSound": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "player",
-				"type": "IsoPlayer"
-			},
-			{
-				"description": "TODO",
-				"name": "int1",
-				"type": "int"
-			},
-			{
-				"description": "TODO",
-				"name": "int2",
-				"type": "int"
-			}
-		],
-		"return": "void"
-	},
-	"InvMngGetItem": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "long1",
-				"type": "long"
-			},
-			{
-				"description": "TODO",
-				"name": "string",
-				"type": "String"
-			},
-			{
-				"description": "TODO",
-				"name": "player",
-				"type": "IsoPlayer"
-			}
-		],
-		"return": "void"
-	},
-	"InvMngRemoveItem": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "long1",
-				"type": "long"
-			},
-			{
-				"description": "TODO",
-				"name": "player",
-				"type": "IsoPlayer"
-			}
-		],
-		"return": "void"
-	},
-	"Render3DItem": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "inventoryItem",
-				"type": "InventoryItem"
-			},
-			{
-				"description": "TODO",
-				"name": "gridSquare",
-				"type": "IsoGridSquare"
-			},
-			{
-				"description": "TODO",
-				"name": "float1",
-				"type": "float"
-			},
-			{
-				"description": "TODO",
-				"name": "float2",
-				"type": "float"
-			},
-			{
-				"description": "TODO",
-				"name": "float3",
-				"type": "float"
-			},
-			{
-				"description": "TODO",
-				"name": "float4",
-				"type": "float"
-			}
-		],
-		"return": "void"
-	},
-	"SendCommandToServer": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "string",
-				"type": "String"
-			}
-		],
-		"return": "void"
-	},
-	"SyncXp": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "player",
-				"type": "IsoPlayer"
-			}
-		],
-		"return": "void"
-	},
-	"ZombRand": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "double1",
-				"type": "double"
-			},
-			{
-				"description": "TODO",
-				"name": "double2",
-				"type": "double"
-			}
-		],
-		"return": "double"
-	},
-	"ZombRandBetween": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "double1",
-				"type": "double"
-			},
-			{
-				"description": "TODO",
-				"name": "double2",
-				"type": "double"
-			}
-		],
-		"return": "double"
-	},
-	"ZombRandFloat": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "float1",
-				"type": "float"
-			},
-			{
-				"description": "TODO",
-				"name": "float2",
-				"type": "float"
-			}
-		],
-		"return": "float"
-	},
 	"acceptFactionInvite": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "faction",
-				"type": "Faction"
+				"type": "Faction",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"acceptSafehouseInvite": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "safeHouse",
-				"type": "SafeHouse"
+				"type": "SafeHouse",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"acceptTrading": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player2",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"activateSteamOverlayToWebPage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"activateSteamOverlayToWorkshop": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"activateSteamOverlayToWorkshopItem": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"activateSteamOverlayToWorkshopUser": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"addAllBurntVehicles": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"addAllSmashedVehicles": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"addAllVehicles": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"addBloodSplat": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
-				"name": "gridSquare",
-				"type": "IsoGridSquare"
+				"name": "square",
+				"type": "IsoGridSquare",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"addCarCrash": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
+		"return": "void"
+	},
+	"AddNoiseToken": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "square",
+				"type": "IsoGridSquare",
+				"description": "TODO"
+			},
+			{
+				"name": "int1",
+				"type": "int",
+				"description": "TODO"
+			}
+		],
 		"return": "void"
 	},
 	"addPhysicsObject": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "BaseVehicle"
 	},
 	"addSound": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "IsoObject"
+				"type": "IsoObject",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int4",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int5",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"addTicket": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"addUserlog": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"addVehicle": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "BaseVehicle"
 	},
 	"addVehicleDebug": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "directions",
-				"type": "IsoDirections"
+				"type": "IsoDirections",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "integer",
-				"type": "Integer"
+				"type": "Integer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
-				"name": "gridSquare",
-				"type": "IsoGridSquare"
+				"name": "square",
+				"type": "IsoGridSquare",
+				"description": "TODO"
 			}
 		],
 		"return": "BaseVehicle"
 	},
 	"addVirtualZombie": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"addWarningPoint": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
-	"addZombieSitting": {
+	"AddWorldSound": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
+				"name": "player",
+				"type": "IsoPlayer",
+				"description": "TODO"
+			},
+			{
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
-			},
-			{
-				"description": "TODO",
-				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"addZombiesEating": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int4",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"addZombiesInBuilding": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "buildingDef",
-				"type": "BuildingDef"
+				"type": "BuildingDef",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "roomDef",
-				"type": "RoomDef"
+				"type": "RoomDef",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "integer",
-				"type": "Integer"
+				"type": "Integer",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"addZombiesInOutfit": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int4",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "integer",
-				"type": "Integer"
+				"type": "Integer",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"addZombiesInOutfitArea": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int4",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int5",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int6",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "integer",
-				"type": "Integer"
+				"type": "Integer",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
+	"addZombieSitting": {
+		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
+		"parameters": [
+			{
+				"name": "int1",
+				"type": "int",
+				"description": "TODO"
+			},
+			{
+				"name": "int2",
+				"type": "int",
+				"description": "TODO"
+			},
+			{
+				"name": "int3",
+				"type": "int",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
 	"assaultPlayer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"attachTrailerToPlayerVehicle": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"backToSinglePlayer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"breakpoint": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"canInviteFriends": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"canModifyPlayerScoreboard": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"canModifyPlayerStats": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"canSeePlayerStats": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"checkPlayerCanUseChat": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Boolean"
 	},
 	"checkSaveFileExists": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"checkSaveFolderExists": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"checkSavePlayerExists": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"cloneItemType": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Item"
 	},
 	"configureLighting": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"connectToServerStateCallback": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"copyTable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"createHordeFromTo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float4",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"createHordeInAreaTo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int4",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int5",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int6",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int7",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"createNewScriptItem": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string4",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string5",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Item"
 	},
 	"createRandomDeadBody": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
-				"name": "gridSquare",
-				"type": "IsoGridSquare"
+				"name": "square",
+				"type": "IsoGridSquare",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoDeadBody"
 	},
 	"createRegionFile": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"createStory": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"createTile": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
-				"name": "gridSquare",
-				"type": "IsoGridSquare"
+				"name": "square",
+				"type": "IsoGridSquare",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"createWorld": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"createZombie": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "survivorDesc",
-				"type": "SurvivorDesc"
+				"type": "SurvivorDesc",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "directions",
-				"type": "IsoDirections"
+				"type": "IsoDirections",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoZombie"
 	},
 	"debugFullyStreamedIn": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"debugLuaTable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"deleteAllGameModeSaves": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"deletePlayerSave": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"deleteSandboxPreset": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"deleteSave": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"disconnect": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"doChallenge": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"doKeyPress": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"doTutorial": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"drawOverheadMap": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "uIElement",
-				"type": "UIElement"
+				"type": "UIElement",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"endFileInput": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"endFileOutput": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"endHelicopter": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"endTextFileInput": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"executeQuery": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"fileExists": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"focusOnTab": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "Short1",
-				"type": "Short"
+				"type": "Short",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"forceChangeState": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "gameState",
-				"type": "GameState"
+				"type": "GameState",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"forceDisconnect": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"forceSnowCheck": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"getAbsoluteSaveFolderName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getAccessLevel": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getActivatedMods": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getAllBeardStyles": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getAllDecalNamesForItem": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "inventoryItem",
-				"type": "InventoryItem"
+				"type": "InventoryItem",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"getAllHairStyles": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"getAllItems": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getAllItemsForBodyLocation": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"getAllOutfits": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"getAllRecipes": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getAllSavedPlayers": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "IOException",
-				"type": "throws"
+				"type": "throws",
+				"description": "TODO"
 			}
 		],
 		"return": "List"
 	},
 	"getAmbientStreamManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "BaseAmbientStreamManager"
 	},
 	"getAnimationViewerState": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "AnimationViewerState"
 	},
 	"getAttachmentEditorState": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "AttachmentEditorState"
 	},
-	"getAverageFPS": {
+	"getAverageFSP": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [],
 		"return": "Double"
 	},
 	"getBeardStylesInstance": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "BeardStyles"
 	},
 	"getBehaviourDebugPlayer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "IsoGameCharacter"
 	},
 	"getButtonCount": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getCallframeTop": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getCameraOffX": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "float"
 	},
 	"getCameraOffY": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "float"
 	},
 	"getCell": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "IsoCell"
 	},
 	"getClassField": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "Field"
 	},
 	"getClassFieldVal": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "field",
-				"type": "Field"
+				"type": "Field",
+				"description": "TODO"
 			}
 		],
 		"return": "Object"
 	},
 	"getClassFunction": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "Method"
 	},
 	"getClientUsername": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getClimateManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ClimateManager"
 	},
 	"getConnectedPlayers": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getContainerOverlays": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [],
 		"return": "ContainerOverlays"
 	},
 	"getControllerAxisCount": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getControllerAxisValue": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"getControllerButtonCount": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getControllerCount": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getControllerDeadZone": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"getControllerGUID": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getControllerName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getControllerPovX": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"getControllerPovY": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"getCore": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "Core"
 	},
 	"getCoroutineCallframeStack": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "LuaCallFrame"
 	},
 	"getCoroutineObjStack": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "Object"
 	},
 	"getCoroutineObjStackWithBase": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "Object"
 	},
 	"getCoroutineTop": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getCurrentCoroutine": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "Coroutine"
 	},
 	"getCurrentUserProfileName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getCurrentUserSteamID": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getDBSchema": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"getDebug": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"getDebugOptions": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "DebugOptions"
 	},
-	"getDirectionTo": {
+	"getDefinition": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
+				"name": "object",
+				"type": "Object",
+				"description": "TODO"
+			}
+		],
+		"return": "String"
+	},
+	"getDirectionTo": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
 				"name": "gameCharacter",
-				"type": "IsoGameCharacter"
+				"type": "IsoGameCharacter",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "IsoObject"
+				"type": "IsoObject",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoDirections"
 	},
 	"getEditVehicleState": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "EditVehicleState"
 	},
 	"getErosion": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"getEvolvedRecipes": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "Stack"
 	},
-	"getFMODSoundBank": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "BaseSoundBank"
-	},
 	"getFileInput": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string throws IOException",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "DataInputStream"
 	},
-	"getFileOutput": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "string",
-				"type": "String"
-			}
-		],
-		"return": "DataOutputStream"
-	},
-	"getFileReader": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "string",
-				"type": "String"
-			},
-			{
-				"description": "TODO",
-				"name": "boolean1 throws IOException",
-				"type": "boolean"
-			}
-		],
-		"return": "BufferedReader"
-	},
-	"getFileSeparator": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "String"
-	},
-	"getFileWriter": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "string",
-				"type": "String"
-			},
-			{
-				"description": "TODO",
-				"name": "boolean1",
-				"type": "boolean"
-			},
-			{
-				"description": "TODO",
-				"name": "boolean2",
-				"type": "boolean"
-			}
-		],
-		"return": "LuaManager.GlobalObject.LuaFileWriter"
-	},
 	"getFilenameOfCallframe": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "luaCallFrame",
-				"type": "LuaCallFrame"
+				"type": "LuaCallFrame",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getFilenameOfClosure": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "luaClosure",
-				"type": "LuaClosure"
+				"type": "LuaClosure",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
-	"getFirstLineOfClosure": {
+	"getFileOutput": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
+			}
+		],
+		"return": "DataOutputStream"
+	},
+	"getFileReader": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
+			},
+			{
+				"name": "boolean1 throws IOException",
+				"type": "boolean",
+				"description": "TODO"
+			}
+		],
+		"return": "BufferedReader"
+	},
+	"getFileSeparator": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "String"
+	},
+	"getFileWriter": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
+			},
+			{
+				"name": "boolean1",
+				"type": "boolean",
+				"description": "TODO"
+			},
+			{
+				"name": "boolean2",
+				"type": "boolean",
+				"description": "TODO"
+			}
+		],
+		"return": "LuaManager.GlobalObject.LuaFileWriter"
+	},
+	"getFirstLineOfClosure": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
 				"name": "luaClosure",
-				"type": "LuaClosure"
+				"type": "LuaClosure",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
+	"getFMODSoundBank": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "BaseSoundBank"
+	},
 	"getFriendsList": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getFullSaveDirectoryTable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getGameClient": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "GameClient"
 	},
 	"getGameFilesInput": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "DataInputStream"
 	},
 	"getGameFilesTextInput": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "BufferedReader"
 	},
 	"getGameSpeed": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getGameTime": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "GameTime"
 	},
 	"getGametimeTimestamp": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "long"
 	},
+	"getGridSquare": {
+		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
+		"parameters": [
+			{
+				"name": "double1",
+				"type": "double",
+				"description": "TODO"
+			},
+			{
+				"name": "double2",
+				"type": "double",
+				"description": "TODO"
+			},
+			{
+				"name": "double3",
+				"type": "double",
+				"description": "TODO"
+			}
+		],
+		"return": "IsoGridSquare"
+	},
 	"getHairStylesInstance": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "HairStyles"
 	},
 	"getHourMinute": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getItemNameFromFullType": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getItemText": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getJoypadAButton": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getJoypadAimingAxisX": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"getJoypadAimingAxisY": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
-	"getJoypadBButton": {
+	"getJoypadBackButton": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
-	"getJoypadBackButton": {
+	"getJoypadBButton": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getJoypadLBumper": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getJoypadMovementAxisX": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"getJoypadMovementAxisY": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"getJoypadRBumper": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getJoypadStartButton": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getJoypadXButton": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getJoypadYButton": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getKeyCode": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getKeyName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getLastPlayedDate": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getLastStandPlayerFileNames": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "IOException",
-				"type": "throws"
+				"type": "throws",
+				"description": "TODO"
 			}
 		],
 		"return": "List"
 	},
 	"getLastStandPlayersDirectory": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getLatestSave": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getLineNumber": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "luaCallFrame",
-				"type": "LuaCallFrame"
+				"type": "LuaCallFrame",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getLoadedLua": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getLoadedLuaCount": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getLocalVarCount": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getLocalVarName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getLocalVarStack": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getLotDirectories": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getLuaDebuggerErrorCount": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getLuaDebuggerErrors": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getMapDirectoryTable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getMapFoldersForMod": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"getMapInfo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"getMaxActivePlayers": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "int"
+	},
+	"getMaxFloors": {
+		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getMethodParameter": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "method",
-				"type": "Method"
+				"type": "Method",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getMethodParameterCount": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "method",
-				"type": "Method"
+				"type": "Method",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getModDirectoryTable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getModFileReader": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1 throws IOException",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "BufferedReader"
 	},
 	"getModFileWriter": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean2",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "LuaManager.GlobalObject.LuaFileWriter"
 	},
 	"getModInfo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "ChooseGameInfo.Mod"
 	},
 	"getModInfoByID": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "ChooseGameInfo.Mod"
 	},
 	"getMouseX": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getMouseXScaled": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getMouseY": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getMouseYScaled": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getMyDocumentFolder": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getNumActivePlayers": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "int"
 	},
 	"getNumClassFields": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getNumClassFunctions": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getOnlinePlayers": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getOnlineUsername": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
-	"getPacketCounts": {
+	"getOrCreateGridSquare": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
+				"name": "double1",
+				"type": "double",
+				"description": "TODO"
+			},
+			{
+				"name": "double2",
+				"type": "double",
+				"description": "TODO"
+			},
+			{
+				"name": "double3",
+				"type": "double",
+				"description": "TODO"
+			}
+		],
+		"return": "IsoGridSquare"
+	},
+	"getPacketCounts": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"getPerformance": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "PerformanceSettings"
 	},
 	"getPlayer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "IsoPlayer"
 	},
 	"getPlayerByOnlineID": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoPlayer"
 	},
 	"getPlayerFromUsername": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoPlayer"
 	},
 	"getPlayerInfo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"getPlayerScreenHeight": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getPlayerScreenLeft": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getPlayerScreenTop": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getPlayerScreenWidth": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getPublicServersList": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getPuddlesManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "IsoPuddles"
 	},
 	"getRadioAPI": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "RadioAPI"
 	},
 	"getRadioText": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getRadioTranslators": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "language",
-				"type": "Language"
+				"type": "Language",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"getRandomUUID": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getRecipeDisplayName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getRenderer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "SpriteRenderer"
 	},
-	"getSLSoundManager": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "SLSoundManager"
-	},
 	"getSandboxFileWriter": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean2",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "LuaManager.GlobalObject.LuaFileWriter"
 	},
 	"getSandboxOptions": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "SandboxOptions"
 	},
 	"getSandboxPresets": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "IOException",
-				"type": "throws"
+				"type": "throws",
+				"description": "TODO"
 			}
 		],
 		"return": "List"
 	},
 	"getSaveDirectory": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"getSaveDirectoryTable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getSaveInfo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"getScriptManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ScriptManager"
 	},
 	"getServerAddressFromArgs": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getServerList": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getServerListFile": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getServerModData": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"getServerName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getServerOptions": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ServerOptions"
 	},
 	"getServerPasswordFromArgs": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "String"
 	},
 	"getServerSavedWorldVersion": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "int"
 	},
 	"getServerSettingsManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ServerSettingsManager"
 	},
 	"getServerSpawnRegions": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getServerStatistic": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "KahluaTable"
 	},
 	"getServerStatisticEnable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"getShortenedFilename": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getSleepingEvent": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "SleepingEvent"
 	},
+	"getSLSoundManager": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "SLSoundManager"
+	},
 	"getSoundManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "BaseSoundManager"
 	},
 	"getSpecificPlayer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoPlayer"
 	},
 	"getSprite": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoSprite"
 	},
 	"getSpriteManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoSpriteManager"
 	},
 	"getSquare": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "double1",
-				"type": "double"
+				"type": "double",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "double2",
-				"type": "double"
+				"type": "double",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "double3",
-				"type": "double"
+				"type": "double",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoGridSquare"
 	},
 	"getSteamAvatarFromSteamID": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Texture"
 	},
 	"getSteamAvatarFromUsername": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Texture"
 	},
 	"getSteamIDFromUsername": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getSteamModeActive": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "Boolean"
 	},
 	"getSteamProfileNameFromSteamID": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getSteamProfileNameFromUsername": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getSteamScoreboard": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"getSteamWorkshopItemIDs": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getSteamWorkshopItemMods": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"getSteamWorkshopStagedItems": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ArrayList"
 	},
 	"getTableResult": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"getText": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object2",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object3",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object4",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getTextManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "TextManager"
 	},
 	"getTextMediaEN": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getTextOrNull": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object2",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object3",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object4",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"getTexture": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Texture"
 	},
 	"getTextureFromSaveDir": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Texture"
 	},
 	"getTickets": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"getTileOverlays": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [],
 		"return": "TileOverlays"
 	},
 	"getTimeInMillis": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "long"
 	},
 	"getTimestamp": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "long"
 	},
 	"getTimestampMs": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "long"
 	},
 	"getTranslatorCredits": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "language",
-				"type": "Language"
+				"type": "Language",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"getUrlInputStream": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "DataInputStream"
 	},
 	"getVehicleById": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "BaseVehicle"
 	},
 	"getVehicleInfo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "baseVehicle",
-				"type": "BaseVehicle"
+				"type": "BaseVehicle",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"getVehicleZoneAt": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoMetaGrid.VehicleZone"
 	},
 	"getWorld": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "IsoWorld"
 	},
 	"getWorldMarkers": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "WorldMarkers"
 	},
 	"getWorldSoundManager": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "WorldSoundManager"
 	},
 	"getZombieInfo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "zombie",
-				"type": "IsoZombie"
+				"type": "IsoZombie",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"getZomboidRadio": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ZomboidRadio"
 	},
 	"getZone": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "IsoMetaGrid.Zone"
 	},
 	"getZones": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "ArrayList"
 	},
 	"hasBreakpoint": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"hasDataBreakpoint": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"hasDataReadBreakpoint": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
+	"HelloWorld": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "int1",
+				"type": "int",
+				"description": "TODO"
+			},
+			{
+				"name": "int2",
+				"type": "int",
+				"description": "TODO"
+			}
+		],
+		"return": "String"
+	},
 	"initUISystem": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"instanceItem": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "InventoryItem"
 	},
-	"instanceof": {
+	"instof": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"inviteFriend": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
+	"InvMngGetItem": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "long1",
+				"type": "long",
+				"description": "TODO"
+			},
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
+			},
+			{
+				"name": "player",
+				"type": "IsoPlayer",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
+	"InvMngRemoveItem": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "long1",
+				"type": "long",
+				"description": "TODO"
+			},
+			{
+				"name": "player",
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"is64bit": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isAccessLevel": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isAdmin": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isAltKeyDown": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isClient": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isControllerConnected": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isCoopHost": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isCtrlKeyDown": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isCurrentExecutionPoint": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isDebugEnabled": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isDemo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isDesktopOpenSupported": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isGamePaused": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isIngameState": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"isJoypadConnected": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isJoypadDown": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isJoypadLBPressed": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isJoypadLeft": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isJoypadPressed": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isJoypadRBPressed": {
 		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "int1",
-				"type": "int"
-			}
+		"modifiers": [
+			"public",
+			"static"
 		],
-		"return": "boolean"
-	},
-	"isJoypadRTPressed": {
-		"description": "TODO",
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isJoypadRight": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
+			}
+		],
+		"return": "boolean"
+	},
+	"isJoypadRTPressed": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "int1",
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isJoypadUp": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isKeyDown": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isKeyPressed": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isModActive": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "mod",
-				"type": "ChooseGameInfo.Mod"
+				"type": "ChooseGameInfo.Mod",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"isMouseButtonDown": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
-		"return": "boolean"
-	},
-	"isPublicServerListAllowed": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "boolean"
-	},
-	"isServer": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "boolean"
-	},
-	"isServerSoftReset": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "boolean"
-	},
-	"isShiftKeyDown": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "boolean"
-	},
-	"isSoundPlaying": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "object",
-				"type": "Object"
-			}
-		],
-		"return": "boolean"
-	},
-	"isSteamOverlayEnabled": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "boolean"
-	},
-	"isSystemLinux": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "boolean"
-	},
-	"isSystemMacOS": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "boolean"
-	},
-	"isSystemWindows": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "boolean"
-	},
-	"isValidSteamID": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "string",
-				"type": "String"
-			}
-		],
-		"return": "boolean"
-	},
-	"isValidUserName": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "string",
-				"type": "String"
-			}
-		],
-		"return": "boolean"
-	},
-	"isXBOXController": {
-		"description": "TODO",
-		"parameters": [],
 		"return": "boolean"
 	},
 	"isoRegionsRenderer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "IsoRegionsRenderer"
 	},
 	"isoToScreenX": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"isoToScreenY": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
-	"istype": {
+	"isPublicServerListAllowed": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isServer": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isServerSoftReset": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isShiftKeyDown": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isSoundPlaying": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
-			},
-			{
-				"description": "TODO",
-				"name": "string",
-				"type": "String"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
-	"loadSkinnedZomboidModel": {
+	"isSteamOverlayEnabled": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isSystemLinux": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isSystemMacOS": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isSystemWindows": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"isType": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
+				"name": "object",
+				"type": "Object",
+				"description": "TODO"
+			},
+			{
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
+			}
+		],
+		"return": "boolean"
+	},
+	"isValidSteamID": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
+			}
+		],
+		"return": "boolean"
+	},
+	"isValidUserName": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
+			}
+		],
+		"return": "boolean"
+	},
+	"isXBOXController": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "boolean"
+	},
+	"iter": {
+		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
+		"parameters": [
+			{
+				"name": "iterable",
+				"type": "Iterable",
+				"description": "TODO"
+			}
+		],
+		"return": "Object"
+	},
+	"loadSkinnedZomboidModel": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Model"
 	},
 	"loadStaticZomboidModel": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Model"
 	},
 	"loadVehicleModel": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Model"
 	},
 	"loadZomboidModel": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string4",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "Model"
 	},
 	"localVarName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "coroutine",
-				"type": "Coroutine"
+				"type": "Coroutine",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"luaDebug": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"manipulateSavefile": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"moduleDotType": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
-	"openUrl": {
+	"openURl": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"pauseSoundAndMusic": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"ping": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string4",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"playServerSound": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
-				"name": "gridSquare",
-				"type": "IsoGridSquare"
+				"name": "square",
+				"type": "IsoGridSquare",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
-	"proceedFactionMessage": {
+	"ProceedFactionMessage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"proceedPM": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
-	"processAdminChatMessage": {
+	"ProcessAdminChatMessage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"processGeneralMessage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
-	"processSafehouseMessage": {
+	"ProcessSafehouseMessage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"processSayMessage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"processShoutMessage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"querySteamWorkshopItemDetails": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "arrayList",
-				"type": "ArrayList"
+				"type": "ArrayList",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "luaClosure",
-				"type": "LuaClosure"
+				"type": "LuaClosure",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
+	"QuickLoad": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
+	"QuickSave": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"rainConfig": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"reactivateJoypadAfterResetLua": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"reloadControllerConfigFiles": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"reloadEngineRPM": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"reloadLuaFile": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"reloadModelsMatching": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"reloadServerLuaFile": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"reloadSoundFiles": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "void"
+	},
+	"reloadVehicles": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"reloadVehicleTextures": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
-	"reloadVehicles": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "void"
-	},
 	"removeTicket": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"removeUserlog": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
+	"Render3DItem": {
+		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
+		"parameters": [
+			{
+				"name": "inventoryItem",
+				"type": "InventoryItem",
+				"description": "TODO"
+			},
+			{
+				"name": "square",
+				"type": "IsoGridSquare",
+				"description": "TODO"
+			},
+			{
+				"name": "float1",
+				"type": "float",
+				"description": "TODO"
+			},
+			{
+				"name": "float2",
+				"type": "float",
+				"description": "TODO"
+			},
+			{
+				"name": "float3",
+				"type": "float",
+				"description": "TODO"
+			},
+			{
+				"name": "float4",
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"renderIsoCircle": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float4",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float5",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float6",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float7",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float8",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"replaceWith": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"requestPacketCounts": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"requestTrading": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player2",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"requestUserlog": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"require": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "Object"
 	},
 	"resetRegionFile": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"resumeSoundAndMusic": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"revertToKeyboardAndMouse": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"sanitizeWorldName": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"save": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"saveControllerSettings": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"saveGame": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"saveModsFile": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"scoreboardUpdate": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"screenToIsoX": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"screenToIsoY": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"screenZoomIn": {
 		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"screenZoomOut": {
 		"description": "TODO",
-		"parameters": [],
-		"return": "void"
-	},
-	"sendAddXp": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "player",
-				"type": "IsoPlayer"
-			},
-			{
-				"description": "TODO",
-				"name": "perk",
-				"type": "PerkFactory.Perk"
-			},
-			{
-				"description": "TODO",
-				"name": "int1",
-				"type": "int"
-			},
-			{
-				"description": "TODO",
-				"name": "boolean1",
-				"type": "boolean"
-			},
-			{
-				"description": "TODO",
-				"name": "boolean2",
-				"type": "boolean"
-			}
+		"modifiers": [
+			"public"
 		],
+		"parameters": [],
 		"return": "void"
 	},
 	"sendAdditionalPain": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
+	"sendAddXp": {
+		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
+		"parameters": [
+			{
+				"name": "player",
+				"type": "IsoPlayer",
+				"description": "TODO"
+			},
+			{
+				"name": "perk",
+				"type": "PerkFactory.Perk",
+				"description": "TODO"
+			},
+			{
+				"name": "int1",
+				"type": "int",
+				"description": "TODO"
+			},
+			{
+				"name": "boolean1",
+				"type": "boolean",
+				"description": "TODO"
+			},
+			{
+				"name": "boolean2",
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendBandage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean2",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendCataplasm": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendCleanBurn": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendClientCommand": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
+	"SendCommandToServer": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "string",
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendDisinfect": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendFactionInvite": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "faction",
-				"type": "Faction"
+				"type": "Faction",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendItemListNet": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "arrayList",
-				"type": "ArrayList"
+				"type": "ArrayList",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player2",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"sendItemsInContainer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "IsoObject"
+				"type": "IsoObject",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "itemContainer",
-				"type": "ItemContainer"
+				"type": "ItemContainer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendPersonalColor": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendPing": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"sendPlayerExtraInfo": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendPlayerStatsChange": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendRemoveBullet": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendRemoveGlass": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendRequestInventory": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendSafehouseInvite": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "safeHouse",
-				"type": "SafeHouse"
+				"type": "SafeHouse",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendServerCommand": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendSplint": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendStitch": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendVisual": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sendWoundInfection": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"serverConnect": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string4",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string5",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string6",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"serverConnectCoop": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"serverFileExists": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"setActivePlayer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setAdmin": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"setAggroTarget": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int3",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setBehaviorStep": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setControllerDeadZone": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setDebugToggleControllerPluggedIn": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setGameSpeed": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setModelMetaData": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string3",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string4",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setMouseXY": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setPlayerJoypad": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setPlayerMouse": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setPlayerMovementActive": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setProgressBarValue": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setPuddles": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setSavefilePlayer1": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setServerStatisticEnable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"setShowPausedMessage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"showAnimationViewer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"showAttachmentEditor": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"showChunkDebugger": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"showFolderInDesktop": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"showGlobalObjectDebugger": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"showVehicleEditor": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"showWrongChatTabMessage": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"sledgeDestroy": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "IsoObject"
+				"type": "IsoObject",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"spawnHorde": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float4",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float5",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"spawnpointsExistsForMod": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"steamGetInternetServerDetails": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "Server"
 	},
-	"steamGetInternetServersCount": {
-		"description": "TODO",
-		"parameters": [],
-		"return": "int"
-	},
 	"steamReleaseInternetServersRequest": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
+	"steamRequestInternetServersCount": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [],
+		"return": "int"
+	},
 	"steamRequestInternetServersList": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"steamRequestServerDetails": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"steamRequestServerRules": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"stopPing": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"stopSound": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "long1",
-				"type": "long"
+				"type": "long",
+				"description": "TODO"
+			}
+		],
+		"return": "void"
+	},
+	"SyncXp": {
+		"description": "TODO",
+		"modifiers": [
+			"public"
+		],
+		"parameters": [
+			{
+				"name": "player",
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"tabToX": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "String"
 	},
 	"takeScreenshot": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"testHelicopter": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"testSound": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"timSort": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
-	"toInt": {
-		"description": "TODO",
-		"parameters": [
-			{
-				"description": "TODO",
-				"name": "double1",
-				"type": "double"
-			}
-		],
-		"return": "int"
-	},
 	"toggleBreakOnChange": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"toggleBreakOnRead": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "kahluaTable",
-				"type": "KahluaTable"
+				"type": "KahluaTable",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"toggleBreakpoint": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"toggleModActive": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "mod",
-				"type": "ChooseGameInfo.Mod"
+				"type": "ChooseGameInfo.Mod",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"toggleSafetyServer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"toggleVehicleRenderToTexture": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
-	"tradingUISendAddItem": {
+	"toInt": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
+				"name": "double1",
+				"type": "double",
+				"description": "TODO"
+			}
+		],
+		"return": "int"
+	},
+	"tradingUISendAddItem": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player2",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "inventoryItem",
-				"type": "InventoryItem"
+				"type": "InventoryItem",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"tradingUISendRemoveItem": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player2",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"tradingUISendUpdateState": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "player",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "player2",
-				"type": "IsoPlayer"
+				"type": "IsoPlayer",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"transformIntoKahluaTable": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "hashMap",
-				"type": "HashMap"
+				"type": "HashMap",
+				"description": "TODO"
 			}
 		],
 		"return": "KahluaTable"
 	},
 	"translatePointXInOverheadMapToWindow": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "uIElement",
-				"type": "UIElement"
+				"type": "UIElement",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"translatePointXInOverheadMapToWorld": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "uIElement",
-				"type": "UIElement"
+				"type": "UIElement",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"translatePointYInOverheadMapToWindow": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "uIElement",
-				"type": "UIElement"
+				"type": "UIElement",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"translatePointYInOverheadMapToWorld": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "float1",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "uIElement",
-				"type": "UIElement"
+				"type": "UIElement",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float2",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "float3",
-				"type": "float"
+				"type": "float",
+				"description": "TODO"
 			}
 		],
 		"return": "float"
 	},
 	"triggerEvent": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object2",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object3",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "object4",
-				"type": "Object"
+				"type": "Object",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"updateChatSettings": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "boolean2",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"updateFire": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "void"
 	},
 	"useStaticErosionRand": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"useTextureFiltering": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "boolean1",
-				"type": "boolean"
+				"type": "boolean",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"wasKeyDown": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "boolean"
 	},
 	"wasMouseActiveMoreRecentlyThanJoypad": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "boolean"
 	},
 	"writeLog": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "string",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "string2",
-				"type": "String"
+				"type": "String",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
-	"zpopClearZombies": {
+	"ZombRand": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
-				"name": "int1",
-				"type": "int"
+				"name": "double1",
+				"type": "double",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
+				"name": "double2",
+				"type": "double",
+				"description": "TODO"
+			}
+		],
+		"return": "double"
+	},
+	"ZombRandBetween": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "double1",
+				"type": "double",
+				"description": "TODO"
+			},
+			{
+				"name": "double2",
+				"type": "double",
+				"description": "TODO"
+			}
+		],
+		"return": "double"
+	},
+	"ZombRandFloat": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "float1",
+				"type": "float",
+				"description": "TODO"
+			},
+			{
+				"name": "float2",
+				"type": "float",
+				"description": "TODO"
+			}
+		],
+		"return": "float"
+	},
+	"zpopClearZombies": {
+		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
+		"parameters": [
+			{
+				"name": "int1",
+				"type": "int",
+				"description": "TODO"
+			},
+			{
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"zpopNewRenderer": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [],
 		"return": "ZombiePopulationRenderer"
 	},
 	"zpopSpawnNow": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
 	},
 	"zpopSpawnTimeToZero": {
 		"description": "TODO",
+		"modifiers": [
+			"public",
+			"static"
+		],
 		"parameters": [
 			{
-				"description": "TODO",
 				"name": "int1",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			},
 			{
-				"description": "TODO",
 				"name": "int2",
-				"type": "int"
+				"type": "int",
+				"description": "TODO"
 			}
 		],
 		"return": "void"
