@@ -21,7 +21,8 @@ for VERSION in "${VERSIONS[@]}"; do
 	OUTPUT="${OUTDIR}/addeventjava.txt"
 	echo -n > "${OUTPUT}"
 
-	JAVAROOT="${BASEROOT}/${VERSION}/java"
+	JAVAROOT="${BASEROOT}/${VERSION}/sources"
+	echo $JAVAROOT
 	while read LINE; do
 
 		if [[ "${LINE}" == *'AddEvent()'* ]] || [[ "${LINE}" == *'AddEvent(string)'* ]] ; then
