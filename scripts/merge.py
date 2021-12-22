@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import json
+from collections import OrderedDict
 
 from os import chdir
 from os.path import dirname, join, realpath
@@ -17,14 +18,14 @@ filename = join('data', 'json', 'parameters.json')
 with open(filename, 'r') as fd:
 	parameters = json.loads(fd.read())
 
-merge = {}
+merge = OrderedDict()
 
 for event, description in dict(descriptions).items():
 
 	if event not in parameters:
 		raise Exception('Missing parameters for event: ' + event)
 
-	merge[event] = {}
+	merge[event] = OrderedDict()
 	merge[event]['description'] = description
 	merge[event]['parameters'] = parameters[event]
 	del(parameters[event])
@@ -36,4 +37,4 @@ if parameters:
 
 filename = join('data', 'json', 'events.json')
 with open(filename, 'w') as fd:
-	fd.write(json.dumps(merge, indent='\t', sort_keys=True))
+	fd.write(json.dumps(merge, indent='\t'))
