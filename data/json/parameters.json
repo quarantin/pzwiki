@@ -123,6 +123,14 @@
 			"type": "KahluaTable"
 		}
 	],
+	"onAddForageDefs": [
+		{
+			"description": "The forage system object",
+			"name": "forageSystem",
+			"type": "KahluaTable"
+		}
+
+	],
 	"OnAIStateChange": [
 		{
 			"description": "The character whose AI state is being changed.",
@@ -459,6 +467,17 @@
 			"type": "IsoWaveSignal,Radio,VehiclePart"
 		}
 	],
+	"onDisableSearchMode": [
+		{
+			"description": "The player who's disabling search mode.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "Whether search mode is being enabled or disabled.",
+			"name": "isSearchMode",
+			"type": "Boolean"
+		}
+	],
 	"OnDisconnect": null,
 	"OnDistributionMerge": null,
 	"OnDoTileBuilding": [
@@ -566,6 +585,17 @@
 			"type": "IsoGameCharacter"
 		}
 	],
+	"onEnableSearchMode": [
+		{
+			"description": "The player who's enabling search mode.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "Whether search mode is being enabled or disabled.",
+			"name": "isSearchMode",
+			"type": "Boolean"
+		}
+	],
 	"OnEnterVehicle": [
 		{
 			"description": "The character who's entering the vehicle.",
@@ -634,6 +664,18 @@
 		{
 			"description": "The items available in the player inventory.",
 			"name": "items",
+			"type": "KahluaTable"
+		}
+	],
+	"onFillSearchIconContextMenu": [
+		{
+			"description": "The context menu to be filled.",
+			"name": "context",
+			"type": "KahluaTable"
+		},
+		{
+			"description": "TODO",
+			"name": "baseIcon",
 			"type": "KahluaTable"
 		}
 	],
@@ -765,6 +807,13 @@
 	"OnIsoThumpableSave": [
 		{
 			"description": "TODO: EVENT NOT FOUND."
+		}
+	],
+	"onItemFall": [
+		{
+			"description": "The inventory item being dropped on the ground.",
+			"name": "item",
+			"type": "InventoryItem"
 		}
 	],
 	"OnJoypadActivate": [
@@ -1660,6 +1709,17 @@
 			"type": "IsoObject"
 		}
 	],
+	"onToggleSearchMode": [
+		{
+			"description": "The player who's toggling search mode.",
+			"type": "IsoPlayer"
+		},
+		{
+			"description": "Whether search mode is being enabled or disabled.",
+			"name": "isSearchMode",
+			"type": "Boolean"
+		}
+	],
 	"OnTriggerNPCEvent": [
 		{
 			"description": "The type of trigger of this NPC event.",
@@ -1674,6 +1734,11 @@
 		{
 			"description": "The building definition of this trigger.",
 			"type": "BuildingDef"
+		}
+	],
+	"onUpdateIcon": [
+		{
+			"description": "TODO"
 		}
 	],
 	"OnUpdateModdedWeatherStage": [
@@ -1810,6 +1875,30 @@
 			"type": "HandWeapon"
 		}
 	],
+	"OnWeatherPeriodComplete": [
+		{
+			"description": "The weather period.",
+			"type": "WeatherPeriod"
+		}
+	],
+	"OnWeatherPeriodStage": [
+		{
+			"description": "The weather period.",
+			"type": "WeatherPeriod"
+		}
+	],
+	"OnWeatherPeriodStart": [
+		{
+			"description": "The weather period.",
+			"type": "WeatherPeriod"
+		}
+	],
+	"OnWeatherPeriodStop": [
+		{
+			"description": "The weather period.",
+			"type": "WeatherPeriod"
+		}
+	],
 	"OnWorldMessage": [
 		{
 			"description": "The user sending the message.",
@@ -1832,6 +1921,38 @@
 			"type": "Boolean"
 		}
 	],
+	"OnWorldSound": [
+		{
+			"description": "The x coordinate of the sound.",
+			"name": "x",
+			"type": "Integer"
+		},
+		{
+			"description": "The y coordinate of the sound.",
+			"name": "y",
+			"type": "Integer"
+		},
+		{
+			"description": "The z coordinate of the sound.",
+			"name": "z",
+			"type": "Integer"
+		},
+		{
+			"description": "The radius of the sound.",
+			"name": "radius",
+			"type": "Integer"
+		},
+		{
+			"description": "The volume of the sound.",
+			"name": "volume",
+			"type": "Integer"
+		},
+		{
+			"description": "The object that triggered the sound.",
+			"name": "source",
+			"type": "IsoObject"
+		}
+	],
 	"OnZombieDead": [
 		{
 			"description": "The zombie who's about to get killed.",
@@ -1843,6 +1964,34 @@
 		{
 			"description": "The zombie who's being updated.",
 			"type": "IsoZombie"
+		}
+	],
+	"preAddCatDefs": [
+		{
+			"description": "The forage system object.",
+			"name": "forageSystem",
+			"type": "KahluaTable"
+		}
+	],
+	"preAddForageDefs": [
+		{
+			"description": "The forage system object.",
+			"name": "forageSystem",
+			"type": "KahluaTable"
+		}
+	],
+	"preAddItemDefs": [
+		{
+			"description": "The forage system object.",
+			"name": "forageSystem",
+			"type": "KahluaTable"
+		}
+	],
+	"preAddZoneDefs": [
+		{
+			"description": "The forage system object.",
+			"name": "forageSystem",
+			"type": "KahluaTable"
 		}
 	],
 	"ReceiveFactionInvite": [
