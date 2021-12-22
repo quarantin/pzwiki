@@ -3,6 +3,7 @@
 import sys
 import json
 import time
+import logging
 import requests
 
 from os import chdir, walk
@@ -13,6 +14,8 @@ from retry import retry
 tries = 5
 
 class Wiki:
+
+	logger = logging.getLogger(__name__)
 
 	default_config_file = 'config.json'
 	default_edit_delay = 0.2
@@ -65,7 +68,7 @@ class Wiki:
 		errorinfo = jsondata['error']['info']
 		raise Exception(errorcode + ': ' + errorinfo)
 
-	@retry(tries=tries, delay=2)
+	@retry(tries=tries, delay=2, logger=logger)
 	def get_csrf_token(self):
 
 		params = {
@@ -101,7 +104,7 @@ class Wiki:
 
 		return urljoin(javadoc_url, join(version, pkg_url))
 
-	@retry(tries=tries, delay=2)
+	@retry(tries=tries, delay=2, logger=logger)
 	def get_login_token(self):
 
 		params = {
@@ -312,7 +315,7 @@ class Wiki:
 
 		return '\n'.join(result)
 
-	@retry(tries=tries, delay=2)
+	@retry(tries=tries, delay=2, logger=logger)
 	def edit_page(self, title, wikitext):
 
 		print(title)
@@ -334,7 +337,7 @@ class Wiki:
 
 		time.sleep(self.edit_delay)
 
-	@retry(tries=tries, delay=2)
+	@retry(tries=tries, delay=2, logger=logger)
 	def delete_page(self, title):
 
 		print(title)
