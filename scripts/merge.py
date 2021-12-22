@@ -37,4 +37,4 @@ if parameters:
 
 filename = join('data', 'json', 'events.json')
 with open(filename, 'w') as fd:
-	fd.write(json.dumps(merge, indent='\t'))
+	fd.write(json.dumps(merge, indent='\t') + '\n')
