@@ -382,7 +382,7 @@
 		"parameters": null
 	},
 	"OnClientCommand": {
-		"description": "Triggered when the player sends a command to the server.",
+		"description": "Triggered when a client command is sent to the server.",
 		"parameters": [
 			{
 				"description": "The name of the module for this client command.",
@@ -395,7 +395,7 @@
 				"type": "String"
 			},
 			{
-				"description": "The player who initiated the client command.",
+				"description": "The player of the client command.",
 				"type": "IsoPlayer"
 			},
 			{
@@ -1991,7 +1991,7 @@
 		]
 	},
 	"OnServerCommand": {
-		"description": "Triggered when a command from the server is being received.",
+		"description": "Triggered when a server command is sent to the client.",
 		"parameters": [
 			{
 				"description": "The name of the module for this server command.",
