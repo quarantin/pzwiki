@@ -17,7 +17,7 @@ ignored_packages = jsondata['ignored_packages']
 for version in jsondata['versions']:
 
 
-	javaroot = '%s/%s/java/' % (jsondata['source'], version)
+	javaroot = '%s/%s/sources/' % (jsondata['source'], version)
 	chdir(javaroot)
 
 	db = {
