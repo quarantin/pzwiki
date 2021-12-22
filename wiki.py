@@ -297,7 +297,7 @@ class Wiki:
 		for see_also in self.see_also[name]:
 			if see_also != name:
 				prefix, suffix = '', ''
-				if name in self.obsolete:
+				if see_also in self.obsolete:
 					prefix, suffix = '<s>', '</s>'
 				result.append('* %s[[Modding:Lua Events/%s|%s]]%s' % (prefix, see_also, see_also, suffix))
 
