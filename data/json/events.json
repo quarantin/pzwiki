@@ -232,6 +232,16 @@
 			}
 		]
 	},
+	"onAddForageDefs": {
+		"description": "Triggered when the forage definitions are being added.",
+		"parameters": [
+			{
+				"description": "The forage system object",
+				"name": "forageSystem",
+				"type": "KahluaTable"
+			}
+		]
+	},
 	"OnAddMessage": {
 		"description": "Triggered when a chat message is being sent.",
 		"parameters": [
@@ -620,6 +630,20 @@
 			}
 		]
 	},
+	"onDisableSearchMode": {
+		"description": "Triggered when search mode is being disabled.",
+		"parameters": [
+			{
+				"description": "The player who's disabling search mode.",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "Whether search mode is being enabled or disabled.",
+				"name": "isSearchMode",
+				"type": "Boolean"
+			}
+		]
+	},
 	"OnDisconnect": {
 		"description": "Triggered when the player disconnects from the server.",
 		"parameters": null
@@ -748,6 +772,20 @@
 			}
 		]
 	},
+	"onEnableSearchMode": {
+		"description": "Triggered when search mode is being enabled.",
+		"parameters": [
+			{
+				"description": "The player who's enabling search mode.",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "Whether search mode is being enabled or disabled.",
+				"name": "isSearchMode",
+				"type": "Boolean"
+			}
+		]
+	},
 	"OnEnterVehicle": {
 		"description": "Triggered when a player successfully enters a vehicle.",
 		"parameters": [
@@ -835,6 +873,21 @@
 			{
 				"description": "The items available in the player inventory.",
 				"name": "items",
+				"type": "KahluaTable"
+			}
+		]
+	},
+	"onFillSearchIconContextMenu": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "The context menu to be filled.",
+				"name": "context",
+				"type": "KahluaTable"
+			},
+			{
+				"description": "TODO",
+				"name": "baseIcon",
 				"type": "KahluaTable"
 			}
 		]
@@ -1020,6 +1073,16 @@
 			}
 		]
 	},
+	"onItemFall": {
+		"description": "Triggered when an item is being dropped on the ground.",
+		"parameters": [
+			{
+				"description": "The inventory item being dropped on the ground.",
+				"name": "item",
+				"type": "InventoryItem"
+			}
+		]
+	},
 	"OnJoypadActivate": {
 		"description": "Triggered when a joypad is activated in-game.",
 		"parameters": [
@@ -1153,8 +1216,8 @@
 		"description": "Used when entering login state (?)",
 		"parameters": [
 			{
-				"description": "The current login state.",
 				"max_version": "40.43",
+				"description": "The current login state.",
 				"type": "LoginState"
 			}
 		]
@@ -2233,6 +2296,20 @@
 			}
 		]
 	},
+	"onToggleSearchMode": {
+		"description": "Triggered when search mode is being toggled.",
+		"parameters": [
+			{
+				"description": "The player who's toggling search mode.",
+				"type": "IsoPlayer"
+			},
+			{
+				"description": "Whether search mode is being enabled or disabled.",
+				"name": "isSearchMode",
+				"type": "Boolean"
+			}
+		]
+	},
 	"OnTriggerNPCEvent": {
 		"description": "Called when a player enters the trigger area of a NPC event.",
 		"parameters": [
@@ -2249,6 +2326,14 @@
 			{
 				"description": "The building definition of this trigger.",
 				"type": "BuildingDef"
+			}
+		]
+	},
+	"onUpdateIcon": {
+		"description": "TODO",
+		"parameters": [
+			{
+				"description": "TODO"
 			}
 		]
 	},
@@ -2414,6 +2499,42 @@
 			}
 		]
 	},
+	"OnWeatherPeriodComplete": {
+		"description": "Triggered when a weather period is complete.",
+		"parameters": [
+			{
+				"description": "The weather period.",
+				"type": "WeatherPeriod"
+			}
+		]
+	},
+	"OnWeatherPeriodStage": {
+		"description": "Triggered when a weather period stage starts.",
+		"parameters": [
+			{
+				"description": "The weather period.",
+				"type": "WeatherPeriod"
+			}
+		]
+	},
+	"OnWeatherPeriodStart": {
+		"description": "Triggered when a weather period starts.",
+		"parameters": [
+			{
+				"description": "The weather period.",
+				"type": "WeatherPeriod"
+			}
+		]
+	},
+	"OnWeatherPeriodStop": {
+		"description": "Triggered when a weather period stops.",
+		"parameters": [
+			{
+				"description": "The weather period.",
+				"type": "WeatherPeriod"
+			}
+		]
+	},
 	"OnWorldMessage": {
 		"description": "Triggered when a world message is being received.",
 		"parameters": [
@@ -2439,6 +2560,41 @@
 			}
 		]
 	},
+	"OnWorldSound": {
+		"description": "Triggered when a sound is being played.",
+		"parameters": [
+			{
+				"description": "The x coordinate of the sound.",
+				"name": "x",
+				"type": "Integer"
+			},
+			{
+				"description": "The y coordinate of the sound.",
+				"name": "y",
+				"type": "Integer"
+			},
+			{
+				"description": "The z coordinate of the sound.",
+				"name": "z",
+				"type": "Integer"
+			},
+			{
+				"description": "The radius of the sound.",
+				"name": "radius",
+				"type": "Integer"
+			},
+			{
+				"description": "The volume of the sound.",
+				"name": "volume",
+				"type": "Integer"
+			},
+			{
+				"description": "The object that triggered the sound.",
+				"name": "source",
+				"type": "IsoObject"
+			}
+		]
+	},
 	"OnZombieDead": {
 		"description": "Triggered when a zombie dies.",
 		"parameters": [
@@ -2455,6 +2611,46 @@
 			{
 				"description": "The zombie who's being updated.",
 				"type": "IsoZombie"
+			}
+		]
+	},
+	"preAddCatDefs": {
+		"description": "Triggered before foraging category definitions are being added.",
+		"parameters": [
+			{
+				"description": "The forage system object.",
+				"name": "forageSystem",
+				"type": "KahluaTable"
+			}
+		]
+	},
+	"preAddForageDefs": {
+		"description": "Triggered before foraging definitions are being added.",
+		"parameters": [
+			{
+				"description": "The forage system object.",
+				"name": "forageSystem",
+				"type": "KahluaTable"
+			}
+		]
+	},
+	"preAddItemDefs": {
+		"description": "Triggered before foraging item definitions are being added.",
+		"parameters": [
+			{
+				"description": "The forage system object.",
+				"name": "forageSystem",
+				"type": "KahluaTable"
+			}
+		]
+	},
+	"preAddZoneDefs": {
+		"description": "Triggered before foraging zone definitions are being added.",
+		"parameters": [
+			{
+				"description": "The forage system object.",
+				"name": "forageSystem",
+				"type": "KahluaTable"
 			}
 		]
 	},
