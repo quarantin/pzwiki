@@ -220,7 +220,16 @@ class Wiki:
 
 	def format_event_page(self, jsonevent):
 
-		output  = '{{ModdingFunction\n'
+		output =  '<!--\n'
+		output += 'WARNING: This page is auto-generated. Don\'t edit directly or your modifications will get lost!\n'
+		output += 'WARNING: To update this page please contact co`#2932 on discord, or make a pull-request directly at:\n'
+		output += 'WARNING: - https://github.com/quarantin/pzwiki\n'
+		output += 'WARNING:\n'
+		output += 'WARNING: The relevant files can be found here:\n'
+		output += 'WARNING: - https://github.com/quarantin/pzwiki/blob/main/data/json/events.json\n'
+		output += 'WARNING: - https://github.com/quarantin/pzwiki/blob/main/data/json/see_also.json\n'
+		output += '-->\n\n'
+		output += '{{ModdingFunction\n'
 		output += '|name = %s\n'             % self.format_event_name(jsonevent)
 		output += '|description = %s\n'      % self.format_event_description(jsonevent)
 		output += '|parameters =\n%s\n'      % self.format_event_parameters(jsonevent)
