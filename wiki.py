@@ -194,11 +194,10 @@ class Wiki:
 	def format_event_example(self, jsonevent):
 
 		event = jsonevent['name']
-		func = event[0].lower() + event[1:]
 
-		output  = self.format_span('keyword', 'function')
+		output  = self.format_span('keyword', 'local function')
 		output += ' '
-		output += self.format_span('function', func)
+		output += self.format_span('function', event)
 		output += '('
 
 		if event in self.parameters and self.parameters[event] != None:
@@ -216,7 +215,7 @@ class Wiki:
 		output += '\n'
 		output += self.format_span('keyword', 'end')
 		output += '\n\n'
-		output += 'Events.%s.Add(%s)' % (event, func)
+		output += 'Events.%s.Add(%s)' % (event, event)
 
 		return '<pre<!----> class="code">' + output + '</pre>'
 
