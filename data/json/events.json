@@ -599,6 +599,11 @@
 		"description": "Triggered when a media device is displaying text.",
 		"parameters": [
 			{
+				"description": "The GUID of the line of text being displayed.",
+				"name": "guid",
+				"type": "String"
+			},
+			{
 				"description": "The interaction codes of the media device.",
 				"name": "interactCodes",
 				"type": "String"
@@ -863,8 +868,8 @@
 		"description": "Triggered when inventory object context menus are being filled.",
 		"parameters": [
 			{
-				"description": "The player for which the context menu is being filled.",
-				"type": "IsoPlayer"
+				"description": "The identifier of the player for which the context menu is being filled.",
+				"type": "Integer"
 			},
 			{
 				"description": "The context menu to be filled.",
@@ -896,8 +901,8 @@
 		"description": "Triggered when world object context menus are being filled.",
 		"parameters": [
 			{
-				"description": "The player for which the context menu is being filled.",
-				"type": "IsoPlayer"
+				"description": "The identifier of the player for which the context menu is being filled.",
+				"type": "Integer"
 			},
 			{
 				"description": "The context menu to be filled.",
@@ -1682,8 +1687,8 @@
 		"description": "Triggered before context menus get filled with options.",
 		"parameters": [
 			{
-				"description": "The player for which the context menu is being filled.",
-				"type": "IsoPlayer"
+				"description": "The identifier of the player for which the context menu is being filled.",
+				"type": "Integer"
 			},
 			{
 				"description": "The context menu to be filled.",
@@ -1701,9 +1706,9 @@
 		"description": "Triggered before context menu for world objects is filled.",
 		"parameters": [
 			{
-				"description": "The player for which the context menu is being filled.",
-				"name": "player",
-				"type": "IsoPlayer"
+				"description": "The identifier of the player for which the context menu is being filled.",
+				"name": "playerNum",
+				"type": "Integer"
 			},
 			{
 				"description": "The context menu to be filled.",
@@ -2409,7 +2414,7 @@
 				"type": "IsoObject"
 			},
 			{
-				"description": "The amount of water that is being added or removed from the water container.",
+				"description": "The amount of water that the object had before it was changed.",
 				"name": "waterAmount",
 				"type": "Integer"
 			}
