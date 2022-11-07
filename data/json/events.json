@@ -2414,7 +2414,7 @@
 				"type": "IsoObject"
 			},
 			{
-				"description": "The amount of water that is being added or removed from the water container.",
+				"description": "The amount of water that the object had before it was changed.",
 				"name": "waterAmount",
 				"type": "Integer"
 			}
